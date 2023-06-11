@@ -1,0 +1,162 @@
+{
+	"#comment": "Dark survival",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s ultimate duration test",
+				"FirstRewardParam": "moneybag_100",
+				"ReplayRewardParam": "moneybag_100",
+				"StartingSun": 50,
+				"LevelNumber": 0,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)"
+				],
+				"Name": "Survival",
+				"StageModule": "RTID(DarkStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "LootOverrideModuleProperties",
+			"aliases": [
+				"LootOverride"
+			],
+			"objdata": {
+				"Overrides": [
+					{
+						"ZombieType": "RTID(dark_coin1@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(dark_armor1_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(dark_armor2_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(dark_gargantuar@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(dark_wizard_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(dark_juggler_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(dark_gargantuar_gold@ZombieTypes)",
+						"LootOverride": "GoldCoin"
+					},
+					{
+						"ZombieType": "RTID(dark_wizard_gold@ZombieTypes)",
+						"LootOverride": "GoldCoin"
+					},
+					{
+						"ZombieType": "RTID(dark_gargantuar_gem@ZombieTypes)",
+						"LootOverride": "Gem"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+					"goldleaf",
+					"thymewarp",
+					"caulipower",
+					"blastberry",
+					"goldbloom",
+					"electricblueberry",
+					"missiletoe"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 30,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 12,
+				"StartingPoints": 10,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"WavesPerFlag": 7,
+				"ZombiePool": [
+					"RTID(dark@ZombieTypes)",
+					"RTID(dark_coin1@ZombieTypes)",
+					"RTID(dark_armor1@ZombieTypes)",
+					"RTID(dark_armor1_silver@ZombieTypes)",
+					"RTID(dark_armor2@ZombieTypes)",
+					"RTID(dark_armor2_silver@ZombieTypes)",
+					"RTID(dark_gargantuar@ZombieTypes)",
+					"RTID(dark_gargantuar_gold@ZombieTypes)",
+					"RTID(dark_gargantuar_gem@ZombieTypes)",
+					"RTID(dark_juggler@ZombieTypes)",
+					"RTID(dark_juggler_silver@ZombieTypes)",
+					"RTID(dark_wizard@ZombieTypes)",
+					"RTID(dark_wizard_silver@ZombieTypes)",
+					"RTID(dark_wizard_gold@ZombieTypes)",
+					"RTID(dark_king@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

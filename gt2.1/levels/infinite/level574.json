@@ -1,0 +1,280 @@
+{
+	"#comment": "lv574",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s infinity trials",
+				"FirstRewardParam": "moneybag_25",
+				"StartingSun": 50,
+				"LevelNumber": 574,
+				"ZombieLevel": 3,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(AutoSunDropperBase@CurrentLevel)",
+					"RTID(AutoSunDropper1@CurrentLevel)",
+					"RTID(AutoSunDropper2@CurrentLevel)",
+					"RTID(AutoSunDropper3@CurrentLevel)",
+					"RTID(AutoSunDropper4@CurrentLevel)",
+					"RTID(AutoSunDropper5@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DinoMowers@LevelModules)",
+					"RTID(ProtectThePlant@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"MusicType": "MiniGame_A",
+				"Name": "Adventure 574",
+				"StageModule": "RTID(DinoStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropperBase"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 2,
+				"SunCountdownBase": 6,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 6
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper1"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 29,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper2"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 71,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper3"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 143,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper4"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 215,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper5"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 317,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 2,
+				"Plants": [
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"PlantType": "stickybombrice"
+					},
+					{
+						"GridX": 2,
+						"GridY": 3,
+						"PlantType": "stickybombrice"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantExcludeList": [
+					"sunflower",
+					"twinsunflower",
+					"primalsunflower",
+					"moonflower",
+					"sunshroom",
+					"sunbean",
+					"goldleaf",
+					"goldbloom",
+					"solartomato",
+					"witchhazel",
+					"ailmint",
+					"enlightenmint"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"WavesPerFlag": 5,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 80,
+				"PointIncrementPerWave": 16,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(dino@ZombieTypes)",
+					"RTID(dino_armor4@ZombieTypes)",
+					"RTID(dino_bully_veteran@ZombieTypes)",
+					"RTID(seagull@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"T1"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 0,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"T2"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 1,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"T3"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 2,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"T4"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 3,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"T5"
+			],
+			"objclass": "DinoWaveActionProps",
+			"objdata": {
+				"DinoRow": 4,
+				"DinoType": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"PF"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

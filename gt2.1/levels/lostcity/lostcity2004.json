@@ -1,0 +1,217 @@
+{
+	"#comment": "LC-20 - all special garg",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s grind thousand quests",
+				"FirstRewardParam": "moneybag_200",
+				"ReplayRewardParam": "moneybag_120",
+				"StartingSun": 50,
+				"LevelNumber": 20,
+				"ZombieLevel": 4,
+				"GridItemLevel": 4,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(LostCityMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(NormalLootOverride@LevelModules)",
+					"RTID(LostCityMainLevelSwapModule4@LevelModules)"
+				],
+				"Name": "Level 20",
+				"StageModule": "RTID(LostCityStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 3,
+						"GridY": 0,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 6,
+						"GridY": 0,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 7,
+						"GridY": 0,
+						"TypeName": "goldtile_fake"
+					},
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 3,
+						"GridY": 1,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 8,
+						"GridY": 1,
+						"TypeName": "goldtile_fake"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 2,
+						"GridY": 2,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 6,
+						"GridY": 2,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"TypeName": "goldtile_fake"
+					},
+					{
+						"GridX": 2,
+						"GridY": 3,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "goldtile_fake"
+					},
+					{
+						"GridX": 3,
+						"GridY": 4,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 4,
+						"GridY": 4,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "goldtile_fake"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 4,
+				"WavesPerFlag": 6,
+				"PlantfoodToSpawnCount": 3,
+				"StartingPoints": 75,
+				"PointIncrementPerWave": 24,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(lostcity_armor2@ZombieTypes)",
+					"RTID(lostcity_jane@ZombieTypes)",
+					"RTID(lostcity_excavator@ZombieTypes)",
+					"RTID(lostcity_crystalskull@ZombieTypes)",
+					"RTID(lostcity_relichunter@ZombieTypes)",
+					"RTID(lostcity_impporter@ZombieTypes)",
+					"RTID(lostcity_gargantuar@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

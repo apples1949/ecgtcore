@@ -1,0 +1,192 @@
+{
+	"#comment": "Empty heart‘",
+	false: "lv442",
+	"objects": [ {
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s infinity trials",
+				"FirstRewardParam": "moneybag_25",
+				"StartingSun": 50,
+				"LevelNumber": 442,
+				"ZombieLevel": 3,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(EgyptMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(GI@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)" ],
+				"Name": "Adventure 442",
+				"StageModule": "RTID(EgyptStage@LevelModules)"
+			}
+		}, {
+			"aliases": [ "GI" ],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [ {
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 3,
+						"GridY": 0,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 6,
+						"GridY": 0,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 4,
+						"GridY": 1,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 2,
+						"GridY": 2,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 5,
+						"GridY": 2,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 8,
+						"GridY": 2,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 1,
+						"GridY": 3,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 4,
+						"GridY": 3,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 7,
+						"GridY": 3,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 3,
+						"GridY": 4,
+						"TypeName": "gravestone_egypt"
+					}, {
+						"GridX": 6,
+						"GridY": 4,
+						"TypeName": "gravestone_egypt"
+					} ]
+			}
+		}, {
+			"aliases": [ "ChallengeModule" ],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [ [ "RTID(SunUsed@CurrentLevel)" ] ],
+				"ChallengesAlwaysAvailable": true
+			}
+		}, {
+			"aliases": [ "SunUsed" ],
+			"objclass": "StarChallengeSunUsedProps",
+			"objdata": {
+				"MaximumSun": 3000
+			}
+		}, {
+			"aliases": [ "SeedBank" ],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [],
+				"SelectionMethod": "chooser"
+			}
+		}, {
+			"aliases": [ "Escalation" ],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"WavesPerFlag": 9,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 10,
+				"PointIncrementPerWave": 12,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [ "RTID(egypt_imp@ZombieTypes)", "RTID(mummy_armor1@ZombieTypes)", "RTID(pharaoh@ZombieTypes)" ]
+			}
+		}, {
+			"aliases": [ "NewWaves" ],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		}, {
+			"aliases": [ "WaveManager" ],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [ [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS3@CurrentLevel)" ] ]
+			}
+		}, {
+			"aliases": [ "Blank" ],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": []
+			}
+		}, {
+			"aliases": [ "SS1" ],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 6,
+				"ColumnStart": 6,
+				"GroupSize": 1,
+				"TimeBetweenGroups": 3,
+				"Type": "sandstorm",
+				"Zombies": [ {
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, {
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					} ]
+			}
+		}, {
+			"aliases": [ "SS2" ],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 7,
+				"ColumnStart": 5,
+				"GroupSize": 1,
+				"TimeBetweenGroups": 1,
+				"Type": "sandstorm",
+				"Zombies": [ {
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, {
+						"Type": "RTID(egypt_imp@ZombieTypes)"
+					}, {
+						"Type": "RTID(egypt_imp@ZombieTypes)"
+					}, {
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					} ]
+			}
+		}, {
+			"aliases": [ "SS3" ],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 8,
+				"ColumnStart": 5,
+				"GroupSize": 8,
+				"TimeBetweenGroups": 1,
+				"Type": "sandstorm",
+				"Zombies": [ {
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, {
+						"Type": "RTID(egypt_imp@ZombieTypes)"
+					}, {
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, {
+						"Type": "RTID(egypt_imp@ZombieTypes)"
+					}, {
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					} ]
+			}
+		} ],
+	"version": 1
+}

@@ -1,0 +1,279 @@
+{
+	"#comment": "Gambling 16B",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Welcome to casino land!",
+				"StartingSun": 200,
+				"DisableSaveGame": true,
+				"DisableRestart": true,
+				"DisablePlantBoosts": true,
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(LevelOfTheDayIntro@LevelModules)",
+					"RTID(AutoSunDropperBase@CurrentLevel)",
+					"RTID(AutoSunDropper1@CurrentLevel)",
+					"RTID(AutoSunDropper2@CurrentLevel)",
+					"RTID(AutoSunDropper3@CurrentLevel)",
+					"RTID(AutoSunDropper4@CurrentLevel)",
+					"RTID(AutoSunDropper5@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(IPP@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"Name": "Risky Island",
+				"StageModule": "RTID(ModernStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropperBase"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 2,
+				"SunCountdownBase": 6,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 6
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper1"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 29,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper2"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 71,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper3"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 143,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper4"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 215,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper5"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 317,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
+			"objclass": "InitialPlantProperties",
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"TypeName": "sunflower"
+					},
+					{
+						"GridX": 4,
+						"GridY": 1,
+						"TypeName": "sunflower"
+					},
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "sunflower"
+					},
+					{
+						"GridX": 4,
+						"GridY": 3,
+						"TypeName": "sunflower"
+					},
+					{
+						"GridX": 4,
+						"GridY": 4,
+						"TypeName": "sunflower"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SunProduced@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"SunProduced"
+			],
+			"objclass": "StarChallengeSunProducedProps",
+			"objdata": {
+				"TargetSun": 2000
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "",
+				"DescriptiveName": ""
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower",
+					"twinsunflower",
+					"primalsunflower",
+					"moonflower",
+					"sunshroom",
+					"sunbean",
+					"goldleaf",
+					"goldbloom",
+					"solartomato",
+					"escaperoot",
+					"witchhazel",
+					"ailmint"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelOfTheDayModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"WavesPerFlag": 8,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 30,
+				"PointIncrementPerWave": 22,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(iceage_hunter@ZombieTypes)",
+					"RTID(lostcity_jane@ZombieTypes)",
+					"RTID(future_imp@ZombieTypes)",
+					"RTID(dino_imp@ZombieTypes)",
+					"RTID(dino_bully_veteran@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"PF"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

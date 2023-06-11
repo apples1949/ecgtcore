@@ -1,0 +1,219 @@
+{
+	"#comment": "WW-3 - 2 special light wr",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s grind thousand quests",
+				"FirstRewardParam": "moneybag_100",
+				"ReplayRewardParam": "moneybag_15",
+				"StartingSun": 50,
+				"LevelNumber": 3,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(WestMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(YetiSwap1@LevelModules)",
+					"RTID(CowboyRails@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)"
+				],
+				"Name": "Level 3",
+				"StageModule": "RTID(WestStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"CowboyRails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy",
+				"Railcarts": [
+					{
+						"Column": 3,
+						"Row": 0
+					},
+					{
+						"Column": 6,
+						"Row": 4
+					}
+				],
+				"Rails": [
+					{
+						"Column": 3,
+						"RowStart": 0,
+						"RowEnd": 3
+					},
+					{
+						"Column": 6,
+						"RowStart": 1,
+						"RowEnd": 4
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 8,
+				"StartingPoints": 10,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"WavesPerFlag": 7,
+				"ZombiePool": [
+					"RTID(cowboy@ZombieTypes)",
+					"RTID(cowboy_armor1@ZombieTypes)",
+					"RTID(west_bullrider@ZombieTypes)",
+					"RTID(cowboy_gargantuar@ZombieTypes)",
+					"RTID(west_bull@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(WR@CurrentLevel)",
+						"RTID(WRMessage@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(WR@CurrentLevel)",
+						"RTID(WRMessage@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(WR@CurrentLevel)",
+						"RTID(WRMessage@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(WR@CurrentLevel)",
+						"RTID(WRMessage@CurrentLevel)"
+					],
+					[
+						"RTID(WR@CurrentLevel)",
+						"RTID(WRMessage@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WR"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WRMessage"
+			],
+			"objclass": "BeachStageEventZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 0,
+				"ColumnStart": 0,
+				"GroupSize": 0,
+				"WaveStartMessage": "Wild Rush!",
+				"ZombieCount": 0,
+				"ZombieName": "prospector"
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

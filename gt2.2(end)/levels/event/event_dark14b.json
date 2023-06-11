@@ -1,0 +1,245 @@
+{
+	"#comment": "ECLISE crossover",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Journey Ends",
+				"FirstRewardParam": "moneybag_200",
+				"ReplayRewardParam": "moneybag_200",
+				"StartingSun": 200,
+				"ZombieLevel": 1,
+				"LevelNumber": 14,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"ZombieEgyptCamelAudio",
+					"PlantMagnetShroomAudio",
+					"BeghouledGroup"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(ZombossIntro@CurrentLevel)",
+					"RTID(DarkMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombossBattle@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(MiniSunGraveSpawner@LevelModules)",
+					"RTID(MiniSunGraveSpawner2@.)",
+					"RTID(MiniSpawnerLimit@LevelModules)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"MusicType": "MiniGame_A",
+				"Name": "DA-14B: Boss Tower",
+				"StageModule": "RTID(DarkStage@CurrentLevel)",
+				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)",
+				"LoadDefaultMusic": false
+			}
+		},
+		{
+			"aliases": [
+				"MiniSunGraveSpawner2"
+			],
+			"objclass": "ZombiePotionModuleProperties",
+			"objdata": {
+				"InitialPotionCount": 0,
+				"MaxPotionCount": 25,
+				"PotionSpawnTimer": {
+					"Max": 6,
+					"Min": 6
+				},
+				"PotionTypes": [
+					"gravestone_minisun"
+				]
+			}
+		},
+		{
+			"objclass": "DarkStageProperties",
+			"aliases": [
+				"DarkStage"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Dark_Compressed",
+					"Dirt_Spawn_Dirt",
+					"ZombieDarkBasicGroup",
+					"AudioDarkAges",
+					"Tombstone_Dark_Base",
+					"Tombstone_Dark_Effects",
+					"Dark_Background_Effects"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_Dark_Compressed"
+				],
+				"StagePrefix": "zomboss",
+				"BackgroundResourceGroup": "DelayLoad_Background_Dark_Compressed",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_DARK",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "dark",
+				"FlagZombieTypeName": "dark_flag",
+				"FlagVeteranZombieTypeNames": [
+					"dark_flag_veteran"
+				],
+				"Armor1ZombieTypeName": "dark_armor1",
+				"Armor2ZombieTypeName": "dark_armor2",
+				"Armor3ZombieTypeName": "dark_armor3",
+				"RailcartDefaultTypeName": "railcart_cowboy",
+				"GravestoneDefaultTypeName": "gravestone_dark",
+				"DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_DIRT",
+				"MusicSuffix": "DarkAges"
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 6,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 7,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 8,
+						"GridY": 0,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 8,
+						"GridY": 1,
+						"TypeName": "gravestonePlantfoodOnDestruction"
+					},
+					{
+						"GridX": 6,
+						"GridY": 2,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 8,
+						"GridY": 2,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 8,
+						"GridY": 3,
+						"TypeName": "gravestonePlantfoodOnDestruction"
+					},
+					{
+						"GridX": 6,
+						"GridY": 4,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 7,
+						"GridY": 4,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 8,
+						"GridY": 4,
+						"TypeName": "gravestoneSunOnDestruction"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombossBattleIntroProperties",
+			"aliases": [
+				"ZombossIntro"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+				],
+				"PanStartOffset": 78,
+				"PanEndOffset": 468,
+				"PanRightDuration": 1.5,
+				"PanLeftDuration": 1.5,
+				"ZombossPhaseCount": 5,
+				"SkipShowingStreet": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
+			"objclass": "ZombossBattleModuleProperties",
+			"objdata": {
+				"ReservedColumnCount": 2,
+				"##### MUST BE >= 2 FOR ZOMBOSS TO MOVE": 0,
+				"ZombossMechType": "zombossmech_dark_easy",
+				"ZombossDeathRow": 3,
+				"ZombossDeathColumn": 5,
+				"ZombossSpawnGridPosition": {
+					"mX": 6,
+					"mY": 3
+				}
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"OverrideSeedSlotsCount": 8,
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"Waves": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

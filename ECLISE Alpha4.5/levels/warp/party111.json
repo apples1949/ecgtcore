@@ -1,0 +1,769 @@
+{
+	"#comment": "Cowboy Wranglers | ELM: Ver-9.1.2 [ECL Alpha 3] | Ramp: 1+0.75",
+	"#zombies": "cowboy, cowboy_armor1, cowboy_armor2, cowboyrangler@, cowboy_gargantuar, cowboyrangler2@, piano, cowboyrangler3@",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 500,
+				"Description": "E  C  L  I  S  E",
+				"FirstRewardParam": "moneybag",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Tombstone_Dark_Special",
+					"Tombstone_Dark_Effects"
+				],
+				"Modules": [
+					"RTID(TechnicalZombieOverride@LevelModules)",
+					"RTID(WestMowers@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
+				"Name": "WP-111: Cowboy Wranglers - Jornker",
+				"StageModule": "RTID(WestNightStage@LevelModules)",
+				"MusicType": "MiniGame_B"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive with 500 starting sun",
+				"DescriptiveName": ""
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"PlantExcludeList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"WavesPerFlag": 8,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 125,
+				"PointIncrementPerWave": 125,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(cowboy@ZombieTypes)",
+					"RTID(cowboy_gargantuar@ZombieTypes)",
+					"RTID(cowboy_armor1@ZombieTypes)",
+					"RTID(piano@ZombieTypes)",
+					"RTID(cowboy_armor2@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 8,
+				"WaveCount": 16,
+				"SuppressFlagZombie": false,
+				"Waves": [
+					[
+						"RTID(ZombieShown@.)"
+					],
+					[
+						"RTID(Wave2@.)"
+					],
+					[
+					],
+					[
+						"RTID(Wave4@.)"
+					],
+					[
+					],
+					[
+						"RTID(Wave6@.)"
+					],
+					[
+					],
+					[
+						"RTID(Wave8@.)"
+					],
+					[
+					],
+					[
+						"RTID(Wave10@.)"
+					],
+					[
+						"RTID(Wave11@.)"
+					],
+					[
+						"RTID(Wave12@.)"
+					],
+					[
+						"RTID(Wave13@.)"
+					],
+					[
+						"RTID(Wave14@.)"
+					],
+					[
+						"RTID(Wave15@.)"
+					],
+					[
+						"RTID(Wave24@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieShown"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(plank@GridItemTypes)"
+				],
+				"WaveStartMessage": "",
+				"SuppressActionIfNoGridItemsFound": true,
+				"Zombies": [
+					{
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(cowboyrangler@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(cowboyrangler@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(cowboyrangler@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(cowboyrangler@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboyrangler@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(cowboyrangler2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(cowboyrangler2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboyrangler2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboyrangler2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(cowboyrangler2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(cowboyrangler2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(cowboyrangler2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(cowboyrangler2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboyrangler2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboyrangler2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(cowboyrangler3@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(cowboyrangler3@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(cowboyrangler3@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave21"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(cowboyrangler3@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave22"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(cowboyrangler3@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave24"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboyrangler3@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboyrangler3@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboyrangler3@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboyrangler@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboyrangler3@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboyrangler@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboyrangler3@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboyrangler@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboyrangler@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboyrangler@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieChickenFarmerDefault"
+			],
+			"objclass": "ZombieChickenFarmerProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 80000,
+					"mY": 80000
+				},
+				"CanSpawnPlantFood": true,
+				"ChickenTypeName": "cowboy",
+				"ChickeningDuration": 3,
+				"ChickeningDurationVariance": 0,
+				"ChickeningHealthPercentage": 0.30000000000000004,
+				"ChickeningInterval": 0.6000000000000001,
+				"ChickeningIntervalVariance": 0,
+				"ChickeningSound": "Play_ChickenAction",
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 28,
+					"mX": 7,
+					"mY": 10
+				},
+				"Hitpoints": 100,
+				"ScaledProps": [
+					{
+						"Arg1": 1.05,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.1,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.01,
+						"Formula": "standard",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.30000000000000004,
+				"WavePointCost": 350,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness2"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieChickenFarmerDefault3"
+			],
+			"objclass": "ZombieChickenFarmerProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 1500,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"ChickenTypeName": "cowboy_armor2",
+				"ChickeningDuration": 1,
+				"ChickeningDurationVariance": 0,
+				"ChickeningHealthPercentage": 0.4,
+				"ChickeningInterval": 0.25,
+				"ChickeningIntervalVariance": 0,
+				"ChickeningSound": "Play_ChickenAction",
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 28,
+					"mX": 7,
+					"mY": 10
+				},
+				"Hitpoints": 300,
+				"ScaledProps": [
+					{
+						"Arg1": 1.05,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.1,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.01,
+						"Formula": "standard",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.45,
+				"WavePointCost": 350,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness2"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieChickenFarmerDefault2"
+			],
+			"objclass": "ZombieChickenFarmerProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 1500,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"ChickenTypeName": "cowboy_armor1",
+				"ChickeningDuration": 2,
+				"ChickeningDurationVariance": 0,
+				"ChickeningHealthPercentage": 0.5,
+				"ChickeningInterval": 0.4,
+				"ChickeningIntervalVariance": 0,
+				"ChickeningSound": "Play_ChickenAction",
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 28,
+					"mX": 7,
+					"mY": 10
+				},
+				"Hitpoints": 200,
+				"ScaledProps": [
+					{
+						"Arg1": 1.05,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.1,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.01,
+						"Formula": "standard",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.35000000000000003,
+				"WavePointCost": 350,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness2"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"cowboyrangler"
+			],
+			"objdata": {
+				"TypeName": "chicken_farmer",
+				"ZombieClass": "ZombieChickenFarmer",
+				"Properties": "RTID(ZombieChickenFarmerDefault@$CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWestChickenFarmerGroup"
+				],
+				"AudioGroups": [
+					"ZombieCowboyChickenAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_ChickenFarmer",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FARMER",
+				"HomeWorld": "cowboy"
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"cowboyrangler3"
+			],
+			"objdata": {
+				"TypeName": "chicken_farmer",
+				"ZombieClass": "ZombieChickenFarmer",
+				"Properties": "RTID(ZombieChickenFarmerDefault3@$CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWestChickenFarmerGroup"
+				],
+				"AudioGroups": [
+					"ZombieCowboyChickenAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_ChickenFarmer",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FARMER",
+				"HomeWorld": "cowboy"
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"cowboyrangler2"
+			],
+			"objdata": {
+				"TypeName": "chicken_farmer",
+				"ZombieClass": "ZombieChickenFarmer",
+				"Properties": "RTID(ZombieChickenFarmerDefault2@$CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWestChickenFarmerGroup"
+				],
+				"AudioGroups": [
+					"ZombieCowboyChickenAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_ChickenFarmer",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FARMER",
+				"HomeWorld": "cowboy"
+			}
+		},
+		{
+		}
+	],
+	"version": 1
+}

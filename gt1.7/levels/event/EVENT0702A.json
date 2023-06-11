@@ -1,0 +1,193 @@
+{
+	"#comment": "Event7 lv2A",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Free for all",
+				"FirstRewardParam": "moneybag_30",
+				"ReplayRewardParam": "moneybag_30",
+				"StartingSun": 1000,
+				"LevelNumber": 2,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(CowboyRails@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
+				"Name": "Event 7 - Level 2A",
+				"StageModule": "RTID(FutureStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"CowboyRails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy",
+				"Railcarts": [
+					{
+						"Column": 3,
+						"Row": 2
+					}
+				],
+				"Rails": [
+					{
+						"Column": 3,
+						"RowStart": 0,
+						"RowEnd": 4
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantWhiteList": [
+					"sunshroom",
+					"twinsunflower",
+					"moonflower",
+					"threepeater",
+					"primalpeashooter",
+					"poisonpeashooter",
+					"electricpeashooter",
+					"homingthistle",
+					"bowlingbulb",
+					"starfruit",
+					"akee",
+					"dusklobber",
+					"snapdragon",
+					"coldsnapdragon",
+					"strawburst",
+					"blastberry",
+					"wasabiwhip",
+					"parsnip",
+					"chomper",
+					"squash",
+					"lavaguava",
+					"redstinger",
+					"cherry_bomb",
+					"hypnoshroom",
+					"hotdate",
+					"stallia",
+					"hurrikale",
+					"escaperoot",
+					"tallnut",
+					"holonut",
+					"garlic",
+					"intensivecarrot",
+					"nightshade",
+					"witchhazel",
+					"icebloom",
+					"armamint",
+					"enforcemint",
+					"enchantmint"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)",
+						"RTID(PlantsLost@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"PlantsLost"
+			],
+			"objclass": "StarChallengePlantsLostProps",
+			"objdata": {
+				"MaximumPlantsLost": 10
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive with 1000 starting sun",
+				"DescriptiveName": ""
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 5,
+				"WavesPerFlag": 4,
+				"PlantfoodToSpawnCount": 7,
+				"StartingPoints": 150,
+				"PointIncrementPerWave": 30,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(mech_cone@ZombieTypes)",
+					"RTID(iceage_weasel@ZombieTypes)",
+					"RTID(future_jetpack@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

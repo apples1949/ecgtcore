@@ -1,0 +1,156 @@
+{
+	"#comment": "FF-8 - 1 special jetpack garg 4 PF",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s grind thousand quests",
+				"FirstRewardParam": "moneybag_100",
+				"ReplayRewardParam": "moneybag_30",
+				"StartingSun": 75,
+				"LevelNumber": 8,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(FutureMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(PowerTiles@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(YetiSwap2@LevelModules)",
+					"RTID(LootOverride@CurrentLevel)"
+				],
+				"Name": "Level 8",
+				"StageModule": "RTID(FutureStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "LootOverrideModuleProperties",
+			"aliases": [
+				"LootOverride"
+			],
+			"objdata": {
+				"Overrides": [
+					{
+						"ZombieType": "RTID(future_coin1@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(future_coin2@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"PowerTiles"
+			],
+			"objclass": "PowerTileProperties",
+			"objdata": {
+				"LinkedTiles": [
+					{
+						"Group": "alpha",
+						"Location": {
+							"mX": 5,
+							"mY": 0
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "alpha",
+						"Location": {
+							"mX": 6,
+							"mY": 2
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "alpha",
+						"Location": {
+							"mX": 5,
+							"mY": 4
+						},
+						"PropagationDelay": 1
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"WavesPerFlag": 9,
+				"PlantfoodToSpawnCount": 3,
+				"StartingPoints": 15,
+				"PointIncrementPerWave": 24,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(future@ZombieTypes)",
+					"RTID(future_armor1@ZombieTypes)",
+					"RTID(future_jetpack@ZombieTypes)",
+					"RTID(disco_mech@ZombieTypes)",
+					"RTID(future_gargantuar@ZombieTypes)",
+					"RTID(future_coin1@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

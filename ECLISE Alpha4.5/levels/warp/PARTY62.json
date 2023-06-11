@@ -1,0 +1,2229 @@
+{
+	"#comment": "Copycat | ELM: Ver-9.0 [ECL Alpha 1.0]",
+	"#zombies": "feastivus_imp, feastivus_imp@, feastivus_imp_armor2@, feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@, feastivus_imp_beeg@, feastivus_imp_explorer@, future_gargantuar@, chicken",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 50,
+				"Description": "Warp Party!",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Tombstone_Dark_Special",
+					"Tombstone_Dark_Effects"
+				],
+				"Modules": [
+					"RTID(FutureMowers@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "WP-62: Copycat - Bread",
+				"StageModule": "RTID(FutureStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"PlantExcludeList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"WavesPerFlag": 9,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 0,
+				"PointIncrementPerWave": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(tutorial@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 9,
+				"WaveCount": 18,
+				"SuppressFlagZombie": false,
+				"Waves": [
+					[
+						"RTID(Wave1@.)"
+					],
+					[
+						"RTID(Wave2@.)"
+					],
+					[
+						"RTID(Wave3@.)"
+					],
+					[
+						"RTID(Wave4@.)"
+					],
+					[
+						"RTID(Wave5@.)",
+						"RTID(Necro5@.)"
+					],
+					[
+						"RTID(Wave6@.)"
+					],
+					[
+						"RTID(Wave7@.)"
+					],
+					[
+						"RTID(Wave8@.)",
+						"RTID(Necro8@.)",
+						"RTID(SpidRain8@.)"
+					],
+					[
+						"RTID(Wave9@.)",
+						"RTID(Snowstorm9_C6@.)",
+						"RTID(Snowstorm9_C7@.)",
+						"RTID(Snowstorm9_C8@.)"
+					],
+					[
+						"RTID(Wave10@.)"
+					],
+					[
+						"RTID(Wave11@.)",
+						"RTID(Necro11@.)"
+					],
+					[
+						"RTID(Wave12@.)"
+					],
+					[
+						"RTID(Wave13@.)",
+						"RTID(SpidRain13@.)"
+					],
+					[
+						"RTID(Wave14@.)",
+						"RTID(Necro14@.)"
+					],
+					[
+						"RTID(Wave15@.)"
+					],
+					[
+						"RTID(Wave16@.)",
+						"RTID(Sandstorm16_C4@.)",
+						"RTID(Sandstorm16_C5@.)",
+						"RTID(Sandstorm16_C6@.)"
+					],
+					[
+						"RTID(Wave17@.)",
+						"RTID(SpidRain17@.)"
+					],
+					[
+						"RTID(Wave18@.)",
+						"RTID(Sandstorm18_C0@.)",
+						"RTID(Sandstorm18_C1@.)",
+						"RTID(Sandstorm18_C2@.)",
+						"RTID(Sandstorm18_C3@.)",
+						"RTID(Sandstorm18_C4@.)",
+						"RTID(Sandstorm18_C5@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_beeg@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_beeg@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 2,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_beeg@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_beeg@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_beeg@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_beeg@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(feastivus_imp_beeg@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(feastivus_imp_explorer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro5"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Wild Rush?",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro8"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Wild Rush?",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain8"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 7,
+				"SpiderCount": 8,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "feastivus_imp",
+				"WaveStartMessage": "Tough Heads!"
+			}
+		},
+		{
+			"aliases": [
+				"Snowstorm9_C6"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "snowstorm",
+				"ColumnStart": 6,
+				"ColumnEnd": 6,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(future_gargantuar@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Snowstorm9_C7"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "snowstorm",
+				"ColumnStart": 7,
+				"ColumnEnd": 7,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Snowstorm9_C8"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "snowstorm",
+				"ColumnStart": 8,
+				"ColumnEnd": 8,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro11"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Wild Rush?",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain13"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 7,
+				"SpiderCount": 15,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "feastivus_imp",
+				"WaveStartMessage": "Tough Heads!"
+			}
+		},
+		{
+			"aliases": [
+				"Necro14"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Wild Rush!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm16_C4"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "sandstorm",
+				"ColumnStart": 4,
+				"ColumnEnd": 4,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm16_C5"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "sandstorm",
+				"ColumnStart": 5,
+				"ColumnEnd": 5,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(future_gargantuar@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm16_C6"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "sandstorm",
+				"ColumnStart": 6,
+				"ColumnEnd": 6,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain17"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 7,
+				"SpiderCount": 30,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "0.5",
+				"ZombieFallTime": "2",
+				"SpiderZombieName": "feastivus_imp",
+				"WaveStartMessage": "Tough Heads!"
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm18_C0"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "sandstorm",
+				"ColumnStart": 0,
+				"ColumnEnd": 0,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm18_C1"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "sandstorm",
+				"ColumnStart": 1,
+				"ColumnEnd": 1,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm18_C2"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "sandstorm",
+				"ColumnStart": 2,
+				"ColumnEnd": 2,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm18_C3"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "sandstorm",
+				"ColumnStart": 3,
+				"ColumnEnd": 3,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(feastivus_imp@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm18_C4"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "sandstorm",
+				"ColumnStart": 4,
+				"ColumnEnd": 4,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(feastivus_imp_armor2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm18_C5"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"Type": "sandstorm",
+				"ColumnStart": 5,
+				"ColumnEnd": 5,
+				"TimeBetweenGroups": 0.5,
+				"GroupSize": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(future_gargantuar@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(future_gargantuar@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"#comment": "Conehead Imp",
+			"objclass": "ZombieType",
+			"aliases": [
+				"feastivus_imp"
+			],
+			"objdata": {
+				"TypeName": "feastivus_imp",
+				"ZombieClass": "ZombieImp",
+				"Properties": "RTID(ZombieTutorialImpDefault2@.)",
+				"ResourceGroups": [
+					"ZombieFeastivusImpGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FEASTIVUS_IMP",
+				"HomeWorld": "tutorial",
+				"Placeable": true,
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieTutorialImpDefault2"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"AttackRect": {
+					"mHeight": 40,
+					"mWidth": 10,
+					"mX": 0,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 65,
+					"mWidth": 32,
+					"mX": -6,
+					"mY": 10
+				},
+				"Hitpoints": 125,
+				"ScoreOverride": 20,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 48
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.1,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Arg1": 1.2,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"Size": "imp",
+				"Speed": 0.6600000000000001,
+				"WavePointCost": 200,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"#comment": "Conehead Imp",
+			"objclass": "ZombieType",
+			"aliases": [
+				"feastivus_imp_uwuwuwuuwwuwuwuwuwuwwu"
+			],
+			"objdata": {
+				"TypeName": "feastivus_imp",
+				"ZombieClass": "ZombieImp",
+				"Properties": "RTID(ZombieTutorialImpDefault3@.)",
+				"ResourceGroups": [
+					"ZombieFeastivusImpGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FEASTIVUS_IMP",
+				"HomeWorld": "tutorial",
+				"Placeable": true,
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieTutorialImpDefault3"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"ArtScale": 0.1,
+				"AttackRect": {
+					"mHeight": 40,
+					"mWidth": 10,
+					"mX": 0,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 65,
+					"mWidth": 32,
+					"mX": -6,
+					"mY": 10
+				},
+				"Hitpoints": 4,
+				"ScoreOverride": 20,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 48
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.1,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Arg1": 1.2,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"Size": "imp",
+				"Speed": 1,
+				"WavePointCost": 200,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"#comment": "Conehead Imp",
+			"objclass": "ZombieType",
+			"aliases": [
+				"feastivus_imp_armor2"
+			],
+			"objdata": {
+				"TypeName": "feastivus_imp",
+				"ZombieClass": "ZombieImp",
+				"Properties": "RTID(ZombieTutorialImpDefault4@.)",
+				"ResourceGroups": [
+					"ZombieFeastivusImpGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FEASTIVUS_IMP",
+				"HomeWorld": "tutorial",
+				"Placeable": true,
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieTutorialImpDefault4"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"ArtScale": 2,
+				"AttackRect": {
+					"mHeight": 40,
+					"mWidth": 10,
+					"mX": 0,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 65,
+					"mWidth": 32,
+					"mX": -6,
+					"mY": 10
+				},
+				"Hitpoints": 1300,
+				"ScoreOverride": 20,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 48
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.1,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Arg1": 1.2,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"Size": "large",
+				"Speed": 0.22,
+				"WavePointCost": 200,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"#comment": "Conehead Imp",
+			"objclass": "ZombieType",
+			"aliases": [
+				"feastivus_imp_explorer"
+			],
+			"objdata": {
+				"TypeName": "feastivus_imp",
+				"ZombieClass": "ZombieImp",
+				"Properties": "RTID(ZombieTutorialImpDefault5@.)",
+				"ResourceGroups": [
+					"ZombieFeastivusImpGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FEASTIVUS_IMP",
+				"HomeWorld": "tutorial",
+				"Placeable": true,
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieTutorialImpDefault5"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"ArtScale": 3,
+				"AttackRect": {
+					"mHeight": 40,
+					"mWidth": 8,
+					"mX": 0,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 15000,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 65,
+					"mWidth": 32,
+					"mX": -6,
+					"mY": 10
+				},
+				"Hitpoints": 470,
+				"ScoreOverride": 20,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 48
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.1,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Arg1": 1.2,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"Size": "imp",
+				"Speed": 0.44,
+				"WavePointCost": 200,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"#comment": "Conehead Imp",
+			"objclass": "ZombieType",
+			"aliases": [
+				"feastivus_imp_beeg"
+			],
+			"objdata": {
+				"TypeName": "feastivus_imp",
+				"ZombieClass": "ZombieImp",
+				"Properties": "RTID(ZombieTutorialImpDefault6@.)",
+				"ResourceGroups": [
+					"ZombieFeastivusImpGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FEASTIVUS_IMP",
+				"HomeWorld": "tutorial",
+				"Placeable": true,
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieTutorialImpDefault6"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"ArtScale": 5,
+				"AttackRect": {
+					"mHeight": 40,
+					"mWidth": 10,
+					"mX": 0,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 65,
+					"mWidth": 32,
+					"mX": -6,
+					"mY": 10
+				},
+				"Hitpoints": 3600,
+				"ScoreOverride": 20,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 48
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.1,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Arg1": 1.2,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"Size": "large",
+				"Speed": 0.22,
+				"WavePointCost": 200,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"future_gargantuar"
+			],
+			"objdata": {
+				"TypeName": "future_gargantuar",
+				"ZombieClass": "ZombieGargantuarMech",
+				"Properties": "RTID(ZombieGargantuarMech@.)",
+				"ResourceGroups": [
+					"ZombieFutureGargantuarGroup",
+					"ZombieFutureImpGroup",
+					"EMPeachEffects",
+					"ZombieGargantuarEffects"
+				],
+				"AudioGroups": [
+					"ZombieFutureGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Mech",
+				"PopAnim": "POPANIM_ZOMBIE_GARGANTUAR",
+				"HomeWorld": "future"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieGargantuarMech"
+			],
+			"objclass": "ZombieGargantuarMechProps",
+			"objdata": {
+				"AlmanacOffset": {
+					"x": 20,
+					"y": 70
+				},
+				"AlmanacScale": 0.8,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ArtScale": 0.55,
+				"AttackRect": {
+					"mHeight": 150,
+					"mWidth": 30,
+					"mX": 0,
+					"mY": 10
+				},
+				"CanBeFlickedOff": false,
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 0,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"ExplodesWhenMowed": false,
+				"EyeLaserDelayBetweenShots": 2,
+				"EyeLaserMaxDistance": 500,
+				"EyeLaserMinDistance": 100,
+				"EyeLaserSweepLength": 90,
+				"EyeLaserSweepTime": 1,
+				"EyeLaserTotalDamage": 300,
+				"EyeLaserWarmUpTime": 0,
+				"FlickIsLaneRestricted": true,
+				"GroundTrackName": "ground_swatch",
+				"HealthThresholdToImpAmmoLayers": [
+					{
+						"HealthPercentThrowImp": 0.5,
+						"ProjectileLayersToHide": [
+							"pod"
+						]
+					}
+				],
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 55,
+					"mX": 32,
+					"mY": 10
+				},
+				"Hitpoints": 2500,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"ImpApex": 350,
+				"ImpFlightTime": 1.5,
+				"ImpSpawnOffset": {
+					"x": 71,
+					"y": 2,
+					"z": 105
+				},
+				"ImpTargetColumn": 3,
+				"ImpType": "feastivus_imp",
+				"IsValidPinchTarget": false,
+				"MetallicBodyParts": true,
+				"MinPosXThrowImp": 400,
+				"NormalDeathWhenMowed": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "SmashDamage"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EyeLaserTotalDamage"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Size": "large",
+				"SkipHeadDropState": true,
+				"SmashDamage": 1500,
+				"SmashDuration": 3,
+				"SoundOnActivate": "Play_Zomb_Future_Gargantuar_Mvmt_Activate",
+				"SoundOnCannon": "Play_Zomb_Future_Gargantuar_Mvmt_Cannon",
+				"SoundOnDeactivate": "Play_Zomb_Future_Gargantuar_Mvmt_Deactivate",
+				"SoundOnDeath": "Play_Zomb_Future_Gargantuar_Mvmt_Death",
+				"SoundOnSmash": "Play_Zomb_Future_Gargantuar_Mvmt_Attack",
+				"SoundOnWalk": "Play_Zomb_Future_Gargantuar_Mvmt_Foley",
+				"Speed": 0.0001,
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"ThrowImpDuration": 1,
+				"WavePointCost": 2000,
+				"Weight": 2500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed1"
+					}
+				]
+			}
+		},
+		{
+		}
+	],
+	"version": 1
+}

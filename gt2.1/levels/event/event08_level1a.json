@@ -1,0 +1,163 @@
+{
+	"#comment": "Event8 lv1",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Mega small munchfield!",
+				"FirstRewardParam": "moneybag_100",
+				"ReplayRewardParam": "moneybag_30",
+				"StartingSun": 5000,
+				"LevelNumber": 1,
+				"ZombieLevel": 10,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LastStand@CurrentLevel)"
+				],
+				"Name": "Event 8 - Level 1",
+				"StageModule": "RTID(DinoStage@.)"
+			}
+		},
+		{
+			"objclass": "EightiesStageProperties",
+			"aliases": [
+				"DinoStage"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Dino_Compressed",
+					"Dirt_Spawn_Grass",
+					"AudioDino",
+					"DinoGroansAudio"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_Dino_Compressed"
+				],
+				"StagePrefix": "dino",
+				"BackgroundResourceGroup": "DelayLoad_Background_Dino_Compressed",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_DINO",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "dino",
+				"FlagZombieTypeName": "dino_flag",
+				"FlagVeteranZombieTypeNames": [
+					"dino_flag_veteran"
+				],
+				"Armor1ZombieTypeName": "dino_armor1",
+				"Armor2ZombieTypeName": "dino_armor2",
+				"RailcartDefaultTypeName": "railcart_egypt",
+				"GravestoneDefaultTypeName": "gravestone_egypt",
+				"DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_GRASS",
+				"MusicSuffix": "Dino"
+			}
+		},
+		{
+			"aliases": [
+				"LastStand"
+			],
+			"objclass": "LastStandMinigameProperties",
+			"objdata": {
+				"StartingPlantfood": 0,
+				"StartingSun": 5000
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantExcludeList": [
+					"sunflower",
+					"twinsunflower",
+					"primalsunflower",
+					"moonflower",
+					"sunshroom",
+					"sunbean",
+					"goldleaf",
+					"goldbloom",
+					"solartomato",
+					"witchhazel",
+					"enlightenmint"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 1,
+				"WavesPerFlag": 10,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 200,
+				"PointIncrementPerWave": 5,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(chicken_farmer@ZombieTypes)",
+					"RTID(iceage_weaselhoarder@ZombieTypes)",
+					"RTID(dino_imp@ZombieTypes)",
+					"RTID(vegan@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"ManualStartup": true
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(JamPunk@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"JamPunk"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"NotificationEvents": [
+					"jam_punk"
+				]
+			}
+		}
+	],
+	"version": 1
+}

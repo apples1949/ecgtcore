@@ -1,0 +1,531 @@
+{
+	"#comment": "Empty Heart",
+	"#comment": "lv412",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s infinity trials",
+				"FirstRewardParam": "moneybag_25",
+				"StartingSun": 600,
+				"LevelNumber": 412,
+				"ZombieLevel": 3,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(AutoSunDropperBase@CurrentLevel)",
+					"RTID(AutoSunDropper1@CurrentLevel)",
+					"RTID(AutoSunDropper2@CurrentLevel)",
+					"RTID(AutoSunDropper3@CurrentLevel)",
+					"RTID(AutoSunDropper4@CurrentLevel)",
+					"RTID(AutoSunDropper5@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"Name": "Adventure 412",
+				"StageModule": "RTID(ModernStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropperBase"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 2,
+				"SunCountdownBase": 6,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 6
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper1"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 29,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper2"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 71,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper3"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 143,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper4"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 215,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"AutoSunDropper5"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 317,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive with 600 starting sun",
+				"DescriptiveName": ""
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "gravestone_tutorial"
+					},
+					{
+						"GridX": 2,
+						"GridY": 2,
+						"TypeName": "gravestone_tutorial"
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"TypeName": "gravestone_tutorial"
+					},
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"TypeName": "gravestone_tutorial"
+					},
+					{
+						"GridX": 4,
+						"GridY": 4,
+						"TypeName": "gravestone_tutorial"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "gravestone_tutorial"
+					},
+					{
+						"GridX": 6,
+						"GridY": 2,
+						"TypeName": "gravestone_tutorial"
+					},
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"TypeName": "gravestone_tutorial"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower",
+					"twinsunflower",
+					"primalsunflower",
+					"moonflower",
+					"sunshroom",
+					"sunbean",
+					"goldleaf",
+					"goldbloom",
+					"solartomato",
+					"escaperoot",
+					"witchhazel",
+					"ailmint"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"WavesPerFlag": 7,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 40,
+				"PointIncrementPerWave": 11,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(tutorial_imp@ZombieTypes)",
+					"RTID(tutorial_armor2@ZombieTypes)",
+					"RTID(tutorial_armor4@ZombieTypes)",
+					"RTID(football_mech@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(GS1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(GS2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)",
+						"RTID(GS2@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GS1"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GS2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"PF"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_imp@.)"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"tutorial_imp"
+			],
+			"objdata": {
+				"TypeName": "tutorial_imp",
+				"ZombieClass": "ZombieImp",
+				"Properties": "RTID(ZombieTutorialImpDefault@.)",
+				"ResourceGroups": [
+					"ZombieTutorialImpGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL_IMP",
+				"HomeWorld": "tutorial",
+				"Placeable": true,
+				"IsBasicZombie": true,
+				"HastyOnStart": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieTutorialImpDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"AttackRect": {
+					"mHeight": 40,
+					"mWidth": 10,
+					"mX": 0,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 20,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 65,
+					"mWidth": 20,
+					"mX": 0,
+					"mY": 10
+				},
+				"Hitpoints": 73,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 48
+				},
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"Size": "imp",
+				"Speed": 0.27,
+				"SpeedVariance": 0.05,
+				"WavePointCost": 10,
+				"Weight": 150,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness0"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				],
+				"ScoreOverride": 10
+			}
+		},
+		{
+			"aliases": [
+				"DM"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(boombox_ambush@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DMMessage"
+			],
+			"objclass": "BeachStageEventZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 0,
+				"ColumnStart": 0,
+				"GroupSize": 0,
+				"WaveStartMessage": "Domainator!",
+				"ZombieCount": 0,
+				"ZombieName": "prospector"
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

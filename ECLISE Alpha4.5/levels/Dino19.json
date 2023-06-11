@@ -1,0 +1,692 @@
+{
+	"#comment": "18-9",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "E  C  L  I  S  E",
+				"FirstRewardParam": "dangerroom_dino",
+				"FirstRewardType": "worldtrophy",
+				"FirstIntroNarrative": "DINO19_INTRO",
+				"ReplayIntroNarrative": "DINO19_INTRO",
+				"FirstOutroNarrative": "DINO_OUTRO_DANGER_ROOM_KEY",
+				"ReplayOutroNarrative": "",
+				"StartingSun": 50,
+				"LevelNumber": 19,
+				"DisablePlantBoosts": false,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DinoMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
+				"MusicType": "",
+				"Name": "18-9: Stop Brackets",
+				"StageModule": "RTID(DinoStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(PlantsLost@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"PlantsLost"
+			],
+			"objclass": "StarChallengePlantsLostProps",
+			"objdata": {
+				"MaximumPlantsLost": 8
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"PlantExcludeList": [
+				],
+				"PlantIncludeList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 1,
+				"WavesPerFlag": 10,
+				"StartingPoints": -1,
+				"PointIncrementPerWave": 0,
+				"PlantfoodToSpawnCount": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(dino@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"### WaveSpendingPointIncrement": 0,
+				"### WaveSpendingPoints": 0,
+				"### SuppressFlagZombie": false,
+				"### ZombieCountdownFirstWaveSecs": 40,
+				"### MinNextWaveHealthPercentage": 0.0,
+				"### MaxNextWaveHealthPercentage": 0.0,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(amber@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(amber@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

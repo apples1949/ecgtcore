@@ -1,0 +1,181 @@
+{
+	"#comment": "Egypt Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Endless Zone!",
+				"ForceNextLevel": "dino_dangerroom",
+				"StartingSun": 600,
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"SuppressAwardScreen": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(EgyptMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(Gravestones@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
+				"Name": "Starting Sun - Level {LEVEL_NUMBER}",
+				"StageModule": "RTID(EgyptStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive with 600 starting sun",
+				"DescriptiveName": ""
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(SunHeadStartDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(EgyptDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(EgyptGravestoneGenerator@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"Gravestones"
+			],
+			"objclass": "GravestoneProperties",
+			"objdata": {
+				"GravestoneCount": 0,
+				"SpawnColumnEnd": 0,
+				"SpawnColumnStart": 0
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+				],
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"EgyptDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 50,
+				"BasePointIncrementPerWave": 5,
+				"BasePointIncrementPerLevel": 1,
+				"ZombiePool": [
+					"RTID(mummy_armor1@ZombieTypes)",
+					"RTID(mummy_armor2@ZombieTypes)",
+					"RTID(mummy@ZombieTypes)",
+					"RTID(mummy_armor4@ZombieTypes)",
+					"RTID(egypt_gargantuar@ZombieTypes)",
+					"RTID(egypt_imp@ZombieTypes)",
+					"RTID(ra@ZombieTypes)",
+					"RTID(camel_onehump@ZombieTypes)",
+					"RTID(tomb_raiser@ZombieTypes)",
+					"RTID(pharaoh@ZombieTypes)",
+					"RTID(explorer@ZombieTypes)",
+					"RTID(explorer_veteran@ZombieTypes)",
+					"RTID(holohead@ZombieTypes)",
+					"RTID(dino_armor4@ZombieTypes)",
+					"RTID(dino_bully_veteran@ZombieTypes)",
+					"RTID(lostcity_jane@ZombieTypes)",
+					"RTID(lostcity_excavator@ZombieTypes)",
+					"RTID(lostcity_crystalskull@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"EgyptGravestoneGenerator"
+			],
+			"objclass": "DangerRoomGravestoneGenerator",
+			"objdata": {
+				"MinGravestoneCount": 6,
+				"BaseGravestoneCountPerLevel": 1,
+				"MaxGeneratedGravestones": 30,
+				"MinStartingGravestoneSpawnCol": 2,
+				"MaxStartingGravestoneSpawnCol": 7,
+				"MaxStartingGravestoneSpawnColOffsetPerLevel": -0.25,
+				"MinEndingGravestoneSpawnCol": 9,
+				"MaxEndingGravestoneSpawnCol": 9,
+				"MaxEndingGravestoneSpawnColOffsetPerLevel": 0.0
+			}
+		},
+		{
+			"aliases": [
+				"EgyptSandstormGenerator"
+			],
+			"objclass": "DangerRoomSandstormDesigner",
+			"objdata": {
+				"BaseSandstormCount": 0,
+				"BaseSandstormCountPerLevel": 0.25,
+				"MinSandstormCountPerLevel": 0,
+				"MaxSandstormsPerFlagWave": 4,
+				"BaseSandstormZombiesCount": 2,
+				"BaseSandstormZombiesCountPerLevel": 0.5,
+				"MinSandstormZombiesCountPerLevel": 0.25,
+				"MaxSandstormZombies": 20,
+				"MinStartingSandstormSpawnCol": 3,
+				"MaxStartingSandstormSpawnCol": 9,
+				"MaxStartingSandstormSpawnColOffsetPerLevel": -0.25,
+				"MinEndingSandstormSpawnCol": 5,
+				"MaxEndingSandstormSpawnCol": 9,
+				"MaxEndingSandstormSpawnColOffsetPerLevel": 0,
+				"BaseSandstormStartWave": 4
+			}
+		}
+	],
+	"version": 1
+}

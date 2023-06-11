@@ -1,0 +1,871 @@
+{
+	"#comment": "Stacking Waves - darkchan | ELM: Ver-9.1.2 [ECL Alpha 3]",
+	"#zombies": "lostcity, lostcity_armor1, lostcity_armor2, eighties_breakdancer, lostcity_mime",
+	"#isInsertable": "true",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 50,
+				"Description": "Welcome to dark land!",
+				"FirstRewardParam": "moneybag",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Tombstone_Dark_Special",
+					"Tombstone_Dark_Effects"
+				],
+				"Modules": [
+					"RTID(TechnicalZombieOverride@LevelModules)",
+					"RTID(LostCityMowers@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "WP-122: Stacking Waves - darkchan",
+				"StageModule": "RTID(LostCityStage@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"PlantIncludeList": [
+					"peashooter",
+					"repeater",
+					"splitpea",
+					"snowpea",
+					"firepeashooter",
+					"primalpeashooter",
+					"peapod",
+					"threepeater",
+					"peanut",
+					"redstinger",
+					"torchwood",
+					"sunflower",
+					"twinsunflower",
+					"primalsunflower",
+					"moonflower",
+					"goldleaf",
+					"goldbloom",
+					"sunbean",
+					"sunshroom",
+					"puffshroom",
+					"wallnut",
+					"tallnut",
+					"pumpkin",
+					"primalwallnut",
+					"holonut",
+					"chardguard",
+					"endurian",
+					"explodeonut",
+					"sweetpotato",
+					"garlic",
+					"aloe",
+					"spikeweed",
+					"spikerock",
+					"armamint",
+					"stickybombrice",
+					"cabbagepult",
+					"kernelpult",
+					"bloominghearts",
+					"sporeshroom",
+					"pepperpult",
+					"melonpult",
+					"wintermelon",
+					"akee",
+					"applemortar",
+					"sapfling",
+					"spearmint",
+					"dazeychain",
+					"citron",
+					"bloomerang",
+					"cactus",
+					"fumeshroom",
+					"laser_bean",
+					"electricpeashooter",
+					"dandelion",
+					"bowlingbulb",
+					"starfruit",
+					"xshot",
+					"homingthistle",
+					"lightningreed",
+					"electriccurrant",
+					"electricblueberry",
+					"caulipower",
+					"witchhazel",
+					"snapdragon",
+					"coldsnapdragon",
+					"phatbeet",
+					"bonkchoy",
+					"celerystalker",
+					"parsnip",
+					"chomper",
+					"toadstool",
+					"coconutcannon",
+					"strawburst",
+					"jackolantern",
+					"banana",
+					"hollyknight",
+					"missiletoe",
+					"magnifyinggrass",
+					"nightshade",
+					"potatomine",
+					"primalpotatomine",
+					"squash",
+					"shadowshroom",
+					"chilibean",
+					"hypnoshroom",
+					"tanglekelp",
+					"lilypad",
+					"grimrose",
+					"dusklobber",
+					"concealmint",
+					"ghostpepper",
+					"guacodile",
+					"jalapeno",
+					"cherry_bomb",
+					"grapeshot",
+					"bombegranate",
+					"lavaguava",
+					"shrinkingviolet",
+					"hotdate",
+					"ailmint",
+					"iceburg",
+					"stunion",
+					"springbean",
+					"hurrikale",
+					"stallia",
+					"thymewarp",
+					"bombardmint",
+					"gravebuster",
+					"hotpotato",
+					"magnetshroom",
+					"intensivecarrot",
+					"empea",
+					"perfumeshroom",
+					"escaperoot",
+					"powerplant",
+					"powerlily",
+					"imitater",
+					"enlightenmint",
+					"minipeashooter",
+					"unused_46",
+					"unused_43",
+					"unused_45",
+					"tumbleweed",
+					"unused_47",
+					"hocus"
+				],
+				"PlantExcludeList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Waves are much tougher, but delay between waves are longer",
+				"DescriptiveName": "Custom Objective"
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 3,
+						"GridY": 1,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"WavesPerFlag": 15,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 0,
+				"PointIncrementPerWave": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(tutorial@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 15,
+				"WaveCount": 30,
+				"SuppressFlagZombie": false,
+				"MinNextWaveHealthPercentage": 0.1,
+				"MaxNextWaveHealthPercentage": 0.1,
+				"ZombieCountdownHugeWaveDelay": 10,
+				"Waves": [
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+						"RTID(Wave5@.)"
+					],
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+						"RTID(Wave10@.)"
+					],
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+						"RTID(Wave15@.)",
+						"RTID(jam_rap@.)"
+					],
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+						"RTID(Wave20@.)"
+					],
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+						"RTID(Wave25@.)"
+					],
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+					],
+					[
+						"RTID(Wave30@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 3,
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave25"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave30"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"jam_rap"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"NotificationEvents": [
+					"jam_rap"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"LostCityStage"
+			],
+			"objclass": "EightiesStageProperties",
+			"objdata": {
+				"ResourceGroupNames": [
+					"Eighties_Background_Effects",
+					"DelayLoad_Background_LostCity_Compressed",
+					"Dirt_Spawn_Grass",
+					"AudioLostCity",
+					"LostCityGroansAudio"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_LostCity_Compressed"
+				],
+				"StagePrefix": "lostcity",
+				"BackgroundResourceGroup": "DelayLoad_Background_LostCity_Compressed",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_LOSTCITY",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "lostcity",
+				"FlagZombieTypeName": "lostcity_flag",
+				"Armor1ZombieTypeName": "lostcity_armor1",
+				"Armor2ZombieTypeName": "lostcity_armor2",
+				"RailcartDefaultTypeName": "railcart_egypt",
+				"GravestoneDefaultTypeName": "gravestone_egypt",
+				"DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_GRASS",
+				"MusicSuffix": "LostCity",
+				"DisabledStreetCells": [
+					{
+						"mX": 0,
+						"mY": 0
+					},
+					{
+						"mX": 0,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 0,
+						"mY": 3
+					},
+					{
+						"mX": 0,
+						"mY": 4
+					},
+					{
+						"mX": 0,
+						"mY": 5
+					},
+					{
+						"mX": 0,
+						"mY": 6
+					},
+					{
+						"mX": 0,
+						"mY": 7
+					},
+					{
+						"mX": 0,
+						"mY": 8
+					},
+					{
+						"mX": 0,
+						"mY": 9
+					},
+					{
+						"mX": 1,
+						"mY": 0
+					},
+					{
+						"mX": 1,
+						"mY": 1
+					},
+					{
+						"mX": 1,
+						"mY": 2
+					},
+					{
+						"mX": 1,
+						"mY": 3
+					},
+					{
+						"mX": 1,
+						"mY": 4
+					},
+					{
+						"mX": 1,
+						"mY": 5
+					},
+					{
+						"mX": 1,
+						"mY": 6
+					},
+					{
+						"mX": 1,
+						"mY": 7
+					},
+					{
+						"mX": 1,
+						"mY": 8
+					},
+					{
+						"mX": 1,
+						"mY": 9
+					},
+					{
+						"mX": 2,
+						"mY": 0
+					},
+					{
+						"mX": 2,
+						"mY": 1
+					},
+					{
+						"mX": 2,
+						"mY": 2
+					},
+					{
+						"mX": 2,
+						"mY": 3
+					},
+					{
+						"mX": 2,
+						"mY": 4
+					},
+					{
+						"mX": 2,
+						"mY": 5
+					},
+					{
+						"mX": 2,
+						"mY": 6
+					},
+					{
+						"mX": 2,
+						"mY": 7
+					},
+					{
+						"mX": 2,
+						"mY": 8
+					},
+					{
+						"mX": 2,
+						"mY": 9
+					},
+					{
+						"mX": 6,
+						"mY": 0
+					},
+					{
+						"mX": 6,
+						"mY": 1
+					},
+					{
+						"mX": 6,
+						"mY": 7
+					},
+					{
+						"mX": 6,
+						"mY": 8
+					},
+					{
+						"mX": 6,
+						"mY": 9
+					},
+					{
+						"mX": 7,
+						"mY": 0
+					},
+					{
+						"mX": 7,
+						"mY": 6
+					},
+					{
+						"mX": 7,
+						"mY": 7
+					},
+					{
+						"mX": 7,
+						"mY": 8
+					},
+					{
+						"mX": 7,
+						"mY": 9
+					},
+					{
+						"mX": 8,
+						"mY": 0
+					},
+					{
+						"mX": 8,
+						"mY": 6
+					},
+					{
+						"mX": 8,
+						"mY": 7
+					},
+					{
+						"mX": 8,
+						"mY": 8
+					},
+					{
+						"mX": 8,
+						"mY": 9
+					}
+				]
+			}
+		},
+		{
+		}
+	],
+	"version": 1
+}

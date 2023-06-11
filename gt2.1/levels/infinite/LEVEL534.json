@@ -1,0 +1,159 @@
+{
+	"#comment": "lvl534",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s infinity trials",
+				"FirstRewardParam": "moneybag_25",
+				"ReplayRewardParam": "",
+				"StartingSun": 50,
+				"ZombieLevel": 3,
+				"LevelNumber": 534,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(IPP@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(EightiesMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)"
+				],
+				"MusicType": "",
+				"Name": "Adventure 534",
+				"StageModule": "RTID(EightiesStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
+			"objclass": "InitialPlantProperties",
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "powerlily"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"PlantExcludeList": [
+				],
+				"PlantIncludeList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"WavesPerFlag": 9,
+				"StartingPoints": 15,
+				"PointIncrementPerWave": 15,
+				"PlantfoodToSpawnCount": 4,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(eighties@ZombieTypes)",
+					"RTID(eighties_armor1@ZombieTypes)",
+					"RTID(eighties_glitter@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 2,
+				"Plants": [
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"PlantType": "celerystalker",
+						"Level": -1
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"PlantType": "celerystalker",
+						"Level": -1
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"### WaveSpendingPointIncrement": 0,
+				"### WaveSpendingPoints": 0,
+				"### SuppressFlagZombie": false,
+				"### ZombieCountdownFirstWaveSecs": 40,
+				"### MinNextWaveHealthPercentage": 0.0,
+				"### MaxNextWaveHealthPercentage": 0.0,
+				"Waves": [
+					[
+						"RTID(JamRap@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"JamRap"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"NotificationEvents": [
+					"jam_rap"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

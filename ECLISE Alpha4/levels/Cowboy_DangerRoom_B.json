@@ -1,0 +1,527 @@
+{
+	"#comment": "Cowboy Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]",
+				"ForceNextLevel": "cowboy_dangerroom",
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(WestMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(LevelDifficultyScaling@CurrentLevel)"
+				],
+				"Name": "[DANGER_ROOM_COWBOY_LEVEL_NAME]",
+				"NormalPresentTable": "cowboy_normal_01",
+				"ShinyPresentTable": "cowboy_shiny_01",
+				"SuppressAwardScreen": true,
+				"StageModule": "RTID(WestStage@CurrentLevel)"
+			}
+		},
+		{
+			"objclass": "JoustStageProperties",
+			"aliases": [
+				"WestStage"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					"DelayLoad_Background_West_Compressed",
+					"Dirt_Spawn_Dirt",
+					"AudioCowboy",
+					"CowboyGroansAudio"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_West_Compressed"
+				],
+				"StagePrefix": "cowboy",
+				"BackgroundResourceGroup": "DelayLoad_Background_West_Compressed",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_OLDWEST",
+				"MowerPopAnim": "POPANIM_MOWERS_MOWER_WILDWEST",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "cowboy",
+				"FlagZombieTypeName": "cowboy_flag",
+				"FlagVeteranZombieTypeNames": [
+					"cowboy_flag_veteran"
+				],
+				"Armor1ZombieTypeName": "cowboy_armor1",
+				"Armor2ZombieTypeName": "cowboy_armor2",
+				"MusicSuffix": "WildWest",
+				"AmbientAudioSuffix": "WildWest_Wind",
+				"RailcartDefaultTypeName": "railcart_cowboy",
+				"GravestoneDefaultTypeName": "gravestone_cowboy",
+				"DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_DIRT",
+				"DisabledStreetCells": [
+					{
+						"mX": 0,
+						"mY": 0
+					},
+					{
+						"mX": 0,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 0,
+						"mY": 3
+					},
+					{
+						"mX": 0,
+						"mY": 4
+					},
+					{
+						"mX": 0,
+						"mY": 5
+					},
+					{
+						"mX": 0,
+						"mY": 6
+					},
+					{
+						"mX": 0,
+						"mY": 7
+					},
+					{
+						"mX": 0,
+						"mY": 8
+					},
+					{
+						"mX": 0,
+						"mY": 9
+					},
+					{
+						"mX": 1,
+						"mY": 0
+					},
+					{
+						"mX": 1,
+						"mY": 1
+					},
+					{
+						"mX": 1,
+						"mY": 2
+					},
+					{
+						"mX": 1,
+						"mY": 3
+					},
+					{
+						"mX": 1,
+						"mY": 4
+					},
+					{
+						"mX": 1,
+						"mY": 5
+					},
+					{
+						"mX": 1,
+						"mY": 6
+					},
+					{
+						"mX": 1,
+						"mY": 7
+					},
+					{
+						"mX": 1,
+						"mY": 8
+					},
+					{
+						"mX": 1,
+						"mY": 9
+					},
+					{
+						"mX": 2,
+						"mY": 0
+					},
+					{
+						"mX": 2,
+						"mY": 1
+					},
+					{
+						"mX": 2,
+						"mY": 2
+					},
+					{
+						"mX": 2,
+						"mY": 3
+					},
+					{
+						"mX": 2,
+						"mY": 4
+					},
+					{
+						"mX": 2,
+						"mY": 5
+					},
+					{
+						"mX": 2,
+						"mY": 6
+					},
+					{
+						"mX": 2,
+						"mY": 7
+					},
+					{
+						"mX": 2,
+						"mY": 8
+					},
+					{
+						"mX": 2,
+						"mY": 9
+					},
+					{
+						"mX": 3,
+						"mY": 9
+					},
+					{
+						"mX": 5,
+						"mY": 9
+					},
+					{
+						"mX": 6,
+						"mY": 4
+					},
+					{
+						"mX": 7,
+						"mY": 4
+					},
+					{
+						"mX": 6,
+						"mY": 3
+					},
+					{
+						"mX": 7,
+						"mY": 3
+					},
+					{
+						"mX": 7,
+						"mY": 2
+					},
+					{
+						"mX": 8,
+						"mY": 9
+					},
+					{
+						"mX": 8,
+						"mY": 8
+					},
+					{
+						"mX": 8,
+						"mY": 5
+					},
+					{
+						"mX": 8,
+						"mY": 4
+					},
+					{
+						"mX": 8,
+						"mY": 3
+					},
+					{
+						"mX": 8,
+						"mY": 2
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			],
+			"objclass": "LevelDifficultyScalingModuleProperties",
+			"objdata": {
+				"#comment": "Minus one level from calculation",
+				"DifficultyRulesType": "NoDifficulty",
+				"ZombieLevelSwaps": [
+					{
+						"Level": 0,
+						"Swaps": [
+							{
+								"From": "RTID(cowboy@ZombieTypes)",
+								"To": [
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(cowboy@ZombieTypes)",
+									"RTID(treasureyeti@ZombieTypes)"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 1,
+				"Plants": [
+					{
+						"GridX": 30,
+						"GridY": 6,
+						"PlantType": "spikeweed"
+					},
+					{
+						"GridX": 0,
+						"GridY": 6,
+						"PlantType": "powerlily"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(CowboyDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(CowboyDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(RailcartDesigner@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"Rails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"CowboyDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 200,
+				"BasePointIncrementPerWave": 50,
+				"BasePointIncrementPerLevel": 10,
+				"ZombiePool": [
+					"RTID(cowboy_armor1@ZombieTypes)",
+					"RTID(cowboy_armor2@ZombieTypes)",
+					"RTID(cowboy_armor4@ZombieTypes)",
+					"RTID(west_bullrider@ZombieTypes)",
+					"RTID(cowboy_gargantuar@ZombieTypes)",
+					"RTID(explorer@ZombieTypes)",
+					"RTID(explorer_veteran@ZombieTypes)",
+					"RTID(tomb_raiser@ZombieTypes)",
+					"RTID(cleopatra@ZombieTypes)",
+					"RTID(lostcity_excavator@ZombieTypes)",
+					"RTID(lostcity_jane@ZombieTypes)",
+					"RTID(lostcity_relichunter@ZombieTypes)",
+					"RTID(lostcity_mime@ZombieTypes)",
+					"RTID(lostcity_crystalskull@ZombieTypes)",
+					"RTID(dark_wizard@ZombieTypes)",
+					"RTID(dark_juggler@ZombieTypes)",
+					"RTID(night_camel@ZombieTypes)",
+					"RTID(barrelroller@ZombieTypes)",
+					"RTID(cannon@ZombieTypes)",
+					"RTID(swashbuckler_endless@ZombieTypes)",
+					"RTID(iceage_dodo@ZombieTypes)",
+					"RTID(iceage_weaselhoarder@ZombieTypes)",
+					"RTID(iceage_hunter@ZombieTypes)",
+					"RTID(chicken_farmer@ZombieTypes)",
+					"RTID(piano@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)",
+					"RTID(west_bull@ZombieTypes)",
+					"RTID(gargantuar_mega@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(modern_balloon@ZombieTypes)",
+					"RTID(dino_bully@ZombieTypes)",
+					"RTID(amber@ZombieTypes)",
+					"RTID(modern_superfanimp@ZombieTypes)",
+					"RTID(football_mech@ZombieTypes)",
+					"RTID(disco_mech@ZombieTypes)",
+					"RTID(future_jetpack@ZombieTypes)",
+					"RTID(eighties_mc@ZombieTypes)",
+					"RTID(eighties_glitter@ZombieTypes)",
+					"RTID(eighties_breakdancer@ZombieTypes)",
+					"RTID(eighties_arcade@ZombieTypes)",
+					"RTID(football@ZombieTypes)",
+					"RTID(modern_newspaper@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"RailcartDesigner"
+			],
+			"objclass": "DangerRoomRailcartDesigner",
+			"objdata": {
+				"BaseRailcartCount": 1,
+				"BaseRailcartCountPerLevel": 0.30000000000000004,
+				"MaxGeneratedRailcarts": 6,
+				"Layouts": [
+					"11110",
+					"01111",
+					"11111",
+					"11000",
+					"01100",
+					"00110",
+					"00011",
+					"11100",
+					"01110",
+					"00111",
+					"11022",
+					"11000",
+					"01100",
+					"00110",
+					"00011",
+					"11100",
+					"01110",
+					"00111",
+					"00000",
+					"00000",
+					"00000",
+					"00000",
+					"00000",
+					"00000"
+				]
+			}
+		}
+	],
+	"version": 1
+}

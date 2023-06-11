@@ -1,0 +1,181 @@
+{
+	"#comment": "Empty Heart",
+	"#comment": "Beach survival",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s ultimate duration test",
+				"FirstRewardParam": "moneybag_100",
+				"ReplayRewardParam": "moneybag_100",
+				"StartingSun": 50,
+				"LevelNumber": 0,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)",
+					"RTID(Tide@CurrentLevel)"
+				],
+				"Name": "Survival",
+				"StageModule": "RTID(BeachStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
+			"objclass": "TideProperties",
+			"objdata": {
+				"StartingWaveLocation": 4
+			}
+		},
+		{
+			"objclass": "LootOverrideModuleProperties",
+			"aliases": [
+				"LootOverride"
+			],
+			"objdata": {
+				"Overrides": [
+					{
+						"ZombieType": "RTID(beach_coin1@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(beach_armor1_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(beach_armor2_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(beach_snorkel_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(beach_surfer_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(beach_octopus_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(beach_gargantuar_gold@ZombieTypes)",
+						"LootOverride": "GoldCoin"
+					},
+					{
+						"ZombieType": "RTID(beach_fisherman_gold@ZombieTypes)",
+						"LootOverride": "GoldCoin"
+					},
+					{
+						"ZombieType": "RTID(beach_octopus_gold@ZombieTypes)",
+						"LootOverride": "GoldCoin"
+					},
+					{
+						"ZombieType": "RTID(beach_gargantuar_gem@ZombieTypes)",
+						"LootOverride": "Gem"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+					"goldleaf",
+					"thymewarp",
+					"caulipower",
+					"blastberry",
+					"goldbloom",
+					"electricblueberry",
+					"missiletoe"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 30,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 16,
+				"StartingPoints": 10,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"WavesPerFlag": 7,
+				"ZombiePool": [
+					"RTID(beach@ZombieTypes)",
+					"RTID(beach_coin1@ZombieTypes)",
+					"RTID(beach_armor1@ZombieTypes)",
+					"RTID(beach_armor1_silver@ZombieTypes)",
+					"RTID(beach_armor2@ZombieTypes)",
+					"RTID(beach_armor2_silver@ZombieTypes)",
+					"RTID(beach_gargantuar@ZombieTypes)",
+					"RTID(beach_gargantuar_gold@ZombieTypes)",
+					"RTID(beach_gargantuar_gem@ZombieTypes)",
+					"RTID(beach_snorkel@ZombieTypes)",
+					"RTID(beach_snorkel_silver@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)",
+					"RTID(beach_surfer_silver@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_octopus_silver@ZombieTypes)",
+					"RTID(beach_octopus_gold@ZombieTypes)",
+					"RTID(beach_fisherman@ZombieTypes)",
+					"RTID(beach_fisherman_gold@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

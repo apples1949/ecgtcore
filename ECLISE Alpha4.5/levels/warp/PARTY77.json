@@ -1,0 +1,2303 @@
+{
+	"#comment": "I don't care",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 50,
+				"Description": "E  C  L  0  0  0",
+				"FirstRewardParam": "moneybag",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Tombstone_Dark_Special",
+					"Tombstone_Dark_Effects"
+				],
+				"Modules": [
+					"RTID(PirateMowers@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "WP-77: Enemies from Another Dimension - Kimmy Turner",
+				"StageModule": "RTID(PirateStage@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"LootOverride"
+			],
+			"objclass": "LootOverrideModuleProperties",
+			"objdata": {
+				"Overrides": [
+					{
+						"ZombieType": "RTID(glitter@CurrentLevel)",
+						"LootOverride": ""
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"PlantExcludeList": [
+					"springbean"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"TypeName": "plank"
+					},
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 6,
+						"GridY": 0,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 7,
+						"GridY": 0,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 8,
+						"GridY": 0,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "plank"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 8,
+						"GridY": 1,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"TypeName": "plank"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 6,
+						"GridY": 2,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 8,
+						"GridY": 2,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "plank"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 8,
+						"GridY": 3,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "plank"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 6,
+						"GridY": 4,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 7,
+						"GridY": 4,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 8,
+						"GridY": 4,
+						"TypeName": "crater_1"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"WavesPerFlag": 8,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 0,
+				"PointIncrementPerWave": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(tutorial@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 8,
+				"WaveCount": 24,
+				"SuppressFlagZombie": false,
+				"ZombieCountdownFirstWaveSecs": 0,
+				"Waves": [
+					[
+						"RTID(GroundSpawn1@.)",
+						"RTID(jam_rap@.)"
+					],
+					[
+						"RTID(Wave2@.)",
+						"RTID(ZombieShown@.)"
+					],
+					[
+						"RTID(Wave3@.)"
+					],
+					[
+						"RTID(Wave4@.)"
+					],
+					[
+						"RTID(Wave5@.)"
+					],
+					[
+						"RTID(Wave6@.)",
+						"RTID(Necro6@.)"
+					],
+					[
+						"RTID(Wave7@.)"
+					],
+					[
+						"RTID(Wave8@.)"
+					],
+					[
+						"RTID(Wave9@.)",
+						"RTID(Necro9@.)"
+					],
+					[
+						"RTID(Wave10@.)"
+					],
+					[
+						"RTID(Wave11@.)"
+					],
+					[
+						"RTID(Wave12@.)"
+					],
+					[
+						"RTID(Wave13@.)",
+						"RTID(Necro13@.)"
+					],
+					[
+						"RTID(Wave14@.)"
+					],
+					[
+						"RTID(Wave15@.)"
+					],
+					[
+						"RTID(Wave16@.)",
+						"RTID(Necro16@.)"
+					],
+					[
+						"RTID(Wave17@.)"
+					],
+					[
+						"RTID(Wave18@.)"
+					],
+					[
+						"RTID(Wave19@.)"
+					],
+					[
+						"RTID(Wave20@.)"
+					],
+					[
+						"RTID(Wave21@.)",
+						"RTID(Necro21@.)"
+					],
+					[
+						"RTID(Wave22@.)"
+					],
+					[
+						"RTID(Wave23@.)"
+					],
+					[
+						"RTID(Wave24@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_boombox@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_boombox@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_boombox@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_boombox@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_boombox@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_boombox@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave21"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_boombox@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_boombox@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave22"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave23"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 2,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave24"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor4@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pirate@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_mc@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_boombox@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_boombox@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn1"
+			],
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 12,
+				"ColumnEnd": 13,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(glitter@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(glitter@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(glitter@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(glitter@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(glitter@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"jam_rap"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"NotificationEvents": [
+					"jam_rap"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieShown"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": true,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_boombox@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro6"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Domainator!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro9"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Domainator!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro13"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Domainator!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro16"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Domainator!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro21"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Domainator!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"CraterProps1"
+			],
+			"objclass": "GridItemCraterProps",
+			"objdata": {
+				"Height": "ground",
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS",
+					"List": [
+						"potatomine",
+						"cactus",
+						"celerystalker",
+						"primalpotatomine",
+						"escaperoot"
+					],
+					"ListType": "excludelist"
+				},
+				"PopAnim": "POPANIM_EFFECTS_CRATER",
+				"PopAnimRenderOffset": {
+					"x": 80000,
+					"y": 80000
+				}
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"glitter"
+			],
+			"objdata": {
+				"TypeName": "miniboss",
+				"ZombieClass": "ZombieEightiesGlitter",
+				"Properties": "RTID(ZombieEightiesGlitter@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieEightiesGlitterGroup"
+				],
+				"AudioGroups": [
+				],
+				"AnimRigClass": "ZombieAnimRig_EightiesGlitter",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_80S_GLITTER",
+				"HomeWorld": "eighties",
+				"IsBasicZombie": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieEightiesGlitter"
+			],
+			"objclass": "ZombieEightiesGlitterProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 80000,
+					"y": 80000
+				},
+				"AttackRect": {
+					"mHeight": 65,
+					"mWidth": 10,
+					"mX": 10,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": false,
+				"CanBeFlicked": false,
+				"CanTriggerZombieWin": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"ChillInsteadOfFreeze": true,
+				"CanSurrender": true,
+				"SkipHeadDropState": true,
+				"ArmDropFraction": 0,
+				"HeadDropFraction": 0,
+				"Cost": 150,
+				"EatDPS": 170000,
+				"FireDamageMultiplier": 0.5,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": -2000,
+					"mY": 10
+				},
+				"Hitpoints": 20000000,
+				"ScoreOverride": 30,
+				"JamStyle": "jam_ballad",
+				"RainbowTrailLength": 10000,
+				"ScaledProps": [
+					{
+						"Arg1": 1.05,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.05,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "RainbowTrailLength"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.1,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.01,
+						"Formula": "standard",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Speed": 0,
+				"WavePointCost": 300,
+				"Weight": 2500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed1"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"eighties_boombox"
+			],
+			"objdata": {
+				"TypeName": "tutorial_gargantuar",
+				"ZombieClass": "ZombieEightiesBoombox",
+				"Properties": "RTID(ZombieEightiesBoombox@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieEightiesBoomboxGroup"
+				],
+				"AudioGroups": [
+					"ZombieEightiesBoomBoxAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_EightiesBoombox",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_80S_BOOMBOX",
+				"HomeWorld": "eighties",
+				"IsBasicZombie": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieEightiesBoombox"
+			],
+			"objclass": "ZombieEightiesBoomboxProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 10000,
+					"mY": 0
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "contagiouspoison"
+					},
+					{
+						"Condition": "stackableslow"
+					},
+					{
+						"Condition": "invincible"
+					}
+				],
+				"BoomBoxColumn": 6,
+				"BoomBoxDuration": 60,
+				"CanSpawnPlantFood": true,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"Cost": 150,
+				"EatDPS": 130,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 5,
+					"mY": 10
+				},
+				"Hitpoints": 600,
+				"JamStyle": "jam_ballad",
+				"PlantBoomRestrictionSet": {
+					"List": [
+					],
+					"ListType": "includelist"
+				},
+				"PlantFreezeRadius": 0,
+				"ScaledProps": [
+					{
+						"Arg1": 1.05,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.1,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.01,
+						"Formula": "standard",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Speed": 0.42000000000000004,
+				"WavePointCost": 300,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"iceage_hunter"
+			],
+			"objdata": {
+				"TypeName": "iceage_troglobite",
+				"ZombieClass": "ZombieIceAgeHunter",
+				"Properties": "RTID(ZombieIceAgeHunter@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieIceAgeHunterGroup",
+					"FrostbiteIceBlockPlantGroup"
+				],
+				"AudioGroups": [
+					"ZombieIceAgeHunterAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Hunter",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ICEAGE_HUNTER",
+				"HomeWorld": "iceage",
+				"Placeable": true,
+				"IsBasicZombie": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieIceAgeHunter"
+			],
+			"objclass": "ZombieIceAgeHunterProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieIceAgeProjectileAction@CurrentLevel)"
+				],
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 60,
+					"mWidth": 10,
+					"mX": 10,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"ChillInsteadOfFreeze": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"FarAttackRange": 5,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 30,
+					"mX": 7,
+					"mY": 10
+				},
+				"Hitpoints": 700,
+				"NearAttackRange": 2,
+				"ScaledProps": [
+					{
+						"Arg1": 1.05,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.05,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "SnowballsPerBarrage"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.1,
+						"Formula": "standard",
+						"Key": "FarAttackRange"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.1,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.01,
+						"Formula": "standard",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"SnowballsPerBarrage": 5,
+				"Speed": 0.12000000000000001,
+				"WavePointCost": 500,
+				"Weight": 3500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieProjectileActionDefinition",
+			"aliases": [
+				"ZombieIceAgeProjectileAction"
+			],
+			"objdata": {
+				"TimeBeforeFirst": {
+					"Min": 7,
+					"Max": 7
+				},
+				"TimeBetween": {
+					"Min": 0.5,
+					"Max": 0.5
+				},
+				"TimeBetweenBarrages": {
+					"Min": 12,
+					"Max": 12
+				},
+				"Projectile": "RTID(HunterSnowballDefault@CurrentLevel)",
+				"ProjectileSound": "Play_Zomb_Egypt_Zomboss_Attack_Rush",
+				"SpawnOffset": {
+					"x": -20,
+					"y": 0,
+					"z": 45
+				},
+				"ApexHeight": 100,
+				"TimeUntilHit": 0.7500000000000001
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"HunterSnowballDefault"
+			],
+			"objdata": {
+				"ClassName": "HunterSnowballProjectile",
+				"BaseDamage": 0,
+				"HealAmount": 40,
+				"CollisionFlags": [
+					"ground",
+					"plants",
+					"griditems"
+				],
+				"DamageFlags": [
+					"frost_whole_stage",
+					"heals_iceblocks",
+					"shooter"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -300,
+						"Max": -300
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 220,
+						"Max": 300
+					}
+				],
+				"InitialAcceleration": [
+					{
+						"Min": -10,
+						"Max": -10
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": -400,
+						"Max": -450
+					}
+				],
+				"InitialScale": {
+					"Min": 1,
+					"Max": 1
+				},
+				"RenderImage": "IMAGE_EFFECTS_ZOMBIE_HUNTER_SNOWBALL_PROJECTILE",
+				"CollisionRect": {
+					"mX": -15,
+					"mY": -15,
+					"mWidth": 30,
+					"mHeight": 30
+				},
+				"ImpactSoundEvent": "Play_Zomb_IceAge_Hunter_Impact",
+				"ImpactSoundThrottleTimer": 0,
+				"ImpactPAM": "POPANIM_EFFECTS_ZOMBIE_HUNTER_SNOWBALL_SPLAT",
+				"ImpactPAMAnimationToPlay": [
+					"animation"
+				],
+				"ImpactOffset": [
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"PirateStage"
+			],
+			"objclass": "EightiesStageProperties",
+			"objdata": {
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Pirate_Compressed",
+					"DelayLoad_Background_Pirate",
+					"Dirt_Spawn_Pirate",
+					"ZombiePirateSwashbucklerGroup",
+					"AudioPirate",
+					"PirateGroansAudio"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_Pirate_Compressed"
+				],
+				"StagePrefix": "pirate",
+				"BackgroundResourceGroup": "DelayLoad_Background_Pirate_Compressed",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_PIRATE",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "pirate",
+				"FlagZombieTypeName": "pirate_flag",
+				"FlagVeteranZombieTypeNames": [
+					"pirate_flag_veteran"
+				],
+				"Armor1ZombieTypeName": "pirate_armor1",
+				"Armor2ZombieTypeName": "pirate_armor2",
+				"MusicSuffix": "Pirate",
+				"AmbientAudioSuffix": "PVZ_Pirate_BG_WaterBubble_LP_02",
+				"RailcartDefaultTypeName": "railcart_pirate",
+				"GravestoneDefaultTypeName": "gravestone_pirate",
+				"DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_PIRATE",
+				"BreakerInterval": 4,
+				"PlantsWhichCannotBePlantedOnPlanks": {
+					"ListType": "includelist",
+					"List": [
+						"potatomine",
+						"cactus",
+						"celerystalker",
+						"primalpotatomine",
+						"escaperoot",
+						"snappea"
+					]
+				},
+				"StarChallengeUnlockLevel": "pirate10",
+				"DisabledStreetCells": [
+					{
+						"mX": 0,
+						"mY": 0
+					},
+					{
+						"mX": 0,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 0,
+						"mY": 3
+					},
+					{
+						"mX": 0,
+						"mY": 4
+					},
+					{
+						"mX": 0,
+						"mY": 5
+					},
+					{
+						"mX": 0,
+						"mY": 6
+					},
+					{
+						"mX": 0,
+						"mY": 7
+					},
+					{
+						"mX": 0,
+						"mY": 8
+					},
+					{
+						"mX": 0,
+						"mY": 9
+					},
+					{
+						"mX": 1,
+						"mY": 0
+					},
+					{
+						"mX": 1,
+						"mY": 1
+					},
+					{
+						"mX": 1,
+						"mY": 2
+					},
+					{
+						"mX": 1,
+						"mY": 3
+					},
+					{
+						"mX": 1,
+						"mY": 4
+					},
+					{
+						"mX": 1,
+						"mY": 5
+					},
+					{
+						"mX": 1,
+						"mY": 6
+					},
+					{
+						"mX": 1,
+						"mY": 7
+					},
+					{
+						"mX": 1,
+						"mY": 8
+					},
+					{
+						"mX": 1,
+						"mY": 9
+					},
+					{
+						"mX": 2,
+						"mY": 0
+					},
+					{
+						"mX": 2,
+						"mY": 1
+					},
+					{
+						"mX": 2,
+						"mY": 2
+					},
+					{
+						"mX": 2,
+						"mY": 3
+					},
+					{
+						"mX": 2,
+						"mY": 4
+					},
+					{
+						"mX": 2,
+						"mY": 5
+					},
+					{
+						"mX": 2,
+						"mY": 6
+					},
+					{
+						"mX": 2,
+						"mY": 7
+					},
+					{
+						"mX": 2,
+						"mY": 8
+					},
+					{
+						"mX": 2,
+						"mY": 9
+					},
+					{
+						"mX": 6,
+						"mY": 5
+					},
+					{
+						"mX": 6,
+						"mY": 6
+					},
+					{
+						"mX": 6,
+						"mY": 7
+					},
+					{
+						"mX": 6,
+						"mY": 8
+					},
+					{
+						"mX": 6,
+						"mY": 9
+					},
+					{
+						"mX": 7,
+						"mY": 4
+					},
+					{
+						"mX": 7,
+						"mY": 5
+					},
+					{
+						"mX": 7,
+						"mY": 6
+					},
+					{
+						"mX": 7,
+						"mY": 7
+					},
+					{
+						"mX": 7,
+						"mY": 8
+					},
+					{
+						"mX": 7,
+						"mY": 9
+					},
+					{
+						"mX": 8,
+						"mY": 9
+					},
+					{
+						"mX": 8,
+						"mY": 8
+					},
+					{
+						"mX": 8,
+						"mY": 7
+					},
+					{
+						"mX": 8,
+						"mY": 6
+					},
+					{
+						"mX": 8,
+						"mY": 5
+					},
+					{
+						"mX": 8,
+						"mY": 4
+					}
+				]
+			}
+		},
+		{
+		}
+	],
+	"version": 1
+}

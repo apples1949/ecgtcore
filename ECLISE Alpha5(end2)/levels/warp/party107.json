@@ -1,0 +1,763 @@
+{
+	"#comment": "Les Go",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "E  C  L  I  S  E",
+				"FirstRewardParam": "moneybag",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Tombstone_Dark_Special",
+					"Tombstone_Dark_Effects"
+				],
+				"Modules": [
+					"RTID(TechnicalZombieOverride@LevelModules)",
+					"RTID(DarkMowers@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(IPP_Protect@CurrentLevel)",
+					"RTID(Conveyor@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "WP-107: Red Bulldozer - Kimmy Turner",
+				"StageModule": "RTID(DarkStage@LevelModules)",
+				"MusicType": "MiniGame_B"
+			}
+		},
+		{
+			"aliases": [
+				"Conveyor"
+			],
+			"objclass": "ConveyorSeedBankProperties",
+			"objdata": {
+				"ManualPacketSpawning": false,
+				"DropDelayConditions": [
+					{
+						"Delay": 6,
+						"MaxPackets": 0
+					}
+				],
+				"SpeedConditions": [
+					{
+						"Speed": 80,
+						"MaxPackets": 0
+					}
+				],
+				"InitialPlantList": [
+					{
+						"PlantType": "peashooter",
+						"Level": 2,
+						"Weight": 5
+					},
+					{
+						"PlantType": "garlic",
+						"Level": 0,
+						"Weight": 15,
+						"MaxCount": 2,
+						"MaxWeightFactor": 0
+					},
+					{
+						"PlantType": "springbean",
+						"Level": 0,
+						"Weight": 2
+					},
+					{
+						"PlantType": "wallnut",
+						"Level": 0,
+						"Weight": 2
+					},
+					{
+						"PlantType": "iceburg",
+						"Level": 0,
+						"Weight": 1
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)",
+						"RTID(DestroyGI@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Protect the endangered plants",
+				"DescriptiveName": "Custom Objective"
+			}
+		},
+		{
+			"aliases": [
+				"DestroyGI"
+			],
+			"objclass": "DestroyGridItemsChallengeProps",
+			"objdata": {
+				"GridItemType": "gravestone_dark",
+				"GridItemsToDestroy": 5,
+				"ChallengeDescription": "Let the Parsnips reach Column 1 to destroy all the gravestones before the final wave"
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "markertile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 0,
+						"GridY": 1,
+						"TypeName": "markertile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 0,
+						"GridY": 1,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "markertile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 0,
+						"GridY": 3,
+						"TypeName": "markertile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 0,
+						"GridY": 3,
+						"TypeName": "crater_1"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "markertile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 4,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "crater_1"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IPP_Protect"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"Level": 1,
+						"PlantType": "parsnip"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"Level": 1,
+						"PlantType": "parsnip"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"Level": 1,
+						"PlantType": "parsnip"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"Level": 1,
+						"PlantType": "parsnip"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"Level": 1,
+						"PlantType": "parsnip"
+					}
+				],
+				"MustProtectCount": 5
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 1,
+				"WavesPerFlag": 13,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 400,
+				"PointIncrementPerWave": 100,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(dark@ZombieTypes)",
+					"RTID(dark_armor1@ZombieTypes)",
+					"RTID(dark_armor2@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 13,
+				"WaveCount": 13,
+				"SuppressFlagZombie": false,
+				"Waves": [
+					[
+						"RTID(Necro1@.)"
+					],
+					[
+						"RTID(Wave2@.)"
+					],
+					[
+						"RTID(Wave3@.)"
+					],
+					[
+						"RTID(Wave4@.)"
+					],
+					[
+						"RTID(Wave5@.)"
+					],
+					[
+						"RTID(Wave6@.)"
+					],
+					[
+						"RTID(Wave7@.)"
+					],
+					[
+						"RTID(Wave8@.)"
+					],
+					[
+						"RTID(Wave9@.)"
+					],
+					[
+						"RTID(Wave10@.)"
+					],
+					[
+						"RTID(Wave11@.)"
+					],
+					[
+						"RTID(Wave12@.)"
+					],
+					[
+						"RTID(Wave13@.)",
+						"RTID(GridSpawn13@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(night_camel@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(football_mech@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(football_mech@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(football_mech@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(football_mech@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(football_mech@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(night_camel@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_mime@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro1"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [],
+				"Zombies": [
+					{
+						"Type": "RTID(football_mech@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GridSpawn13"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [],
+				"SpawnPositionsPool": [],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"DisplacePlants": true,
+				"GridClassesToDestroy": [
+					"GridItemGravestone"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Crater_1"
+			],
+			"objclass": "GridItemCraterProps",
+			"objdata": {
+				"Height": "ground",
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS",
+					"List": [
+						"parsnip"
+					],
+					"ListType": "includelist"
+				},
+				"PopAnim": "POPANIM_EFFECTS_CRATER",
+				"PopAnimRenderOffset": {
+					"x": 1096,
+					"y": 125
+				}
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"football_mech"
+			],
+			"objdata": {
+				"TypeName": "football_mech",
+				"ZombieClass": "ZombieMechFootball",
+				"Properties": "RTID(ZombieMechFootball@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieFutureMechFootballGroup",
+					"EMPeachEffects"
+				],
+				"AudioGroups": [
+					"ZombieFutureMechFootballAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_FootballMech",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MECH_FOOTBALL",
+				"HomeWorld": "future",
+				"IsBasicZombie": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMechFootball"
+			],
+			"objclass": "ZombieMechFootballProps",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 100,
+					"mWidth": 20,
+					"mX": -25,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 0,
+				"ExplodesWhenMowed": false,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 115,
+					"mWidth": 90,
+					"mX": -5,
+					"mY": 10
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "chill",
+						"Percent": 0.15
+					},
+					{
+						"Condition": "freeze",
+						"Percent": 0.5
+					},
+					{
+						"Condition": "stalled",
+						"Percent": 0.5
+					},
+					{
+						"Condition": "stun",
+						"Percent": 0.5
+					},
+					{
+						"Condition": "butter"
+					},
+					{
+						"Condition": "poisoned",
+						"Percent": 0.5
+					},
+					{
+						"Condition": "contagiouspoison",
+						"Percent": 0.5
+					}
+				],
+				"Hitpoints": 2500,
+				"ScoreOverride": 325,
+				"IsValidPinchTarget": false,
+				"NormalDeathOnExplosion": true,
+				"NormalDeathWhenMowed": true,
+				"ChillInsteadOfFreeze": true,
+				"CanBePlantTossedWeak": false,
+				"NumDamageStates": 6,
+				"PushDamageToZombies": 400,
+				"ScaledProps": [
+					{
+						"Arg1": 1.05,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.1,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Arg1": 1,
+						"Arg2": 0.01,
+						"Formula": "standard",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"SkipHeadDropState": true,
+				"SoundOnActivate": "Play_Zomb_Future_Football_Mvmt_Activate",
+				"SoundOnDeactivate": "Play_Zomb_Future_Football_Mvmt_Deactivate",
+				"SoundOnDeath": "Play_Zomb_Future_Football_Mvmt_Death",
+				"SoundOnPush": "Play_Zomb_Future_Football_Mvmt_Attack",
+				"SoundOnWalk": "Play_Zomb_Future_Football_Mvmt_Foley",
+				"Speed": 0.2,
+				"WavePointCost": 1500,
+				"Weight": 1500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed1"
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

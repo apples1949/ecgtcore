@@ -1,0 +1,200 @@
+{
+	"#comment": "Gambling 17A",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Welcome to casino land!",
+				"StartingSun": 50,
+				"DisableSaveGame": true,
+				"DisableRestart": true,
+				"DisablePlantBoosts": true,
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(LevelOfTheDayIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"Name": "Risky Island",
+				"StageModule": "RTID(ModernStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "",
+				"DescriptiveName": ""
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+					"bloominghearts",
+					"lightningreed",
+					"electriccurrant",
+					"phatbeet",
+					"puffshroom",
+					"ailmint",
+					"sapfling",
+					"spikeweed",
+					"sporeshroom",
+					"pepperpult",
+					"fumeshroom",
+					"guacodile",
+					"bonkchoy",
+					"potatomine",
+					"tanglekelp",
+					"chilibean",
+					"stunion",
+					"ghostpepper",
+					"jalapeno",
+					"pyrevine",
+					"electricpeashooter",
+					"homingthistle",
+					"dusklobber",
+					"snapdragon",
+					"coldsnapdragon",
+					"missiletoe",
+					"blastberry",
+					"wasabiwhip",
+					"squash",
+					"lavaguava",
+					"bombegranate",
+					"cherry_bomb",
+					"hypnoshroom",
+					"hotdate",
+					"spikerock",
+					"firepeashooter",
+					"xshot",
+					"coconutcannon",
+					"strawburst",
+					"melonpult",
+					"laser_bean",
+					"pokra",
+					"toadstool",
+					"primalpotatomine",
+					"shrinkingviolet",
+					"grapeshot",
+					"hollyknight",
+					"chardguard",
+					"endurian",
+					"spearmint",
+					"zoybeanpod",
+					"torchwood",
+					"cactus",
+					"dandelion",
+					"wintermelon",
+					"applemortar",
+					"kiwibeast",
+					"banana",
+					"jackolantern",
+					"explodeonut",
+					"peppermint",
+					"icebloom"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelOfTheDayModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"WavesPerFlag": 6,
+				"PlantfoodToSpawnCount": 2,
+				"StartingPoints": 10,
+				"PointIncrementPerWave": 14,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(chicken_farmer@ZombieTypes)",
+					"RTID(lostcity_excavator@ZombieTypes)",
+					"RTID(iceage_armor3@ZombieTypes)",
+					"RTID(tutorial@ZombieTypes)",
+					"RTID(tutorial_armor1@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"PF"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

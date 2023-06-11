@@ -1,0 +1,1258 @@
+{
+	"#comment": "Parrot",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "U N D E R T A L E ?",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(FutureMowers@LevelModules)",
+					"RTID(GridItems@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"Name": "Parrotrousle (easy) - DT",
+				"StageModule": "RTID(FutureStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"GridItems"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 8,
+						"GridY": 8,
+						"TypeName": "crater"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(ChallengeText@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeText"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Sir Parrotee wish to battle!",
+				"DescriptiveName": ""
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 50,
+				"StartingPoints": -300,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"WavesPerFlag": 9,
+				"ZombiePool": [
+					"RTID(future@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)",
+						"RTID(ParrotSpawner1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)",
+						"RTID(Portal1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)",
+						"RTID(StormWarning@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)",
+						"RTID(Portal2@CurrentLevel)",
+						"RTID(ParrotSpawner1@CurrentLevel)",
+						"RTID(ParrotSpawner2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)",
+						"RTID(Portal3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14@CurrentLevel)",
+						"RTID(Portal4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15@CurrentLevel)"
+					],
+					[
+						"RTID(Wave16@CurrentLevel)"
+					],
+					[
+						"RTID(Wave17@CurrentLevel)",
+						"RTID(StormWarning@CurrentLevel)"
+					],
+					[
+						"RTID(Wave18@CurrentLevel)",
+						"RTID(Portal5@CurrentLevel)",
+						"RTID(Portal6@CurrentLevel)",
+						"RTID(ParrotSpawner2@CurrentLevel)",
+						"RTID(ParrotSpawner2@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(future@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(modern_superfanimp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"StormWarning"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"SpiderCount": 0,
+				"WaveStartMessage": "A huge flock of Parrots is coming!"
+			}
+		},
+		{
+			"aliases": [
+				"Portal1"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"PortalColumn": 7,
+				"PortalRow": 1,
+				"PortalType": "future_cone1",
+				"SpawnEffectAnimID": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Portal2"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"PortalColumn": 6,
+				"PortalRow": 2,
+				"PortalType": "future_cone2",
+				"SpawnEffectAnimID": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Portal3"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"PortalColumn": 5,
+				"PortalRow": 4,
+				"PortalType": "future_bucket",
+				"SpawnEffectAnimID": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Portal4"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"PortalColumn": 7,
+				"PortalRow": 1,
+				"PortalType": "future_cone2",
+				"SpawnEffectAnimID": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Portal5"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"PortalColumn": 8,
+				"PortalRow": 0,
+				"PortalType": "future_pack1",
+				"SpawnEffectAnimID": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Portal6"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"PortalColumn": 6,
+				"PortalRow": 3,
+				"PortalType": "future_pack1",
+				"SpawnEffectAnimID": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"ParrotSpawner1"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(crater@GridItemTypes)"
+				],
+				"WaveStartMessage": "",
+				"SuppressActionIfNoGridItemsFound": true,
+				"Zombies": [
+					{
+						"Type": "RTID(parrot_spawner@.)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ParrotSpawner2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(crater@GridItemTypes)"
+				],
+				"WaveStartMessage": "",
+				"SuppressActionIfNoGridItemsFound": true,
+				"Zombies": [
+					{
+						"Type": "RTID(parrot_spawner2@.)"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"parrot_spawner"
+			],
+			"objdata": {
+				"TypeName": "miniboss",
+				"ZombieClass": "ZombieCarnieMagician",
+				"Properties": "RTID(ZombieParrotSpawner@.)",
+				"ResourceGroups": [
+					"ZombieCarnieMagicianGroup",
+					"ZombiePirateCaptainGroup",
+					"ZombieWestChickenGroup",
+					"ZombieCarnieDoveGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_Tutorial",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAGICIAN",
+				"HomeWorld": "modern",
+				"Placeable": true,
+				"IsBasicZombie": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieParrotSpawner"
+			],
+			"objclass": "ZombieCarnieMagicianProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieParrotrousleSpawn1@.)",
+					"RTID(ZombieParrotrousleSpawn1@.)",
+					"RTID(ZombieParrotrousleSpawn1@.)"
+				],
+				"TeleportOtherStartTime": 20,
+				"TeleportSelfStartTime": 99999999,
+				"DoveSpawnStartTime": 99999999,
+				"TimeBetweenTeleportOther": 25,
+				"TimeBetweenTeleportSelf": 99999999,
+				"TimeBetweenDoveSpawn": 99999999,
+				"TeleportationFailPercentage": 0,
+				"ImmuneToPlantRestrictionSet": {
+					"List": [],
+					"ListType": "includelist"
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "stalled"
+					},
+					{
+						"Condition": "stackableslow"
+					},
+					{
+						"Condition": "sapped"
+					},
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "butter"
+					},
+					{
+						"Condition": "shrinking"
+					},
+					{
+						"Condition": "shrunken"
+					},
+					{
+						"Condition": "poisoned"
+					},
+					{
+						"Condition": "decaypoison"
+					},
+					{
+						"Condition": "contagiouspoison"
+					}
+				],
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"StreetOffset": {
+					"x": 99999,
+					"y": 99999
+				},
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"AttackRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 99999,
+					"mY": 99999
+				},
+				"HitRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 0,
+					"mY": 100
+				},
+				"GridExtents": {
+					"mX": 0,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": false,
+				"CanSurrender": true,
+				"CanTriggerZombieWin": false,
+				"Cost": 150,
+				"EatDPS": 0,
+				"ZombieArmorProps": [
+					"RTID(InvincibleArmor@ArmorTypes)"
+				],
+				"GroundTrackName": "none",
+				"Hitpoints": 99999999,
+				"Speed": 2.0
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"parrot_spawner2"
+			],
+			"objdata": {
+				"TypeName": "miniboss",
+				"ZombieClass": "ZombieCarnieMagician",
+				"Properties": "RTID(ZombieParrotSpawner2@.)",
+				"ResourceGroups": [
+					"ZombieCarnieMagicianGroup",
+					"ZombiePirateCaptainGroup",
+					"ZombieWestChickenGroup",
+					"ZombieCarnieDoveGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_Tutorial",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MAGICIAN",
+				"HomeWorld": "modern",
+				"Placeable": true,
+				"IsBasicZombie": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieParrotSpawner2"
+			],
+			"objclass": "ZombieCarnieMagicianProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieParrotrousleSpawn2@.)",
+					"RTID(ZombieParrotrousleSpawn2@.)",
+					"RTID(ZombieParrotrousleSpawn2@.)"
+				],
+				"TeleportOtherStartTime": 3,
+				"TeleportSelfStartTime": 99999999,
+				"DoveSpawnStartTime": 99999999,
+				"TimeBetweenTeleportOther": 99999999,
+				"TimeBetweenTeleportSelf": 99999999,
+				"TimeBetweenDoveSpawn": 99999999,
+				"TeleportationFailPercentage": 0,
+				"ImmuneToPlantRestrictionSet": {
+					"List": [],
+					"ListType": "includelist"
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "stalled"
+					},
+					{
+						"Condition": "stackableslow"
+					},
+					{
+						"Condition": "sapped"
+					},
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "butter"
+					},
+					{
+						"Condition": "shrinking"
+					},
+					{
+						"Condition": "shrunken"
+					},
+					{
+						"Condition": "poisoned"
+					},
+					{
+						"Condition": "decaypoison"
+					},
+					{
+						"Condition": "contagiouspoison"
+					}
+				],
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"StreetOffset": {
+					"x": 99999,
+					"y": 99999
+				},
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"AttackRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 99999,
+					"mY": 99999
+				},
+				"HitRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 0,
+					"mY": 100
+				},
+				"GridExtents": {
+					"mX": 0,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": false,
+				"CanSurrender": true,
+				"CanTriggerZombieWin": false,
+				"TimeToKillInSeconds": 10,
+				"Cost": 150,
+				"EatDPS": 0,
+				"ZombieArmorProps": [
+					"RTID(InvincibleArmor@ArmorTypes)"
+				],
+				"GroundTrackName": "none",
+				"Hitpoints": 99999999,
+				"Speed": 2.0
+			}
+		},
+		{
+			"objclass": "ZombieSpawnActionDefinition",
+			"aliases": [
+				"ZombieParrotrousleSpawn1"
+			],
+			"objdata": {
+				"SpawnZombieType": "parrotrousle_parrot",
+				"SpawnStartAnimation": "magic_start",
+				"SpawnDoneAnimation": "dove_release",
+				"IsADove": true,
+				"Phase": "Attacking",
+				"SpawnOffset": {
+					"x": -55,
+					"y": -10
+				},
+				"ZombieSpawnWeights": [
+					{
+						"Count": 1,
+						"Weight": 1
+					}
+				],
+				"PlantTargetExcludeList": [
+					"firepeashooter",
+					"torchwood",
+					"moonflower",
+					"tallnut",
+					"holonut",
+					"spikeweed",
+					"spikerock",
+					"spearmint",
+					"cactus",
+					"bowlingbulb",
+					"parsnip",
+					"celerystalker",
+					"jackolantern",
+					"nightshade",
+					"potatomine",
+					"custom_potatomine",
+					"unused_45",
+					"primalpotatomine",
+					"custom_primalpotatomine",
+					"grimrose",
+					"dusklobber",
+					"ghostpepper",
+					"tumbleweed",
+					"unused_47",
+					"unused_49",
+					"lilypad",
+					"iceburg",
+					"escaperoot",
+					"escaperoot_sos",
+					"shadowpeashooter"
+				]
+			}
+		},
+		{
+			"objclass": "ZombieSpawnActionDefinition",
+			"aliases": [
+				"ZombieParrotrousleSpawn2"
+			],
+			"objdata": {
+				"SpawnZombieType": "parrotrousle_parrot",
+				"SpawnStartAnimation": "magic_start",
+				"SpawnDoneAnimation": "dove_release",
+				"IsADove": true,
+				"Phase": "Attacking",
+				"SpawnOffset": {
+					"x": -55,
+					"y": -10
+				},
+				"ZombieSpawnWeights": [
+					{
+						"Count": 5,
+						"Weight": 1
+					}
+				],
+				"PlantTargetExcludeList": [
+					"firepeashooter",
+					"torchwood",
+					"moonflower",
+					"tallnut",
+					"holonut",
+					"spikeweed",
+					"spikerock",
+					"spearmint",
+					"cactus",
+					"bowlingbulb",
+					"parsnip",
+					"celerystalker",
+					"jackolantern",
+					"nightshade",
+					"potatomine",
+					"custom_potatomine",
+					"unused_45",
+					"primalpotatomine",
+					"custom_primalpotatomine",
+					"grimrose",
+					"dusklobber",
+					"ghostpepper",
+					"tumbleweed",
+					"unused_47",
+					"unused_49",
+					"lilypad",
+					"iceburg",
+					"escaperoot",
+					"escaperoot_sos",
+					"shadowpeashooter"
+				]
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,331 @@
+{
+	"#comment": "Event8 lv5B",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Event is held on goodp2 grotto!",
+				"FirstRewardParam": "moneybag_30",
+				"ReplayRewardParam": "moneybag_30",
+				"StartingSun": 500,
+				"LevelNumber": 5,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(JoustModule@CurrentLevel)",
+					"RTID(LevelDifficultyScaling@CurrentLevel)",
+					"RTID(LevelScoring@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(MiniSunGraveSpawner@CurrentLevel)",
+					"RTID(GraveSpawnerLimit@CurrentLevel)",
+					"RTID(CrazyOlaf@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)"
+				],
+				"Name": "Event 8 - Level 5B",
+				"LossModule": "RTID(JoustOutro@LevelModules)",
+				"VictoryModule": "RTID(JoustOutro@LevelModules)",
+				"StageModule": "RTID(DarkStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "LootOverrideModuleProperties",
+			"aliases": [
+				"LootOverride"
+			],
+			"objdata": {
+				"Overrides": [
+					{
+						"ZombieType": "RTID(future_jetpack_veteran@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					},
+					{
+						"ZombieType": "RTID(dino_bully_veteran@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"MiniSunGraveSpawner"
+			],
+			"objclass": "ZombiePotionModuleProperties",
+			"objdata": {
+				"InitialPotionCount": 0,
+				"MaxPotionCount": 25,
+				"PotionSpawnTimer": {
+					"Max": 2,
+					"Min": 2
+				},
+				"PotionTypes": [
+					"gravestone_minisun"
+				]
+			}
+		},
+		{
+			"objclass": "CrazyOlafTestProperties",
+			"aliases": [
+				"CrazyOlaf"
+			],
+			"objdata": {
+				"ActionTimer": 5,
+				"MaxPlantTypes": 0,
+				"MaxPerType": 0,
+				"PlantBeforeColumn": 0,
+				"PlantRequiredList": [
+					"electricpeashooter"
+				],
+				"Actions": [
+					{
+						"Action": "SpawnCreature",
+						"Weight": 1
+					}
+				],
+				"CreatureList": [
+					{
+						"CreatureTypeName": "dinotyranno",
+						"MaxCountInRow": 1
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GraveSpawnerLimit"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 0,
+						"GridY": 1,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 0,
+						"GridY": 3,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 1,
+						"GridY": 0,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 1,
+						"GridY": 4,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 7,
+						"GridY": 0,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 7,
+						"GridY": 4,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 8,
+						"GridY": 0,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 8,
+						"GridY": 1,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 8,
+						"GridY": 2,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 8,
+						"GridY": 3,
+						"TypeName": "crater_white"
+					},
+					{
+						"GridX": 8,
+						"GridY": 4,
+						"TypeName": "crater_white"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			],
+			"objclass": "LevelDifficultyScalingModuleProperties",
+			"objdata": {
+				"DifficultyRulesType": "NoLevelingIncrease"
+			}
+		},
+		{
+			"aliases": [
+				"LevelScoring"
+			],
+			"objclass": "LevelScoringModuleProperties",
+			"objdata": {
+				"PlantBonusMultiplier": 0.0,
+				"PlantBonuses": [
+				],
+				"ScoringRulesType": "NoMultiplier",
+				"StartingPlantfood": 0
+			}
+		},
+		{
+			"aliases": [
+				"JoustModule"
+			],
+			"objclass": "JoustGameModuleProperties",
+			"objdata": {
+				"TimeLimit": 360
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive for 6 minutes with 500 starting sun",
+				"DescriptiveName": "[STARCHALLENGE_PRESET_PLANTS_NAME]"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 1,
+				"WavesPerFlag": 25,
+				"PlantfoodToSpawnCount": 5,
+				"StartingPoints": 10,
+				"PointIncrementPerWave": 36,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(future_jetpack_veteran@ZombieTypes)",
+					"RTID(dark_imp@ZombieTypes)",
+					"RTID(dino_bully_veteran@ZombieTypes)",
+					"RTID(dark@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

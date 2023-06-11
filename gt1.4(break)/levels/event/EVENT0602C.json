@@ -1,0 +1,165 @@
+{
+	"#comment": "Empty heart‘",
+	false: "Event6 lv2C",
+	"objects": [ {
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Grinding ground!",
+				"FirstRewardParam": "moneybag_100",
+				"StartingSun": 500,
+				"LevelNumber": 2,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(AutoSunDropperBase@CurrentLevel)", "RTID(AutoSunDropper1@CurrentLevel)", "RTID(AutoSunDropper2@CurrentLevel)", "RTID(AutoSunDropper3@CurrentLevel)", "RTID(AutoSunDropper4@CurrentLevel)", "RTID(AutoSunDropper5@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)", "RTID(PiratePlanks@CurrentLevel)", "RTID(Tide@CurrentLevel)", "RTID(LootOverride@CurrentLevel)" ],
+				"Name": "Event 6 - Level 2C",
+				"StageModule": "RTID(PirateStage@LevelModules)"
+			}
+		}, {
+			"objclass": "LootOverrideModuleProperties",
+			"aliases": [ "LootOverride" ],
+			"objdata": {
+				"Overrides": [ {
+						"ZombieType": "RTID(cannon@ZombieTypes)",
+						"LootOverride": "GoldCoin"
+					}, {
+						"ZombieType": "RTID(beach_snorkel_gold@ZombieTypes)",
+						"LootOverride": "GoldCoin"
+					}, {
+						"ZombieType": "RTID(beach_surfer_gold@ZombieTypes)",
+						"LootOverride": "GoldCoin"
+					} ]
+			}
+		}, {
+			"aliases": [ "PiratePlanks" ],
+			"objclass": "PiratePlankProperties",
+			"objdata": {
+				"PlankRows": [ 0, 1, 2, 3, 4 ]
+			}
+		}, {
+			"aliases": [ "Tide" ],
+			"objclass": "TideProperties",
+			"objdata": {
+				"StartingWaveLocation": 5
+			}
+		}, {
+			"objclass": "SunDropperProperties",
+			"aliases": [ "AutoSunDropperBase" ],
+			"objdata": {
+				"InitialSunDropDelay": 2,
+				"SunCountdownBase": 6,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 6
+			}
+		}, {
+			"objclass": "SunDropperProperties",
+			"aliases": [ "AutoSunDropper1" ],
+			"objdata": {
+				"InitialSunDropDelay": 29,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		}, {
+			"objclass": "SunDropperProperties",
+			"aliases": [ "AutoSunDropper2" ],
+			"objdata": {
+				"InitialSunDropDelay": 71,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		}, {
+			"objclass": "SunDropperProperties",
+			"aliases": [ "AutoSunDropper3" ],
+			"objdata": {
+				"InitialSunDropDelay": 143,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		}, {
+			"objclass": "SunDropperProperties",
+			"aliases": [ "AutoSunDropper4" ],
+			"objdata": {
+				"InitialSunDropDelay": 215,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		}, {
+			"objclass": "SunDropperProperties",
+			"aliases": [ "AutoSunDropper5" ],
+			"objdata": {
+				"InitialSunDropDelay": 317,
+				"SunCountdownBase": 30,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.0,
+				"SunCountdownMax": 30
+			}
+		}, {
+			"aliases": [ "ChallengeModule" ],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)", "RTID(PlantsLost@CurrentLevel)" ] ],
+				"ChallengesAlwaysAvailable": true
+			}
+		}, {
+			"aliases": [ "BeatTheLevel" ],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive with 500 starting sun",
+				"DescriptiveName": ""
+			}
+		}, {
+			"aliases": [ "PlantsLost" ],
+			"objclass": "StarChallengePlantsLostProps",
+			"objdata": {
+				"MaximumPlantsLost": 10
+			}
+		}, {
+			"aliases": [ "SeedBank" ],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [ "sunflower", "twinsunflower", "primalsunflower", "moonflower", "sunshroom", "sunbean", "goldleaf", "goldbloom", "solartomato", "escaperoot", "witchhazel", "ailmint" ],
+				"SelectionMethod": "chooser"
+			}
+		}, {
+			"aliases": [ "Escalation" ],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"WavesPerFlag": 7,
+				"PlantfoodToSpawnCount": 5,
+				"StartingPoints": 70,
+				"PointIncrementPerWave": 20,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [ "RTID(cannon@ZombieTypes)", "RTID(future_jetpack@ZombieTypes)", "RTID(beach_surfer@ZombieTypes)", "RTID(seagull_plank@ZombieTypes)", "RTID(beach_snorkel@ZombieTypes)", "RTID(beach_snorkel_gold@ZombieTypes)", "RTID(beach_surfer_gold@ZombieTypes)" ]
+			}
+		}, {
+			"aliases": [ "NewWaves" ],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		}, {
+			"aliases": [ "WaveManager" ],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+			}
+		}, {
+			"aliases": [ "Blank" ],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": []
+			}
+		} ],
+	"version": 1
+}

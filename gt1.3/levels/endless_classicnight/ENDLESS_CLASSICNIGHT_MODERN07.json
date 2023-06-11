@@ -1,0 +1,197 @@
+{
+	"#comment": "Modern Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Endless Zone!",
+				"ForceNextLevel": "dark_dangerroom",
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"SuppressAwardScreen": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "Classic Night - Level {LEVEL_NUMBER}",
+				"StageModule": "RTID(ModernStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(ClassicNightDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(ModernDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(IceBlockDesigner@CurrentLevel)",
+					"RTID(IceBlockDesigner2@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+				],
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"IceBlockDesigner"
+			],
+			"objclass": "DangerRoomIceBlockDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 500
+				},
+				"PlantColumnMin": {
+					"Min": 6,
+					"Max": 6
+				},
+				"PlantColumnMax": {
+					"Min": 8,
+					"Max": 9
+				},
+				"ZombieColumnMin": {
+					"Min": 8,
+					"Max": 8
+				},
+				"ZombieColumnMax": {
+					"Min": 8,
+					"Max": 8
+				},
+				"BlocksMin": {
+					"Min": 1,
+					"Max": 1
+				},
+				"BlocksMax": {
+					"Min": 1,
+					"Max": 1
+				},
+				"PctGoodBlocks": {
+					"Min": 100,
+					"Max": 100
+				},
+				"PlantTypeNames": [
+					"goldbloom",
+					"cherry_bomb",
+					"grapeshot",
+					"bombegranate",
+					"primalpotatomine",
+					"explodeonut"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IceBlockDesigner2"
+			],
+			"objclass": "DangerRoomIceBlockDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 500
+				},
+				"PlantColumnMin": {
+					"Min": 4,
+					"Max": 4
+				},
+				"PlantColumnMax": {
+					"Min": 8,
+					"Max": 8
+				},
+				"ZombieColumnMin": {
+					"Min": 8,
+					"Max": 8
+				},
+				"ZombieColumnMax": {
+					"Min": 8,
+					"Max": 8
+				},
+				"BlocksMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"BlocksMax": {
+					"Min": 4,
+					"Max": 4
+				},
+				"PctGoodBlocks": {
+					"Min": 100,
+					"Max": 100
+				},
+				"PlantTypeNames": [
+					"solartomato",
+					"sunbean",
+					"chilibean",
+					"potatomine",
+					"hypnoshroom",
+					"stunion"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ModernDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 12,
+				"BasePointIncrementPerWave": 3,
+				"BasePointIncrementPerLevel": 1,
+				"ZombiePool": [
+					"RTID(tutorial_armor1@ZombieTypes)",
+					"RTID(tutorial_armor2@ZombieTypes)",
+					"RTID(tutorial@ZombieTypes)",
+					"RTID(tutorial_armor4@ZombieTypes)",
+					"RTID(tutorial_gargantuar@ZombieTypes)",
+					"RTID(tutorial_imp@ZombieTypes)",
+					"RTID(modern_football@ZombieTypes)",
+					"RTID(modern_newspaper@ZombieTypes)",
+					"RTID(modern_balloon@ZombieTypes)",
+					"RTID(football_mech@ZombieTypes)",
+					"RTID(eighties_boombox@ZombieTypes)",
+					"RTID(camel_onehump@ZombieTypes)",
+					"RTID(tomb_raiser@ZombieTypes)",
+					"RTID(pharaoh@ZombieTypes)",
+					"RTID(explorer@ZombieTypes)",
+					"RTID(explorer_veteran@ZombieTypes)"
+				]
+			}
+		}
+	],
+	"version": 1
+}

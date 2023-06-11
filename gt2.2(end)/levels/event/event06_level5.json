@@ -1,0 +1,415 @@
+{
+	"#comment": "Event6 lv5C",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Throw a surprise party!",
+				"FirstRewardParam": "moneybag_100",
+				"StartingSun": 50,
+				"LevelNumber": 5,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(Tide@CurrentLevel)",
+					"RTID(LastStand@CurrentLevel)"
+				],
+				"Name": "Event 6 Revisit - Level 5",
+				"StageModule": "RTID(BeachStage@CurrentLevel)"
+			}
+		},
+		{
+			"objclass": "EightiesStageProperties",
+			"aliases": [
+				"BeachStage"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Dirt_Spawn_Dirt",
+					"AudioBeach",
+					"BeachGroansAudio"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"StagePrefix": "beach",
+				"BackgroundResourceGroup": "DelayLoad_Background_Beach_Compressed",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_BEACH",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "beach",
+				"FlagZombieTypeName": "beach_flag",
+				"Armor1ZombieTypeName": "beach_armor1",
+				"Armor2ZombieTypeName": "beach_armor2",
+				"RailcartDefaultTypeName": "railcart_egypt",
+				"GravestoneDefaultTypeName": "gravestone_egypt",
+				"DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_DIRT",
+				"MusicSuffix": "Beach"
+			}
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
+			"objclass": "TideProperties",
+			"objdata": {
+				"StartingWaveLocation": 6
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SimultaneousPlants@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"SimultaneousPlants"
+			],
+			"objclass": "StarChallengeSimultaneousPlantsProps",
+			"objdata": {
+				"MaximumPlants": 15
+			}
+		},
+		{
+			"aliases": [
+				"LastStand"
+			],
+			"objclass": "LastStandMinigameProperties",
+			"objdata": {
+				"StartingPlantfood": 0,
+				"StartingSun": 1200
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantExcludeList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 4,
+				"WavesPerFlag": 6,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 50,
+				"PointIncrementPerWave": 35,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(eighties_gargantuar@ZombieTypes)",
+					"RTID(eighties_breakdancer@ZombieTypes)",
+					"RTID(eighties_mc@ZombieTypes)",
+					"RTID(mummy_armor4@ZombieTypes)",
+					"RTID(camel_onehump@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"ManualStartup": true
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(JamRap@CurrentLevel)",
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(Tide4@CurrentLevel)",
+						"RTID(LT1@CurrentLevel)",
+						"RTID(LT1@CurrentLevel)"
+					],
+					[
+						"RTID(Tide5@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(Tide6@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(JamRap@CurrentLevel)",
+						"RTID(Tide4@CurrentLevel)",
+						"RTID(LT1@CurrentLevel)",
+						"RTID(LT1@CurrentLevel)",
+						"RTID(LT1@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(Tide5@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(Tide6@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(JamRap@CurrentLevel)",
+						"RTID(Tide3@CurrentLevel)",
+						"RTID(LT3@CurrentLevel)",
+						"RTID(LT3@CurrentLevel)",
+						"RTID(LT3@CurrentLevel)",
+						"RTID(LT1@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(Tide4@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(Tide6@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(JamRap@CurrentLevel)",
+						"RTID(Tide2@CurrentLevel)",
+						"RTID(LT4@CurrentLevel)",
+						"RTID(LT4@CurrentLevel)",
+						"RTID(LT4@CurrentLevel)",
+						"RTID(LT3@CurrentLevel)",
+						"RTID(LT1@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(Tide3@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(Tide4@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"JamRap"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"NotificationEvents": [
+					"jam_rap"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"PF"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "prev",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Tide6"
+			],
+			"objclass": "TidalChangeWaveActionProps",
+			"objdata": {
+				"TidalChange": {
+					"ChangeAmount": 6,
+					"ChangeType": "absolute"
+				}
+			}
+		},
+		{
+			"aliases": [
+				"Tide4"
+			],
+			"objclass": "TidalChangeWaveActionProps",
+			"objdata": {
+				"TidalChange": {
+					"ChangeAmount": 4,
+					"ChangeType": "absolute"
+				}
+			}
+		},
+		{
+			"aliases": [
+				"Tide5"
+			],
+			"objclass": "TidalChangeWaveActionProps",
+			"objdata": {
+				"TidalChange": {
+					"ChangeAmount": 5,
+					"ChangeType": "absolute"
+				}
+			}
+		},
+		{
+			"aliases": [
+				"Tide3"
+			],
+			"objclass": "TidalChangeWaveActionProps",
+			"objdata": {
+				"TidalChange": {
+					"ChangeAmount": 3,
+					"ChangeType": "absolute"
+				}
+			}
+		},
+		{
+			"aliases": [
+				"Tide2"
+			],
+			"objclass": "TidalChangeWaveActionProps",
+			"objdata": {
+				"TidalChange": {
+					"ChangeAmount": 2,
+					"ChangeType": "absolute"
+				}
+			}
+		},
+		{
+			"aliases": [
+				"LT1"
+			],
+			"objclass": "BeachStageEventZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 5,
+				"ColumnStart": 3,
+				"GroupSize": 1,
+				"WaveStartMessage": "[WARNING_LOW_TIDE]",
+				"ZombieCount": 1,
+				"ZombieName": "eighties_mc"
+			}
+		},
+		{
+			"aliases": [
+				"LT3"
+			],
+			"objclass": "BeachStageEventZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 6,
+				"ColumnStart": 4,
+				"GroupSize": 1,
+				"WaveStartMessage": "[WARNING_LOW_TIDE]",
+				"ZombieCount": 1,
+				"ZombieName": "eighties_mc"
+			}
+		},
+		{
+			"aliases": [
+				"LT4"
+			],
+			"objclass": "BeachStageEventZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 7,
+				"ColumnStart": 5,
+				"GroupSize": 1,
+				"WaveStartMessage": "[WARNING_LOW_TIDE]",
+				"ZombieCount": 1,
+				"ZombieName": "eighties_mc"
+			}
+		},
+		{
+			"aliases": [
+				"LT2"
+			],
+			"objclass": "BeachStageEventZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 5,
+				"ColumnStart": 3,
+				"GroupSize": 1,
+				"WaveStartMessage": "",
+				"ZombieCount": 1,
+				"ZombieName": "eighties_mc"
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,113 @@
+{
+	"#comment": "Empty heart‘",
+	false: "WW-7 - 2 special cart spam",
+	"objects": [ {
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s grind thousand quests",
+				"FirstRewardParam": "moneybag_100",
+				"ReplayRewardParam": "moneybag_25",
+				"StartingSun": 75,
+				"LevelNumber": 7,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(WestMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(CowboyRails@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(LootOverride@CurrentLevel)" ],
+				"Name": "Level 7",
+				"StageModule": "RTID(WestStage@LevelModules)"
+			}
+		}, {
+			"objclass": "LootOverrideModuleProperties",
+			"aliases": [ "LootOverride" ],
+			"objdata": {
+				"Overrides": [ {
+						"ZombieType": "RTID(cowboy_coin1@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					}, {
+						"ZombieType": "RTID(cowboy_coin2@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					} ]
+			}
+		}, {
+			"aliases": [ "SeedBank" ],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [],
+				"SelectionMethod": "chooser"
+			}
+		}, {
+			"aliases": [ "CowboyRails" ],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy",
+				"Railcarts": [ {
+						"Column": 0,
+						"Row": 3
+					}, {
+						"Column": 1,
+						"Row": 0
+					}, {
+						"Column": 1,
+						"Row": 4
+					}, {
+						"Column": 3,
+						"Row": 1
+					}, {
+						"Column": 4,
+						"Row": 0
+					}, {
+						"Column": 4,
+						"Row": 4
+					} ],
+				"Rails": [ {
+						"Column": 0,
+						"RowStart": 2,
+						"RowEnd": 4
+					}, {
+						"Column": 1,
+						"RowStart": 0,
+						"RowEnd": 4
+					}, {
+						"Column": 3,
+						"RowStart": 0,
+						"RowEnd": 2
+					}, {
+						"Column": 4,
+						"RowStart": 0,
+						"RowEnd": 4
+					} ]
+			}
+		}, {
+			"aliases": [ "Escalation" ],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"WavesPerFlag": 10,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 17,
+				"StartingPoints": 15,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [ "RTID(cowboy@ZombieTypes)", "RTID(cowboy_armor1@ZombieTypes)", "RTID(cowboy_armor2@ZombieTypes)", "RTID(west_bull@ZombieTypes)", "RTID(piano@ZombieTypes)", "RTID(cowboy_coin2@ZombieTypes)" ]
+			}
+		}, {
+			"aliases": [ "NewWaves" ],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		}, {
+			"aliases": [ "WaveManager" ],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+			}
+		}, {
+			"aliases": [ "Blank" ],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": []
+			}
+		} ],
+	"version": 1
+}

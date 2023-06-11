@@ -1,0 +1,320 @@
+{
+	"#comment": "Event8 lv4",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "A golden discovery!",
+				"FirstRewardParam": "moneybag_100",
+				"ReplayRewardParam": "moneybag_50",
+				"LevelNumber": 4,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(IPP@CurrentLevel)",
+					"RTID(IZP@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(Tide@CurrentLevel)"
+				],
+				"Name": "Event 8 - Level 4",
+				"StageModule": "RTID(IceageStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
+			"objclass": "TideProperties",
+			"objdata": {
+				"StartingWaveLocation": 9
+			}
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
+			"objclass": "InitialPlantProperties",
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "lilypad"
+					},
+					{
+						"GridX": 0,
+						"GridY": 1,
+						"TypeName": "lilypad"
+					},
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "lilypad"
+					},
+					{
+						"GridX": 0,
+						"GridY": 3,
+						"TypeName": "lilypad"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "lilypad"
+					},
+					{
+						"GridX": 1,
+						"GridY": 0,
+						"TypeName": "lilypad"
+					},
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "lilypad"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "lilypad"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"TypeName": "lilypad"
+					},
+					{
+						"GridX": 1,
+						"GridY": 4,
+						"TypeName": "lilypad"
+					},
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"Condition": "icecubed",
+						"TypeName": "goldbloom"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"Condition": "icecubed",
+						"TypeName": "goldbloom"
+					},
+					{
+						"GridX": 6,
+						"GridY": 4,
+						"Condition": "icecubed",
+						"TypeName": "goldbloom"
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"Condition": "icecubed",
+						"TypeName": "goldbloom"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IZP"
+			],
+			"objclass": "InitialZombieProperties",
+			"objdata": {
+				"InitialZombiePlacements": [
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"Condition": "icecubed",
+						"TypeName": "explorer_veteran"
+					},
+					{
+						"GridX": 4,
+						"GridY": 3,
+						"Condition": "icecubed",
+						"TypeName": "explorer_veteran"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"Condition": "icecubed",
+						"TypeName": "explorer_veteran"
+					},
+					{
+						"GridX": 6,
+						"GridY": 0,
+						"Condition": "icecubed",
+						"TypeName": "explorer_veteran"
+					},
+					{
+						"GridX": 6,
+						"GridY": 4,
+						"Condition": "icecubed",
+						"TypeName": "explorer_veteran"
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"Condition": "icecubed",
+						"TypeName": "explorer_veteran"
+					},
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"Condition": "icecubed",
+						"TypeName": "explorer_veteran"
+					},
+					{
+						"GridX": 8,
+						"GridY": 2,
+						"Condition": "icecubed",
+						"TypeName": "explorer_veteran"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 4,
+				"WavesPerFlag": 6,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 10,
+				"PointIncrementPerWave": 35,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(explorer_veteran@ZombieTypes)",
+					"RTID(explorer_veteran_silver@ZombieTypes)",
+					"RTID(explorer_veteran_gold@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)",
+					"RTID(iceage_silver@ZombieTypes)",
+					"RTID(iceage_gargantuar@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

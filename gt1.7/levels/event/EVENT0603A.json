@@ -1,0 +1,252 @@
+{
+	"#comment": "Event6 lv3A",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Special level practice",
+				"FirstRewardParam": "moneybag_25",
+				"StartingSun": 50,
+				"LevelNumber": 3,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)",
+					"RTID(GI@CurrentLevel)"
+				],
+				"Name": "Event 6 - Level 3A",
+				"StageModule": "RTID(LostCityStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 15,
+				"Plants": [
+					{
+						"GridX": 3,
+						"GridY": 0,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 3,
+						"GridY": 1,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 3,
+						"GridY": 2,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 3,
+						"GridY": 4,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 4,
+						"GridY": 1,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 4,
+						"GridY": 3,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 4,
+						"GridY": 4,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"PlantType": "pumpkin"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"PlantType": "pumpkin"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
+			"objclass": "TideProperties",
+			"objdata": {
+				"StartingWaveLocation": 1
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+					"phatbeet",
+					"spikeweed",
+					"electriccurrant",
+					"bonkchoy",
+					"wasabiwhip",
+					"snapdragon",
+					"coldsnapdragon",
+					"spikerock",
+					"escaperoot"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"WavesPerFlag": 8,
+				"PlantfoodToSpawnCount": 4,
+				"StartingPoints": 25,
+				"PointIncrementPerWave": 15,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(lostcity_relichunter@ZombieTypes)",
+					"RTID(lostcity_relichunter_gold@ZombieTypes)",
+					"RTID(lostcity_bug_armor2_gold@ZombieTypes)",
+					"RTID(piano_silver@ZombieTypes)",
+					"RTID(chicken@ZombieTypes)",
+					"RTID(cowboy_armor1_silver@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(ZombieShown@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieShown"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(plank@GridItemTypes)"
+				],
+				"WaveStartMessage": "",
+				"SuppressActionIfNoGridItemsFound": true,
+				"Zombies": [
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_bug_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

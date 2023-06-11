@@ -1,0 +1,256 @@
+{
+	"#comment": "Empty Heart",
+	"#comment": "Modern Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Endless Zone!",
+				"ForceNextLevel": "beach_dangerroom",
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"SuppressAwardScreen": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(Tide@CurrentLevel)"
+				],
+				"Name": "High Tide - Level {LEVEL_NUMBER}",
+				"StageModule": "RTID(ModernStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
+			"objclass": "TideProperties",
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(FloodedLawnDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(ModernDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(IceBlockDesigner@CurrentLevel)",
+					"RTID(BeachTideChanger@CurrentLevel)",
+					"RTID(BeachLilypadPlacer@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+				],
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"IceBlockDesigner"
+			],
+			"objclass": "DangerRoomIceBlockDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 500
+				},
+				"PlantColumnMin": {
+					"Min": 1,
+					"Max": 1
+				},
+				"PlantColumnMax": {
+					"Min": 4,
+					"Max": 4
+				},
+				"ZombieColumnMin": {
+					"Min": 8,
+					"Max": 8
+				},
+				"ZombieColumnMax": {
+					"Min": 8,
+					"Max": 8
+				},
+				"BlocksMin": {
+					"Min": 1,
+					"Max": 1
+				},
+				"BlocksMax": {
+					"Min": 2,
+					"Max": 2
+				},
+				"PctGoodBlocks": {
+					"Min": 100,
+					"Max": 100
+				},
+				"PlantTypeNames": [
+					"goldbloom",
+					"jalapeno",
+					"homingthistle"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ModernDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 12,
+				"BasePointIncrementPerWave": 3,
+				"BasePointIncrementPerLevel": 1,
+				"ZombiePool": [
+					"RTID(tutorial_armor1@ZombieTypes)",
+					"RTID(tutorial_armor2@ZombieTypes)",
+					"RTID(tutorial@ZombieTypes)",
+					"RTID(tutorial_armor4@ZombieTypes)",
+					"RTID(tutorial_gargantuar@ZombieTypes)",
+					"RTID(tutorial_imp@ZombieTypes)",
+					"RTID(modern_football@ZombieTypes)",
+					"RTID(modern_newspaper@ZombieTypes)",
+					"RTID(modern_balloon@ZombieTypes)",
+					"RTID(football_mech@ZombieTypes)",
+					"RTID(eighties_boombox@ZombieTypes)",
+					"RTID(future_jetpack@ZombieTypes)",
+					"RTID(future_jetpack_veteran@ZombieTypes)",
+					"RTID(mech_cone@ZombieTypes)",
+					"RTID(future_protector@ZombieTypes)",
+					"RTID(disco_mech@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"BeachTideChanger"
+			],
+			"objclass": "DangerRoomBeachTideChanger",
+			"objdata": {
+				"//": "If the value is lower than LowerLimit, use LowerLimit instead. If the value is bigger than UpperLimit, use UpperLimit instead.",
+				"StartingTideLevel": {
+					"LowerBound": {
+						"SlopeCoefficient": 0,
+						"YIntercept": 9,
+						"LowerLimit": {
+							"Value": 9
+						},
+						"UpperLimit": {
+							"Value": 9
+						}
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0,
+						"YIntercept": 9,
+						"LowerLimit": {
+							"Value": 9
+						},
+						"UpperLimit": {
+							"Value": 9
+						}
+					}
+				},
+				"FinalTideLevel": {
+					"LowerBound": {
+						"YIntercept": 9
+					},
+					"UpperBound": {
+						"YIntercept": 9
+					}
+				},
+				"MinimumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 9
+					},
+					"UpperBound": {
+						"YIntercept": 9
+					}
+				},
+				"MaximumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 9
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0,
+						"YIntercept": 9,
+						"LowerLimit": {
+							"Value": 9
+						},
+						"UpperLimit": {
+							"Value": 9
+						}
+					}
+				}
+			}
+		},
+		{
+			"aliases": [
+				"BeachLilypadPlacer"
+			],
+			"objclass": "DangerRoomBeachLilypadPlacer",
+			"objdata": {
+				"NumberOfLilypads": {
+					"LowerBound": {
+						"YIntercept": 12
+					},
+					"UpperBound": {
+						"YIntercept": 15
+					}
+				},
+				"MinimumLilypadColumn": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"YIntercept": 0
+					}
+				},
+				"MaximumLilypadColumn": {
+					"LowerBound": {
+						"YIntercept": 4
+					},
+					"UpperBound": {
+						"YIntercept": 4
+					}
+				}
+			}
+		}
+	],
+	"version": 1
+}

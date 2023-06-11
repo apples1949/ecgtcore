@@ -1,0 +1,282 @@
+{
+	"#comment": "Iceage Endless",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "E  C  L  I  S  E   sandbox",
+				"LevelNumber": 1,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"DisablePlantBoosts": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(LevelDifficultyScaling@CurrentLevel)",
+					"RTID(LevelScoring@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "Survival: Frostbite Caves",
+				"SuppressAwardScreen": true,
+				"StageModule": "RTID(IceageStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+					"goldleaf"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "score_100"
+					},
+					{
+						"GridX": 0,
+						"GridY": 1,
+						"TypeName": "score_100"
+					},
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "score_100"
+					},
+					{
+						"GridX": 0,
+						"GridY": 3,
+						"TypeName": "score_100"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "score_100"
+					},
+					{
+						"GridX": 1,
+						"GridY": 0,
+						"TypeName": "score_100"
+					},
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "score_100"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "score_100"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"TypeName": "score_100"
+					},
+					{
+						"GridX": 1,
+						"GridY": 4,
+						"TypeName": "score_100"
+					},
+					{
+						"GridX": 2,
+						"GridY": 0,
+						"TypeName": "score_50"
+					},
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"TypeName": "score_50"
+					},
+					{
+						"GridX": 2,
+						"GridY": 2,
+						"TypeName": "score_50"
+					},
+					{
+						"GridX": 2,
+						"GridY": 3,
+						"TypeName": "score_50"
+					},
+					{
+						"GridX": 2,
+						"GridY": 4,
+						"TypeName": "score_50"
+					},
+					{
+						"GridX": 3,
+						"GridY": 0,
+						"TypeName": "score_50"
+					},
+					{
+						"GridX": 3,
+						"GridY": 1,
+						"TypeName": "score_50"
+					},
+					{
+						"GridX": 3,
+						"GridY": 2,
+						"TypeName": "score_50"
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"TypeName": "score_50"
+					},
+					{
+						"GridX": 3,
+						"GridY": 4,
+						"TypeName": "score_50"
+					},
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"TypeName": "score_20"
+					},
+					{
+						"GridX": 4,
+						"GridY": 1,
+						"TypeName": "score_20"
+					},
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "score_20"
+					},
+					{
+						"GridX": 4,
+						"GridY": 3,
+						"TypeName": "score_20"
+					},
+					{
+						"GridX": 4,
+						"GridY": 4,
+						"TypeName": "score_20"
+					},
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"TypeName": "score_20"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "score_20"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"TypeName": "score_20"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "score_20"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "score_20"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			],
+			"objclass": "LevelDifficultyScalingModuleProperties",
+			"objdata": {
+				"DifficultyRulesType": "SurvivalScalingHasChicken"
+			}
+		},
+		{
+			"aliases": [
+				"LevelScoring"
+			],
+			"objclass": "LevelScoringModuleProperties",
+			"objdata": {
+				"PlantBonusMultiplier": 0,
+				"PlantBonuses": [
+				],
+				"ScoringRulesType": "NoMultiplier",
+				"StartingPlantfood": 5
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 30,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 200,
+				"StartingPoints": 200,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"WavesPerFlag": 7,
+				"ZombiePool": [
+					"RTID(iceage@ZombieTypes)",
+					"RTID(iceage_hunter@ZombieTypes)",
+					"RTID(iceage_imp@ZombieTypes)",
+					"RTID(iceage_dodo@ZombieTypes)",
+					"RTID(hellbird@ZombieTypes)",
+					"RTID(iceage_troglobite@ZombieTypes)",
+					"RTID(iceage_weaselhoarder@ZombieTypes)",
+					"RTID(iceage_gargantuar@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"ZombieCountdownHugeWaveDelay": 10,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered",
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

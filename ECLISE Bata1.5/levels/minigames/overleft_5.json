@@ -1,0 +1,1984 @@
+{
+	"#comment": "Lefty 5",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Here we go.",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"Name": "Overleft V: Explorers' League - DT",
+				"StageModule": "RTID(ModernStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(ChallengeText@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeText"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "The final challenge... good luck.",
+				"DescriptiveName": ""
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+					"iceburg",
+					"snowpea",
+					"coldsnapdragon",
+					"wintermelon",
+					"missiletoe",
+					"hurrikale",
+					"bombardmint"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 60,
+				"StartingPoints": -400,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"WavesPerFlag": 8,
+				"ZombiePool": [
+					"RTID(mummy@ZombieTypes)",
+					"RTID(mummy_armor2@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"MinNextWaveHealthPercentage": 0.05,
+				"MaxNextWaveHealthPercentage": 0.1,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)",
+						"RTID(ZombieShown@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)",
+						"RTID(Sandstorm1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)",
+						"RTID(Sandstorm2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15@CurrentLevel)"
+					],
+					[
+						"RTID(Wave16@CurrentLevel)",
+						"RTID(Sandstorm3@CurrentLevel)",
+						"RTID(Sandstorm4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave17@CurrentLevel)"
+					],
+					[
+						"RTID(Wave18@CurrentLevel)"
+					],
+					[
+						"RTID(Wave19@CurrentLevel)"
+					],
+					[
+						"RTID(Wave20@CurrentLevel)",
+						"RTID(Sandstorm5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave21@CurrentLevel)"
+					],
+					[
+						"RTID(Wave22@CurrentLevel)"
+					],
+					[
+						"RTID(Wave23@CurrentLevel)"
+					],
+					[
+						"RTID(Wave24@CurrentLevel)",
+						"RTID(Sandstorm6@CurrentLevel)",
+						"RTID(Sandstorm7@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_gargantuar@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_gargantuar@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(explorer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_gargantuar@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(explorer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave21"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave22"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(prospector@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave23"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave24"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_gargantuar@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_gargantuar@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mummy_armor4@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_excavator@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(explorer@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_jane@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(prospector@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm1"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 5,
+				"ColumnStart": 3,
+				"GroupSize": 2,
+				"TimeBetweenGroups": 1,
+				"Type": "sandstorm",
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm2"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 7,
+				"ColumnStart": 5,
+				"GroupSize": 1,
+				"TimeBetweenGroups": 1,
+				"Type": "sandstorm",
+				"Zombies": [
+					{
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm3"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 6,
+				"ColumnStart": 5,
+				"GroupSize": 1,
+				"TimeBetweenGroups": 1,
+				"Type": "sandstorm",
+				"Zombies": [
+					{
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm4"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 4,
+				"ColumnStart": 2,
+				"GroupSize": 1,
+				"TimeBetweenGroups": 0.5,
+				"Type": "sandstorm",
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm5"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 5,
+				"ColumnStart": 4,
+				"GroupSize": 1,
+				"TimeBetweenGroups": 0.5,
+				"Type": "sandstorm",
+				"Zombies": [
+					{
+						"Type": "RTID(mummy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm6"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 3,
+				"ColumnStart": 2,
+				"GroupSize": 2,
+				"TimeBetweenGroups": 1,
+				"Type": "sandstorm",
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Sandstorm7"
+			],
+			"objclass": "StormZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 7,
+				"ColumnStart": 6,
+				"GroupSize": 1,
+				"TimeBetweenGroups": 0.5,
+				"Type": "sandstorm",
+				"Zombies": [
+					{
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(mummy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieShown"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(plank@GridItemTypes)"
+				],
+				"WaveStartMessage": "",
+				"SuppressActionIfNoGridItemsFound": true,
+				"Zombies": [
+					{
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_excavator@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(explorer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_jane@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_gargantuar@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy_armor4@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"mummy_armor4"
+			],
+			"objdata": {
+				"TypeName": "mummy_armor4",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieMummyArmor4Default@.)",
+				"ResourceGroups": [
+					"ZombieEgyptBasicGroup"
+				],
+				"AudioGroups": [
+				],
+				"AnimRigClass": "ZombieAnimRig_EgyptBasic",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_EGYPT_BASIC",
+				"HomeWorld": "egypt",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"mummy_armor1"
+			],
+			"objdata": {
+				"TypeName": "mummy_armor1",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieMummyArmor1Default@.)",
+				"ResourceGroups": [
+					"ZombieEgyptBasicGroup"
+				],
+				"AudioGroups": [
+				],
+				"AnimRigClass": "ZombieAnimRig_EgyptBasic",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_EGYPT_BASIC",
+				"HomeWorld": "egypt",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"explorer"
+			],
+			"objdata": {
+				"TypeName": "explorer",
+				"ZombieClass": "ZombieExplorer",
+				"Properties": "RTID(ZombieExplorerDefault@.)",
+				"ResourceGroups": [
+					"ZombieEgyptExplorerGroup"
+				],
+				"AudioGroups": [
+					"ZombieEgyptExplorerAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Explorer",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_EXPLORER",
+				"HomeWorld": "egypt",
+				"HastyOnStart": false
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"lostcity_excavator"
+			],
+			"objdata": {
+				"TypeName": "lostcity_excavator",
+				"ZombieClass": "ZombieExcavator",
+				"Properties": "RTID(ZombieExcavator@.)",
+				"ResourceGroups": [
+					"ZombieExcavatorGroup"
+				],
+				"AudioGroups": [
+					"ZombieLostCityExcavatorAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_LostCityExcavator",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_EXCAVATOR",
+				"HomeWorld": "lostcity",
+				"IsBasicZombie": false,
+				"HastyOnStart": false
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"lostcity_jane"
+			],
+			"objdata": {
+				"TypeName": "lostcity_jane",
+				"ZombieClass": "ZombieLostCityJane",
+				"Properties": "RTID(ZombieLostCityJaneDefault@.)",
+				"ResourceGroups": [
+					"ZombieLostCityJaneGroup"
+				],
+				"AudioGroups": [
+					"ZombieLostCityJaneAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_LostCityJane",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_JANE",
+				"HomeWorld": "lostcity",
+				"IsBasicZombie": true,
+				"HastyOnStart": false
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"lostcity_gargantuar"
+			],
+			"objdata": {
+				"TypeName": "lostcity_gargantuar",
+				"ZombieClass": "ZombieLostCityGargantuar",
+				"Properties": "RTID(ZombieLostCityGargantuar@.)",
+				"ResourceGroups": [
+					"ZombieLostCityGargantuarGroup",
+					"ZombieLostCityImpGroup",
+					"ZombieGargantuarEffects"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio",
+					"ZombieLostCityGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_LostCityGargantuar",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_GARGANTUAR",
+				"HomeWorld": "lostcity",
+				"Placeable": true,
+				"HastyOnStart": false
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"prospector"
+			],
+			"objdata": {
+				"TypeName": "prospector",
+				"ZombieClass": "ZombieProspector",
+				"Properties": "RTID(ZombieProspectorDefault@.)",
+				"ResourceGroups": [
+					"ZombieWestProspectorGroup"
+				],
+				"AudioGroups": [
+					"ZombieCowboyProspectorAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Prospector",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PROSPECTOR",
+				"HomeWorld": "cowboy",
+				"HastyOnStart": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMummyArmor1Default"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 65,
+					"mWidth": 10,
+					"mX": -177,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 28,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 190,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.185,
+				"ZombieArmorProps": [
+					"RTID(ConeDefault@ArmorTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieMummyArmor4Default"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 65,
+					"mWidth": 10,
+					"mX": -177,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 28,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 190,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.185,
+				"ZombieArmorProps": [
+					"RTID(BrickDefault@ArmorTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieExplorerDefault"
+			],
+			"objclass": "ZombieExplorerProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 60,
+					"mWidth": 10,
+					"mX": -113,
+					"mY": 10
+				},
+				"CanSpawnPlantFood": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 85,
+					"mWidth": 20,
+					"mX": 5,
+					"mY": 10
+				},
+				"Hitpoints": 250,
+				"MaxTorchReach": 50,
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Speed": 0.25
+			}
+		},
+		{
+			"aliases": [
+				"ZombieExcavator"
+			],
+			"objclass": "ZombieExcavatorProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": -270,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"CatchArcDegrees": 120,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 40,
+					"mX": -5,
+					"mY": 0
+				},
+				"Hitpoints": 350,
+				"ProjectileClassesToNeverBlock": {
+					"List": [
+						"GuacodileProjectile",
+						"ParsnipProjectile",
+						"CactusProjectile",
+						"AppleMortarProjectile"
+					],
+					"ListType": "whitelist"
+				},
+				"PlantsShovelableWhileInvincible": {
+					"List": [
+						"bowlingbulb",
+						"springbean",
+						"chardguard"
+					],
+					"ListType": "whitelist"
+				},
+				"PlantsToBashInsteadOfShovel": {
+					"List": [
+						"gravebuster",
+						"tallnut"
+					],
+					"ListType": "whitelist"
+				},
+				"PreferredDistanceToThrowPlant": 3,
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"ShadowScaling": {
+					"x": 1,
+					"y": 1
+				},
+				"ShovelAttackRectOffsetX": 0,
+				"ShovelRect": {
+					"mHeight": 100,
+					"mWidth": 20,
+					"mX": -315,
+					"mY": 0
+				},
+				"Speed": 0.3,
+				"ZombieArmorProps": [
+					"RTID(ShovelDefault@ArmorTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieLostCityJaneDefault"
+			],
+			"objclass": "ZombieLostCityJaneProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 60,
+					"mWidth": 10,
+					"mX": -187,
+					"mY": 0
+				},
+				"BounceableProjectiles": [
+					"RTID(CabbageDefault@ProjectileTypes)",
+					"RTID(MegaCabbageDefault@ProjectileTypes)",
+					"RTID(KernelDefault@ProjectileTypes)",
+					"RTID(ButterDefault@ProjectileTypes)",
+					"RTID(MelonDefault@ProjectileTypes)",
+					"RTID(MegaMelonDefault@ProjectileTypes)",
+					"RTID(WinterMelonDefault@ProjectileTypes)",
+					"RTID(WinterMegaMelonDefault@ProjectileTypes)",
+					"RTID(PepperpultDefault@ProjectileTypes)",
+					"RTID(PepperpultPlantfoodDefault@ProjectileTypes)",
+					"RTID(AkeeDefault@ProjectileTypes)",
+					"RTID(MegaAkeeDefault@ProjectileTypes)",
+					"RTID(SporeshroomDefault@ProjectileTypes)",
+					"RTID(MegaSporeshroomDefault@ProjectileTypes)",
+					"RTID(BloomingHeartsDefault@ProjectileTypes)",
+					"RTID(BloomingHeartsPlantfoodDefault@ProjectileTypes)",
+					"RTID(BananaDefault@ProjectileTypes)",
+					"RTID(MissileToeDefault@ProjectileTypes)",
+					"RTID(AppleMortarDefault@ProjectileTypes)",
+					"RTID(AppleMortarPlantfoodDefault@ProjectileTypes)",
+					"RTID(WheatProjectile@ProjectileTypes)",
+					"RTID(WheatPFProjectile@ProjectileTypes)"
+				],
+				"CanSpawnPlantFood": true,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 115,
+					"mWidth": 20,
+					"mX": 5,
+					"mY": 10
+				},
+				"Hitpoints": 350,
+				"ProjectileBounceDistance": 160,
+				"ProjectileBounceHeight": 120,
+				"ProjectileBounceTime": 0.9,
+				"ShadowOffset": {
+					"x": 20,
+					"y": 0,
+					"z": 1.2
+				},
+				"ShadowScaling": {
+					"x": 1.4,
+					"y": 1
+				},
+				"Speed": 0.25
+			}
+		},
+		{
+			"aliases": [
+				"ZombieProspectorDefault"
+			],
+			"objclass": "ZombieProspectorProps",
+			"objdata": {
+				"Apex": 250,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 60,
+					"mWidth": 10,
+					"mX": -256,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 25,
+					"mX": -10,
+					"mY": 10
+				},
+				"Hitpoints": 190,
+				"LaunchCountdown": 10,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.16,
+				"StunTime": 2.5,
+				"TimeToTravel": 1.5
+			}
+		},
+		{
+			"aliases": [
+				"ZombieLostCityGargantuar"
+			],
+			"objclass": "ZombieGargantuarProps",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"HeadDropFraction": 0,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ArtScale": 0.55,
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 30,
+					"mX": -192,
+					"mY": 10
+				},
+				"CanBeFlickedOff": false,
+				"CanSpawnPlantFood": false,
+				"EatDPS": 0,
+				"ExplodesWhenMowed": true,
+				"FlickIsLaneRestricted": true,
+				"GroundTrackName": "ground_swatch",
+				"HealthThresholdToImpAmmoLayers": [
+					{
+						"HealthPercentThrowImp": 0.5,
+						"ProjectileLayersToHide": [
+							"zombie_imp_skull",
+							"zombie_imp_jaw",
+							"Zombie_gargantuar_whiterope",
+							"zombie_imp_arm_inner_lower",
+							"zombie_imp_arm_inner_upper",
+							"zombie_imp_arm_outer_lower",
+							"zombie_imp_arm_outer_upper_01",
+							"zombie_imp_arm_outer_upper_02",
+							"zombie_imp_arms_outer_upper",
+							"zombie_imp_eye",
+							"zombie_imp_eye_sm",
+							"zombie_imp_hand_inner",
+							"zombie_imp_hand_outer",
+							"zombie_imp_leg_inner_lower",
+							"zombie_imp_leg_inner_upper",
+							"zombie_imp_leg_outer_lower",
+							"zombie_imp_leg_outer_upper",
+							"zombie_imp_pupil",
+							"zombie_imp_torso",
+							"zombie_imp_waist",
+							"zombie_imp_toe_outer",
+							"zombie_imp_toe_inner"
+						]
+					}
+				],
+				"HitRect": {
+					"mHeight": 150,
+					"mWidth": 61,
+					"mX": 32,
+					"mY": 10
+				},
+				"Hitpoints": 3600,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"ImpApex": 250,
+				"ImpFlightTime": 1.5,
+				"ImpSpawnOffset": {
+					"x": -100,
+					"y": 2,
+					"z": 115
+				},
+				"ImpTargetColumn": 2,
+				"ImpType": "lostcity_imp",
+				"IsValidPinchTarget": false,
+				"MinPosXThrowImp": 400,
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Size": "large",
+				"SkipHeadDropState": true,
+				"SmashDamage": 1500,
+				"SmashDuration": 2,
+				"SoundOnAsh": "Play_Zomb_Global_Gargantuar_Mvmt_Death_Ash",
+				"SoundOnElectrocute": "Play_Zomb_Global_Gargantuar_Mvmt_Shock",
+				"SoundOnIdle": "Play_Zomb_Egypt_Gargantuar_Mvmt_Idle",
+				"Speed": 0.18,
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"ThrowImpDuration": 1
+			}
+		},
+		{
+			"aliases": [
+				"StormWarning"
+			],
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"SpiderCount": 0,
+				"WaveStartMessage": "Warning! A huge storm of Parrots is coming!"
+			}
+		}
+	],
+	"version": 1
+}

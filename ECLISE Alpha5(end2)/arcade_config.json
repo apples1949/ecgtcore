@@ -1,0 +1,328 @@
+{
+	"#note": "Please do not publicize these code lines or distribute a modified version of the mod - keep this to yourself. That includes the levels as well. Thanks! - DT",
+	"#comment": "ECLISE Arcade Config",
+	"version": 1,
+	"objects": [
+		{
+			"objclass": "ArcadePropertySheet",
+			"aliases": [
+				"ArcadeConfig"
+			],
+			"objdata": {
+				"ArcadeModes": [
+					{
+						"ID": "vasebreaker",
+						"ModeNameLocalizationKey": "[MODE_NAME_VASEBREAKER]",
+						"PowerUpCollectionID": "vasebreaker_powerups",
+						"ArcadeMenuImage": "IMAGE_UI_GAME_ROOM_GAME_ROOM_VASEBREAKER_ICON",
+						"DisplayInArcadeMenu": true,
+						"EndlessLevel": {
+							"Level": {
+								"ID": "arcade/vasebreaker_endless"
+							}
+						},
+						"UnlockEndlessAfter": "vasebreaker_lostcity_1",
+						"LevelPacks": [
+							{
+								"ID": "vasebreaker_tutorial",
+								"PackNameLocalizationKey": "Vasebreaker: Intro",
+								"LayoutFile": "MiniGameLevelPack",
+								"BackdropImage": "IMAGE_UI_ARCADEMENU_BG_TUTORIAL",
+								"Levels": [
+									{
+										"ID": "arcade/vasebreaker_tutorial1"
+									},
+									{
+										"ID": "arcade/vasebreaker_tutorial2"
+									},
+									{
+										"ID": "arcade/vasebreaker_tutorial3"
+									}
+								],
+								"Reward": {
+									"Type": "PowerUp",
+									"ID": "powerupvasebreakerreveal"
+								}
+							},
+							{
+								"ID": "vasebreaker_egypt_1",
+								"PackNameLocalizationKey": "Egypt Edition - I",
+								"LayoutFile": "MiniGameLevelPack",
+								"BackdropImage": "IMAGE_UI_ARCADEMENU_BG_WEST",
+								"UnlockAfter": "vasebreaker_tutorial",
+								"Levels": [
+									{
+										"ID": "arcade/vasebreaker_egypt1"
+									},
+									{
+										"ID": "arcade/vasebreaker_egypt2"
+									},
+									{
+										"ID": "arcade/vasebreaker_egypt3"
+									}
+								],
+								"Reward": {
+									"Type": "PowerUp",
+									"ID": "powerupvasebreakerbutter"
+								}
+							},
+							{
+								"ID": "vasebreaker_lostcity_1",
+								"PackNameLocalizationKey": "Lost City Edition - I",
+								"LayoutFile": "MiniGameLevelPack",
+								"BackdropImage": "IMAGE_UI_ARCADEMENU_BG_WEST",
+								"UnlockAfter": "vasebreaker_egypt_1",
+								"Levels": [
+									{
+										"ID": "arcade/vasebreaker_lostcity1"
+									},
+									{
+										"ID": "arcade/vasebreaker_lostcity2"
+									},
+									{
+										"ID": "arcade/vasebreaker_lostcity3"
+									}
+								],
+								"Reward": {
+									"Type": "PowerUp",
+									"ID": "powerupvasebreakermove"
+								}
+							},
+							{
+								"ID": "vasebreaker_dark_1",
+								"PackNameLocalizationKey": "Dark Ages Edition - I",
+								"LayoutFile": "MiniGameLevelPack",
+								"BackdropImage": "IMAGE_UI_ARCADEMENU_BG_WEST",
+								"UnlockAfter": "vasebreaker_lostcity_1",
+								"Levels": [
+									{
+										"ID": "arcade/vasebreaker_dark1"
+									},
+									{
+										"ID": "arcade/vasebreaker_dark2"
+									},
+									{
+										"ID": "arcade/vasebreaker_dark3"
+									}
+								],
+								"Reward": {
+									"Type": "GiftBox"
+								}
+							},
+							{
+								"ID": "vasebreaker_pirate_1",
+								"PackNameLocalizationKey": "Pirate Edition - I",
+								"LayoutFile": "MiniGameLevelPack",
+								"BackdropImage": "IMAGE_UI_ARCADEMENU_BG_WEST",
+								"UnlockAfter": "vasebreaker_dark_1",
+								"Levels": [
+									{
+										"ID": "arcade/vasebreaker_pirate1"
+									},
+									{
+										"ID": "arcade/vasebreaker_pirate2"
+									},
+									{
+										"ID": "arcade/vasebreaker_pirate3"
+									}
+								],
+								"Reward": {
+									"Type": "GiftBox"
+								}
+							},
+							{
+								"ID": "vasebreaker_iceage_1",
+								"PackNameLocalizationKey": "Ice Age Edition - I",
+								"LayoutFile": "MiniGameLevelPack",
+								"BackdropImage": "IMAGE_UI_ARCADEMENU_BG_WEST",
+								"UnlockAfter": "vasebreaker_pirate_1",
+								"Levels": [
+									{
+										"ID": "arcade/vasebreaker_iceage1"
+									},
+									{
+										"ID": "arcade/vasebreaker_iceage2"
+									},
+									{
+										"ID": "arcade/vasebreaker_iceage3"
+									}
+								],
+								"Reward": {
+									"Type": "GiftBox"
+								}
+							},
+							{
+								"ID": "vasebreaker_cowboy_1",
+								"PackNameLocalizationKey": "Wild West Edition - I",
+								"LayoutFile": "MiniGameLevelPack",
+								"BackdropImage": "IMAGE_UI_ARCADEMENU_BG_WEST",
+								"UnlockAfter": "vasebreaker_iceage_1",
+								"Levels": [
+									{
+										"ID": "arcade/vasebreaker_cowboy1"
+									},
+									{
+										"ID": "arcade/vasebreaker_cowboy2"
+									},
+									{
+										"ID": "arcade/vasebreaker_cowboy3"
+									}
+								],
+								"Reward": {
+									"Type": "GiftBox"
+								}
+							},
+							{
+								"ID": "vasebreaker_beach_1",
+								"PackNameLocalizationKey": "Seaside Edition - I",
+								"LayoutFile": "MiniGameLevelPack",
+								"BackdropImage": "IMAGE_UI_ARCADEMENU_BG_WEST",
+								"UnlockAfter": "vasebreaker_cowboy_1",
+								"Levels": [
+									{
+										"ID": "arcade/vasebreaker_beach1"
+									},
+									{
+										"ID": "arcade/vasebreaker_beach2"
+									},
+									{
+										"ID": "arcade/vasebreaker_beach3"
+									}
+								],
+								"Reward": {
+									"Type": "GiftBox"
+								}
+							},
+							{
+								"ID": "vasebreaker_dino_1",
+								"PackNameLocalizationKey": "Jurassic Edition - I",
+								"LayoutFile": "MiniGameLevelPack",
+								"BackdropImage": "IMAGE_UI_ARCADEMENU_BG_WEST",
+								"UnlockAfter": "vasebreaker_beach_1",
+								"Levels": [
+									{
+										"ID": "arcade/vasebreaker_dino1"
+									},
+									{
+										"ID": "arcade/vasebreaker_dino2"
+									},
+									{
+										"ID": "arcade/vasebreaker_dino3"
+									}
+								],
+								"Reward": {
+									"Type": "GiftBox"
+								}
+							},
+							{
+								"ID": "vasebreaker_future_1",
+								"PackNameLocalizationKey": "Future Edition - I",
+								"LayoutFile": "MiniGameLevelPack",
+								"BackdropImage": "IMAGE_UI_ARCADEMENU_BG_WEST",
+								"UnlockAfter": "vasebreaker_dino_1",
+								"Levels": [
+									{
+										"ID": "arcade/vasebreaker_future1"
+									},
+									{
+										"ID": "arcade/vasebreaker_future2"
+									},
+									{
+										"ID": "arcade/vasebreaker_future3"
+									}
+								],
+								"Reward": {
+									"Type": "GiftBox"
+								}
+							},
+							{
+								"ID": "vasebreaker_eighties_1",
+								"PackNameLocalizationKey": "Neon Edition - I",
+								"LayoutFile": "MiniGameLevelPack",
+								"BackdropImage": "IMAGE_UI_ARCADEMENU_BG_WEST",
+								"UnlockAfter": "vasebreaker_future_1",
+								"Levels": [
+									{
+										"ID": "arcade/vasebreaker_eighties1"
+									},
+									{
+										"ID": "arcade/vasebreaker_eighties2"
+									},
+									{
+										"ID": "arcade/vasebreaker_eighties3"
+									}
+								],
+								"Reward": {
+									"Type": "GiftBox"
+								}
+							}
+						]
+					}
+				],
+				"PowerUpCollections": [
+					{
+						"ID": "vasebreaker_powerups",
+						"PowerUps": [
+							{
+								"ID": "powerupvasebreakerreveal",
+								"UpImage": "IMAGE_UI_POWERUPS_POWER_VASEBREAKERREVEAL",
+								"DownImage": "IMAGE_UI_POWERUPS_POWER_VASEBREAKERREVEAL_DOWN",
+								"GameFeature": "feature_powerup_vasebreaker_reveal",
+								"NameLocalizationKey": "[POWERUP_VASEBREAKER_REVEAL]",
+								"DescriptionLocalizationKey": "[POWERUP_VASEBREAKER_REVEAL_DESCRIPTION]",
+								"UnlockHintLocalizationKey": "[POWERUP_VASEBREAKER_REVEAL_UNLOCK]"
+							},
+							{
+								"ID": "powerupvasebreakerbutter",
+								"UpImage": "IMAGE_UI_POWERUPS_POWER_VASEBREAKERBUTTER",
+								"DownImage": "IMAGE_UI_POWERUPS_POWER_VASEBREAKERBUTTER_DOWN",
+								"GameFeature": "feature_powerup_vasebreaker_butter",
+								"NameLocalizationKey": "[POWERUP_VASEBREAKER_BUTTER]",
+								"DescriptionLocalizationKey": "[POWERUP_VASEBREAKER_BUTTER_DESCRIPTION]",
+								"UnlockHintLocalizationKey": "[POWERUP_VASEBREAKER_BUTTER_UNLOCK]"
+							},
+							{
+								"ID": "powerupvasebreakermove",
+								"UpImage": "IMAGE_UI_POWERUPS_POWER_VASEBREAKERMOVE",
+								"DownImage": "IMAGE_UI_POWERUPS_POWER_VASEBREAKERMOVE_DOWN",
+								"GameFeature": "feature_powerup_vasebreaker_move",
+								"NameLocalizationKey": "[POWERUP_VASEBREAKER_MOVE]",
+								"DescriptionLocalizationKey": "[POWERUP_VASEBREAKER_MOVE_DESCRIPTION]",
+								"UnlockHintLocalizationKey": "[POWERUP_VASEBREAKER_MOVE_UNLOCK]"
+							}
+						]
+					},
+					{
+						"ID": "beghouled_powerups",
+						"PowerUps": [
+							{
+								"ID": "powerupbeghouledshuffle",
+								"UpImage": "IMAGE_UI_POWERUPS_POWER_BEGHOULEDSHUFFLE",
+								"DownImage": "IMAGE_UI_POWERUPS_POWER_BEGHOULEDSHUFFLE_DOWN",
+								"GameFeature": "feature_powerup_beghouled_shuffle",
+								"NameLocalizationKey": "[POWERUP_BEGHOULED_SHUFFLE]",
+								"DescriptionLocalizationKey": "[POWERUP_BEGHOULED_SHUFFLE_DESCRIPTION]"
+							},
+							{
+								"ID": "powerupbeghouledshovel",
+								"UpImage": "IMAGE_UI_POWERUPS_POWER_BEGHOULEDSHOVEL",
+								"DownImage": "IMAGE_UI_POWERUPS_POWER_BEGHOULEDSHOVEL_DOWN",
+								"GameFeature": "feature_powerup_beghouled_shovel",
+								"NameLocalizationKey": "[POWERUP_BEGHOULED_SHOVEL]",
+								"DescriptionLocalizationKey": "[POWERUP_BEGHOULED_SHOVEL_DESCRIPTION]"
+							},
+							{
+								"ID": "powerupbeghouledwizardfinger",
+								"UpImage": "IMAGE_UI_POWERUPS_POWERUP_BEGHOULED_SHOCK",
+								"DownImage": "IMAGE_UI_POWERUPS_POWERUP_BEGHOULED_SHOCK_DOWN",
+								"GameFeature": "feature_powerup_beghouled_wizardfinger",
+								"NameLocalizationKey": "[POWERUP_WIZARDFINGER]",
+								"DescriptionLocalizationKey": "[POWERUP_WIZARDFINGER_DESCRIPTION]"
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}

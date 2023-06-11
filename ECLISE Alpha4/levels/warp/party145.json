@@ -1,0 +1,684 @@
+{
+	"#comment": "Coldheart Icicle | ELM: Ver-9.1.2 [ECL Alpha 3]",
+	"#zombies": "iceage, iceage_armor1, iceage_armor2, chicken_farmer, chicken, iceage_hunter, iceage_troglobite_1block, hellbird",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 50,
+				"Description": "Freeze and Unfreeze are 2 steps of winning",
+				"LevelNumber": "69",
+				"FirstRewardParam": "moneybag",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Tombstone_Dark_Special",
+					"Tombstone_Dark_Effects"
+				],
+				"Modules": [
+					"RTID(TechnicalZombieOverride@LevelModules)",
+					"RTID(IceageMowers@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(IPP@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(CooldownMultiplier@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "WP-145: Coldheart Icicle - Giang",
+				"StageModule": "RTID(IceageStage@LevelModules)",
+				"MusicType": "MiniGame_B"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "magnifyinggrass",
+						"Level": 0
+					},
+					{
+						"PlantType": "sunflower",
+						"Level": 1
+					},
+					{
+						"PlantType": "goldleaf",
+						"Level": 2
+					},
+					{
+						"PlantType": "hotpotato",
+						"Level": 1
+					}
+				],
+				"SelectionMethod": "preset"
+			}
+		},
+		{
+			"aliases": [
+				"CooldownMultiplier"
+			],
+			"objclass": "PlantCooldownModifierProperties",
+			"objdata": {
+				"CooldownMultiplier": 0.7500000000000001
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "All seed packets have x0.75 recharge\nSurvive with the given plants",
+				"DescriptiveName": "Custom Objective"
+			}
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
+			"objclass": "InitialPlantProperties",
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"Level": -1,
+						"TypeName": "goldbloom",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"Level": -1,
+						"TypeName": "goldbloom",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 2,
+						"GridY": 0,
+						"Level": 2,
+						"TypeName": "hurrikale",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"Level": -1,
+						"TypeName": "stunion",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 3,
+						"GridY": 0,
+						"Level": 0,
+						"TypeName": "puffshroom",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 3,
+						"GridY": 1,
+						"Level": 0,
+						"TypeName": "puffshroom",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 4,
+						"GridY": 1,
+						"Level": -1,
+						"TypeName": "stunion",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"Level": -1,
+						"TypeName": "hurrikale",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 2,
+						"GridY": 2,
+						"Level": -1,
+						"TypeName": "goldbloom",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"Level": 0,
+						"TypeName": "puffshroom",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"Level": 2,
+						"TypeName": "hurrikale",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"Level": -1,
+						"TypeName": "stunion",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 4,
+						"GridY": 3,
+						"Level": 0,
+						"TypeName": "puffshroom",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 2,
+						"GridY": 4,
+						"Level": -1,
+						"TypeName": "goldbloom",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 4,
+						"GridY": 4,
+						"Level": 0,
+						"TypeName": "puffshroom",
+						"Condition": "icecubed"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"Level": -1,
+						"TypeName": "stunion",
+						"Condition": "icecubed"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 1,
+				"WavesPerFlag": 12,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 0,
+				"PointIncrementPerWave": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(tutorial@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 12,
+				"WaveCount": 12,
+				"SuppressFlagZombie": false,
+				"Waves": [
+					[
+						"RTID(Wave1@.)"
+					],
+					[
+						"RTID(Wave2@.)"
+					],
+					[
+						"RTID(Wave3@.)"
+					],
+					[
+						"RTID(Wave4@.)"
+					],
+					[
+						"RTID(Wave5@.)",
+						"RTID(Necro5@.)"
+					],
+					[
+						"RTID(Wave6@.)",
+						"RTID(Necro6@.)"
+					],
+					[
+						"RTID(Wave7@.)"
+					],
+					[
+						"RTID(Wave8@.)"
+					],
+					[
+						"RTID(Wave9@.)"
+					],
+					[
+						"RTID(Wave10@.)"
+					],
+					[
+						"RTID(Wave11@.)",
+						"RTID(Necro11@.)"
+					],
+					[
+						"RTID(Wave12@.)",
+						"RTID(Necro12@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_troglobite_1block@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(hellbird@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_hunter@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(iceage@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(hellbird@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_troglobite_1block@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_troglobite_1block@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(iceage_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(iceage@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(iceage_troglobite_1block@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro5"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Wild Rush is incoming! Prepare your Puff Shrooms!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro6"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Wild Rush!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro11"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "The Final Wild Rush is incoming!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro12"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Wild Rush!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+				]
+			}
+		},
+		{
+		}
+	],
+	"version": 1
+}

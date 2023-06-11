@@ -1,0 +1,199 @@
+{
+	"#comment": "lvl532",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s infinity trials",
+				"FirstRewardParam": "moneybag_25",
+				"ReplayRewardParam": "",
+				"StartingSun": 50,
+				"ZombieLevel": 1,
+				"LevelNumber": 532,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(IPP@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(EightiesMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)"
+				],
+				"MusicType": "",
+				"Name": "Adventure 532",
+				"StageModule": "RTID(EightiesStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
+			"objclass": "InitialPlantProperties",
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 3,
+						"GridY": 2,
+						"TypeName": "powerlily"
+					},
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "powerlily"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"TypeName": "powerlily"
+					},
+					{
+						"GridX": 2,
+						"GridY": 2,
+						"TypeName": "powerlily"
+					},
+					{
+						"GridX": 6,
+						"GridY": 2,
+						"TypeName": "powerlily"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 1,
+				"Plants": [
+					{
+						"GridX": 30,
+						"GridY": 6,
+						"PlantType": "spikeweed"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"Level": -1,
+						"PlantType": "sunshroom"
+					},
+					{
+						"Level": -1,
+						"PlantType": "sunbean"
+					},
+					{
+						"Level": -1,
+						"PlantType": "pyrevine"
+					},
+					{
+						"Level": -1,
+						"PlantType": "blastberry"
+					},
+					{
+						"Level": -1,
+						"PlantType": "filamint"
+					},
+					{
+						"Level": -1,
+						"PlantType": "imitater"
+					},
+					{
+						"Level": -1,
+						"PlantType": "ailmint"
+					}
+				],
+				"PlantBlackList": [
+				],
+				"PlantWhiteList": [
+				],
+				"SelectionMethod": "preset"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 4,
+				"WavesPerFlag": 6,
+				"StartingPoints": 20,
+				"PointIncrementPerWave": 15,
+				"PlantfoodToSpawnCount": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(eighties_punk@ZombieTypes)",
+					"RTID(eighties_breakdancer@ZombieTypes)",
+					"RTID(modern_football@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"### WaveSpendingPointIncrement": 0,
+				"### WaveSpendingPoints": 0,
+				"### SuppressFlagZombie": false,
+				"### ZombieCountdownFirstWaveSecs": 40,
+				"### MinNextWaveHealthPercentage": 0.0,
+				"### MaxNextWaveHealthPercentage": 0.0,
+				"Waves": [
+					[
+						"RTID(JamRap@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"JamRap"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"NotificationEvents": [
+					"jam_rap"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,234 @@
+{
+	"#comment": "Empty heart‘",
+	false: "Gambling 10C",
+	"objects": [ {
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Welcome to casino land!",
+				"StartingSun": 100,
+				"DisableSaveGame": true,
+				"DisableRestart": true,
+				"DisablePlantBoosts": true,
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)",
+				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [ "RTID(LevelOfTheDayIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(LostCityMowers@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)", "RTID(ProtectThePlant@CurrentLevel)", "RTID(MoldColonies@CurrentLevel)", "RTID(GI@CurrentLevel)" ],
+				"Name": "Risky Island",
+				"StageModule": "RTID(LostCityStage@LevelModules)"
+			}
+		}, {
+			"aliases": [ "GI" ],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [ {
+						"GridX": 8,
+						"GridY": 1,
+						"TypeName": "goldtile"
+					}, {
+						"GridX": 8,
+						"GridY": 2,
+						"TypeName": "goldtile"
+					}, {
+						"GridX": 8,
+						"GridY": 3,
+						"TypeName": "goldtile"
+					}, {
+						"GridX": 8,
+						"GridY": 4,
+						"TypeName": "goldtile"
+					}, {
+						"GridX": 8,
+						"GridY": 0,
+						"TypeName": "goldtile"
+					} ]
+			}
+		}, {
+			"aliases": [ "ChallengeModule" ],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"ChallengesAlwaysAvailable": true
+			}
+		}, {
+			"aliases": [ "BeatTheLevel" ],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Prepare for Parachute Rains right on top of those Pumpkins!",
+				"DescriptiveName": ""
+			}
+		}, {
+			"aliases": [ "ProtectThePlant" ],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 15,
+				"Plants": [ {
+						"GridX": 3,
+						"GridY": 0,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 3,
+						"GridY": 1,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 3,
+						"GridY": 2,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 3,
+						"GridY": 3,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 3,
+						"GridY": 4,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 4,
+						"GridY": 0,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 4,
+						"GridY": 1,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 4,
+						"GridY": 2,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 4,
+						"GridY": 3,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 4,
+						"GridY": 4,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 5,
+						"GridY": 0,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 5,
+						"GridY": 1,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 5,
+						"GridY": 2,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 5,
+						"GridY": 3,
+						"PlantType": "pumpkin"
+					}, {
+						"GridX": 5,
+						"GridY": 4,
+						"PlantType": "pumpkin"
+					} ]
+			}
+		}, {
+			"aliases": [ "MoldColonies" ],
+			"objclass": "MoldColonyChallengeProps",
+			"objdata": {
+				"Locations": "RTID(Mold@CurrentLevel)"
+			}
+		}, {
+			"aliases": [ "Mold" ],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [ [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ] ]
+			}
+		}, {
+			"aliases": [ "SeedBank" ],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [],
+				"SelectionMethod": "chooser"
+			}
+		}, {
+			"aliases": [ "Escalation" ],
+			"objclass": "LevelOfTheDayModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"WavesPerFlag": 7,
+				"PlantfoodToSpawnCount": 2,
+				"StartingPoints": 10,
+				"PointIncrementPerWave": 18,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [ "RTID(lostcity_relichunter@ZombieTypes)", "RTID(lostcity_impporter@ZombieTypes)", "RTID(prospector@ZombieTypes)", "RTID(lostcity_bug_armor1@ZombieTypes)" ]
+			}
+		}, {
+			"aliases": [ "NewWaves" ],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		}, {
+			"aliases": [ "WaveManager" ],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [ [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR4@CurrentLevel)" ] ]
+			}
+		}, {
+			"aliases": [ "PR1" ],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 5,
+				"ColumnStart": 3,
+				"GroupSize": 3,
+				"SpiderCount": 3,
+				"SpiderZombieName": "lostcity_lostpilot",
+				"TimeBeforeFullSpawn": "1",
+				"TimeBetweenGroups": "0.2",
+				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		}, {
+			"aliases": [ "PR2" ],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 5,
+				"ColumnStart": 3,
+				"GroupSize": 5,
+				"SpiderCount": 5,
+				"SpiderZombieName": "lostcity_lostpilot",
+				"TimeBeforeFullSpawn": "1",
+				"TimeBetweenGroups": "0.2",
+				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		}, {
+			"aliases": [ "PR3" ],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 5,
+				"ColumnStart": 3,
+				"GroupSize": 7,
+				"SpiderCount": 7,
+				"SpiderZombieName": "lostcity_lostpilot",
+				"TimeBeforeFullSpawn": "1",
+				"TimeBetweenGroups": "0.2",
+				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		}, {
+			"aliases": [ "PR4" ],
+			"objclass": "ParachuteRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 6,
+				"ColumnStart": 3,
+				"GroupSize": 12,
+				"SpiderCount": 12,
+				"SpiderZombieName": "lostcity_lostpilot",
+				"TimeBeforeFullSpawn": "1",
+				"TimeBetweenGroups": "0.2",
+				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
+				"ZombieFallTime": "1.5"
+			}
+		}, {
+			"aliases": [ "Blank" ],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": []
+			}
+		} ],
+	"version": 1
+}

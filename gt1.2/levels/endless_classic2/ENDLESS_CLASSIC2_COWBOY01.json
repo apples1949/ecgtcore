@@ -1,0 +1,142 @@
+{
+	"#comment": "Cowboy Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Endless Zone!",
+				"ForceNextLevel": "egypt_dangerroom",
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"SuppressAwardScreen": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(WestMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "Classic II - Level {LEVEL_NUMBER}",
+				"StageModule": "RTID(WestStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(ClassicDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(CowboyDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(RailcartDesigner@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"Rails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+				],
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"CowboyDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 15,
+				"BasePointIncrementPerWave": 10,
+				"BasePointIncrementPerLevel": 2,
+				"ZombiePool": [
+					"RTID(chicken_farmer@ZombieTypes)",
+					"RTID(piano@ZombieTypes)",
+					"RTID(cowboy@ZombieTypes)",
+					"RTID(cowboy_armor1@ZombieTypes)",
+					"RTID(cowboy_armor2@ZombieTypes)",
+					"RTID(cowboy_armor4@ZombieTypes)",
+					"RTID(vegan@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)",
+					"RTID(west_bull@ZombieTypes)",
+					"RTID(west_bullrider@ZombieTypes)",
+					"RTID(cowboy_gargantuar@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"RailcartDesigner"
+			],
+			"objclass": "DangerRoomRailcartDesigner",
+			"objdata": {
+				"BaseRailcartCount": 1,
+				"BaseRailcartCountPerLevel": 0.25,
+				"MaxGeneratedRailcarts": 4,
+				"Layouts": [
+					"11110",
+					"01111",
+					"11111",
+					"11000",
+					"01100",
+					"00110",
+					"00011",
+					"11100",
+					"01110",
+					"00111",
+					"11022",
+					"11000",
+					"01100",
+					"00110",
+					"00011",
+					"11100",
+					"01110",
+					"00111",
+					"00000",
+					"00000",
+					"00000",
+					"00000",
+					"00000",
+					"00000"
+				]
+			}
+		}
+	],
+	"version": 1
+}

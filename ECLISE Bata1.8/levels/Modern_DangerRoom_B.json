@@ -1,0 +1,3503 @@
+{
+	"#comment": "Modern Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]",
+				"ForceNextLevel": "modern_dangerroom",
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "[DANGER_ROOM_MODERN_LEVEL_NAME]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"SuppressAwardScreen": true,
+				"StageModule": "RTID(ModernNightStage@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 1,
+				"Plants": [
+					{
+						"GridX": 30,
+						"GridY": 6,
+						"PlantType": "spikeweed"
+					},
+					{
+						"GridX": 0,
+						"GridY": 6,
+						"PlantType": "powerlily"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "EightiesStageProperties",
+			"aliases": [
+				"ModernNightStage"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach_Compressed",
+					"DelayLoad_Background_FrontLawn_halloween",
+					"Dirt_Spawn_Grass",
+					"AudioModern",
+					"ModernGroansAudio",
+					"DelayLoad_Background_FrontLawn",
+					"DelayLoad_Background_Eighties_Compressed",
+					"AudioEighties",
+					"EightiesGroansAudio",
+					"Eighties_Background_Effects",
+					"AudioDino",
+					"DinoGroansAudio"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_FrontLawn_halloween"
+				],
+				"StagePrefix": "modern",
+				"BackgroundResourceGroup": "DelayLoad_Background_FrontLawn_halloween",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_FRONTLAWN_LOD_HALLOWEEN",
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"BasicZombieTypeName": "tutorial",
+				"FlagZombieTypeName": "tutorial_flag",
+				"Armor1ZombieTypeName": "tutorial_armor1",
+				"Armor2ZombieTypeName": "tutorial_armor2",
+				"RailcartDefaultTypeName": "railcart_tutorial",
+				"GravestoneDefaultTypeName": "gravestone_tutorial",
+				"DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_GRASS",
+				"MusicSuffix": "Modern"
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(ModernDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(ModernDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(PortalDesigner@CurrentLevel)",
+					"RTID(JamDesigner@CurrentLevel)",
+					"RTID(PowerTileDesigner@CurrentLevel)",
+					"RTID(DinosaurDesigner@CurrentLevel)",
+					"RTID(IceBlockDesigner@CurrentLevel)",
+					"RTID(GridDesigner@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+				],
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"PortalDesigner"
+			],
+			"objclass": "DangerRoomModernDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 30
+				},
+				"PortalTypesMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"PortalTypesMax": {
+					"Min": 2,
+					"Max": 3
+				},
+				"FirstPortalWavesMin": {
+					"Min": 12,
+					"Max": 14
+				},
+				"FirstPortalWavesMax": {
+					"Min": 10,
+					"Max": 11
+				},
+				"NextPortalWavesMin": {
+					"Min": 4,
+					"Max": 5
+				},
+				"NextPortalWavesMax": {
+					"Min": 3,
+					"Max": 3
+				},
+				"PortalCountInWaveMin": {
+					"Min": 0,
+					"Max": 1
+				},
+				"PortalCountInWaveMax": {
+					"Min": 2,
+					"Max": 2
+				},
+				"ColumnToSpawnMin": {
+					"Min": 8,
+					"Max": 8
+				},
+				"ColumnToSpawnMax": {
+					"Min": 6,
+					"Max": 7
+				},
+				"ZombiesToSpawnMin": {
+					"Min": 1,
+					"Max": 2
+				},
+				"ZombiesToSpawnMax": {
+					"Min": 4,
+					"Max": 4
+				},
+				"ZombieRandomListStartMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"ZombieRandomListStartMax": {
+					"Min": 0,
+					"Max": 0
+				},
+				"ZombieRandomListEndMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"ZombieRandomListEndMax": {
+					"Min": 4,
+					"Max": 4
+				}
+			}
+		},
+		{
+			"aliases": [
+				"JamDesigner"
+			],
+			"objclass": "DangerRoomJamDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 500
+				},
+				"JamTypesMin": {
+					"Min": -2,
+					"Max": -2
+				},
+				"JamTypesMax": {
+					"Min": 4,
+					"Max": 4
+				},
+				"FirstJamWavesMin": {
+					"Min": 16,
+					"Max": 18
+				},
+				"FirstJamWavesMax": {
+					"Min": 1,
+					"Max": 2
+				},
+				"NextJamWavesMin": {
+					"Min": 7,
+					"Max": 8
+				},
+				"NextJamWavesMax": {
+					"Min": 2,
+					"Max": 3
+				},
+				"ZombieAddLevelRange": {
+					"Min": 1,
+					"Max": 500
+				},
+				"JamZombiesToReplaceMin": {
+					"Min": 1,
+					"Max": 2
+				},
+				"JamZombiesToReplaceMax": {
+					"Min": 7,
+					"Max": 8
+				},
+				"LevelToIntroduceMetalJam": 5000
+			}
+		},
+		{
+			"aliases": [
+				"DinosaurDesigner"
+			],
+			"objclass": "DangerRoomDinoDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 30
+				},
+				"DinoTypesMin": {
+					"Min": 0,
+					"Max": 1
+				},
+				"DinoTypesMax": {
+					"Min": 3,
+					"Max": 3
+				},
+				"FirstDinoWavesMin": {
+					"Min": 7,
+					"Max": 8
+				},
+				"FirstDinoWavesMax": {
+					"Min": 15,
+					"Max": 16
+				},
+				"NextDinoWavesMin": {
+					"Min": 2,
+					"Max": 3
+				},
+				"NextDinoWavesMax": {
+					"Min": 7,
+					"Max": 8
+				},
+				"DinoCountInWaveMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"DinoCountInWaveMax": {
+					"Min": 1,
+					"Max": 2
+				},
+				"DinoTypePool": [
+					{
+						"Value": "raptor",
+						"Weight": 10.0
+					},
+					{
+						"Value": "stego",
+						"Weight": 3.0
+					},
+					{
+						"Value": "ptero",
+						"Weight": 0
+					},
+					{
+						"Value": "tyranno",
+						"Weight": 7.0
+					},
+					{
+						"Value": "ankylo",
+						"Weight": 0
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"PowerTileDesigner"
+			],
+			"objclass": "DangerRoomPowerTileDesigner",
+			"objdata": {
+				"PickByRowColumn": false,
+				"BaseTileSetCount": 0,
+				"BaseTileSetCountPerLevel": 0.24,
+				"MaxTileSetCount": 1,
+				"ColumnCount": 4,
+				"TileSetLayouts": [
+					[
+						"0",
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					[
+						"0",
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					[
+						"0",
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					[
+						"0",
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					[
+						"0",
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					[
+						"0",
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					[
+						"0",
+						"1",
+						"0",
+						"1",
+						"0"
+					],
+					[
+						"1",
+						"0",
+						"0",
+						"0",
+						"1"
+					],
+					[
+						"10",
+						"00",
+						"00",
+						"00",
+						"01"
+					],
+					[
+						"01",
+						"00",
+						"00",
+						"00",
+						"10"
+					],
+					[
+						"11"
+					],
+					[
+						"1",
+						"0",
+						"1",
+						"0",
+						"1"
+					],
+					[
+						"0",
+						"1",
+						"1",
+						"1",
+						"0"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IceBlockDesigner"
+			],
+			"objclass": "DangerRoomIceBlockDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 60
+				},
+				"PlantColumnMin": {
+					"Min": 0,
+					"Max": 1
+				},
+				"PlantColumnMax": {
+					"Min": 2,
+					"Max": 7
+				},
+				"ZombieColumnMin": {
+					"Min": 7,
+					"Max": 7
+				},
+				"ZombieColumnMax": {
+					"Min": 8,
+					"Max": 8
+				},
+				"BlocksMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"BlocksMax": {
+					"Min": 3,
+					"Max": 8
+				},
+				"PctGoodBlocks": {
+					"Min": 100,
+					"Max": 90
+				},
+				"PlantTypeNames": [
+					"moonflower",
+					"primalsunflower",
+					"solartomato",
+					"escaperoot",
+					"chardguard",
+					"dusklobber",
+					"parsnip",
+					"guacodile",
+					"homingthistle",
+					"hypnoshroom",
+					"magnetshroom",
+					"sapfling",
+					"hurrikale",
+					"primalpotatomine",
+					"explodeonut",
+					"electricblueberry",
+					"thymewarp",
+					"powerlily",
+					"goldleaf",
+					"potatomine",
+					"springbean",
+					"aloe",
+					"bombardmint"
+				],
+				"ZombieTypeNames": [
+					"iceage_weasel",
+					"chicken"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GridDesigner"
+			],
+			"objclass": "DangerRoomBoardGridMapPlacer",
+			"objdata": {
+				"GridMaps": [
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Blank@CurrentLevel)",
+					"RTID(Slider01@CurrentLevel)",
+					"RTID(Slider02@CurrentLevel)",
+					"RTID(Slider03@CurrentLevel)",
+					"RTID(Slider04@CurrentLevel)",
+					"RTID(Slider05@CurrentLevel)",
+					"RTID(Slider06@CurrentLevel)",
+					"RTID(Slider07@CurrentLevel)",
+					"RTID(Slider08@CurrentLevel)",
+					"RTID(Slider09@CurrentLevel)",
+					"RTID(Slider10@CurrentLevel)",
+					"RTID(Slider11@CurrentLevel)",
+					"RTID(Slider12@CurrentLevel)",
+					"RTID(Slider13@CurrentLevel)",
+					"RTID(Grave01@CurrentLevel)",
+					"RTID(Grave02@CurrentLevel)",
+					"RTID(Grave03@CurrentLevel)",
+					"RTID(Grave04@CurrentLevel)",
+					"RTID(Grave05@CurrentLevel)",
+					"RTID(Grave06@CurrentLevel)",
+					"RTID(Grave07@CurrentLevel)",
+					"RTID(Grave08@CurrentLevel)",
+					"RTID(Grave09@CurrentLevel)",
+					"RTID(Grave10@CurrentLevel)",
+					"RTID(Grave11@CurrentLevel)",
+					"RTID(Grave12@CurrentLevel)",
+					"RTID(Grave13@CurrentLevel)",
+					"RTID(Grave14@CurrentLevel)",
+					"RTID(Grave15@CurrentLevel)",
+					"RTID(Grave16@CurrentLevel)",
+					"RTID(Grave17@CurrentLevel)",
+					"RTID(Grave18@CurrentLevel)",
+					"RTID(Grave19@CurrentLevel)",
+					"RTID(Gold01@CurrentLevel)",
+					"RTID(Gold02@CurrentLevel)",
+					"RTID(Gold03@CurrentLevel)",
+					"RTID(Gold04@CurrentLevel)",
+					"RTID(Gold05@CurrentLevel)",
+					"RTID(Gold06@CurrentLevel)",
+					"RTID(Gold07@CurrentLevel)",
+					"RTID(Gold08@CurrentLevel)",
+					"RTID(Rare01@CurrentLevel)",
+					"RTID(Rare02@CurrentLevel)",
+					"RTID(Rare03@CurrentLevel)"
+				],
+				"GridItemTypes": [
+					"slider_down_modern",
+					"slider_up_modern",
+					"gravestone_dark",
+					"gravestoneSunOnDestruction",
+					"goldtile",
+					"bombegranateseeds",
+					"flame_spreader_trap"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider01"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider02"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						1,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider03"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						1,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider04"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						2,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider05"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						2,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider06"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						2,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider07"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider08"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						1,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider09"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						1,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider10"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						2,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider11"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						2,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider12"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						2,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Slider13"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						2,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave01"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						3,
+						4,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave02"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						3,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave03"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						3,
+						4,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave04"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						3,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave05"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						3,
+						4,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave06"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						3,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave08"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave07"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave08"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave09"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave10"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave11"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						4,
+						0,
+						3,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave12"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						4,
+						0,
+						3,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave19"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						4,
+						0,
+						3,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave13"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						3,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						3,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave14"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						3
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						3,
+						3
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						4,
+						3,
+						3
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						3,
+						3
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						3,
+						0,
+						3,
+						3
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave15"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave16"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						3,
+						3,
+						3,
+						3,
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Grave17"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						3,
+						3,
+						3,
+						3,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Gold01"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						5,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						5,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Gold02"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						5,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						5,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Gold03"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						5,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						5,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Gold04"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						5,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						5,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Gold05"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						5,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						5,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Gold06"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						3,
+						5,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						5,
+						0,
+						5,
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Gold07"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						5,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						5,
+						3,
+						0,
+						5,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						5,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Gold08"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						5,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						5,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						5,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						5,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						5,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Rare01"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						7,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Rare02"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						2,
+						2,
+						2
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						2,
+						2,
+						2
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Rare03"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						7
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						7
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						7
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ModernDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 100,
+				"BasePointIncrementPerWave": 30,
+				"BasePointIncrementPerLevel": 6.5,
+				"ZombiePool": [
+					"RTID(tutorial_armor1@ZombieTypes)",
+					"RTID(tutorial_armor2@ZombieTypes)",
+					"RTID(tutorial_armor4@ZombieTypes)",
+					"RTID(tutorial_imp@ZombieTypes)",
+					"RTID(tutorial_gargantuar@ZombieTypes)",
+					"RTID(tutorial@ZombieTypes)",
+					"RTID(tutorial_armor1@ZombieTypes)",
+					"RTID(tutorial_armor2@ZombieTypes)",
+					"RTID(tutorial_armor4@ZombieTypes)",
+					"RTID(tutorial_imp@ZombieTypes)",
+					"RTID(tutorial_gargantuar@ZombieTypes)",
+					"RTID(pharaoh@ZombieTypes)",
+					"RTID(tomb_raiser@ZombieTypes)",
+					"RTID(camel_onehump@ZombieTypes)",
+					"RTID(cleopatra@ZombieTypes)",
+					"RTID(lostcity_excavator@ZombieTypes)",
+					"RTID(lostcity_jane@ZombieTypes)",
+					"RTID(lostcity_relichunter@ZombieTypes)",
+					"RTID(lostcity_crystalskull@ZombieTypes)",
+					"RTID(dark_wizard@ZombieTypes)",
+					"RTID(dark_juggler@ZombieTypes)",
+					"RTID(dark_imp_dragon@ZombieTypes)",
+					"RTID(night_camel@ZombieTypes)",
+					"RTID(barrelroller@ZombieTypes)",
+					"RTID(cannon@ZombieTypes)",
+					"RTID(swashbuckler@ZombieTypes)",
+					"RTID(iceage_dodo@ZombieTypes)",
+					"RTID(iceage_weaselhoarder@ZombieTypes)",
+					"RTID(iceage_hunter@ZombieTypes)",
+					"RTID(hellbird@ZombieTypes)",
+					"RTID(chicken_farmer@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)",
+					"RTID(west_bull@ZombieTypes)",
+					"RTID(vegan@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_armor4@ZombieTypes)",
+					"RTID(modern_balloon@ZombieTypes)",
+					"RTID(dino_bully@ZombieTypes)",
+					"RTID(modern_superfanimp@ZombieTypes)",
+					"RTID(football_mech@ZombieTypes)",
+					"RTID(disco_mech@ZombieTypes)",
+					"RTID(future_jetpack@ZombieTypes)",
+					"RTID(eighties_punk@ZombieTypes)",
+					"RTID(eighties_glitter@ZombieTypes)",
+					"RTID(eighties_breakdancer@ZombieTypes)",
+					"RTID(eighties_arcade@ZombieTypes)",
+					"RTID(football@ZombieTypes)",
+					"RTID(modern_newspaper@ZombieTypes)"
+				]
+			}
+		}
+	],
+	"version": 1
+}

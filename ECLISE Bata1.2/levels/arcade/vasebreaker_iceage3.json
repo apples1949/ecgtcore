@@ -1,0 +1,268 @@
+{
+	"#comment": "V5-3",
+	"version": 1,
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Name": "V5-3: Ice Straye",
+				"IsVasebreaker": true,
+				"AddBonusStartingSun": false,
+				"LevelPowerupSet": "LevelPowerupsVasebreaker",
+				"Description": "",
+				"FirstIntroNarrative": "VASEBREAKER_5-3_INTRO",
+				"ReplayIntroNarrative": "VASEBREAKER_5-3_INTRO",
+				"FirstRewardParam": "big_moneybag",
+				"StageModule": "RTID(IceageStage@LevelModules)",
+				"StartingSun": 0,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)",
+					"RTID(VaseBreakerProps@.)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "traptile_1"
+					},
+					{
+						"GridX": 0,
+						"GridY": 1,
+						"TypeName": "traptile_1"
+					},
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "traptile_1"
+					},
+					{
+						"GridX": 0,
+						"GridY": 3,
+						"TypeName": "traptile_1"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "traptile_1"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "hotpotato",
+						"Level": 2
+					},
+					{
+						"PlantType": "nightshade",
+						"Level": 0
+					}
+				],
+				"SelectionMethod": "preset"
+			}
+		},
+		{
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 3,
+				"MaxColumnIndex": 8,
+				"GridSquareBlacklist": [
+					{
+						"mX": 0,
+						"mY": 0
+					}
+				],
+				"Vases": [
+					{
+						"ZombieTypeName": "iceage_imp",
+						"Count": 7
+					},
+					{
+						"ZombieTypeName": "iceage_armor1",
+						"Count": 4
+					},
+					{
+						"ZombieTypeName": "iceage_armor3",
+						"Count": 2
+					},
+					{
+						"ZombieTypeName": "iceage_troglobite_1block",
+						"Count": 4
+					},
+					{
+						"PlantTypeName": "sunbean",
+						"Count": 3
+					},
+					{
+						"PlantTypeName": "nightshade",
+						"Count": 4
+					},
+					{
+						"PlantTypeName": "spikeweed",
+						"Count": 4
+					},
+					{
+						"PlantTypeName": "pepperpult",
+						"Count": 2
+					},
+					{
+						"CollectableTypeName": "sun",
+						"Count": 0
+					}
+				],
+				"NumColoredPlantVases": 13,
+				"NumColoredZombieVases": 0
+			}
+		},
+		{
+			"aliases": [
+				"TrapTileProps_1"
+			],
+			"objclass": "GridItemProjectileTrapProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_EFFECTS_ZOMBIE_OCTOPUS_PROJECTILE",
+				"PopAnimRenderOffset": {
+					"x": 10000,
+					"y": 10000
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"PositioningFlags": [
+				],
+				"ProjectileFireOriginOffset": {
+					"x": 576,
+					"y": 0,
+					"z": 10
+				},
+				"ProjectileTypeToSpawn": "RTID(FreezeWind@CurrentLevel)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 20,
+				"TriggerRect": {
+					"mHeight": 60,
+					"mWidth": 2000,
+					"mX": -1000,
+					"mY": -119
+				},
+				"TriggeringEntityTypes": [
+					"zombie",
+					"plant"
+				]
+			}
+		},
+		{
+			"objclass": "CactusProjectileProps",
+			"aliases": [
+				"FreezeWind"
+			],
+			"objdata": {
+				"ClassName": "CactusProjectile",
+				"InitialPierceChance": 150,
+				"PierceChanceReductionPerHit": 0,
+				"HasShadow": false,
+				"BaseDamage": 0.5,
+				"DiesOnImpact": false,
+				"DamageFlags": [
+					"frost_whole_stage",
+					"shooter"
+				],
+				"Conditions": [
+					{
+						"Condition": "icecubed",
+						"Duration": {
+							"Min": 10,
+							"Max": 10
+						}
+					},
+					{
+						"Condition": "freeze",
+						"Duration": {
+							"Min": 25,
+							"Max": 25
+						}
+					}
+				],
+				"CollisionFlags": [
+					"griditems",
+					"ground_zombies",
+					"all_zombies",
+					"off_ground_zombies",
+					"ground_plants",
+					"tall_plants",
+					"plants",
+					"normal_plants"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -350.0,
+						"Max": -350.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"InitialScale": {
+					"Min": 0.75,
+					"Max": 0.75
+				},
+				"AttachedPAM": "",
+				"AttachedPAMAnimRigClass": "",
+				"AttachedPAMOffset": {
+					"x": -150,
+					"y": -130
+				},
+				"AttachedPAMAnimationToPlay": [
+					"animation"
+				],
+				"CollisionRect": {
+					"mX": -15,
+					"mY": -15,
+					"mWidth": 30,
+					"mHeight": 30
+				},
+				"ImpactSoundEvent": "",
+				"ImpactSoundThrottleTimer": 0.075,
+				"ImpactPAM": "",
+				"ImpactPAMAnimationToPlay": [
+					""
+				],
+				"ImpactOffset": [
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					}
+				]
+			}
+		}
+	]
+}

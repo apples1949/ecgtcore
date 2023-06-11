@@ -1,0 +1,785 @@
+{
+	"#comment": "I,Zombie Endless",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "",
+				"LevelNumber": 0,
+				"StartingSun": 1000,
+				"AddBonusStartingSun": false,
+				"Loot": "RTID(NoLoot@LevelModules)",
+				"Modules": [
+					"RTID(IZIntro@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(IZZombieWinCondition@LevelModules)",
+					"RTID(IZNoShovel@LevelModules)",
+					"RTID(IZResistance@LevelModules)",
+					"RTID(IZInitialTraps@.)",
+					"RTID(IZCraters@.)",
+					"RTID(IZZombieSpawner@.)",
+					"RTID(SeedBank@.)",
+					"RTID(NewWaves@.)",
+					"RTID(LevelScoring@.)"
+				],
+				"Name": "I, Zombie Endless",
+				"StageModule": "RTID(ModernNightStage@LevelModules)",
+				"SuppressAccountUpgrades": true,
+				"DisablePlantBoosts": true
+			}
+		},
+		{
+            "aliases": [
+                "LevelScoring"
+            ],
+            "objclass": "LevelScoringModuleProperties",
+            "objdata": {
+                "PlantBonusMultiplier": 0.0,
+                "PlantBonuses": [],
+                "ScoringRulesType": "NoMultiplier",
+                "StartingPlantfood": 0
+            }
+        },
+		{
+			"aliases": [
+				"IZInitialTraps"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 5,
+						"GridY": -1,
+						"TypeName": "iz_sign"
+					},
+					{
+						"GridX": 8,
+						"GridY": 8,
+						"TypeName": "crater"
+					},
+					{
+						"GridX": -1,
+						"GridY": 0,
+						"TypeName": "iz_plantspawn"
+					},
+					{
+						"GridX": -1,
+						"GridY": 1,
+						"TypeName": "iz_plantspawn"
+					},
+					{
+						"GridX": -1,
+						"GridY": 2,
+						"TypeName": "iz_plantspawn"
+					},
+					{
+						"GridX": -1,
+						"GridY": 3,
+						"TypeName": "iz_plantspawn"
+					},
+					{
+						"GridX": -1,
+						"GridY": 4,
+						"TypeName": "iz_plantspawn"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IZCraters"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 0,
+						"GridY": 1,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 0,
+						"GridY": 3,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 1,
+						"GridY": 0,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 1,
+						"GridY": 4,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 2,
+						"GridY": 0,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 2,
+						"GridY": 2,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 2,
+						"GridY": 3,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 2,
+						"GridY": 4,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 3,
+						"GridY": 0,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 3,
+						"GridY": 1,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 3,
+						"GridY": 2,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 3,
+						"GridY": 4,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 4,
+						"GridY": 1,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 4,
+						"GridY": 3,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 4,
+						"GridY": 4,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 6,
+						"GridY": 0,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 6,
+						"GridY": 2,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 6,
+						"GridY": 4,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 7,
+						"GridY": 0,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 7,
+						"GridY": 4,
+						"TypeName": "crater_iz_normal"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IZZombieSpawner"
+			],
+			"objclass": "InitialZombieProperties",
+			"objdata": {
+				"InitialZombiePlacements": [
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 6,
+						"GridY": 0,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 6,
+						"GridY": 2,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 6,
+						"GridY": 4,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 7,
+						"GridY": 0,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 7,
+						"GridY": 4,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 8,
+						"GridY": 0,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 8,
+						"GridY": 1,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 8,
+						"GridY": 2,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 8,
+						"GridY": 3,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 8,
+						"GridY": 4,
+						"TypeName": "iz_spawner"
+					},
+					{
+						"GridX": 8,
+						"GridY": 8,
+						"TypeName": "iz_wincon_zom"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "izp_basic"
+					},
+					{
+						"PlantType": "izp_cone"
+					},
+					{
+						"PlantType": "izp_bucket"
+					},
+					{
+						"PlantType": "izp_explorer"
+					},
+					{
+						"PlantType": "izp_seagull"
+					},
+					{
+						"PlantType": "izp_prospector"
+					},
+					{
+						"PlantType": "izp_shield"
+					},
+					{
+						"PlantType": "izp_gargantuar"
+					}
+				],
+				"SelectionMethod": "preset"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"ZombieCountdownFirstWaveSecs": 0.0,
+				"ZombieCountdownFirstWaveConveyorSecs": 0.0,
+				"ZombieCountdownHugeWaveDelay": 0.0,
+				"SuppressFlagZombie": true,
+				"Waves": [
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(Yeti@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk1@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(mel1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk1@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(Yeti@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(Yeti@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(Yeti@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mul1@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mel1@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk2@CurrentLevel)","RTID(atk2@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(Yeti@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(ice1@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk5@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sta2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(Yeti@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta1@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(mel3@CurrentLevel)","RTID(Yeti@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk3@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(sta3@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(mel2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(wal2@CurrentLevel)","RTID(mul2@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(Yeti@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"],
+["RTID(atk4@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(atk5@CurrentLevel)","RTID(wal3@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(tor1@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun2@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(sun1@CurrentLevel)","RTID(WaveDelay@CurrentLevel)"]
+				]
+			}
+		},
+        {"aliases": ["atk1"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_atk1_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["atk2"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_atk2_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["atk3"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_atk3_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["atk4"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_atk4_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["atk5"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_atk5_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["mul1"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_mul1_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["mul2"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_mul2_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["mel1"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_mel1_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["mel2"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_mel2_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["mel3"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_mel3_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["sta1"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_sta1_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["sta2"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_sta2_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["sta3"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_sta3_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["tor1"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_tor1_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["ice1"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_ice1_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["wal1"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_wal1_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["wal2"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_wal2_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["wal3"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_wal3_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["sun1"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_sun1_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["sun2"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_sun2_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },{"aliases": ["sun3"],"objclass": "SpawnGravestonesWaveActionProps","objdata": {
+                "GravestonePool": [{"Count":1,"Type":"RTID(iz_sprout_sun3_spawner@GridItemTypes)"}],
+				"DisplacePlants": false,"RandomPlacement": true,"SpawnPositionsPool": [
+{"mX":0,"mY":0},{"mX":1,"mY":0},{"mX":2,"mY":0},{"mX":3,"mY":0},{"mX":4,"mY":0},{"mX":0,"mY":1},{"mX":1,"mY":1},{"mX":2,"mY":1},{"mX":3,"mY":1},{"mX":4,"mY":1},{"mX":0,"mY":2},{"mX":1,"mY":2},{"mX":2,"mY":2},{"mX":3,"mY":2},{"mX":4,"mY":2},{"mX":0,"mY":3},{"mX":1,"mY":3},{"mX":2,"mY":3},{"mX":3,"mY":3},{"mX":4,"mY":3},{"mX":0,"mY":4},{"mX":1,"mY":4},{"mX":2,"mY":4},{"mX":3,"mY":4},{"mX":4,"mY":4}],"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT","SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"}
+        },
+		{
+			"aliases": [
+				"ZombieIZWinCon"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 99999999,
+					"y": 99999999
+				},
+				"AttackRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 99999999,
+					"mY": 99999999
+				},
+				"ArmDropFraction": -1,
+				"SkipHeadDropState": true,
+				"CanSpawnPlantFood": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanBeFlickedOff": false,
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "stalled"
+					},
+					{
+						"Condition": "stackableslow"
+					},
+					{
+						"Condition": "sapped"
+					},
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "butter"
+					},
+					{
+						"Condition": "shrinking"
+					},
+					{
+						"Condition": "shrunken"
+					},
+					{
+						"Condition": "poisoned"
+					},
+					{
+						"Condition": "decaypoison"
+					},
+					{
+						"Condition": "contagiouspoison"
+					}
+				],
+				"Cost": 150,
+				"EatDPS": 99999999,
+				"GroundTrackName": "none",
+				"HitRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 0,
+					"mY": 200
+				},
+				"FireDamageMultiplier": 0.0,
+				"Hitpoints": 10000000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"ZombieArmorProps": [
+					"RTID(InvincibleArmor@ArmorTypes)"
+				],
+				"SoundOnDeath": "",
+				"SoundOnWalk": "",
+				"MaxTideLoweredPercent": 0,
+				"IgnoreWaterLine": true,
+				"Speed": 2.0,
+				"SpeedVariance": 0
+			}
+		},
+		{"aliases": ["Yeti"],"objclass": "SpawnZombiesJitteredWaveActionProps","objdata": {"Zombies": [{"Type": "RTID(treasureyeti@ZombieTypes)"}]}},
+		{
+			"aliases": [
+				"WaveDelay"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(crater@GridItemTypes)"
+				],
+				"WaveStartMessage": "",
+				"Zombies": [
+					{
+						"Type": "RTID(wave_delayer@ZombieTypes)"
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

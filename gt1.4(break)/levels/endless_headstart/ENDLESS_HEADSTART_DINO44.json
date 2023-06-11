@@ -1,0 +1,125 @@
+{
+	"#comment": "Empty heart‘",
+	false: "Dino Danger Room",
+	"objects": [ {
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Endless Zone!",
+				"ForceNextLevel": "dino_dangerroom",
+				"StartingSun": 600,
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"SuppressAwardScreen": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [ "RTID(DangerRoomIntro@CurrentLevel)", "RTID(DangerRoomModule@CurrentLevel)", "RTID(DinoMowers@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(NewWaves@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ChallengeModule@CurrentLevel)" ],
+				"Name": "Starting Sun - Level {LEVEL_NUMBER}",
+				"StageModule": "RTID(DinoStage@LevelModules)"
+			}
+		}, {
+			"aliases": [ "ChallengeModule" ],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"ChallengesAlwaysAvailable": true
+			}
+		}, {
+			"aliases": [ "BeatTheLevel" ],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive with 600 starting sun",
+				"DescriptiveName": ""
+			}
+		}, {
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [ "NewWaves" ],
+			"objdata": {}
+		}, {
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [ "DangerRoomModule" ],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(SunHeadStartDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [ "RTID(DinoDangerRoomWaveGenerator@CurrentLevel)", "RTID(DinosaurDesigner@CurrentLevel)" ]
+			}
+		}, {
+			"aliases": [ "DangerRoomIntro" ],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {}
+		}, {
+			"aliases": [ "SeedBank" ],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [],
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		}, {
+			"aliases": [ "DinosaurDesigner" ],
+			"objclass": "DangerRoomDinoDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 500
+				},
+				"DinoTypesMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"DinoTypesMax": {
+					"Min": 1,
+					"Max": 1
+				},
+				"FirstDinoWavesMin": {
+					"Min": 5,
+					"Max": 5
+				},
+				"FirstDinoWavesMax": {
+					"Min": 2,
+					"Max": 2
+				},
+				"NextDinoWavesMin": {
+					"Min": 3,
+					"Max": 3
+				},
+				"NextDinoWavesMax": {
+					"Min": 1,
+					"Max": 2
+				},
+				"DinoCountInWaveMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"DinoCountInWaveMax": {
+					"Min": 2,
+					"Max": 3
+				},
+				"DinoTypePool": [ {
+						"Value": "raptor",
+						"Weight": 0.0
+					}, {
+						"Value": "stego",
+						"Weight": 0.0
+					}, {
+						"Value": "ptero",
+						"Weight": 0.0
+					}, {
+						"Value": "tyranno",
+						"Weight": 1.0
+					}, {
+						"Value": "ankylo",
+						"Weight": 0.0
+					} ]
+			}
+		}, {
+			"aliases": [ "DinoDangerRoomWaveGenerator" ],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 50,
+				"BasePointIncrementPerWave": 5,
+				"BasePointIncrementPerLevel": 1,
+				"ZombiePool": [ "RTID(dino_armor1@ZombieTypes)", "RTID(dino_armor2@ZombieTypes)", "RTID(dino@ZombieTypes)", "RTID(dino_armor3@ZombieTypes)", "RTID(dino_bully@ZombieTypes)", "RTID(dino_gargantuar@ZombieTypes)", "RTID(holohead@ZombieTypes)", "RTID(dino_armor4@ZombieTypes)", "RTID(dino_bully_veteran@ZombieTypes)", "RTID(dino_imp@ZombieTypes)", "RTID(iceage_hunter@ZombieTypes)", "RTID(iceage_troglobite@ZombieTypes)", "RTID(iceage_weaselhoarder@ZombieTypes)", "RTID(modern_football@ZombieTypes)", "RTID(modern_balloon@ZombieTypes)", "RTID(eighties_boombox@ZombieTypes)" ]
+			}
+		} ],
+	"version": 1
+}

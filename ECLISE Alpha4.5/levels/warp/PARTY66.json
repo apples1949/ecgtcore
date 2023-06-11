@@ -1,0 +1,2753 @@
+{
+	"#comment": "took me too long updating this",
+	"#zombies": "cowboy@, cowboy_armor1@, cowboy_armor2@, cowboy_flag@, west_bull@, cannon@, piano@, piano2@, cannonfake@, cowboy_gargantuar@, wave_delayer@, cowboy, cowboy_armor1, cowboy_armor2, cowboy_flag, west_bull, cannon, piano, cowboy_gargantuar",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 50,
+				"Description": ":warpparty:",
+				"FirstRewardParam": "moneybag",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Tombstone_Dark_Special",
+					"Tombstone_Dark_Effects"
+				],
+				"Modules": [
+					"RTID(TechnicalZombieOverride@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(Rails@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(LootOverride@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "WP-66: Wildest Day - MCtheZombie",
+				"StageModule": "RTID(WestStage@LevelModules)",
+				"MusicType": "MiniGame_A"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"PlantExcludeList": [
+					"powerlily",
+					"caulipower"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"LootOverride"
+			],
+			"objclass": "LootOverrideModuleProperties",
+			"objdata": {
+				"Overrides": [
+					{
+						"ZombieType": "RTID(cannonfake@CurrentLevel)",
+						"LootOverride": ""
+					},
+					{
+						"ZombieType": "RTID(wave_delayer@CurrentLevel)",
+						"LootOverride": ""
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 8,
+						"GridY": 10,
+						"TypeName": "gravestone_tutorial"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Rails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy",
+				"Railcarts": [
+					{
+						"Column": 5,
+						"Row": 2
+					},
+					{
+						"Column": 6,
+						"Row": 3
+					},
+					{
+						"Column": 8,
+						"Row": 3
+					},
+					{
+						"Column": 7,
+						"Row": 4
+					}
+				],
+				"Rails": [
+					{
+						"Column": 8,
+						"RowEnd": 0,
+						"RowStart": 0
+					},
+					{
+						"Column": 5,
+						"RowEnd": 1,
+						"RowStart": 1
+					},
+					{
+						"Column": 6,
+						"RowEnd": 1,
+						"RowStart": 1
+					},
+					{
+						"Column": 8,
+						"RowEnd": 1,
+						"RowStart": 1
+					},
+					{
+						"Column": 5,
+						"RowEnd": 2,
+						"RowStart": 2
+					},
+					{
+						"Column": 6,
+						"RowEnd": 2,
+						"RowStart": 2
+					},
+					{
+						"Column": 8,
+						"RowEnd": 2,
+						"RowStart": 2
+					},
+					{
+						"Column": 5,
+						"RowEnd": 3,
+						"RowStart": 3
+					},
+					{
+						"Column": 6,
+						"RowEnd": 3,
+						"RowStart": 3
+					},
+					{
+						"Column": 7,
+						"RowEnd": 3,
+						"RowStart": 3
+					},
+					{
+						"Column": 8,
+						"RowEnd": 3,
+						"RowStart": 3
+					},
+					{
+						"Column": 5,
+						"RowEnd": 4,
+						"RowStart": 4
+					},
+					{
+						"Column": 7,
+						"RowEnd": 4,
+						"RowStart": 4
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"WavesPerFlag": 9,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 0,
+				"PointIncrementPerWave": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(tutorial@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 9,
+				"WaveCount": 18,
+				"SuppressFlagZombie": true,
+				"Waves": [
+					[
+						"RTID(Wave1@.)",
+						"RTID(Necro1@.)"
+					],
+					[
+						"RTID(Wave2@.)",
+						"RTID(Necro2@.)"
+					],
+					[
+						"RTID(Wave3@.)"
+					],
+					[
+						"RTID(Wave4@.)"
+					],
+					[
+						"RTID(Wave5@.)"
+					],
+					[
+						"RTID(Wave6@.)"
+					],
+					[
+						"RTID(Wave7@.)",
+						"RTID(GroundSpawn7_C8@.)",
+						"RTID(Necro7@.)"
+					],
+					[
+						"RTID(Wave8@.)"
+					],
+					[
+						"RTID(Wave9@.)",
+						"RTID(Necro9@.)"
+					],
+					[
+						"RTID(Wave10@.)"
+					],
+					[
+						"RTID(Wave11@.)",
+						"RTID(GroundSpawn11_C6@.)",
+						"RTID(GroundSpawn11_C7@.)",
+						"RTID(Necro11@.)"
+					],
+					[
+						"RTID(Wave12@.)",
+						"RTID(Necro12@.)"
+					],
+					[
+						"RTID(Wave13@.)",
+						"RTID(Necro13@.)"
+					],
+					[
+						"RTID(Wave14@.)",
+						"RTID(Necro14@.)"
+					],
+					[
+						"RTID(Wave15@.)",
+						"RTID(GroundSpawn15_C7@.)",
+						"RTID(GroundSpawn15_C8@.)",
+						"RTID(Necro15@.)"
+					],
+					[
+						"RTID(Wave16@.)",
+						"RTID(Necro16@.)"
+					],
+					[
+						"RTID(Wave17@.)",
+						"RTID(Necro17@.)"
+					],
+					[
+						"RTID(Wave18@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_flag@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(piano@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_gargantuar@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_flag@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cannon@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_flag@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_flag@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cannon@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_flag@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(piano@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_flag@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_flag@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cowboy_gargantuar@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor1@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(west_bull@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cannon@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(cannonfake@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(cowboy_armor2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro1"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": true,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_flag@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(west_bull@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cannon@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": true,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(wave_delayer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn7_C8"
+			],
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 8,
+				"ColumnEnd": 9,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(piano2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro7"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Underpianist!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(wave_delayer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro9"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "FINAL WAVE",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(wave_delayer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn11_C6"
+			],
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 6,
+				"ColumnEnd": 7,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(piano2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn11_C7"
+			],
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 7,
+				"ColumnEnd": 8,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(piano2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro11"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Underpianists!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(wave_delayer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro12"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": true,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(wave_delayer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro13"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": true,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(wave_delayer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro14"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": true,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(wave_delayer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn15_C7"
+			],
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 7,
+				"ColumnEnd": 8,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(piano2@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(piano2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn15_C8"
+			],
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 8,
+				"ColumnEnd": 9,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(piano2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro15"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "Underpianists!",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": false,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(wave_delayer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro16"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": true,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(wave_delayer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Necro17"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": "",
+				"ZombieSpawnWaitTime": 0,
+				"SuppressActionIfNoGridItemsFound": true,
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(wave_delayer@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"cowboy"
+			],
+			"objdata": {
+				"TypeName": "cowboy",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieCowboyDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWestBasicGroup"
+				],
+				"AudioGroups": [
+				],
+				"AnimRigClass": "ZombieAnimRig_CowboyBasic",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_BASIC",
+				"HomeWorld": "cowboy",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieCowboyDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 65,
+					"mWidth": 10,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 200,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 26,
+					"mX": 9,
+					"mY": 10
+				},
+				"Hitpoints": 380,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.37000000000000005,
+				"WavePointCost": 100,
+				"Weight": 1000,
+				"ZombieArmorProps": [
+					"RTID(CowboyHatDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"cowboy_armor1"
+			],
+			"objdata": {
+				"TypeName": "cowboy_armor1",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieCowboyArmor1Default@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWestBasicGroup"
+				],
+				"AudioGroups": [
+				],
+				"AnimRigClass": "ZombieAnimRig_CowboyBasic",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_BASIC",
+				"HomeWorld": "cowboy",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieCowboyArmor1Default"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 65,
+					"mWidth": 10,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 200,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 26,
+					"mX": 9,
+					"mY": 10
+				},
+				"Hitpoints": 380,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.37000000000000005,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieArmorProps": [
+					"RTID(ConeDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"cowboy_armor2"
+			],
+			"objdata": {
+				"TypeName": "cowboy_armor2",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieCowboyArmor2Default@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWestBasicGroup"
+				],
+				"AudioGroups": [
+				],
+				"AnimRigClass": "ZombieAnimRig_CowboyBasic",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_BASIC",
+				"HomeWorld": "cowboy",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieCowboyArmor2Default"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 65,
+					"mWidth": 10,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 200,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 26,
+					"mX": 9,
+					"mY": 10
+				},
+				"Hitpoints": 380,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.37000000000000005,
+				"WavePointCost": 400,
+				"Weight": 4000,
+				"ZombieArmorProps": [
+					"RTID(BucketDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"cowboy_flag"
+			],
+			"objdata": {
+				"TypeName": "cowboy_flag",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieCowboyFlagDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWestBasicGroup"
+				],
+				"AudioGroups": [
+				],
+				"AnimRigClass": "ZombieAnimRig_CowboyFlag",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_FLAG",
+				"HomeWorld": "cowboy",
+				"IsBasicZombie": true,
+				"FlagType": "flag_normal"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieCowboyFlagDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 65,
+					"mWidth": 10,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 300,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 26,
+					"mX": 9,
+					"mY": 10
+				},
+				"Hitpoints": 380,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.535,
+				"WavePointCost": 100,
+				"Weight": 0,
+				"ZombieArmorProps": [
+					"RTID(CowboyHatDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"west_bull"
+			],
+			"objdata": {
+				"TypeName": "west_bull",
+				"ZombieClass": "ZombieBull",
+				"Properties": "RTID(ZombieBullDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWestBullRiderGroup"
+				],
+				"AudioGroups": [
+					"ZombieCowboyBullRiderAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Bull",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_BULLRIDER",
+				"HomeWorld": "cowboy",
+				"HastyOnStart": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieBullDefault"
+			],
+			"objclass": "ZombieBullProps",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 106,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 45,
+					"mWidth": 10,
+					"mX": -37,
+					"mY": 0
+				},
+				"BuckRect": {
+					"mHeight": 80,
+					"mWidth": 40,
+					"mX": -45,
+					"mY": 10
+				},
+				"BullEnterSpeed": 0.16,
+				"BullPawLocation": 0,
+				"BullRunSpeed": 0.16,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 96,
+					"mX": -12,
+					"mY": 10
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "chill",
+						"Percent": 0.5
+					}
+				],
+				"Hitpoints": 650,
+				"HypnoshroomEffectOffset": {
+					"x": 35,
+					"y": 20
+				},
+				"IsValidPinchTarget": false,
+				"MetallicBodyParts": true,
+				"NormalDeathOnExplosion": true,
+				"NormalDeathWhenMowed": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "BullRunSpeed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"ShadowScaling": {
+					"x": 2,
+					"y": 1
+				},
+				"SkipHeadDropState": true,
+				"Speed": 0.16,
+				"StreetCriticalSize": {
+					"x": 3,
+					"y": 1
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"WavePointCost": 600,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed1"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"cannon"
+			],
+			"objdata": {
+				"TypeName": "cannon",
+				"ZombieClass": "ZombiePirateCannon",
+				"Properties": "RTID(ZombiePirateCannonDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombiePirateCannonGroup",
+					"ZombiePirateImpGroup"
+				],
+				"AudioGroups": [
+					"ZombiePirateCannonAudio",
+					"ZombiePirateImpAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_PirateCannon",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PIRATE_CANNON",
+				"HomeWorld": "pirate",
+				"HastyOnStart": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombiePirateCannonDefault"
+			],
+			"objclass": "ZombiePirateCannonProps",
+			"objdata": {
+				"Ammo": 0,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 120,
+					"y": 120
+				},
+				"AttackRect": {
+					"mHeight": 80,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanSpawnPlantFood": false,
+				"ChanceImpFallsInWater": 0.0,
+				"Cost": 150,
+				"EatDPS": 100,
+				"ExplodesWhenMowed": true,
+				"ExplosionImpLaunchHeight": 3000,
+				"ExplosionImpLaunchTime": 1,
+				"ExplosionImpLaunchTimeVariance": 0.7500000000000001,
+				"ExplosionImpSpawnCount": 5,
+				"ExplosionImpTargetColumnMax": 5,
+				"ExplosionImpTargetColumnMin": 2,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 62,
+					"mX": -20,
+					"mY": 10
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					}
+				],
+				"Hitpoints": 10000,
+				"ImpShotHeight": 95,
+				"ImpShotTime": 1,
+				"InitialShotCooldown": 1,
+				"IsValidPinchTarget": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Ammo"
+					},
+					{
+						"Formula": "constant",
+						"Key": "ExplosionImpSpawnCount"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"ShotCooldown": 0,
+				"SkipHeadDropState": true,
+				"Speed": 0.18,
+				"StreetCriticalSize": {
+					"x": 3,
+					"y": 1
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"TimeToWalkInToPosition": 4,
+				"WavePointCost": 700,
+				"Weight": 1500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"piano"
+			],
+			"objdata": {
+				"TypeName": "piano",
+				"ZombieClass": "ZombiePiano",
+				"Properties": "RTID(ZombiePianoDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWestPianoGroup"
+				],
+				"AudioGroups": [
+					"ZombieCowboyPianoAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Piano",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PIANO",
+				"HomeWorld": "cowboy"
+			}
+		},
+		{
+			"aliases": [
+				"ZombiePianoDefault"
+			],
+			"objclass": "ZombiePianoProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 74,
+					"mX": -14,
+					"mY": 10
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 0,
+				"FastMoveSpeed": 1,
+				"GroundTrackName": "none",
+				"HitRect": {
+					"mHeight": 100,
+					"mWidth": 76,
+					"mX": -18,
+					"mY": 10
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "stalled",
+						"Percent": 0.25
+					}
+				],
+				"Hitpoints": 1600,
+				"NormalDeathWhenMowed": true,
+				"PlantsWhichBreakPianoOnCollision": {
+					"List": [
+					],
+					"ListType": "includelist"
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 1,
+				"StreetCriticalSize": {
+					"x": 3,
+					"y": 1
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"WavePointCost": 450,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"piano2"
+			],
+			"objdata": {
+				"TypeName": "piano",
+				"ZombieClass": "ZombiePiano",
+				"Properties": "RTID(ZombiePianoDefault2@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWestPianoGroup"
+				],
+				"AudioGroups": [
+					"ZombieCowboyPianoAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Piano",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PIANO",
+				"HomeWorld": "cowboy"
+			}
+		},
+		{
+			"aliases": [
+				"ZombiePianoDefault2"
+			],
+			"objclass": "ZombiePianoProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 74,
+					"mX": -14,
+					"mY": 10
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 10000,
+				"FastMoveSpeed": 1,
+				"GroundTrackName": "none",
+				"HitRect": {
+					"mHeight": 100,
+					"mWidth": 76,
+					"mX": -18,
+					"mY": 10
+				},
+				"Hitpoints": 10000,
+				"NormalDeathWhenMowed": true,
+				"PlantsWhichBreakPianoOnCollision": {
+					"List": [
+						"iceburg",
+						"potatomine",
+						"spikeweed",
+						"springbean",
+						"lightningreed",
+						"spikerock",
+						"squash",
+						"puffshroom",
+						"lilypad",
+						"stunion",
+						"lavaguava",
+						"stallia",
+						"cactus",
+						"celerystalker",
+						"primalpotatomine",
+						"shrinkingviolet",
+						"moonflower",
+						"nightshade",
+						"escaperoot",
+						"dusklobber",
+						"hotdate",
+						"armamint",
+						"spearmint",
+						"ailmint",
+						"unused_43",
+						"minipeashooter",
+						"unused_45",
+						"unused_46"
+					],
+					"ListType": "excludelist"
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 1,
+				"StreetCriticalSize": {
+					"x": 3,
+					"y": 1
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"WavePointCost": 450,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				],
+				"ConditionImmunities": [
+					{
+						"Condition": "chill",
+						"Percent": 0
+					},
+					{
+						"Condition": "sapped",
+						"Percent": 0
+					},
+					{
+						"Condition": "freeze",
+						"Percent": 0
+					},
+					{
+						"Condition": "stalled",
+						"Percent": 0
+					},
+					{
+						"Condition": "stun",
+						"Percent": 0
+					},
+					{
+						"Condition": "butter",
+						"Percent": 0
+					},
+					{
+						"Condition": "poisoned",
+						"Percent": 0
+					},
+					{
+						"Condition": "contagiouspoison",
+						"Percent": 0
+					},
+					{
+						"Condition": "shrunken",
+						"Percent": 0
+					},
+					{
+						"Condition": "dazeystunned",
+						"Percent": 0
+					},
+					{
+						"Condition": "stackableslow",
+						"Percent": 0
+					},
+					{
+						"Condition": "hypnotized",
+						"Percent": 0
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"cannonfake"
+			],
+			"objdata": {
+				"TypeName": "cannon",
+				"ZombieClass": "ZombiePirateCannon",
+				"Properties": "RTID(ZombiePirateCannonDefaultFake@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombiePirateCannonGroup",
+					"ZombiePirateImpGroup"
+				],
+				"AudioGroups": [
+					"ZombiePirateCannonAudio",
+					"ZombiePirateImpAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_PirateCannon",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PIRATE_CANNON",
+				"HomeWorld": "pirate",
+				"HastyOnStart": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombiePirateCannonDefaultFake"
+			],
+			"objclass": "ZombiePirateCannonProps",
+			"objdata": {
+				"Ammo": 0,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 120,
+					"y": 120
+				},
+				"AttackRect": {
+					"mHeight": 80,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanSpawnPlantFood": false,
+				"ChanceImpFallsInWater": 0.0,
+				"Cost": 150,
+				"EatDPS": 100,
+				"ExplodesWhenMowed": true,
+				"ExplosionImpLaunchHeight": 300,
+				"ExplosionImpLaunchTime": 1,
+				"ExplosionImpLaunchTimeVariance": 0.7500000000000001,
+				"ExplosionImpSpawnCount": 0,
+				"ExplosionImpTargetColumnMax": 5,
+				"ExplosionImpTargetColumnMin": 2,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 62,
+					"mX": -20,
+					"mY": 10
+				},
+				"Hitpoints": 10000,
+				"ImpShotHeight": 95,
+				"ImpShotTime": 1,
+				"InitialShotCooldown": 1,
+				"IsValidPinchTarget": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Ammo"
+					},
+					{
+						"Formula": "constant",
+						"Key": "ExplosionImpSpawnCount"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"ShotCooldown": 0,
+				"SkipHeadDropState": true,
+				"Speed": 0.18,
+				"StreetCriticalSize": {
+					"x": 3,
+					"y": 1
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"TimeToWalkInToPosition": 4,
+				"WavePointCost": 700,
+				"Weight": 1500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"cowboy_gargantuar"
+			],
+			"objdata": {
+				"TypeName": "cowboy_gargantuar",
+				"ZombieClass": "ZombieGargantuar",
+				"Properties": "RTID(ZombieCowboyGargantuar@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieCowboyGargantuarGroup",
+					"ZombieModernSuperfanImpGroup",
+					"ZombieGargantuarEffects"
+				],
+				"AudioGroups": [
+					"ZombieCowboyGargantuarAudio",
+					"ZombieModernSuperfanAudio",
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Gargantuar",
+				"PopAnim": "POPANIM_ZOMBIE_COWBOY_GARGANTUAR",
+				"HomeWorld": "cowboy"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieCowboyGargantuar"
+			],
+			"objclass": "ZombieGargantuarProps",
+			"objdata": {
+				"AlmanacOffset": {
+					"x": 20,
+					"y": 70
+				},
+				"AlmanacScale": 0.8,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ArtScale": 0.7000000000000001,
+				"AttackRect": {
+					"mHeight": 120,
+					"mWidth": 30,
+					"mX": 0,
+					"mY": 10
+				},
+				"CanBeFlickedOff": false,
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 0,
+				"ExplodesWhenMowed": true,
+				"FlickIsLaneRestricted": true,
+				"GroundTrackName": "ground_swatch",
+				"HealthThresholdToImpAmmoLayers": [
+					{
+						"HealthPercentThrowImp": 1,
+						"ProjectileLayersToHide": [
+							"imp_1"
+						]
+					},
+					{
+						"HealthPercentThrowImp": 1,
+						"ProjectileLayersToHide": [
+							"zombie_imp_skull",
+							"zombie_imp_jaw",
+							"Zombie_gargantuar_whiterope",
+							"_zombie_imp_head_top",
+							"zombie_imp_arm_inner_lower",
+							"zombie_imp_arm_inner_upper",
+							"zombie_imp_arm_outer_lower",
+							"zombie_imp_arm_outer_upper_01",
+							"zombie_imp_arm_outer_upper_02",
+							"zombie_imp_arms_outer_upper",
+							"zombie_imp_eye",
+							"zombie_imp_eye_sm",
+							"zombie_imp_hand_inner",
+							"zombie_imp_hand_outer",
+							"zombie_imp_leg_inner_lower",
+							"zombie_imp_leg_inner_upper",
+							"zombie_imp_leg_outer_lower",
+							"zombie_imp_leg_outer_upper",
+							"zombie_imp_pupil",
+							"zombie_imp_torso",
+							"zombie_imp_waist",
+							"zombie_imp_toe_outer",
+							"zombie_imp_toe_inner"
+						]
+					}
+				],
+				"HitRect": {
+					"mHeight": 150,
+					"mWidth": 61,
+					"mX": 32,
+					"mY": 10
+				},
+				"Hitpoints": 4800,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"ImpApex": 250,
+				"ImpFlightTime": 1.5,
+				"ImpSpawnOffset": {
+					"x": -100,
+					"y": 2,
+					"z": 115
+				},
+				"ImpTargetColumn": 3,
+				"ImpType": "modern_superfanimp",
+				"IsValidPinchTarget": false,
+				"MinPosXThrowImp": 400,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "SmashDamage"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Size": "large",
+				"SkipHeadDropState": true,
+				"SmashDamage": 3000,
+				"SmashDuration": 2,
+				"SoundOnAsh": "Play_Zomb_Global_Gargantuar_Mvmt_Death_Ash",
+				"SoundOnElectrocute": "Play_Zomb_Global_Gargantuar_Mvmt_Shock",
+				"SoundOnIdle": "Play_Zomb_WildWest_Gargantuar_Mvmt_Idle",
+				"Speed": 0.16,
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"ThrowImpDuration": 1,
+				"WavePointCost": 1500,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				],
+				"ConditionImmunities": [
+					{
+						"Condition": "chill",
+						"Percent": 0.15000000000000002
+					},
+					{
+						"Condition": "freeze",
+						"Percent": 0
+					},
+					{
+						"Condition": "stalled",
+						"Percent": 0.5
+					},
+					{
+						"Condition": "stun",
+						"Percent": 0
+					},
+					{
+						"Condition": "butter",
+						"Percent": 0
+					},
+					{
+						"Condition": "poisoned",
+						"Percent": 0.5
+					},
+					{
+						"Condition": "contagiouspoison",
+						"Percent": 0.5
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"wave_delayer"
+			],
+			"objdata": {
+				"TypeName": "miniboss",
+				"ZombieClass": "ZombieGargantuar",
+				"Properties": "RTID(ZombieCowboyDelayer@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieCowboyGargantuarGroup",
+					"ZombieWestBullRiderGroup",
+					"ZombieGargantuarEffects",
+					"ZombieTutorialGroup"
+				],
+				"AudioGroups": [
+				],
+				"AnimRigClass": "ZombieAnimRig_Tutorial",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL",
+				"HomeWorld": "modern"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieCowboyDelayer"
+			],
+			"objclass": "ZombieGargantuarProps",
+			"objdata": {
+				"AlmanacOffset": {
+					"x": 20,
+					"y": 70
+				},
+				"AlmanacScale": 0.8,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ArtScale": 1,
+				"AttackRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 80000,
+					"mY": 80000
+				},
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanSurrender": true,
+				"CanTriggerZombieWin": false,
+				"CanBeFlickedOff": false,
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 9999,
+				"ExplodesWhenMowed": true,
+				"FlickIsLaneRestricted": true,
+				"GroundTrackName": "ground_swatch",
+				"HealthThresholdToImpAmmoLayers": [
+				],
+				"HitRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 80000,
+					"mY": 80000
+				},
+				"Hitpoints": 3600000,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"ImpApex": 9999,
+				"ImpFlightTime": 99999,
+				"ImpSpawnOffset": {
+					"x": -100,
+					"y": 2,
+					"z": 115
+				},
+				"ImpTargetColumn": 2,
+				"ImpType": "west_bullrider",
+				"IsValidPinchTarget": false,
+				"MinPosXThrowImp": 9999,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "SmashDamage"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Size": "large",
+				"SkipHeadDropState": true,
+				"SmashDamage": 99999,
+				"SmashDuration": 2,
+				"SoundOnAsh": "Play_Zomb_Global_Gargantuar_Mvmt_Death_Ash",
+				"SoundOnElectrocute": "Play_Zomb_Global_Gargantuar_Mvmt_Shock",
+				"SoundOnIdle": "Play_Zomb_WildWest_Gargantuar_Mvmt_Idle",
+				"Speed": 0.7500000000000001,
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"ThrowImpDuration": 99999,
+				"WavePointCost": 1500,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				],
+				"ConditionImmunities": [
+					{
+						"Condition": "chill",
+						"Percent": 0
+					},
+					{
+						"Condition": "sapped",
+						"Percent": 0
+					},
+					{
+						"Condition": "freeze",
+						"Percent": 0
+					},
+					{
+						"Condition": "stalled",
+						"Percent": 0
+					},
+					{
+						"Condition": "stun",
+						"Percent": 0
+					},
+					{
+						"Condition": "butter",
+						"Percent": 0
+					},
+					{
+						"Condition": "poisoned",
+						"Percent": 0
+					},
+					{
+						"Condition": "contagiouspoison",
+						"Percent": 0
+					},
+					{
+						"Condition": "shrunken",
+						"Percent": 0
+					},
+					{
+						"Condition": "dazeystunned",
+						"Percent": 0
+					},
+					{
+						"Condition": "stackableslow",
+						"Percent": 0
+					}
+				]
+			}
+		},
+		{
+		}
+	],
+	"version": 1
+}

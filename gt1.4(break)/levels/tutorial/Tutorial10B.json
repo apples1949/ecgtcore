@@ -1,0 +1,94 @@
+{
+	"#comment": "Empty heart‘",
+	false: "Tutorial 10B",
+	"objects": [ {
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Final touches for a good headstart",
+				"FirstRewardParam": "akee",
+				"FirstRewardType": "unlock_plant",
+				"FirstOutroNarrative": "TUTORIAL10_OUTRO",
+				"ReplayOutroNarrative": "TUTORIAL10_OUTRO",
+				"ForceWarpTunnel": true,
+				"ForceToWorldMap": true,
+				"LevelNumber": 10,
+				"GameFeaturesToUnlock": [ "feature_worldmap", "feature_plantfood", "feature_almanac" ],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [ "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(FrontLawnMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LootOverride@CurrentLevel)", "RTID(GI@CurrentLevel)" ],
+				"Name": "Tutorial 10",
+				"StageModule": "RTID(ModernStage@LevelModules)",
+				"StartingSun": 50,
+				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "PeaEffects", "DelayLoad_Background_Beach_Compressed", "SodRollGroup" ]
+			}
+		}, {
+			"aliases": [ "GI" ],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [ {
+						"GridX": 6,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					}, {
+						"GridX": 7,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					}, {
+						"GridX": 7,
+						"GridY": 2,
+						"TypeName": "gravestone_dark"
+					}, {
+						"GridX": 7,
+						"GridY": 4,
+						"TypeName": "gravestone_dark"
+					} ]
+			}
+		}, {
+			"objclass": "LootOverrideModuleProperties",
+			"aliases": [ "LootOverride" ],
+			"objdata": {
+				"Overrides": [ {
+						"ZombieType": "RTID(tutorial_coin2@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					} ]
+			}
+		}, {
+			"aliases": [ "SeedBank" ],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [],
+				"SelectionMethod": "chooser"
+			}
+		}, {
+			"aliases": [ "Escalation" ],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 6,
+				"StartingPoints": 10,
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+				"WavesPerFlag": 6,
+				"ZombiePool": [ "RTID(tutorial@ZombieTypes)", "RTID(tutorial_armor1@ZombieTypes)", "RTID(tutorial_armor2@ZombieTypes)", "RTID(tutorial_imp@ZombieTypes)", "RTID(tutorial_coin2@ZombieTypes)" ]
+			}
+		}, {
+			"aliases": [ "NewWaves" ],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		}, {
+			"aliases": [ "WaveManagerProps" ],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"IgnoreFlagCarriers": false,
+				"WaveSpendingPointIncrement": 10,
+				"WaveSpendingPoints": 100,
+				"Waves": [ [ "RTID(Wave1@CurrentLevel)" ] ]
+			}
+		}, {
+			"aliases": [ "Wave1" ],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": []
+			}
+		} ],
+	"version": 1
+}

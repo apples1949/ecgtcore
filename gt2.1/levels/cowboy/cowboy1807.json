@@ -1,0 +1,161 @@
+{
+	"#comment": "WW-18 - special prospector no basic garg",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s grind thousand quests",
+				"FirstRewardParam": "moneybag_200",
+				"ReplayRewardParam": "moneybag_100",
+				"StartingSun": 500,
+				"LevelNumber": 18,
+				"ZombieLevel": 4,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(WestMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(NormalLootOverride@LevelModules)",
+					"RTID(CowboyMainLevelSwapModule4@LevelModules)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(CowboyRails@CurrentLevel)"
+				],
+				"Name": "Level 18",
+				"StageModule": "RTID(WestStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"CowboyRails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy",
+				"Railcarts": [
+					{
+						"Column": 2,
+						"Row": 1
+					},
+					{
+						"Column": 2,
+						"Row": 3
+					},
+					{
+						"Column": 4,
+						"Row": 0
+					},
+					{
+						"Column": 4,
+						"Row": 4
+					},
+					{
+						"Column": 6,
+						"Row": 2
+					},
+					{
+						"Column": 8,
+						"Row": 2
+					}
+				],
+				"Rails": [
+					{
+						"Column": 2,
+						"RowStart": 0,
+						"RowEnd": 4
+					},
+					{
+						"Column": 4,
+						"RowStart": 0,
+						"RowEnd": 4
+					},
+					{
+						"Column": 6,
+						"RowStart": 0,
+						"RowEnd": 4
+					},
+					{
+						"Column": 8,
+						"RowStart": 0,
+						"RowEnd": 4
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 4,
+				"WavesPerFlag": 7,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 25,
+				"StartingPoints": 30,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(prospector@ZombieTypes)",
+					"RTID(cowboy_gargantuar@ZombieTypes)",
+					"RTID(west_bull@ZombieTypes)",
+					"RTID(chicken_farmer@ZombieTypes)",
+					"RTID(chicken@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

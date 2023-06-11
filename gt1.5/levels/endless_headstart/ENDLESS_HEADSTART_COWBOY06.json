@@ -1,0 +1,173 @@
+{
+	"#comment": "Empty Heart",
+	"#comment": "Cowboy Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Endless Zone!",
+				"ForceNextLevel": "dino_dangerroom",
+				"StartingSun": 600,
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"SuppressAwardScreen": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(WestMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
+				"Name": "Starting Sun - Level {LEVEL_NUMBER}",
+				"StageModule": "RTID(WestStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive with 600 starting sun",
+				"DescriptiveName": ""
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(SunHeadStartDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(CowboyDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(RailcartDesigner@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"Rails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+				],
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"CowboyDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 50,
+				"BasePointIncrementPerWave": 5,
+				"BasePointIncrementPerLevel": 1,
+				"ZombiePool": [
+					"RTID(cowboy_armor1@ZombieTypes)",
+					"RTID(cowboy_armor2@ZombieTypes)",
+					"RTID(cowboy@ZombieTypes)",
+					"RTID(cowboy_armor4@ZombieTypes)",
+					"RTID(cowboy_gargantuar@ZombieTypes)",
+					"RTID(west_bullrider@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)",
+					"RTID(vegan@ZombieTypes)",
+					"RTID(west_bull@ZombieTypes)",
+					"RTID(chicken_farmer@ZombieTypes)",
+					"RTID(future_jetpack@ZombieTypes)",
+					"RTID(future_jetpack_veteran@ZombieTypes)",
+					"RTID(mech_cone@ZombieTypes)",
+					"RTID(future_protector@ZombieTypes)",
+					"RTID(disco_mech@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"RailcartDesigner"
+			],
+			"objclass": "DangerRoomRailcartDesigner",
+			"objdata": {
+				"BaseRailcartCount": 1,
+				"BaseRailcartCountPerLevel": 0.25,
+				"MaxGeneratedRailcarts": 4,
+				"Layouts": [
+					"11110",
+					"01111",
+					"11111",
+					"11000",
+					"01100",
+					"00110",
+					"00011",
+					"11100",
+					"01110",
+					"00111",
+					"11022",
+					"11000",
+					"01100",
+					"00110",
+					"00011",
+					"11100",
+					"01110",
+					"00111",
+					"00000",
+					"00000",
+					"00000",
+					"00000",
+					"00000",
+					"00000"
+				]
+			}
+		}
+	],
+	"version": 1
+}

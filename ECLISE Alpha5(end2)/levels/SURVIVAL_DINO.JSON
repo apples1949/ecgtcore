@@ -1,0 +1,423 @@
+{
+	"#comment": "Egypt Endless",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "E  C  L  I  S  E   sandbox",
+				"LevelNumber": 1,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(LevelDifficultyScaling@CurrentLevel)",
+					"RTID(CrazyOlaf@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "Survival: Jurassic Marsh",
+				"SuppressAwardScreen": true,
+				"StageModule": "RTID(DinoStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "CrazyOlafTestProperties",
+			"aliases": [
+				"CrazyOlaf"
+			],
+			"objdata": {
+				"ActionTimer": 40,
+				"MaxPlantTypes": 0,
+				"MaxPerType": 0,
+				"PlantBeforeColumn": 0,
+				"PlantRequiredList": [
+					"electricpeashooter"
+				],
+				"Actions": [
+					{
+						"Action": "SpawnCreature",
+						"Weight": 1
+					}
+				],
+				"CreatureList": [
+					{
+						"CreatureTypeName": "dinoraptor",
+						"MaxCountInRow": 1
+					},
+					{
+						"CreatureTypeName": "dinostego",
+						"MaxCountInRow": 1
+					},
+					{
+						"CreatureTypeName": "dinoptero",
+						"MaxCountInRow": 1
+					},
+					{
+						"CreatureTypeName": "dinotyranno",
+						"MaxCountInRow": 1
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantExcludeList": [
+					"goldleaf",
+					"caulipower"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			],
+			"objclass": "LevelDifficultyScalingModuleProperties",
+			"objdata": {
+				"DifficultyRulesType": "SurvivalScalingNew",
+				"ZombieLevelSwaps": [
+					{
+						"Level": 0,
+						"Swaps": [
+							{
+								"From": "RTID(dino_flag@ZombieTypes)",
+								"To": [
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 1,
+						"Swaps": [
+							{
+								"From": "RTID(dino@ZombieTypes)",
+								"To": [
+									"RTID(dino@ZombieTypes)",
+									"RTID(dino@ZombieTypes)",
+									"RTID(dino@ZombieTypes)",
+									"RTID(dino_armor1@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 3,
+						"Swaps": [
+							{
+								"From": "RTID(dino@ZombieTypes)",
+								"To": [
+									"RTID(dino@ZombieTypes)",
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor1@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino_flag@ZombieTypes)",
+								"To": [
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 5,
+						"Swaps": [
+							{
+								"From": "RTID(dino@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor1@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino_armor1@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor2@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 9,
+						"Swaps": [
+							{
+								"From": "RTID(dino_armor1@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor2@ZombieTypes)",
+									"RTID(dino_armor2@ZombieTypes)",
+									"RTID(dino_armor2@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino_bully@ZombieTypes)",
+								"To": [
+									"RTID(dino_bully@ZombieTypes)",
+									"RTID(amber@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 13,
+						"Swaps": [
+							{
+								"From": "RTID(dino_armor1@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor2@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino_armor2@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor2@ZombieTypes)",
+									"RTID(dino_armor2@ZombieTypes)",
+									"RTID(dino_armor2@ZombieTypes)",
+									"RTID(dino_armor3@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino_flag@ZombieTypes)",
+								"To": [
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 16,
+						"Swaps": [
+							{
+								"From": "RTID(dino_armor1@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor2@ZombieTypes)",
+									"RTID(amber@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino_flag@ZombieTypes)",
+								"To": [
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 19,
+						"Swaps": [
+							{
+								"From": "RTID(dino_armor2@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor2@ZombieTypes)",
+									"RTID(dino_armor3@ZombieTypes)",
+									"RTID(dino_armor3@ZombieTypes)",
+									"RTID(dino_armor3@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor2@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 22,
+						"Swaps": [
+							{
+								"From": "RTID(dino_armor2@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor3@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino_bully@ZombieTypes)",
+								"To": [
+									"RTID(amber@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino_flag@ZombieTypes)",
+								"To": [
+									"RTID(dino_flag@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 25,
+						"Swaps": [
+							{
+								"From": "RTID(dino_armor3@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor3@ZombieTypes)",
+									"RTID(dino_armor3@ZombieTypes)",
+									"RTID(dino_armor3@ZombieTypes)",
+									"RTID(dino_armor3@ZombieTypes)",
+									"RTID(dino_gargantuar@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor2@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 29,
+						"Swaps": [
+							{
+								"From": "RTID(dino_armor3@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor3@ZombieTypes)",
+									"RTID(dino_armor3@ZombieTypes)",
+									"RTID(dino_gargantuar@ZombieTypes)",
+									"RTID(dino_gargantuar@ZombieTypes)",
+									"RTID(dino_gargantuar@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 32,
+						"Swaps": [
+							{
+								"From": "RTID(dino_armor3@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor3@ZombieTypes)",
+									"RTID(dino_gargantuar@ZombieTypes)",
+									"RTID(dino_gargantuar@ZombieTypes)",
+									"RTID(dino_gargantuar@ZombieTypes)",
+									"RTID(dino_gargantuar@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor1@ZombieTypes)",
+									"RTID(dino_armor2@ZombieTypes)",
+									"RTID(dino_armor2@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 35,
+						"Swaps": [
+							{
+								"From": "RTID(dino@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor2@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(dino_armor1@ZombieTypes)",
+								"To": [
+									"RTID(dino_armor3@ZombieTypes)",
+									"RTID(amber@ZombieTypes)"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 30,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 80,
+				"StartingPoints": 200,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"WavesPerFlag": 7,
+				"ZombiePool": [
+					"RTID(dino@ZombieTypes)",
+					"RTID(dino_armor1@ZombieTypes)",
+					"RTID(dino_armor2@ZombieTypes)",
+					"RTID(dino_armor3@ZombieTypes)",
+					"RTID(dino_imp@ZombieTypes)",
+					"RTID(dino_gargantuar@ZombieTypes)",
+					"RTID(amber@ZombieTypes)",
+					"RTID(dino_bully@ZombieTypes)",
+					"RTID(modern_superfanimp@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"ZombieCountdownHugeWaveDelay": 10,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered",
+				"Zombies": []
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,613 @@
+{
+	"#comment": "Gem 3H",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Welcome to Diamond Dungeon!",
+				"StartingSun": 250,
+				"LevelNumber": 0,
+				"ZombieLevel": 7,
+				"GridItemLevel": 6,
+				"## FixedPlantLevel": 15,
+				"DisableSaveGame": true,
+				"DisableRestart": true,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(SunDropper@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)",
+					"RTID(PowerTiles@CurrentLevel)",
+					"RTID(LastStand@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)",
+					"RTID(GraveSpawner@CurrentLevel)"
+				],
+				"Name": "Gem Arena",
+				"StageModule": "RTID(JoustStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "SunDropperProperties",
+			"aliases": [
+				"SunDropper"
+			],
+			"objdata": {
+				"InitialSunDropDelay": 2,
+				"SunCountdownBase": 2,
+				"SunCountdownRange": 0.1,
+				"SunCountdownIncreasePerSun": 0.1,
+				"SunCountdownMax": 10
+			}
+		},
+		{
+			"aliases": [
+				"LastStand"
+			],
+			"objclass": "LastStandMinigameProperties",
+			"objdata": {
+				"StartingPlantfood": 2,
+				"StartingSun": 250
+			}
+		},
+		{
+			"aliases": [
+				"GraveSpawner"
+			],
+			"objclass": "ZombiePotionModuleProperties",
+			"objdata": {
+				"InitialPotionCount": 0,
+				"MaxPotionCount": 20,
+				"PotionSpawnTimer": {
+					"Max": 13.5,
+					"Min": 8.5
+				},
+				"PotionTypes": [
+					"zombieportal_1"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombiePortal_1"
+			],
+			"objclass": "GridItemZombiePortalProps",
+			"objdata": {
+				"CanBeMowed": false,
+				"CloseAnimation": "end",
+				"Height": "ground",
+				"Hitpoints": 5,
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 125
+				},
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig",
+				"SpawnAnimation": "spawn",
+				"World": "",
+				"ZombieSpawnMethod": "NonRandomShuffled",
+				"ZombieSpawnPointOffset": -20,
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1,
+						"ZombieTypeName": "lunar_armor1"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"LevelTimer"
+			],
+			"objclass": "StarChallengeLevelTimerProperties",
+			"objdata": {
+				"TimeLimit": 480
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(LevelTimer@CurrentLevel)",
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Zombies have +1 level",
+				"DescriptiveName": ""
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 4,
+				"Plants": [
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"PlantType": "squash"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"PlantType": "primalpotatomine"
+					},
+					{
+						"GridX": 2,
+						"GridY": 2,
+						"PlantType": "explodeonut"
+					},
+					{
+						"GridX": 3,
+						"GridY": 2,
+						"PlantType": "hollyknight"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"PowerTiles"
+			],
+			"objclass": "PowerTileProperties",
+			"objdata": {
+				"LinkedTiles": [
+					{
+						"Group": "gamma",
+						"Location": {
+							"mX": 0,
+							"mY": 0
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "gamma",
+						"Location": {
+							"mX": 0,
+							"mY": 2
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "beta",
+						"Location": {
+							"mX": 1,
+							"mY": 1
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "beta",
+						"Location": {
+							"mX": 1,
+							"mY": 2
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "delta",
+						"Location": {
+							"mX": 2,
+							"mY": 3
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "delta",
+						"Location": {
+							"mX": 2,
+							"mY": 2
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "alpha",
+						"Location": {
+							"mX": 3,
+							"mY": 4
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "alpha",
+						"Location": {
+							"mX": 3,
+							"mY": 2
+						},
+						"PropagationDelay": 1
+					}
+				]
+			}
+		},
+		{
+			"objclass": "LootOverrideModuleProperties",
+			"aliases": [
+				"LootOverride"
+			],
+			"objdata": {
+				"Overrides": [
+					{
+						"ZombieType": "RTID(football_mech@ZombieTypes)",
+						"LootOverride": "Gem"
+					},
+					{
+						"ZombieType": "RTID(west_bull_veteran@ZombieTypes)",
+						"LootOverride": "Gem"
+					},
+					{
+						"ZombieType": "RTID(dark_impfinity@ZombieTypes)",
+						"LootOverride": "Gem"
+					},
+					{
+						"ZombieType": "RTID(lunar_armor1@ZombieTypes)",
+						"LootOverride": "Gem"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"MoldColonies"
+			],
+			"objclass": "MoldColonyChallengeProps",
+			"objdata": {
+				"Locations": "RTID(Mold@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"Mold"
+			],
+			"objclass": "BoardGridMapProps",
+			"objdata": {
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
+			"objclass": "TideProperties",
+			"objdata": {
+				"StartingWaveLocation": 1
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelOfTheDayModuleProperties",
+			"objdata": {
+				"FlagCount": 8,
+				"WavesPerFlag": 5,
+				"PlantfoodToSpawnCount": 10,
+				"StartingPoints": 40,
+				"PointIncrementPerWave": 34,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(dark_imp@ZombieTypes)",
+					"RTID(holohead@ZombieTypes)",
+					"RTID(dark_armor1@ZombieTypes)",
+					"RTID(dark_armor2@ZombieTypes)",
+					"RTID(roman_healer@ZombieTypes)",
+					"RTID(dark_wizard@ZombieTypes)",
+					"RTID(pharaoh@ZombieTypes)",
+					"RTID(dino_armor4@ZombieTypes)",
+					"RTID(roman_shield_triad@ZombieTypes)",
+					"RTID(disco_mech@ZombieTypes)",
+					"RTID(football_mech@ZombieTypes)",
+					"RTID(west_bull_veteran@ZombieTypes)",
+					"RTID(dark_impfinity@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"ZombieCountdownFirstWaveSecs": 5,
+				"ZombieCountdownHugeWaveDelay": 2,
+				"MinNextWaveHealthPercentage": 0.45,
+				"MaxNextWaveHealthPercentage": 0.45,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Cone2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Cone4@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Cone4@CurrentLevel)",
+						"RTID(Cone2@CurrentLevel)",
+						"RTID(Cone1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Cone4@CurrentLevel)",
+						"RTID(Cone4@CurrentLevel)",
+						"RTID(Cone2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Cone4@CurrentLevel)",
+						"RTID(Cone1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Cone4@CurrentLevel)",
+						"RTID(Cone1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Cone4@CurrentLevel)",
+						"RTID(Cone1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Cone4@CurrentLevel)",
+						"RTID(Cone1@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Cone1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(lunar_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Cone2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(lunar_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Cone4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(lunar_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lunar_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

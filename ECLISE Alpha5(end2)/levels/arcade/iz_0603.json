@@ -1,0 +1,812 @@
+{
+	"#comment": "I,Zombie 6-3",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "E  C  L  I  S  E",
+				"LevelNumber": 3,
+				"StartingSun": 100,
+				"AddBonusStartingSun": false,
+				"Loot": "RTID(NoLoot@LevelModules)",
+				"Modules": [
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(IZZombieWinCondition@LevelModules)",
+					"RTID(IZNoShovel@LevelModules)",
+					"RTID(IZResistance@LevelModules)",
+					"RTID(IZInitialTraps@.)",
+					"RTID(IZCraters@.)",
+					"RTID(IZZombieSpawner@.)",
+					"RTID(IPP@.)",
+					"RTID(SeedBank@.)",
+					"RTID(NewWaves@.)",
+					"RTID(LastStand@.)",
+					"RTID(CoolDown@.)",
+					"RTID(ChallengeModule@.)"
+				],
+				"Name": "Z6-3: Peas Court",
+				"StageModule": "RTID(WestNightStage@LevelModules)",
+				"SuppressAccountUpgrades": true,
+				"DisablePlantBoosts": true
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "NOTE: All Spikeweeds are at Tier II. All Torchwoods are at Tier III.",
+				"DescriptiveName": " "
+			}
+		},
+		{
+			"objclass": "PlantCooldownModifierProperties",
+			"aliases": [
+				"CoolDown"
+			],
+			"objdata": {
+				"CooldownMultiplier": 10000000
+			}
+		},
+		{
+			"aliases": [
+				"LastStand"
+			],
+			"objclass": "LastStandMinigameProperties",
+			"objdata": {
+				"StartingPlantfood": 0,
+				"StartingSun": 1600
+			}
+		},
+		{
+			"aliases": [
+				"IZInitialTraps"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 5,
+						"GridY": -1,
+						"TypeName": "iz_sign"
+					},
+					{
+						"GridX": -1,
+						"GridY": 0,
+						"TypeName": "iz_itemspawn"
+					},
+					{
+						"GridX": -1,
+						"GridY": 1,
+						"TypeName": "iz_itemspawn"
+					},
+					{
+						"GridX": -1,
+						"GridY": 2,
+						"TypeName": "iz_itemspawn"
+					},
+					{
+						"GridX": -1,
+						"GridY": 3,
+						"TypeName": "iz_itemspawn"
+					},
+					{
+						"GridX": -1,
+						"GridY": 4,
+						"TypeName": "iz_itemspawn"
+					},
+					{
+						"GridX": -1,
+						"GridY": 0,
+						"TypeName": "iz_wincon"
+					},
+					{
+						"GridX": -1,
+						"GridY": 1,
+						"TypeName": "iz_wincon"
+					},
+					{
+						"GridX": -1,
+						"GridY": 2,
+						"TypeName": "iz_wincon"
+					},
+					{
+						"GridX": -1,
+						"GridY": 3,
+						"TypeName": "iz_wincon"
+					},
+					{
+						"GridX": -1,
+						"GridY": 4,
+						"TypeName": "iz_wincon"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IZCraters"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 0,
+						"GridY": 1,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 0,
+						"GridY": 3,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 1,
+						"GridY": 0,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 1,
+						"GridY": 4,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 2,
+						"GridY": 0,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 2,
+						"GridY": 2,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 2,
+						"GridY": 3,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 2,
+						"GridY": 4,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 3,
+						"GridY": 0,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 3,
+						"GridY": 1,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 3,
+						"GridY": 2,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 3,
+						"GridY": 4,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 4,
+						"GridY": 1,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 4,
+						"GridY": 3,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 4,
+						"GridY": 4,
+						"TypeName": "crater_iz_block"
+					},
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 6,
+						"GridY": 0,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 6,
+						"GridY": 2,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 6,
+						"GridY": 4,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 7,
+						"GridY": 0,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"TypeName": "crater_iz_normal"
+					},
+					{
+						"GridX": 7,
+						"GridY": 4,
+						"TypeName": "crater_iz_normal"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IZZombieSpawner"
+			],
+			"objclass": "InitialZombieProperties",
+			"objdata": {
+				"InitialZombiePlacements": [
+					{
+						"GridX": 8,
+						"GridY": 8,
+						"TypeName": "iz_wincon_zom"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
+			"objclass": "InitialPlantProperties",
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 1,
+						"Level": 0,
+						"TypeName": "wallnut"
+					},
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"Level": 0,
+						"TypeName": "splitpea"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"Level": 0,
+						"TypeName": "peashooter"
+					},
+					{
+						"GridX": 1,
+						"GridY": 0,
+						"Level": 0,
+						"TypeName": "wallnut"
+					},
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"Level": 0,
+						"TypeName": "peashooter"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"Level": 2,
+						"TypeName": "torchwood"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"Level": 1,
+						"TypeName": "spikeweed"
+					},
+					{
+						"GridX": 1,
+						"GridY": 4,
+						"Level": 1,
+						"TypeName": "spikeweed"
+					},
+					{
+						"GridX": 2,
+						"GridY": 0,
+						"Level": 0,
+						"TypeName": "peashooter"
+					},
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"Level": 0,
+						"TypeName": "splitpea"
+					},
+					{
+						"GridX": 2,
+						"GridY": 3,
+						"Level": 0,
+						"TypeName": "peashooter"
+					},
+					{
+						"GridX": 2,
+						"GridY": 4,
+						"Level": 1,
+						"TypeName": "spikeweed"
+					},
+					{
+						"GridX": 3,
+						"GridY": 0,
+						"Level": 0,
+						"TypeName": "chomper"
+					},
+					{
+						"GridX": 3,
+						"GridY": 1,
+						"Level": 0,
+						"TypeName": "peashooter"
+					},
+					{
+						"GridX": 3,
+						"GridY": 2,
+						"Level": 2,
+						"TypeName": "torchwood"
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"Level": 2,
+						"TypeName": "torchwood"
+					},
+					{
+						"GridX": 3,
+						"GridY": 4,
+						"Level": 0,
+						"TypeName": "peashooter"
+					},
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"Level": 2,
+						"TypeName": "torchwood"
+					},
+					{
+						"GridX": 4,
+						"GridY": 1,
+						"Level": 0,
+						"TypeName": "garlic"
+					},
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"Level": 0,
+						"TypeName": "splitpea"
+					},
+					{
+						"GridX": 4,
+						"GridY": 3,
+						"Level": 0,
+						"TypeName": "chomper"
+					},
+					{
+						"GridX": 4,
+						"GridY": 4,
+						"Level": 0,
+						"TypeName": "wallnut"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "izp_basic"
+					},
+					{
+						"PlantType": "izp_cone"
+					},
+					{
+						"PlantType": "izp_bucket"
+					},
+					{
+						"PlantType": "izp_dodo"
+					},
+					{
+						"PlantType": "izp_prospector"
+					}
+				],
+				"SelectionMethod": "preset"
+			}
+		},
+		{
+			"aliases": [
+				"Wave1A"
+			],
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 5,
+				"Zombies": [
+					{
+						"Row": 1,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1B"
+			],
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 6,
+				"Zombies": [
+					{
+						"Row": 1,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1C"
+			],
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"ColumnStart": 6,
+				"ColumnEnd": 7,
+				"Zombies": [
+					{
+						"Row": 1,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1D"
+			],
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"ColumnStart": 7,
+				"ColumnEnd": 8,
+				"Zombies": [
+					{
+						"Row": 1,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1E"
+			],
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"ColumnStart": 8,
+				"ColumnEnd": 9,
+				"Zombies": [
+					{
+						"Row": 1,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(iz_spawner@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"ZombieCountdownFirstWaveSecs": 0.0,
+				"ZombieCountdownFirstWaveConveyorSecs": 0.0,
+				"ZombieCountdownHugeWaveDelay": 0.0,
+				"SuppressFlagZombie": true,
+				"Waves": [
+					[
+						"RTID(Wave1B@CurrentLevel)",
+						"RTID(Wave1C@CurrentLevel)",
+						"RTID(Wave1D@CurrentLevel)",
+						"RTID(Wave1E@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieIZWinCon"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 99999999,
+					"y": 99999999
+				},
+				"AttackRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 99999999,
+					"mY": 99999999
+				},
+				"ArmDropFraction": -1,
+				"SkipHeadDropState": true,
+				"CanSpawnPlantFood": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanBeFlickedOff": false,
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "stalled"
+					},
+					{
+						"Condition": "stackableslow"
+					},
+					{
+						"Condition": "sapped"
+					},
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "butter"
+					},
+					{
+						"Condition": "shrinking"
+					},
+					{
+						"Condition": "shrunken"
+					},
+					{
+						"Condition": "poisoned"
+					},
+					{
+						"Condition": "decaypoison"
+					},
+					{
+						"Condition": "contagiouspoison"
+					}
+				],
+				"Cost": 150,
+				"EatDPS": 99999999,
+				"GroundTrackName": "none",
+				"HitRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 0,
+					"mY": 0
+				},
+				"FireDamageMultiplier": 0.0,
+				"Hitpoints": 5,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"ZombieArmorProps": [
+					"RTID(InvincibleArmor@ArmorTypes)"
+				],
+				"SoundOnDeath": "",
+				"SoundOnWalk": "",
+				"MaxTideLoweredPercent": 0,
+				"IgnoreWaterLine": true,
+				"Speed": 2.0,
+				"SpeedVariance": 0
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,256 @@
+{
+	"#comment": "Cowboy Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Endless Zone!",
+				"ForceNextLevel": "beach_dangerroom",
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"SuppressAwardScreen": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(WestMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(Tide@CurrentLevel)"
+				],
+				"Name": "High Tide - Level {LEVEL_NUMBER}",
+				"StageModule": "RTID(WestStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
+			"objclass": "TideProperties",
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(FloodedLawnDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(CowboyDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(RailcartDesigner@CurrentLevel)",
+					"RTID(BeachTideChanger@CurrentLevel)",
+					"RTID(BeachLilypadPlacer@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"Rails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+				],
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"CowboyDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 12,
+				"BasePointIncrementPerWave": 3,
+				"BasePointIncrementPerLevel": 1,
+				"ZombiePool": [
+					"RTID(cowboy_armor1@ZombieTypes)",
+					"RTID(cowboy_armor2@ZombieTypes)",
+					"RTID(cowboy@ZombieTypes)",
+					"RTID(cowboy_armor4@ZombieTypes)",
+					"RTID(cowboy_gargantuar@ZombieTypes)",
+					"RTID(west_bullrider@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)",
+					"RTID(vegan@ZombieTypes)",
+					"RTID(west_bull@ZombieTypes)",
+					"RTID(chicken_farmer@ZombieTypes)",
+					"RTID(seagull@ZombieTypes)",
+					"RTID(pirate_captain@ZombieTypes)",
+					"RTID(cannon@ZombieTypes)",
+					"RTID(future_jetpack@ZombieTypes)",
+					"RTID(mech_cone@ZombieTypes)",
+					"RTID(future_protector@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"RailcartDesigner"
+			],
+			"objclass": "DangerRoomRailcartDesigner",
+			"objdata": {
+				"BaseRailcartCount": 1,
+				"BaseRailcartCountPerLevel": 0.25,
+				"MaxGeneratedRailcarts": 4,
+				"Layouts": [
+					"11110",
+					"01111",
+					"11111",
+					"11000",
+					"01100",
+					"00110",
+					"00011",
+					"11100",
+					"01110",
+					"00111",
+					"11022",
+					"11000",
+					"01100",
+					"00110",
+					"00011",
+					"11100",
+					"01110",
+					"00111",
+					"00000",
+					"00000",
+					"00000",
+					"00000",
+					"00000",
+					"00000"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"BeachTideChanger"
+			],
+			"objclass": "DangerRoomBeachTideChanger",
+			"objdata": {
+				"//": "If the value is lower than LowerLimit, use LowerLimit instead. If the value is bigger than UpperLimit, use UpperLimit instead.",
+				"StartingTideLevel": {
+					"LowerBound": {
+						"SlopeCoefficient": 0,
+						"YIntercept": 9,
+						"LowerLimit": {
+							"Value": 9
+						},
+						"UpperLimit": {
+							"Value": 9
+						}
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0,
+						"YIntercept": 9,
+						"LowerLimit": {
+							"Value": 9
+						},
+						"UpperLimit": {
+							"Value": 9
+						}
+					}
+				},
+				"FinalTideLevel": {
+					"LowerBound": {
+						"YIntercept": 9
+					},
+					"UpperBound": {
+						"YIntercept": 9
+					}
+				},
+				"MinimumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 9
+					},
+					"UpperBound": {
+						"YIntercept": 9
+					}
+				},
+				"MaximumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 9
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0,
+						"YIntercept": 9,
+						"LowerLimit": {
+							"Value": 9
+						},
+						"UpperLimit": {
+							"Value": 9
+						}
+					}
+				}
+			}
+		},
+		{
+			"aliases": [
+				"BeachLilypadPlacer"
+			],
+			"objclass": "DangerRoomBeachLilypadPlacer",
+			"objdata": {
+				"NumberOfLilypads": {
+					"LowerBound": {
+						"YIntercept": 12
+					},
+					"UpperBound": {
+						"YIntercept": 15
+					}
+				},
+				"MinimumLilypadColumn": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"YIntercept": 0
+					}
+				},
+				"MaximumLilypadColumn": {
+					"LowerBound": {
+						"YIntercept": 4
+					},
+					"UpperBound": {
+						"YIntercept": 4
+					}
+				}
+			}
+		}
+	],
+	"version": 1
+}

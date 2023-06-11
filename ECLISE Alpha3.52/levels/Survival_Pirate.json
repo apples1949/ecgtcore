@@ -1,0 +1,482 @@
+{
+	"#comment": "Pirate Endless",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "E  C  L  I  S  E   sandbox",
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"DisablePlantBoosts": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(LevelDifficultyScaling@CurrentLevel)",
+					"RTID(PiratePlanks@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "Survival: Pirate Seas",
+				"SuppressAwardScreen": true,
+				"StageModule": "RTID(PirateStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"PiratePlanks"
+			],
+			"objclass": "PiratePlankProperties",
+			"objdata": {
+				"PlankRows": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantExcludeList": [
+					"goldleaf",
+					"caulipower"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			],
+			"objclass": "LevelDifficultyScalingModuleProperties",
+			"objdata": {
+				"#comment": "Minus one level from calculation",
+				"DifficultyRulesType": "SurvivalScalingNew",
+				"ZombieLevelSwaps": [
+					{
+						"Level": 0,
+						"Swaps": [
+							{
+								"From": "RTID(pirate_flag@ZombieTypes)",
+								"To": [
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(treasureyeti@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate_captain@ZombieTypes)",
+								"To": [
+									"RTID(pirate_captain@ZombieTypes)",
+									"RTID(swashbuckler_endless@ZombieTypes)",
+									"RTID(swashbuckler_endless@ZombieTypes)",
+									"RTID(swashbuckler_endless@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 1,
+						"Swaps": [
+							{
+								"From": "RTID(pirate@ZombieTypes)",
+								"To": [
+									"RTID(pirate@ZombieTypes)",
+									"RTID(pirate@ZombieTypes)",
+									"RTID(pirate@ZombieTypes)",
+									"RTID(pirate@ZombieTypes)",
+									"RTID(barrel_basic@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 3,
+						"Swaps": [
+							{
+								"From": "RTID(pirate@ZombieTypes)",
+								"To": [
+									"RTID(pirate@ZombieTypes)",
+									"RTID(pirate@ZombieTypes)",
+									"RTID(pirate@ZombieTypes)",
+									"RTID(barrel_basic@ZombieTypes)",
+									"RTID(barrel_basic@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate_captain@ZombieTypes)",
+								"To": [
+									"RTID(pirate_captain@ZombieTypes)",
+									"RTID(pirate_captain@ZombieTypes)",
+									"RTID(swashbuckler_endless@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(seagull_endless@ZombieTypes)",
+								"To": [
+									"RTID(seagull_endless@ZombieTypes)",
+									"RTID(seagull_endless@ZombieTypes)",
+									"RTID(seagull_endless@ZombieTypes)",
+									"RTID(pelican_endless@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate_flag@ZombieTypes)",
+								"To": [
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(treasureyeti@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 5,
+						"Swaps": [
+							{
+								"From": "RTID(pirate_armor1@ZombieTypes)",
+								"To": [
+									"RTID(pirate_armor1@ZombieTypes)",
+									"RTID(pirate_armor1@ZombieTypes)",
+									"RTID(pirate_armor1@ZombieTypes)",
+									"RTID(pirate_armor1@ZombieTypes)",
+									"RTID(barrel_cone@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate@ZombieTypes)",
+								"To": [
+									"RTID(pirate_armor1@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(seagull_endless@ZombieTypes)",
+								"To": [
+									"RTID(seagull_endless@ZombieTypes)",
+									"RTID(seagull_endless@ZombieTypes)",
+									"RTID(pelican_endless@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 9,
+						"Swaps": [
+							{
+								"From": "RTID(pirate_armor1@ZombieTypes)",
+								"To": [
+									"RTID(pirate_armor1@ZombieTypes)",
+									"RTID(pirate_armor1@ZombieTypes)",
+									"RTID(barrel_cone@ZombieTypes)",
+									"RTID(barrel_cone@ZombieTypes)",
+									"RTID(barrel_cone@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate_captain@ZombieTypes)",
+								"To": [
+									"RTID(pirate_captain@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(seagull_endless@ZombieTypes)",
+								"To": [
+									"RTID(seagull_endless@ZombieTypes)",
+									"RTID(pelican_endless@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate_flag@ZombieTypes)",
+								"To": [
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(treasureyeti@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 13,
+						"Swaps": [
+							{
+								"From": "RTID(pirate_armor2@ZombieTypes)",
+								"To": [
+									"RTID(pirate_armor2@ZombieTypes)",
+									"RTID(pirate_armor2@ZombieTypes)",
+									"RTID(barrel_bucket@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(swashbuckler_endless@ZombieTypes)",
+								"To": [
+									"RTID(swashbuckler_endless@ZombieTypes)",
+									"RTID(swashbuckler_endless@ZombieTypes)",
+									"RTID(swashbuckler_endless@ZombieTypes)",
+									"RTID(cannon@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate_flag@ZombieTypes)",
+								"To": [
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(treasureyeti@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 16,
+						"Swaps": [
+							{
+								"From": "RTID(pirate_armor2@ZombieTypes)",
+								"To": [
+									"RTID(pirate_armor2@ZombieTypes)",
+									"RTID(barrel_bucket@ZombieTypes)",
+									"RTID(barrel_bucket@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate_armor1@ZombieTypes)",
+								"To": [
+									"RTID(barrel_cone@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate_flag@ZombieTypes)",
+								"To": [
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(treasureyeti@ZombieTypes)",
+									"RTID(treasureyeti@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 19,
+						"Swaps": [
+							{
+								"From": "RTID(seagull_endless@ZombieTypes)",
+								"To": [
+									"RTID(pelican_endless@ZombieTypes)",
+									"RTID(pelican_endless@ZombieTypes)",
+									"RTID(pelican_endless@ZombieTypes)",
+									"RTID(cannon@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 21,
+						"Swaps": [
+							{
+								"From": "RTID(pirate_armor2@ZombieTypes)",
+								"To": [
+									"RTID(barrel_bucket@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate@ZombieTypes)",
+								"To": [
+									"RTID(barrel_basic@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate_flag@ZombieTypes)",
+								"To": [
+									"RTID(pirate_flag@ZombieTypes)",
+									"RTID(treasureyeti@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 25,
+						"Swaps": [
+							{
+								"From": "RTID(pirate_armor4@ZombieTypes)",
+								"To": [
+									"RTID(pirate_armor4@ZombieTypes)",
+									"RTID(pirate_armor4@ZombieTypes)",
+									"RTID(pirate_armor4@ZombieTypes)",
+									"RTID(pirate_armor4@ZombieTypes)",
+									"RTID(pirate_gargantuar@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(swashbuckler_endless@ZombieTypes)",
+								"To": [
+									"RTID(swashbuckler_endless@ZombieTypes)",
+									"RTID(cannon@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 28,
+						"Swaps": [
+							{
+								"From": "RTID(pirate@ZombieTypes)",
+								"To": [
+									"RTID(barrel_cone@ZombieTypes)",
+									"RTID(barrel_basic@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 31,
+						"Swaps": [
+							{
+								"From": "RTID(pirate_armor4@ZombieTypes)",
+								"To": [
+									"RTID(pirate_armor4@ZombieTypes)",
+									"RTID(pirate_armor4@ZombieTypes)",
+									"RTID(pirate_gargantuar@ZombieTypes)",
+									"RTID(pirate_gargantuar@ZombieTypes)",
+									"RTID(pirate_gargantuar@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate_armor1@ZombieTypes)",
+								"To": [
+									"RTID(barrel_cone@ZombieTypes)",
+									"RTID(barrel_bucket@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 34,
+						"Swaps": [
+							{
+								"From": "RTID(pirate_armor4@ZombieTypes)",
+								"To": [
+									"RTID(pirate_armor4@ZombieTypes)",
+									"RTID(pirate_gargantuar@ZombieTypes)",
+									"RTID(pirate_gargantuar@ZombieTypes)",
+									"RTID(pirate_gargantuar@ZombieTypes)",
+									"RTID(pirate_gargantuar@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate@ZombieTypes)",
+								"To": [
+									"RTID(barrel_cone@ZombieTypes)",
+									"RTID(barrel_cone@ZombieTypes)",
+									"RTID(barrel_basic@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 39,
+						"Swaps": [
+							{
+								"From": "RTID(pirate_armor4@ZombieTypes)",
+								"To": [
+									"RTID(pirate_gargantuar@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate@ZombieTypes)",
+								"To": [
+									"RTID(barrel_cone@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(pirate_armor1@ZombieTypes)",
+								"To": [
+									"RTID(pirate_armor4@ZombieTypes)",
+									"RTID(barrelroller@ZombieTypes)",
+									"RTID(barrel_bucket@ZombieTypes)",
+									"RTID(barrel_bucket@ZombieTypes)"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 30,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 80,
+				"StartingPoints": 200,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"WavesPerFlag": 7,
+				"ZombiePool": [
+					"RTID(pirate@ZombieTypes)",
+					"RTID(pirate_armor1@ZombieTypes)",
+					"RTID(pirate_armor2@ZombieTypes)",
+					"RTID(pirate_armor4@ZombieTypes)",
+					"RTID(pirate_gargantuar@ZombieTypes)",
+					"RTID(swashbuckler_endless@ZombieTypes)",
+					"RTID(seagull_endless@ZombieTypes)",
+					"RTID(pirate_captain@ZombieTypes)",
+					"RTID(barrelroller@ZombieTypes)",
+					"RTID(cannon@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"ZombieCountdownHugeWaveDelay": 10,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered",
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

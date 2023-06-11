@@ -1,0 +1,178 @@
+{
+	"#comment": "FF-9 - 3 special 5 PF",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s grind thousand quests",
+				"FirstRewardParam": "moneybag_100",
+				"ReplayRewardParam": "moneybag_30",
+				"StartingSun": 75,
+				"LevelNumber": 9,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(FutureMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(PowerTiles@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(NormalLootOverride@LevelModules)",
+					"RTID(FutureMainLevelSwapModule2@LevelModules)"
+				],
+				"Name": "Level 9",
+				"StageModule": "RTID(FutureStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"PowerTiles"
+			],
+			"objclass": "PowerTileProperties",
+			"objdata": {
+				"LinkedTiles": [
+					{
+						"Group": "alpha",
+						"Location": {
+							"mX": 1,
+							"mY": 1
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "alpha",
+						"Location": {
+							"mX": 1,
+							"mY": 3
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "beta",
+						"Location": {
+							"mX": 3,
+							"mY": 0
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "beta",
+						"Location": {
+							"mX": 3,
+							"mY": 2
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "delta",
+						"Location": {
+							"mX": 5,
+							"mY": 2
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "delta",
+						"Location": {
+							"mX": 5,
+							"mY": 4
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "gamma",
+						"Location": {
+							"mX": 7,
+							"mY": 1
+						},
+						"PropagationDelay": 1
+					},
+					{
+						"Group": "gamma",
+						"Location": {
+							"mX": 7,
+							"mY": 3
+						},
+						"PropagationDelay": 1
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 4,
+				"WavesPerFlag": 7,
+				"PlantfoodToSpawnCount": 4,
+				"StartingPoints": 15,
+				"PointIncrementPerWave": 26,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(disco_mech@ZombieTypes)",
+					"RTID(future@ZombieTypes)",
+					"RTID(future_armor1@ZombieTypes)",
+					"RTID(future_armor2@ZombieTypes)",
+					"RTID(future_jetpack@ZombieTypes)",
+					"RTID(future_protector@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

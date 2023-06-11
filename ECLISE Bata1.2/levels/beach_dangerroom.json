@@ -1,0 +1,424 @@
+{
+	"#comment": "Beach Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]",
+				"ForceNextLevel": "beach_dangerroom",
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(BeachMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "[DANGER_ROOM_BEACH_LEVEL_NAME]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"StageModule": "RTID(BeachStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
+			"objclass": "TideProperties",
+			"objdata": {
+				"StartingWaveLocation": 3.0
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(BeachDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(BeachDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(BeachTideChanger@CurrentLevel)",
+					"RTID(BeachTideChanger2@CurrentLevel)",
+					"RTID(BeachLilypadPlacer@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+				],
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"BeachDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 100,
+				"BasePointIncrementPerWave": 30,
+				"BasePointIncrementPerLevel": 5,
+				"ZombiePool": [
+					"RTID(beach@ZombieTypes)",
+					"RTID(beach_fem@ZombieTypes)",
+					"RTID(beach_armor1@ZombieTypes)",
+					"RTID(beach_armor2@ZombieTypes)",
+					"RTID(beach_fem_armor1@ZombieTypes)",
+					"RTID(beach_fem_armor2@ZombieTypes)",
+					"RTID(beach_snorkel@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_fisherman@ZombieTypes)",
+					"RTID(beach_gargantuar@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"BeachTideChanger"
+			],
+			"objclass": "DangerRoomBeachTideChanger",
+			"objdata": {
+				"//": "Low Tide Zombie Design",
+				"StartingTideLevel": {
+					"LowerBound": {
+						"SlopeCoefficient": -0.5,
+						"YIntercept": 7,
+						"LowerLimit": {
+							"Value": "0"
+						},
+						"UpperLimit": {
+							"Value": "4"
+						}
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 1,
+						"YIntercept": -11,
+						"LowerLimit": {
+							"Value": "3"
+						},
+						"UpperLimit": {
+							"Value": "6"
+						}
+					}
+				},
+				"FinalTideLevel": {
+					"LowerBound": {
+						"YIntercept": 3
+					},
+					"UpperBound": {
+						"YIntercept": 7
+					}
+				},
+				"MinimumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 1
+					},
+					"UpperBound": {
+						"YIntercept": 2
+					}
+				},
+				"MaximumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 3
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0.2,
+						"YIntercept": 4.0,
+						"LowerLimit": {
+							"Value": "4"
+						},
+						"UpperLimit": {
+							"Value": "7"
+						}
+					}
+				},
+				"MinimumTideDelta": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"YIntercept": 1
+					}
+				},
+				"MaximumTideDelta": {
+					"LowerBound": {
+						"YIntercept": 2
+					},
+					"UpperBound": {
+						"//": "Go from 1 to 4 between levels 10 and 40",
+						"SlopeCoefficient": 0.15,
+						"YIntercept": 0,
+						"LowerLimit": {
+							"Value": "1"
+						},
+						"UpperLimit": {
+							"Value": "4"
+						}
+					}
+				},
+				"LowTideEventsPerFlagWave": {
+					"LowerBound": {
+						"SlopeCoefficient": 0.1,
+						"YIntercept": 0,
+						"LowerLimit": {
+							"Value": "0"
+						},
+						"UpperLimit": {
+							"Value": "1"
+						}
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0.1,
+						"YIntercept": 0.5,
+						"LowerLimit": {
+							"Value": "0"
+						},
+						"UpperLimit": {
+							"Value": "4"
+						}
+					}
+				},
+				"LowTideStartLevel": {
+					"LowerBound": {
+						"YIntercept": 3
+					},
+					"UpperBound": {
+						"YIntercept": 7
+					}
+				},
+				"LowTideRecedeAmount": {
+					"LowerBound": {
+						"SlopeCoefficient": 1,
+						"YIntercept": -20,
+						"LowerLimit": {
+							"Value": "0"
+						},
+						"UpperLimit": {
+							"Value": "2"
+						}
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0.2,
+						"YIntercept": 0,
+						"LowerLimit": {
+							"Value": "1"
+						},
+						"UpperLimit": {
+							"Value": "5"
+						}
+					}
+				},
+				"BasicLowTideZombieType": "beach_imp",
+				"BasicLowTideZombiesPerLowTideEvent": {
+					"LowerBound": {
+						"YIntercept": 2
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0.2,
+						"YIntercept": 2.5,
+						"LowerLimit": {
+							"Value": "2"
+						},
+						"UpperLimit": {
+							"Value": "15"
+						}
+					}
+				},
+				"SpecialLowTideZombieTypes": [
+					"beach_armor1",
+					"beach_armor2",
+					"beach_fem_armor1",
+					"beach_fem_armor2"
+				],
+				"SpecialLowTideZombiesPerLowTideEvent": {
+					"LowerBound": {
+						"SlopeCoefficient": 0.1,
+						"YIntercept": -10,
+						"LowerLimit": {
+							"Value": "0"
+						},
+						"UpperLimit": {
+							"Value": "0"
+						}
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0.2,
+						"YIntercept": 0,
+						"LowerLimit": {
+							"Value": "0"
+						},
+						"UpperLimit": {
+							"Value": "8"
+						}
+					}
+				}
+			}
+		},
+		{
+			"aliases": [
+				"BeachTideChanger2"
+			],
+			"objclass": "DangerRoomBeachTideChanger",
+			"objdata": {
+				"LowTideEventsPerFlagWave": {
+					"LowerBound": {
+						"SlopeCoefficient": 0.1,
+						"YIntercept": 0,
+						"LowerLimit": {
+							"Value": "0"
+						},
+						"UpperLimit": {
+							"Value": "0"
+						}
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0.1,
+						"YIntercept": 0.5,
+						"LowerLimit": {
+							"Value": "0"
+						},
+						"UpperLimit": {
+							"Value": "2"
+						}
+					}
+				},
+				"LowTideStartLevel": {
+					"LowerBound": {
+						"YIntercept": 5
+					},
+					"UpperBound": {
+						"YIntercept": 8
+					}
+				},
+				"LowTideRecedeAmount": {
+					"LowerBound": {
+						"SlopeCoefficient": 0,
+						"YIntercept": 0,
+						"LowerLimit": {
+							"Value": "0"
+						},
+						"UpperLimit": {
+							"Value": "0"
+						}
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0.2,
+						"YIntercept": 0,
+						"LowerLimit": {
+							"Value": "1"
+						},
+						"UpperLimit": {
+							"Value": "3"
+						}
+					}
+				},
+				"BasicLowTideZombieType": "beach_surfer",
+				"BasicLowTideZombiesPerLowTideEvent": {
+					"LowerBound": {
+						"YIntercept": 1
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0.2,
+						"YIntercept": 1,
+						"LowerLimit": {
+							"Value": "1"
+						},
+						"UpperLimit": {
+							"Value": "8"
+						}
+					}
+				},
+				"SpecialLowTideZombieTypes": [
+					"beach_octopus"
+				],
+				"SpecialLowTideZombiesPerLowTideEvent": {
+					"LowerBound": {
+						"SlopeCoefficient": 0.1,
+						"YIntercept": -10,
+						"LowerLimit": {
+							"Value": "0"
+						},
+						"UpperLimit": {
+							"Value": "0"
+						}
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0.1,
+						"YIntercept": 0.4,
+						"LowerLimit": {
+							"Value": "0"
+						},
+						"UpperLimit": {
+							"Value": "4"
+						}
+					}
+				}
+			}
+		},
+		{
+			"aliases": [
+				"BeachLilypadPlacer"
+			],
+			"objclass": "DangerRoomBeachLilypadPlacer",
+			"objdata": {
+				"//": "All properties are a function of level",
+				"NumberOfLilypads": {
+					"LowerBound": {
+						"YIntercept": 3
+					},
+					"UpperBound": {
+						"YIntercept": 40
+					}
+				},
+				"MinimumLilypadColumn": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"YIntercept": 0
+					}
+				},
+				"MaximumLilypadColumn": {
+					"LowerBound": {
+						"YIntercept": 9
+					},
+					"UpperBound": {
+						"YIntercept": 9
+					}
+				}
+			}
+		}
+	],
+	"version": 1
+}

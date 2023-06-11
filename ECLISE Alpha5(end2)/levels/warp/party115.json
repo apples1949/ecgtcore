@@ -1,0 +1,1139 @@
+{
+	"#comment": "Funny kb minigame",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 450,
+				"Description": "E  C  L  I  P  S  E",
+				"FirstRewardParam": "moneybag",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Tombstone_Dark_Special",
+					"Tombstone_Dark_Effects",
+					"MarkerTileModule"
+				],
+				"Modules": [
+					"RTID(IceageMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Cooldown@CurrentLevel)",
+					"RTID(IPP@CurrentLevel)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(Rails@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)"
+				],
+				"Name": "WP-115: Cold Racers - Locke",
+				"StageModule": "RTID(IceageStage@LevelModules)",
+				"MusicType": "MiniGame_B"
+			}
+		},
+		{
+			"aliases": [
+				"Cooldown"
+			],
+			"objclass": "PlantCooldownModifierProperties",
+			"objdata": {
+				"CooldownMultiplier": 0
+			}
+		},
+		{
+			"aliases": [
+				"Rails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy",
+				"Railcarts": [
+					{
+						"Column": 0,
+						"Row": 2
+					},
+					{
+						"Column": 1,
+						"Row": 2
+					}
+				],
+				"Rails": [
+					{
+						"Column": 0,
+						"RowEnd": 0,
+						"RowStart": 0
+					},
+					{
+						"Column": 0,
+						"RowEnd": 1,
+						"RowStart": 1
+					},
+					{
+						"Column": 0,
+						"RowEnd": 2,
+						"RowStart": 2
+					},
+					{
+						"Column": 0,
+						"RowEnd": 3,
+						"RowStart": 3
+					},
+					{
+						"Column": 0,
+						"RowEnd": 4,
+						"RowStart": 4
+					},
+					{
+						"Column": 1,
+						"RowEnd": 0,
+						"RowStart": 0
+					},
+					{
+						"Column": 1,
+						"RowEnd": 1,
+						"RowStart": 1
+					},
+					{
+						"Column": 1,
+						"RowEnd": 2,
+						"RowStart": 2
+					},
+					{
+						"Column": 1,
+						"RowEnd": 3,
+						"RowStart": 3
+					},
+					{
+						"Column": 1,
+						"RowEnd": 4,
+						"RowStart": 4
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
+			"objclass": "InitialPlantProperties",
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"Level": 2,
+						"TypeName": "primalpeashooter"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"Level": 2,
+						"TypeName": "primalpeashooter"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "iceburg",
+						"Level": 0
+					},
+					{
+						"PlantType": "springbean",
+						"Level": 0
+					},
+					{
+						"PlantType": "chilibean",
+						"Level": 1
+					}
+				],
+				"SelectionMethod": "preset"
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": -2,
+						"GridY": 5,
+						"TypeName": "gravestoneZombieOnDestruction_1"
+					},
+					{
+						"GridX": 8,
+						"GridY": 0,
+						"TypeName": "markertile"
+					},
+					{
+						"GridX": 8,
+						"GridY": 1,
+						"TypeName": "markertile"
+					},
+					{
+						"GridX": 8,
+						"GridY": 2,
+						"TypeName": "markertile"
+					},
+					{
+						"GridX": 8,
+						"GridY": 3,
+						"TypeName": "markertile"
+					},
+					{
+						"GridX": 8,
+						"GridY": 4,
+						"TypeName": "markertile"
+					},
+					{
+						"GridX": 8,
+						"GridY": 0,
+						"TypeName": "traptile_2"
+					},
+					{
+						"GridX": 8,
+						"GridY": 1,
+						"TypeName": "traptile_2"
+					},
+					{
+						"GridX": 8,
+						"GridY": 2,
+						"TypeName": "traptile_2"
+					},
+					{
+						"GridX": 8,
+						"GridY": 3,
+						"TypeName": "traptile_2"
+					},
+					{
+						"GridX": 8,
+						"GridY": 4,
+						"TypeName": "traptile_2"
+					},
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"TypeName": "gravestone_tutorial"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "gravestone_tutorial"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"TypeName": "gravestone_tutorial"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "gravestone_tutorial"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "gravestone_tutorial"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(FlowerLine@CurrentLevel)",
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Don't let the zombies trample the marked tiles",
+				"DescriptiveName": "Custom Objective"
+			}
+		},
+		{
+			"aliases": [
+				"FlowerLine"
+			],
+			"objclass": "StarChallengeZombieDistanceProps",
+			"objdata": {
+				"TargetDistance": 2
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 1,
+				"WavesPerFlag": 13,
+				"SuppressFlagZombie": true,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 0.0,
+				"StartingPoints": -100.0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": []
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 13,
+				"WaveCount": 13,
+				"SuppressFlagZombie": true,
+				"ZombieCountdownHugeWaveDelay": 5,
+				"ZombieCountdownFirstWaveSecs": 5,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)",
+						"RTID(Wave1a@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)",
+						"RTID(Wave7ex@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"SuppressActionIfNoGridItemsFound": true,
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1a"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"SuppressActionIfNoGridItemsFound": true,
+				"GridTypes": [
+					"RTID(gravestone_egypt@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(iceage@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(iceage_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"SuppressActionIfNoGridItemsFound": true,
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(iceage_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"SuppressActionIfNoGridItemsFound": true,
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(iceage_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"SuppressActionIfNoGridItemsFound": true,
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(iceage_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage_armor2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"SuppressActionIfNoGridItemsFound": true,
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(iceage_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"SuppressActionIfNoGridItemsFound": true,
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(iceage_armor2@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage_armor2@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage_armor1@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7ex"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"SuppressActionIfNoGridItemsFound": true,
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage_flag@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"WaveStartMessage": " ",
+				"SuppressActionIfNoGridItemsFound": true,
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage_armor2@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage_armor2@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(iceage@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": []
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"iceage"
+			],
+			"objdata": {
+				"TypeName": "iceage",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieIceageDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieIceageBasicGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_IceAgeBasic",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ICEAGE_BASIC",
+				"HomeWorld": "iceage",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieIceageDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 65,
+					"mWidth": 10,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"ChillInsteadOfFreeze": true,
+				"Cost": 150,
+				"EatDPS": 500,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 26,
+					"mX": 9,
+					"mY": 10
+				},
+				"Hitpoints": 180,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.3,
+				"WavePointCost": 100,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"iceage_armor1"
+			],
+			"objdata": {
+				"TypeName": "iceage_armor1",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieIceageArmor1Default@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieIceageBasicGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_IceAgeBasic",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ICEAGE_BASIC",
+				"HomeWorld": "iceage",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieIceageArmor1Default"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 65,
+					"mWidth": 10,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"ChillInsteadOfFreeze": true,
+				"Cost": 150,
+				"EatDPS": 500,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 26,
+					"mX": 9,
+					"mY": 10
+				},
+				"Hitpoints": 180,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.3,
+				"WavePointCost": 200,
+				"Weight": 3000,
+				"ZombieArmorProps": [
+					"RTID(ConeDefault@CurrentLevel)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"iceage_armor2"
+			],
+			"objdata": {
+				"TypeName": "iceage_armor2",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieIceageArmor2Default@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieIceageBasicGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_IceAgeBasic",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ICEAGE_BASIC",
+				"HomeWorld": "iceage",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieIceageArmor2Default"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 65,
+					"mWidth": 10,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"ChillInsteadOfFreeze": true,
+				"Cost": 150,
+				"EatDPS": 500,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 26,
+					"mX": 9,
+					"mY": 10
+				},
+				"Hitpoints": 180,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.3,
+				"WavePointCost": 400,
+				"Weight": 4000,
+				"ZombieArmorProps": [
+					"RTID(BucketDefault@CurrentLevel)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"ConeDefault"
+			],
+			"objdata": {
+				"ArmorType": "Cone",
+				"BaseHealth": 120.0,
+				"ArmorFlags": [
+					"damageable",
+					"droppable",
+					"helm"
+				],
+				"ArmorLayers": [
+					"zombie_armor_cone_norm",
+					"zombie_armor_cone_damage_01",
+					"zombie_armor_cone_damage_02"
+				],
+				"ArmorLayerHealth": [
+					0.666,
+					0.333
+				],
+				"ImpactSoundEvent": "Play_impact_plastic"
+			}
+		},
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"BucketDefault"
+			],
+			"objdata": {
+				"ArmorType": "Bucket",
+				"BaseHealth": 210.0,
+				"ArmorFlags": [
+					"metallic",
+					"damageable",
+					"droppable",
+					"helm"
+				],
+				"ArmorLayers": [
+					"zombie_armor_bucket_norm",
+					"zombie_armor_bucket_damage_01",
+					"zombie_armor_bucket_damage_02"
+				],
+				"ArmorLayerHealth": [
+					0.666,
+					0.333
+				],
+				"ImpactSoundEvent": "Play_impact_shieldhit"
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"iceage_flag"
+			],
+			"objdata": {
+				"TypeName": "iceage_flag",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieIceageFlagDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieIceageBasicGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_IceAgeBasic",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ICEAGE_FLAG",
+				"HomeWorld": "iceage",
+				"IsBasicZombie": true,
+				"FlagType": "flag_normal"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieIceageFlagDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 65,
+					"mWidth": 10,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"ChillInsteadOfFreeze": true,
+				"Cost": 150,
+				"EatDPS": 500,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 26,
+					"mX": 9,
+					"mY": 10
+				},
+				"Hitpoints": 180,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.42,
+				"WavePointCost": 100,
+				"Weight": 0,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"TrapTile_2"
+			],
+			"objclass": "GridItemProjectileTrapProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_EFFECTS_ZOMBIE_OCTOPUS_PROJECTILE",
+				"PopAnimRenderOffset": {
+					"x": 10000,
+					"y": 10000
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"ProjectileFireOriginOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 50
+				},
+				"ProjectileTypeToSpawn": "RTID(GameOver@CurrentLevel)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 5.0,
+				"TriggerRect": {
+					"mHeight": 60,
+					"mWidth": 60,
+					"mX": -30,
+					"mY": -60
+				},
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"GameOver"
+			],
+			"objdata": {
+				"BaseDamage": 10,
+				"SplashDamage": 100000.0,
+				"SplashRadius": 8000.0,
+				"ShakeBoardOnSplash": true,
+				"DiesOnImpact": true,
+				"HasShadow": false,
+				"DamageFlags": [
+					"shooter"
+				],
+				"CollisionFlags": [
+					"ground",
+					"griditems",
+					"ground_zombies",
+					"off_ground_zombies"
+				],
+				"InitialVelocity": [
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": -500.0,
+						"Max": -600.0
+					}
+				],
+				"InitialScale": {
+					"Min": 0.95,
+					"Max": 1.05
+				},
+				"CollisionRect": {
+					"mX": -15.0,
+					"mY": -15.0,
+					"mWidth": 30.0,
+					"mHeight": 30.0
+				},
+				"ImpactOffset": [
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GravestoneZombieOnDestruction_1"
+			],
+			"objclass": "GridItemGravestonePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 9999,
+					"y": 9999
+				},
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_TUTORIAL_DAMAGE",
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble",
+				"DamageStateCount": 5,
+				"HitRectOffsetWidth": -128,
+				"HitRectOffsetX": 64,
+				"Hitpoints": 100000,
+				"IsAnimated": false,
+				"PopAnim": "POPANIM_GRAVESTONES_TUTORIAL_GRAVESTONE"
+			}
+		},
+		{}
+	],
+	"version": 1
+}

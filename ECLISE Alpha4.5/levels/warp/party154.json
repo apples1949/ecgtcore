@@ -1,0 +1,1390 @@
+{
+	"#comment": "Future Forgotten - Reeee | ELM: Ver-8.1.4 [ECL v8.9 Test]",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 300,
+				"Description": "Custom Level",
+				"FirstRewardParam": "moneybag",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Tombstone_Dark_Special",
+					"Tombstone_Dark_Effects"
+				],
+				"Modules": [
+					"RTID(LostCityMowers@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(PowerTiles@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "WP-154: Future Forgotten - Reeee",
+				"StageModule": "RTID(LostCityStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"PlantExcludeList": [
+					"toadstool",
+					"hypnoshroom",
+					"caulipower"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 8,
+						"GridY": 0,
+						"TypeName": "protectionrune"
+					},
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"TypeName": "protectionrune"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"TypeName": "protectionrune"
+					},
+					{
+						"GridX": 2,
+						"GridY": 3,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "protectionrune"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "goldtile"
+					},
+					{
+						"GridX": 8,
+						"GridY": 4,
+						"TypeName": "protectionrune"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"PowerTiles"
+			],
+			"objclass": "PowerTileProperties",
+			"objdata": {
+				"LinkedTiles": [
+					{
+						"Location": {
+							"mX": 3,
+							"mY": 1
+						},
+						"PropagationDelay": "1",
+						"Group": "beta"
+					},
+					{
+						"Location": {
+							"mX": 5,
+							"mY": 1
+						},
+						"PropagationDelay": "1",
+						"Group": "beta"
+					},
+					{
+						"Location": {
+							"mX": 3,
+							"mY": 3
+						},
+						"PropagationDelay": "1",
+						"Group": "beta"
+					},
+					{
+						"Location": {
+							"mX": 5,
+							"mY": 3
+						},
+						"PropagationDelay": "1",
+						"Group": "beta"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"WavesPerFlag": 6,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 0,
+				"PointIncrementPerWave": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(tutorial@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 6,
+				"WaveCount": 18,
+				"SuppressFlagZombie": false,
+				"MinNextWaveHealthPercentage": 0,
+				"MaxNextWaveHealthPercentage": 0,
+				"Waves": [
+					[
+						"RTID(SpidRain1@.)"
+					],
+					[
+						"RTID(Wave2@.)",
+						"RTID(SpidRain2@.)"
+					],
+					[
+						"RTID(Wave3@.)",
+						"RTID(SpidRain3@.)"
+					],
+					[
+						"RTID(SpidRain4@.)",
+						"RTID(GroundSpawn4_C7@.)",
+						"RTID(GroundSpawn4_C8@.)"
+					],
+					[
+						"RTID(SpidRain5@.)"
+					],
+					[
+						"RTID(Wave6@.)",
+						"RTID(SpidRain6@.)"
+					],
+					[
+						"RTID(Wave7@.)",
+						"RTID(SpidRain7@.)"
+					],
+					[
+						"RTID(Wave8@.)",
+						"RTID(SpidRain8@.)"
+					],
+					[
+						"RTID(Wave9@.)",
+						"RTID(SpidRain9@.)"
+					],
+					[
+						"RTID(Wave10@.)",
+						"RTID(SpidRain10@.)"
+					],
+					[
+						"RTID(Wave11@.)",
+						"RTID(SpidRain11@.)",
+						"RTID(GroundSpawn11_C7@.)",
+						"RTID(GroundSpawn11_C8@.)"
+					],
+					[
+						"RTID(Wave12@.)",
+						"RTID(SpidRain12@.)"
+					],
+					[
+						"RTID(Wave13@.)",
+						"RTID(SpidRain13@.)"
+					],
+					[
+						"RTID(Wave14@.)",
+						"RTID(SpidRain14@.)"
+					],
+					[
+						"RTID(Wave15@.)",
+						"RTID(SpidRain15@.)",
+						"RTID(GroundSpawn15_C6@.)",
+						"RTID(GroundSpawn15_C7@.)",
+						"RTID(GroundSpawn15_C8@.)"
+					],
+					[
+						"RTID(Wave16@.)",
+						"RTID(SpidRain16@.)"
+					],
+					[
+						"RTID(Wave17@.)",
+						"RTID(SpidRain17@.)"
+					],
+					[
+						"RTID(Wave18@.)",
+						"RTID(SpidRain18@.)",
+						"RTID(SpidRain18_2@.)",
+						"RTID(GroundSpawn18_C6@.)",
+						"RTID(GroundSpawn18_C7@.)",
+						"RTID(GroundSpawn18_C8@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_imp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_imp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(mech_cone@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_imp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain1"
+			],
+			"#EventInfo": "APT-6.4 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 7,
+				"ColumnEnd": 9,
+				"SpiderCount": 6,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": "Permanent Bot Swarm!"
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain2"
+			],
+			"#EventInfo": "APT-6.4 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 7,
+				"ColumnEnd": 9,
+				"SpiderCount": 6,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain3"
+			],
+			"#EventInfo": "APT-6.4 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 7,
+				"ColumnEnd": 9,
+				"SpiderCount": 6,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain4"
+			],
+			"#EventInfo": "APT-6.8 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 6,
+				"ColumnEnd": 9,
+				"SpiderCount": 6,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": "Runes Spawn!"
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn4_C7"
+			],
+			"#EventInfo": "AP1-0 AP2-0 AP3-4.5 AP4-0 AP5-0 ML1-1 ML2-1 ML3-1 ML4-1 ML5-1 MFW-1 ",
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 7,
+				"ColumnEnd": 8,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn4_C8"
+			],
+			"#EventInfo": "AP1-4 AP2-0 AP3-4 AP4-0 AP5-0 ML1-1 ML2-1 ML3-1 ML4-1 ML5-1 MFW-1 ",
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 8,
+				"ColumnEnd": 9,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain5"
+			],
+			"#EventInfo": "APT-23 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 9,
+				"SpiderCount": 18,
+				"GroupSize": 3,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain6"
+			],
+			"#EventInfo": "APT-14.4 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 9,
+				"SpiderCount": 12,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain7"
+			],
+			"#EventInfo": "APT-7.2 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 9,
+				"SpiderCount": 6,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain8"
+			],
+			"#EventInfo": "APT-7.2 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 9,
+				"SpiderCount": 6,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain9"
+			],
+			"#EventInfo": "APT-7.2 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 9,
+				"SpiderCount": 6,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain10"
+			],
+			"#EventInfo": "APT-14.4 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 9,
+				"SpiderCount": 12,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain11"
+			],
+			"#EventInfo": "APT-14.4 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 9,
+				"SpiderCount": 12,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": "Runes Spawn!"
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn11_C7"
+			],
+			"#EventInfo": "AP1-0 AP2-0 AP3-4.5 AP4-0 AP5-0 ML1-1 ML2-1 ML3-1 ML4-1 ML5-1 MFW-1 ",
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 7,
+				"ColumnEnd": 8,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn11_C8"
+			],
+			"#EventInfo": "AP1-4 AP2-0 AP3-4 AP4-0 AP5-0 ML1-1 ML2-1 ML3-1 ML4-1 ML5-1 MFW-1 ",
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 8,
+				"ColumnEnd": 9,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain12"
+			],
+			"#EventInfo": "APT-34.6 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 2,
+				"ColumnEnd": 9,
+				"SpiderCount": 24,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "1",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain13"
+			],
+			"#EventInfo": "APT-14.4 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 9,
+				"SpiderCount": 12,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain14"
+			],
+			"#EventInfo": "APT-14.4 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 9,
+				"SpiderCount": 12,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain15"
+			],
+			"#EventInfo": "APT-14.4 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 5,
+				"ColumnEnd": 9,
+				"SpiderCount": 12,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": "Runes Spawn!"
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn15_C6"
+			],
+			"#EventInfo": "AP1-0 AP2-5.1 AP3-0 AP4-5.1 AP5-0 ML1-1 ML2-1 ML3-1 ML4-1 ML5-1 MFW-1 ",
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 6,
+				"ColumnEnd": 7,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn15_C7"
+			],
+			"#EventInfo": "AP1-0 AP2-0 AP3-4.5 AP4-0 AP5-0 ML1-1 ML2-1 ML3-1 ML4-1 ML5-1 MFW-1 ",
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 7,
+				"ColumnEnd": 8,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn15_C8"
+			],
+			"#EventInfo": "AP1-4 AP2-0 AP3-4 AP4-0 AP5-0 ML1-1 ML2-1 ML3-1 ML4-1 ML5-1 MFW-1 ",
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 8,
+				"ColumnEnd": 9,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain16"
+			],
+			"#EventInfo": "APT-15.3 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 9,
+				"SpiderCount": 12,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain17"
+			],
+			"#EventInfo": "APT-15.3 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 9,
+				"SpiderCount": 12,
+				"GroupSize": 2,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain18"
+			],
+			"#EventInfo": "APT-19.2 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 4,
+				"ColumnEnd": 9,
+				"SpiderCount": 15,
+				"GroupSize": 5,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"SpidRain18_2"
+			],
+			"#EventInfo": "APT-6.2 ",
+			"objclass": "SpiderRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnStart": 2,
+				"ColumnEnd": 3,
+				"SpiderCount": 3,
+				"GroupSize": 1,
+				"TimeBetweenGroups": "5",
+				"ZombieFallTime": "3",
+				"SpiderZombieName": "future_imp",
+				"WaveStartMessage": ""
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn18_C6"
+			],
+			"#EventInfo": "AP1-0 AP2-5.1 AP3-0 AP4-5.1 AP5-0 ML1-1 ML2-1 ML3-1 ML4-1 ML5-1 MFW-1 ",
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 6,
+				"ColumnEnd": 7,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn18_C7"
+			],
+			"#EventInfo": "AP1-0 AP2-4.5 AP3-0 AP4-4.5 AP5-0 ML1-1 ML2-1 ML3-1 ML4-1 ML5-1 MFW-1 ",
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 7,
+				"ColumnEnd": 8,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GroundSpawn18_C8"
+			],
+			"#EventInfo": "AP1-4 AP2-4 AP3-0 AP4-4 AP5-0 ML1-1 ML2-1 ML3-1 ML4-1 ML5-1 MFW-1 ",
+			"objclass": "SpawnZombiesFromGroundSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"ColumnStart": 8,
+				"ColumnEnd": 9,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_protector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+		}
+	],
+	"version": 1
+}

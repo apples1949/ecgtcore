@@ -1,0 +1,196 @@
+{
+	"#comment": "Eighties Endless",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "E  C  L  I  S  E   sandbox",
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(LevelDifficultyScaling@CurrentLevel)",
+					"RTID(JamZombiesModule@LevelModules)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "Survival: Neon Mixtape Tour",
+				"SuppressAwardScreen": true,
+				"StageModule": "RTID(EightiesStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantExcludeList": [
+					"goldleaf",
+					"caulipower"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			],
+			"objclass": "LevelDifficultyScalingModuleProperties",
+			"objdata": {
+				"#comment": "Minus one level from calculation",
+				"DifficultyRulesType": "SurvivalScalingNew",
+				"ZombieLevelSwaps": [
+					{
+						"Level": 0,
+						"Swaps": [
+							{
+								"From": "RTID(eighties_flag@ZombieTypes)",
+								"To": [
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 3,
+						"Swaps": [
+							{
+								"From": "RTID(eighties_flag@ZombieTypes)",
+								"To": [
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 9,
+						"Swaps": [
+							{
+								"From": "RTID(eighties_flag@ZombieTypes)",
+								"To": [
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 13,
+						"Swaps": [
+							{
+								"From": "RTID(eighties_flag@ZombieTypes)",
+								"To": [
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 16,
+						"Swaps": [
+							{
+								"From": "RTID(eighties_flag@ZombieTypes)",
+								"To": [
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 21,
+						"Swaps": [
+							{
+								"From": "RTID(eighties_flag@ZombieTypes)",
+								"To": [
+									"RTID(eighties_flag@ZombieTypes)",
+									"RTID(treasureyeti_hidden@ZombieTypes)"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 30,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 60,
+				"StartingPoints": 100,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"WavesPerFlag": 7,
+				"ZombiePool": [
+					"RTID(eighties@ZombieTypes)",
+					"RTID(eighties_armor1@ZombieTypes)",
+					"RTID(eighties_armor2@ZombieTypes)",
+					"RTID(eighties_glitter@ZombieTypes)",
+					"RTID(eighties_punk@ZombieTypes)",
+					"RTID(eighties_arcade@ZombieTypes)",
+					"RTID(eighties_breakdancer@ZombieTypes)",
+					"RTID(eighties_mc@ZombieTypes)",
+					"RTID(eighties_boombox@ZombieTypes)",
+					"RTID(football@ZombieTypes)",
+					"RTID(eighties_gargantuar@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"ZombieCountdownHugeWaveDelay": 10,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {}
+		}
+	],
+	"version": 1
+}

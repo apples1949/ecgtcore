@@ -1,0 +1,402 @@
+{
+	"#comment": "",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "coming soon!",
+				"SuppressAccountUpgrades": true,
+				"FirstIntroNarrative": "OUT_OF_CONTENT_SOON",
+				"ReplayIntroNarrative": "OUT_OF_CONTENT_SOON",
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"PeaEffects",
+					"PlantEMPea",
+					"PlantEMPeachAudio",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(IPP@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(RailsCowboy@CurrentLevel)",
+					"RTID(Scoring@CurrentLevel)"
+				],
+				"Name": "Update the survey answer!",
+				"StageModule": "RTID(EightiesStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"Scoring"
+			],
+			"objclass": "LevelScoringModuleProperties",
+			"objdata": {
+				"ScoringRulesType": "Classic",
+				"StartingPlantfood": 0
+			}
+		},
+		{
+			"aliases": [
+				"RailsCowboy"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_tutorial",
+				"Railcarts": [
+					{
+						"Column": 0,
+						"Row": 2
+					}
+				],
+				"Rails": [
+					{
+						"Column": 0,
+						"RowEnd": 4,
+						"RowStart": 0
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
+			"objclass": "InitialPlantProperties",
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "bonkchoy"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Jam"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"NotificationEvents": [
+					"jam_rap"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"ZombieCountdownFirstWaveSecs": 0,
+				"ZombieCountdownHugeWaveDelay": 0,
+				"SuppressFlagZombie": true,
+				"Waves": [
+					[
+						"RTID(ArcadeSpawn@CurrentLevel)",
+						"RTID(ArcadeSpawn2@CurrentLevel)",
+						"RTID(Jam@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ArcadeSpawn"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 5,
+						"Type": "RTID(arcade@CurrentLevel)"
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_EMPEACH_BLAST",
+				"SpawnPositionsPool": [
+					{
+						"mX": 8,
+						"mY": 0
+					},
+					{
+						"mX": 8,
+						"mY": 1
+					},
+					{
+						"mX": 8,
+						"mY": 2
+					},
+					{
+						"mX": 8,
+						"mY": 3
+					},
+					{
+						"mX": 8,
+						"mY": 4
+					}
+				],
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+			}
+		},
+		{
+			"aliases": [
+				"ArcadeSpawn2"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 5,
+						"Type": "RTID(arcade2@CurrentLevel)"
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_EMPEACH_BLAST",
+				"SpawnPositionsPool": [
+					{
+						"mX": 8,
+						"mY": 0
+					},
+					{
+						"mX": 8,
+						"mY": 1
+					},
+					{
+						"mX": 8,
+						"mY": 2
+					},
+					{
+						"mX": 8,
+						"mY": 3
+					},
+					{
+						"mX": 8,
+						"mY": 4
+					}
+				],
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"arcade"
+			],
+			"objdata": {
+				"TypeName": "eightiesarcadecabinet",
+				"GridItemClass": "GridItemEightiesArcadeCabinet",
+				"Properties": "RTID(ArcadeDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieEightiesArcadeGroup",
+					"ZombieImpPorterGroup"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemEightiesArcadeCabinetProps",
+			"aliases": [
+				"ArcadeDefault"
+			],
+			"objdata": {
+				"PopAnimRigClass": "GridItemEightiesArcadeCabinetAnimRig",
+				"Hitpoints": 268353535,
+				"Height": "ground",
+				"PopAnim": "POPANIM_EFFECTS_80S_ARCADE_CABINET",
+				"PopAnimRenderOffset": {
+					"x": 105,
+					"y": 115
+				},
+				"CanBeMowed": false,
+				"PlantingRestrictions": {
+					"ListType": "whitelist",
+					"List": [
+					],
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ARCADE_MACHINE"
+				},
+				"JamStyle": "jam_rap",
+				"TimeBetweenSpawns": {
+					"Min": 1,
+					"Max": 5
+				},
+				"InitialPause": {
+					"Min": 0,
+					"Max": 10
+				},
+				"TimeAfterZombieCreationWhereCabinetDoesNotMove": 1,
+				"ZombieTypesToSpawn": [
+					{
+						"ZombieTypeName": "chicken",
+						"Weight": 1
+					}
+				],
+				"ZombieSpawnPointOffset": -39,
+				"DamagePhases": {
+					"Phases": [
+						{
+							"StartAtHealthPercent": 0.833,
+							"Layers": [
+								"arcade_cabinet_damage0",
+								"arcade_cabinet_active_damage0"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0.667,
+							"Layers": [
+								"arcade_cabinet_damage1",
+								"arcade_cabinet_active_damage1"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0.5,
+							"Layers": [
+								"arcade_cabinet_damage2",
+								"arcade_cabinet_active_damage2"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0.333,
+							"Layers": [
+								"arcade_cabinet_damage3",
+								"arcade_cabinet_active_damage3"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0.167,
+							"Layers": [
+								"arcade_cabinet_damage4",
+								"arcade_cabinet_active_damage4"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0,
+							"Layers": [
+								"arcade_cabinet_damage5",
+								"arcade_cabinet_active_damage5"
+							]
+						}
+					]
+				},
+				"BreakEffect": "POPANIM_EFFECTS_80S_ARCADE_CABINET_BREAK",
+				"PopAnimDeathAnim": "death"
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"arcade2"
+			],
+			"objdata": {
+				"TypeName": "eightiesarcadecabinet",
+				"GridItemClass": "GridItemEightiesArcadeCabinet",
+				"Properties": "RTID(Arcade2Default@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieEightiesArcadeGroup",
+					"ZombieImpPorterGroup"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemEightiesArcadeCabinetProps",
+			"aliases": [
+				"Arcade2Default"
+			],
+			"objdata": {
+				"PopAnimRigClass": "GridItemEightiesArcadeCabinetAnimRig",
+				"Hitpoints": 268353535,
+				"Height": "ground",
+				"PopAnim": "POPANIM_EFFECTS_80S_ARCADE_CABINET",
+				"PopAnimRenderOffset": {
+					"x": 105,
+					"y": 115
+				},
+				"CanBeMowed": false,
+				"PlantingRestrictions": {
+					"ListType": "whitelist",
+					"List": [
+					],
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ARCADE_MACHINE"
+				},
+				"JamStyle": "jam_rap",
+				"TimeBetweenSpawns": {
+					"Min": 50,
+					"Max": 180
+				},
+				"InitialPause": {
+					"Min": 10,
+					"Max": 500
+				},
+				"TimeAfterZombieCreationWhereCabinetDoesNotMove": 1,
+				"ZombieTypesToSpawn": [
+					{
+						"ZombieTypeName": "tutorial",
+						"Weight": 1
+					}
+				],
+				"ZombieSpawnPointOffset": -39,
+				"DamagePhases": {
+					"Phases": [
+						{
+							"StartAtHealthPercent": 0.833,
+							"Layers": [
+								"arcade_cabinet_damage0",
+								"arcade_cabinet_active_damage0"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0.667,
+							"Layers": [
+								"arcade_cabinet_damage1",
+								"arcade_cabinet_active_damage1"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0.5,
+							"Layers": [
+								"arcade_cabinet_damage2",
+								"arcade_cabinet_active_damage2"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0.333,
+							"Layers": [
+								"arcade_cabinet_damage3",
+								"arcade_cabinet_active_damage3"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0.167,
+							"Layers": [
+								"arcade_cabinet_damage4",
+								"arcade_cabinet_active_damage4"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0,
+							"Layers": [
+								"arcade_cabinet_damage5",
+								"arcade_cabinet_active_damage5"
+							]
+						}
+					]
+				},
+				"BreakEffect": "POPANIM_EFFECTS_80S_ARCADE_CABINET_BREAK",
+				"PopAnimDeathAnim": "death"
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,215 @@
+{
+    "#comment": "BWB-10",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "E  C  L  I  S  E",
+                "FirstRewardParam": "moneybag",
+                "FirstIntroNarrative": "BEACH_NIGHT10_INTRO",
+                "ReplayIntroNarrative": "BEACH_NIGHT10_INTRO",
+                "FirstOutroNarrative": "BEACH_NIGHT10_OUTRO",
+                "ReplayOutroNarrative": "BEACH_NIGHT10_OUTRO",
+                "StartingSun": 50,
+                "LevelNumber": 10,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(BeachNightStageBackground@LevelModules)",
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(BeachMowers@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(Escalation@CurrentLevel)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(GI@CurrentLevel)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(LevelScoring@CurrentLevel)"
+                ],
+                "MusicType": "MiniGame_A",
+                "Name": "BWB-10: Nightwish",
+                "StageModule": "RTID(BeachNightStage@LevelModules)"
+            }
+        },
+		{"aliases":["GI"],"objclass":"InitialGridItemProperties","objdata":{"InitialGridItemPlacements":[{"GridX":7,"GridY":2,"TypeName":"lilypad"}]}},
+		{
+            "aliases": [
+                "LevelScoring"
+            ],
+            "objclass": "LevelScoringModuleProperties",
+            "objdata": {
+                "PlantBonusMultiplier": 0.0,
+                "PlantBonuses": [],
+                "ScoringRulesType": "NoMultiplier",
+                "StartingPlantfood": 0
+            }
+        },
+		{
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(ReachTheScore@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "ReachTheScore"
+            ],
+            "objclass": "StarChallengeTargetScoreProps",
+            "objdata": {
+                "Description": "Place Lily Pads for zombies to spawn and score at least 10,000 points!",
+                "DescriptionFailure": "Not enough zombies spawned!",
+                "DescriptiveName": "[STARCHALLENGE_TARGET_SCORE_NAME]",
+                "TargetScore": 10000
+            }
+        },
+        {
+            "aliases": [
+                "Tide"
+            ],
+            "objclass": "TideProperties",
+            "objdata": {
+                "StartingWaveLocation": 9
+            }
+        },
+{"aliases": ["SeedBank"],"objclass": "SeedBankProperties","objdata": {"PresetPlantList": [{"Level":-1,"PlantType":"lilypad"}],"PlantExcludeList": [],"PlantIncludeList": [],"SelectionMethod": "chooser"}},
+
+        {
+            "aliases": [
+                "Escalation"
+            ],
+            "objclass": "LevelEscalationModuleProperties",
+            "objdata": {
+                "FlagCount": 2,
+                "PlantfoodToSpawnCount": 0,
+                "PointIncrementPerWave": 100,
+                "StartingPoints": -400,
+                "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+                "WavesPerFlag": 10,
+                "ZombiePool": [
+                    "RTID(beach@ZombieTypes)",
+                    "RTID(beach_fem@ZombieTypes)",
+                    "RTID(beach_octopus@ZombieTypes)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "WaveManager"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "WaveSpendingPointIncrement": 0,
+                "WaveSpendingPoints": 0,
+                "Waves": [
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS2@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS1@CurrentLevel)"],	
+["RTID(GS2@CurrentLevel)"]
+                ]
+            }
+        },
+		{
+            "aliases": [
+                "GS1"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(lilypad@GridItemTypes)"
+                ],
+                "WaveStartMessage": "",
+                "Zombies": [
+                    {"Type": "RTID(beach@ZombieTypes)"},
+                    {"Type": "RTID(beach_fem@ZombieTypes)"},
+                    {"Type": "RTID(beach_snorkel@ZombieTypes)"},
+                    {"Type": "RTID(beach_armor1@ZombieTypes)"},
+                    {"Type": "RTID(beach_snorkel@ZombieTypes)"},
+                    {"Type": "RTID(beach_fem_armor1@ZombieTypes)"},
+                    {"Type": "RTID(beach_surfer@ZombieTypes)"},
+                    {"Type": "RTID(beach_octopus@ZombieTypes)"},
+                    {"Type": "RTID(beach_armor2@ZombieTypes)"},
+                    {"Type": "RTID(beach_surfer@ZombieTypes)"},
+                    {"Type": "RTID(beach_octopus@ZombieTypes)"},
+                    {"Type": "RTID(beach_fem_armor2@ZombieTypes)"},
+                    {"Type": "RTID(beach_gargantuar@ZombieTypes)"},
+                    {"Type": "RTID(beach_surfer@ZombieTypes)"},
+                    {"Type": "RTID(beach_octopus@ZombieTypes)"},
+                    {"Type": "RTID(beach_armor2@ZombieTypes)"},
+                    {"Type": "RTID(beach_surfer@ZombieTypes)"},
+                    {"Type": "RTID(beach_octopus@ZombieTypes)"},
+                    {"Type": "RTID(beach_fem_armor2@ZombieTypes)"},
+                    {"Type": "RTID(beach_gargantuar@ZombieTypes)"}
+                ]
+            }
+        },
+		{
+            "aliases": [
+                "GS2"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(lilypad@GridItemTypes)"
+                ],
+                "WaveStartMessage": "",
+                "Zombies": [
+                    {"Type": "RTID(beach_surfer@ZombieTypes)"},
+                    {"Type": "RTID(beach_octopus@ZombieTypes)"},
+                    {"Type": "RTID(beach_armor2@ZombieTypes)"},
+                    {"Type": "RTID(beach_surfer@ZombieTypes)"},
+                    {"Type": "RTID(beach_octopus@ZombieTypes)"},
+                    {"Type": "RTID(beach_fem_armor2@ZombieTypes)"},
+                    {"Type": "RTID(beach_gargantuar@ZombieTypes)"},
+                    {"Type": "RTID(beach_octopus@ZombieTypes)"},
+                    {"Type": "RTID(beach_octopus@ZombieTypes)"},
+                    {"Type": "RTID(beach_armor2@ZombieTypes)"},
+                    {"Type": "RTID(beach_octopus@ZombieTypes)"},
+                    {"Type": "RTID(beach_octopus@ZombieTypes)"},
+                    {"Type": "RTID(beach_fem_armor2@ZombieTypes)"},
+                    {"Type": "RTID(beach_gargantuar@ZombieTypes)"},
+                    {"Type": "RTID(beach_surfer@ZombieTypes)"},
+                    {"Type": "RTID(beach_gargantuar@ZombieTypes)"},
+                    {"Type": "RTID(beach_armor2@ZombieTypes)"},
+                    {"Type": "RTID(beach_surfer@ZombieTypes)"},
+                    {"Type": "RTID(beach_gargantuar@ZombieTypes)"},
+                    {"Type": "RTID(beach_fem_armor2@ZombieTypes)"},
+                    {"Type": "RTID(beach_gargantuar@ZombieTypes)"}
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

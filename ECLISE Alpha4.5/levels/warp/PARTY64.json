@@ -1,0 +1,1251 @@
+{
+	"#comment": "Bug Bounty-mc zom-b | ELM: Ver-9.1 [ECL Alpha 2.0] | Ramp: 1+1",
+	"#zombies": "lostcity_bug_mime, lostcity_bug, lostcity_bug@, lostcity_bug2@, lostcity_bug3@, lostcity_bug4@, modern_balloon@",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"StartingSun": 100,
+				"Description": "Warp Party!",
+				"FirstRewardParam": "moneybag",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Tombstone_Dark_Special",
+					"Tombstone_Dark_Effects",
+					"ZombieExcavatorGroup",
+					"ZombieLostCityGargantuarGroup",
+					"ZombieLostCityImpGroup",
+					"ZombieGargantuarEffects",
+					"ZombieLostCityJaneGroup",
+					"ZombieLostCityCrystalSkullGroup"
+				],
+				"Modules": [
+					"RTID(LostCityMowers@LevelModules)",
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "WP-64: Bug Bounty - mc zom-b",
+				"StageModule": "RTID(LostCityStage@LevelModules)",
+				"MusicType": "MiniGame_B"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"PlantExcludeList": [
+					"chomper",
+					"toadstool",
+					"sporeshroom",
+					"bonkchoy"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"WavesPerFlag": 7,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 0,
+				"PointIncrementPerWave": 0,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(tutorial@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 7,
+				"WaveCount": 21,
+				"SuppressFlagZombie": false,
+				"Waves": [
+					[
+						"RTID(Wave1@.)"
+					],
+					[
+						"RTID(Wave2@.)"
+					],
+					[
+						"RTID(Wave3@.)"
+					],
+					[
+						"RTID(Wave4@.)"
+					],
+					[
+						"RTID(Wave5@.)"
+					],
+					[
+						"RTID(Wave6@.)"
+					],
+					[
+						"RTID(Wave7@.)"
+					],
+					[
+						"RTID(Wave8@.)"
+					],
+					[
+						"RTID(Wave9@.)"
+					],
+					[
+						"RTID(Wave10@.)"
+					],
+					[
+						"RTID(Wave11@.)"
+					],
+					[
+						"RTID(Wave12@.)"
+					],
+					[
+						"RTID(Wave13@.)"
+					],
+					[
+						"RTID(Wave14@.)"
+					],
+					[
+						"RTID(Wave15@.)"
+					],
+					[
+						"RTID(Wave16@.)"
+					],
+					[
+						"RTID(Wave17@.)"
+					],
+					[
+						"RTID(Wave18@.)"
+					],
+					[
+						"RTID(Wave19@.)"
+					],
+					[
+						"RTID(Wave20@.)"
+					],
+					[
+						"RTID(Wave21@.)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug3@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug2@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug4@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug4@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug3@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug2@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug4@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug4@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug3@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug3@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug4@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug4@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug2@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug3@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_balloon@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug4@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug3@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug3@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug4@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug2@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave21"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug3@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug2@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug_mime@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug2@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(lostcity_bug@CurrentLevel)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lostcity_bug3@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug4@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(lostcity_bug4@CurrentLevel)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"lostcity_bug"
+			],
+			"objdata": {
+				"TypeName": "lostcity_bug",
+				"ZombieClass": "ZombieLostCityBug",
+				"Properties": "RTID(ZombieLostCityBugDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieLostCityBugGroup",
+					"ZombieLostCityBasicGroup",
+					"ZombieLostCityBugEffectsGroup"
+				],
+				"AudioGroups": [
+					"ZombieLostCityBugAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_LostCityBug",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_BUG",
+				"HomeWorld": "lostcity",
+				"Placeable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieLostCityBugDefault"
+			],
+			"objclass": "ZombieBugProps",
+			"objdata": {
+				"#comment": "ShadowOffset is synced to the shadow of the basic that is dropped.  Please maintain sync.",
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 60,
+					"mWidth": 20,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"IsSpawnedFlying": true,
+				"Cost": 150,
+				"DamageAmountWhichAlsoKillsBasic": 999999999,
+				"DamageFraction": 0.5,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 70,
+					"mWidth": 40,
+					"mX": 0,
+					"mY": -35
+				},
+				"Hitpoints": 200,
+				"NormalDeathWhenMowed": true,
+				"PlantsWhichAlsoKillBasic": {
+					"List": [
+						"blover"
+					],
+					"ListType": "includelist"
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": -6,
+					"y": -4,
+					"z": 1.2
+				},
+				"SkipHeadDropState": true,
+				"SpawnedZombieName": "lostcity_gargantuar",
+				"Speed": 0.4,
+				"SpeedVariance": 0,
+				"WavePointCost": 350,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness2"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed4"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"lostcity_bug4"
+			],
+			"objdata": {
+				"TypeName": "lostcity_bug",
+				"ZombieClass": "ZombieLostCityBug",
+				"Properties": "RTID(ZombieLostCityBugDefault4@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieLostCityBugGroup",
+					"ZombieLostCityBasicGroup",
+					"ZombieLostCityBugEffectsGroup"
+				],
+				"AudioGroups": [
+					"ZombieLostCityBugAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_LostCityBug",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_BUG",
+				"HomeWorld": "lostcity",
+				"Placeable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieLostCityBugDefault4"
+			],
+			"objclass": "ZombieBugProps",
+			"objdata": {
+				"#comment": "ShadowOffset is synced to the shadow of the basic that is dropped.  Please maintain sync.",
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 60,
+					"mWidth": 20,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"IsSpawnedFlying": true,
+				"Cost": 150,
+				"DamageAmountWhichAlsoKillsBasic": 999999,
+				"DamageFraction": 0.5,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 70,
+					"mWidth": 40,
+					"mX": 0,
+					"mY": -35
+				},
+				"Hitpoints": 200,
+				"NormalDeathWhenMowed": true,
+				"PlantsWhichAlsoKillBasic": {
+					"List": [
+						"blover"
+					],
+					"ListType": "includelist"
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": -6,
+					"y": -4,
+					"z": 1.2
+				},
+				"SkipHeadDropState": true,
+				"SpawnedZombieName": "lostcity_crystalskull",
+				"Speed": 0.4,
+				"SpeedVariance": 0,
+				"WavePointCost": 200,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness2"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed4"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"lostcity_bug2"
+			],
+			"objdata": {
+				"TypeName": "lostcity_bug",
+				"ZombieClass": "ZombieLostCityBug",
+				"Properties": "RTID(ZombieLostCityBugDefault2@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieLostCityBugGroup",
+					"ZombieLostCityBasicGroup",
+					"ZombieLostCityBugEffectsGroup"
+				],
+				"AudioGroups": [
+					"ZombieLostCityBugAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_LostCityBug",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_BUG",
+				"HomeWorld": "lostcity",
+				"Placeable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieLostCityBugDefault2"
+			],
+			"objclass": "ZombieBugProps",
+			"objdata": {
+				"#comment": "ShadowOffset is synced to the shadow of the basic that is dropped.  Please maintain sync.",
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 60,
+					"mWidth": 20,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"IsSpawnedFlying": true,
+				"Cost": 150,
+				"DamageAmountWhichAlsoKillsBasic": 999999,
+				"DamageFraction": 0.5,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 70,
+					"mWidth": 40,
+					"mX": 0,
+					"mY": -35
+				},
+				"Hitpoints": 200,
+				"NormalDeathWhenMowed": true,
+				"PlantsWhichAlsoKillBasic": {
+					"List": [
+						"blover"
+					],
+					"ListType": "includelist"
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": -6,
+					"y": -4,
+					"z": 1.2
+				},
+				"SkipHeadDropState": true,
+				"SpawnedZombieName": "lostcity_excavator",
+				"Speed": 0.4,
+				"SpeedVariance": 0,
+				"WavePointCost": 200,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness2"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed4"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"lostcity_bug3"
+			],
+			"objdata": {
+				"TypeName": "lostcity_bug",
+				"ZombieClass": "ZombieLostCityBug",
+				"Properties": "RTID(ZombieLostCityBugDefault3@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieLostCityBugGroup",
+					"ZombieLostCityBasicGroup",
+					"ZombieLostCityBugEffectsGroup"
+				],
+				"AudioGroups": [
+					"ZombieLostCityBugAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_LostCityBug",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_BUG",
+				"HomeWorld": "lostcity",
+				"Placeable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieLostCityBugDefault3"
+			],
+			"objclass": "ZombieBugProps",
+			"objdata": {
+				"#comment": "ShadowOffset is synced to the shadow of the basic that is dropped.  Please maintain sync.",
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 60,
+					"mWidth": 20,
+					"mX": 5,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"IsSpawnedFlying": true,
+				"Cost": 150,
+				"DamageAmountWhichAlsoKillsBasic": 9999,
+				"DamageFraction": 0.5,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 70,
+					"mWidth": 40,
+					"mX": 0,
+					"mY": -35
+				},
+				"Hitpoints": 350,
+				"NormalDeathWhenMowed": true,
+				"PlantsWhichAlsoKillBasic": {
+					"List": [
+						"blover"
+					],
+					"ListType": "includelist"
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": -6,
+					"y": -4,
+					"z": 1.2
+				},
+				"SkipHeadDropState": true,
+				"SpawnedZombieName": "lostcity_jane",
+				"Speed": 0.4,
+				"SpeedVariance": 0,
+				"WavePointCost": 350,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness2"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed4"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieModernBalloonDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"#comment": "ShadowOffset is synced to the shadow of the basic that is dropped.  Please maintain sync.",
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 1000000000,
+					"y": 130000900
+				},
+				"AttackRect": {
+					"mHeight": 11111110,
+					"mWidth": 1111110,
+					"mX": 11111110,
+					"mY": 111111110
+				},
+				"CanSpawnPlantFood": true,
+				"IsSpawnedFlying": true,
+				"CanSurrender": true,
+				"CanTriggerZombieWin": false,
+				"Cost": 150,
+				"EatDPS": 0,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 0,
+					"mY": 10000000000
+				},
+				"Hitpoints": 250,
+				"NormalDeathWhenMowed": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": -6666,
+					"y": -444,
+					"z": 1.2222
+				},
+				"SkipHeadDropState": true,
+				"Speed": 0.6000000000000001,
+				"SpeedVariance": 0,
+				"WavePointCost": 400,
+				"Weight": 3000,
+				"ZombieArmorProps": [
+					"RTID(BalloonDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed4"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"modern_balloon"
+			],
+			"objdata": {
+				"TypeName": "modern_balloon",
+				"ZombieClass": "ZombieModernBalloon",
+				"Properties": "RTID(ZombieModernBalloonDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieModernBalloonGroup",
+					"ZombieLostCityBasicGroup",
+					"ZombieLostCityBugEffectsGroup"
+				],
+				"AudioGroups": [
+					"ZombieModernBalloonAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_ModernBalloon",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MODERN_BALLOON_ORG",
+				"HomeWorld": "modern",
+				"Placeable": true
+			}
+		},
+		{
+		}
+	],
+	"version": 1
+}

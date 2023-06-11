@@ -1,0 +1,167 @@
+{
+	"#comment": "Empty Heart",
+	"#comment": "Dino Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Endless Zone!",
+				"ForceNextLevel": "future_dangerroom",
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"SuppressAwardScreen": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(DinoMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "All Out - Level {LEVEL_NUMBER}",
+				"StageModule": "RTID(DinoStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(FullSeedbankDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(DinoDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(DinosaurDesigner@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+				],
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"DinosaurDesigner"
+			],
+			"objclass": "DangerRoomDinoDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 500
+				},
+				"DinoTypesMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"DinoTypesMax": {
+					"Min": 1,
+					"Max": 1
+				},
+				"FirstDinoWavesMin": {
+					"Min": 6,
+					"Max": 6
+				},
+				"FirstDinoWavesMax": {
+					"Min": 4,
+					"Max": 4
+				},
+				"NextDinoWavesMin": {
+					"Min": 4,
+					"Max": 4
+				},
+				"NextDinoWavesMax": {
+					"Min": 2,
+					"Max": 2
+				},
+				"DinoCountInWaveMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"DinoCountInWaveMax": {
+					"Min": 2,
+					"Max": 3
+				},
+				"DinoTypePool": [
+					{
+						"Value": "raptor",
+						"Weight": 0.0
+					},
+					{
+						"Value": "stego",
+						"Weight": 0.0
+					},
+					{
+						"Value": "ptero",
+						"Weight": 0.0
+					},
+					{
+						"Value": "tyranno",
+						"Weight": 1.0
+					},
+					{
+						"Value": "ankylo",
+						"Weight": 0.0
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DinoDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 15,
+				"BasePointIncrementPerWave": 10,
+				"BasePointIncrementPerLevel": 2,
+				"ZombiePool": [
+					"RTID(dino_armor1@ZombieTypes)",
+					"RTID(dino_armor2@ZombieTypes)",
+					"RTID(dino@ZombieTypes)",
+					"RTID(dino_armor3@ZombieTypes)",
+					"RTID(dino_bully@ZombieTypes)",
+					"RTID(dino_gargantuar@ZombieTypes)",
+					"RTID(holohead@ZombieTypes)",
+					"RTID(dino_armor4@ZombieTypes)",
+					"RTID(dino_bully_veteran@ZombieTypes)",
+					"RTID(dino_imp@ZombieTypes)",
+					"RTID(seagull@ZombieTypes)",
+					"RTID(pirate_captain@ZombieTypes)",
+					"RTID(cannon@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)"
+				]
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,142 @@
+{
+    "#comment": "BWB-16",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "E  C  L  I  S  E",
+                "FirstRewardParam": "moneybag",
+                "FirstIntroNarrative": "BEACH_NIGHT16_INTRO",
+                "ReplayIntroNarrative": "BEACH_NIGHT16_INTRO",
+                "StartingSun": 50,
+                "LevelNumber": 16,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(BeachNightStageBackground@LevelModules)",
+                    "RTID(TechnicalZombieOverride@LevelModules)",
+                    "RTID(UrchinModule@LevelModules)",
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(BeachMowers@LevelModules)",
+                    "RTID(ConveyorBelt@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(Escalation@CurrentLevel)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(IPP@CurrentLevel)",                    "RTID(Tide@CurrentLevel)"
+                ],
+                "Name": "BWB-16: Wave Vortex",
+                "StageModule": "RTID(BeachNightStage@LevelModules)"
+            }
+        },
+		{
+			"aliases": [
+				"IPP"
+			],
+			"objclass": "InitialPlantProperties",
+			"objdata": {
+				"InitialPlantPlacements": [
+					{"GridX":4,"GridY":2,"TypeName":"sweetpotato","Level":0},
+					{"GridX":4,"GridY":1,"TypeName":"lilypad","Level":2},
+					{"GridX":4,"GridY":2,"TypeName":"lilypad","Level":2},
+					{"GridX":4,"GridY":3,"TypeName":"lilypad","Level":2}
+				]
+			}
+		},
+        {
+            "aliases": [
+                "Tide"
+            ],
+            "objclass": "TideProperties",
+            "objdata": {
+                "StartingWaveLocation": 9
+            }
+        },
+		{"aliases": ["ConveyorBelt"],"objclass": "ConveyorSeedBankProperties","objdata": {
+			"InitialPlantList": [
+				{"PlantType": "snapdragon","Level": 0,"Weight": 8,"MaxCount": 2,"MaxWeightFactor": 0.25},
+				{"PlantType": "bonkchoy","Level": 1,"Weight": 8,"MaxCount": 4,"MaxWeightFactor": 0.5},
+				{"PlantType": "electriccurrant","Level": 0,"Weight": 8,"MaxCount": 2,"MaxWeightFactor": 0.25},
+				{"PlantType": "wallnut","Level": 2,"Weight": 4,"MaxCount": 2,"MaxWeightFactor": 0.25},
+				{"PlantType": "tanglekelp","Level": 0,"Weight": 4,"MaxCount": 1,"MaxWeightFactor": 0.5},
+				{"PlantType": "jalapeno","Level": 0,"MaxCount": 1,"MaxWeightFactor": 1,"MaxCountCooldownSeconds": 60,"Weight": 100},
+				{"PlantType": "powerlily","Level": 0,"MaxCount": 1,"MaxWeightFactor": 1,"MaxCountCooldownSeconds": 30,"Weight": 100}
+			],
+			"DropDelayConditions": [{"Delay": 6.5,"MaxPackets": 0}],
+			"SpeedConditions": [{"Speed": 80,"MaxPackets": 0}]
+		}},
+        {
+            "aliases": [
+                "Escalation"
+            ],
+            "objclass": "LevelEscalationModuleProperties",
+            "objdata": {
+                "FlagCount": 2,
+                "PlantfoodToSpawnCount": 0,
+                "PointIncrementPerWave": 0,
+                "StartingPoints": -1,
+                "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+                "WavesPerFlag": 6,
+                "ZombiePool": [
+                    "RTID(beach_imp@ZombieTypes)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "WaveManager"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "WaveSpendingPointIncrement": 0,
+                "WaveSpendingPoints": 0,
+                "Waves": [
+["RTID(Wave1@CurrentLevel)"],	
+["RTID(Wave2@CurrentLevel)"],	
+["RTID(Wave3@CurrentLevel)"],	
+["RTID(Wave4@CurrentLevel)"],	
+["RTID(Wave5@CurrentLevel)"],	
+["RTID(Wave6@CurrentLevel)"],	
+["RTID(Wave7@CurrentLevel)"],	
+["RTID(Wave8@CurrentLevel)"],	
+["RTID(Wave9@CurrentLevel)"],	
+["RTID(Wave10@CurrentLevel)"],	
+["RTID(Wave11@CurrentLevel)"],	
+["RTID(Wave12@CurrentLevel)"]
+                ]
+            }
+        },
+{"aliases":["Wave1"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"1","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"2","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"3","Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave2"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"1","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"4","Type":"RTID(iceage_hunter@ZombieTypes)"},{"Row":"5","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"4","Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave3"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"1","Type":"RTID(prospector@ZombieTypes)"},{"Row":"2","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"4","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"5","Type":"RTID(prospector@ZombieTypes)"},{"Row":"2","Type":"RTID(prospector@ZombieTypes)"},{"Row":"4","Type":"RTID(prospector@ZombieTypes)"}]}},	
+{"aliases":["Wave4"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"1","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"2","Type":"RTID(iceage_hunter@ZombieTypes)"},{"Row":"3","Type":"RTID(chicken_farmer@ZombieTypes)"},{"Row":"1","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"2","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"3","Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave5"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"1","Type":"RTID(prospector@ZombieTypes)"},{"Row":"3","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"5","Type":"RTID(iceage_hunter@ZombieTypes)"},{"Row":"1","Type":"RTID(prospector@ZombieTypes)"},{"Row":"5","Type":"RTID(prospector@ZombieTypes)"},{"Row":"5","Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave6"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"1","Type":"RTID(prospector@ZombieTypes)"},{"Row":"3","Type":"RTID(prospector@ZombieTypes)"},{"Row":"4","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"5","Type":"RTID(chicken_farmer@ZombieTypes)"},{"Row":"1","Type":"RTID(prospector@ZombieTypes)"},{"Row":"4","Type":"RTID(chicken_farmer@ZombieTypes)"},{"Row":"5","Type":"RTID(prospector@ZombieTypes)"},{"Row":"1","Type":"RTID(iceage_hunter@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave7"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"2","Type":"RTID(beach_armor4@ZombieTypes)"},{"Row":"3","Type":"RTID(iceage_hunter@ZombieTypes)"},{"Row":"4","Type":"RTID(lostcity_bug_armor2@ZombieTypes)"},{"Row":"3","Type":"RTID(iceage_hunter@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave8"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"1","Type":"RTID(lostcity_bug_armor2@ZombieTypes)"},{"Row":"3","Type":"RTID(chicken_farmer@ZombieTypes)"},{"Row":"4","Type":"RTID(lostcity_bug_armor2@ZombieTypes)"},{"Row":"5","Type":"RTID(prospector@ZombieTypes)"},{"Row":"1","Type":"RTID(prospector@ZombieTypes)"},{"Row":"3","Type":"RTID(chicken_farmer@ZombieTypes)"},{"Row":"4","Type":"RTID(prospector@ZombieTypes)"},{"Row":"5","Type":"RTID(prospector@ZombieTypes)"},{"Row":"1","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"3","Type":"RTID(prospector@ZombieTypes)"},{"Row":"4","Type":"RTID(prospector@ZombieTypes)"},{"Row":"4","Type":"RTID(prospector@ZombieTypes)"}]}},	
+{"aliases":["Wave9"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"2","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"4","Type":"RTID(beach_armor4@ZombieTypes)"},{"Row":"5","Type":"RTID(lostcity_bug_armor2@ZombieTypes)"},{"Row":"2","Type":"RTID(lostcity_bug_armor2@ZombieTypes)"},{"Row":"4","Type":"RTID(iceage_hunter@ZombieTypes)"},{"Row":"5","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"1","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"2","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"1","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"2","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"1","Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave10"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"1","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"3","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"5","Type":"RTID(chicken_farmer@ZombieTypes)"},{"Row":"1","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"3","Type":"RTID(lostcity_bug_armor2@ZombieTypes)"},{"Row":"5","Type":"RTID(chicken_farmer@ZombieTypes)"},{"Row":"1","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"1","Type":"RTID(chicken_farmer@ZombieTypes)"},{"Row":"4","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"5","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"4","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"5","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"4","Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave11"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"1","Type":"RTID(beach_armor4@ZombieTypes)"},{"Row":"2","Type":"RTID(beach_armor4@ZombieTypes)"},{"Row":"5","Type":"RTID(beach_armor4@ZombieTypes)"},{"Row":"1","Type":"RTID(iceage_hunter@ZombieTypes)"},{"Row":"2","Type":"RTID(iceage_hunter@ZombieTypes)"},{"Row":"4","Type":"RTID(iceage_hunter@ZombieTypes)"},{"Row":"5","Type":"RTID(iceage_hunter@ZombieTypes)"},{"Row":"2","Type":"RTID(beach_imp@ZombieTypes)"},{"Row":"4","Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave12"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"1","Type":"RTID(lostcity_bug_armor2@ZombieTypes)"},{"Row":"2","Type":"RTID(lostcity_bug_armor2@ZombieTypes)"},{"Row":"3","Type":"RTID(lostcity_bug_armor2@ZombieTypes)"},{"Row":"4","Type":"RTID(lostcity_bug_armor2@ZombieTypes)"},{"Row":"1","Type":"RTID(chicken_farmer@ZombieTypes)"},{"Row":"2","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"3","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"4","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"5","Type":"RTID(beach_surfer@ZombieTypes)"},{"Row":"1","Type":"RTID(prospector@ZombieTypes)"},{"Row":"2","Type":"RTID(prospector@ZombieTypes)"},{"Row":"3","Type":"RTID(beach_armor4@ZombieTypes)"},{"Row":"4","Type":"RTID(prospector@ZombieTypes)"},{"Row":"5","Type":"RTID(chicken_farmer@ZombieTypes)"},{"Row":"1","Type":"RTID(prospector@ZombieTypes)"},{"Row":"2","Type":"RTID(beach_armor4@ZombieTypes)"},{"Row":"4","Type":"RTID(beach_armor4@ZombieTypes)"},{"Row":"5","Type":"RTID(prospector@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+
+
+		{
+            "aliases": [
+                "URM"
+            ],
+            "objclass": "BeachStageEventZombieSpawnerProps",
+            "objdata": {
+                "WaveStartMessage": "Urchin Rise!",
+                "ZombieCount": 0,
+                "ZombieName": "beach"
+            }
+        }
+    ],
+    "version": 1
+}

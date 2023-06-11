@@ -1,0 +1,821 @@
+{
+	"#comment": "Beach Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]",
+				"ForceNextLevel": "beach_dangerroom",
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(BeachMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(LevelDifficultyScaling@CurrentLevel)",
+					"RTID(Tide@CurrentLevel)"
+				],
+				"Name": "[DANGER_ROOM_BEACH_LEVEL_NAME]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"SuppressAwardScreen": true,
+				"StageModule": "RTID(BeachNightStage@CurrentLevel)"
+			}
+		},
+		{
+			"objclass": "JoustStageProperties",
+			"aliases": [
+				"BeachNightStage"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed",
+					"Dirt_Spawn_Dirt",
+					"AudioBeach",
+					"BeachGroansAudio"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"StagePrefix": "modern",
+				"BackgroundResourceGroup": "DelayLoad_Background_Beach_Compressed",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_BEACH_NIGHT",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "beach",
+				"FlagZombieTypeName": "beach_flag",
+				"Armor1ZombieTypeName": "beach_armor1",
+				"Armor2ZombieTypeName": "beach_armor2",
+				"RailcartDefaultTypeName": "railcart_egypt",
+				"GravestoneDefaultTypeName": "gravestone_egypt",
+				"DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_DIRT",
+				"MusicSuffix": "Beach",
+				"DisabledStreetCells": [
+					{
+						"mX": 0,
+						"mY": 0
+					},
+					{
+						"mX": 0,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 0,
+						"mY": 3
+					},
+					{
+						"mX": 0,
+						"mY": 4
+					},
+					{
+						"mX": 0,
+						"mY": 5
+					},
+					{
+						"mX": 0,
+						"mY": 6
+					},
+					{
+						"mX": 0,
+						"mY": 7
+					},
+					{
+						"mX": 0,
+						"mY": 8
+					},
+					{
+						"mX": 0,
+						"mY": 9
+					},
+					{
+						"mX": 1,
+						"mY": 0
+					},
+					{
+						"mX": 1,
+						"mY": 1
+					},
+					{
+						"mX": 1,
+						"mY": 2
+					},
+					{
+						"mX": 1,
+						"mY": 3
+					},
+					{
+						"mX": 1,
+						"mY": 4
+					},
+					{
+						"mX": 1,
+						"mY": 5
+					},
+					{
+						"mX": 1,
+						"mY": 6
+					},
+					{
+						"mX": 1,
+						"mY": 7
+					},
+					{
+						"mX": 1,
+						"mY": 8
+					},
+					{
+						"mX": 1,
+						"mY": 9
+					},
+					{
+						"mX": 2,
+						"mY": 0
+					},
+					{
+						"mX": 2,
+						"mY": 1
+					},
+					{
+						"mX": 2,
+						"mY": 2
+					},
+					{
+						"mX": 2,
+						"mY": 3
+					},
+					{
+						"mX": 2,
+						"mY": 4
+					},
+					{
+						"mX": 2,
+						"mY": 5
+					},
+					{
+						"mX": 2,
+						"mY": 6
+					},
+					{
+						"mX": 2,
+						"mY": 7
+					},
+					{
+						"mX": 2,
+						"mY": 8
+					},
+					{
+						"mX": 2,
+						"mY": 9
+					},
+					{
+						"mX": 3,
+						"mY": 9
+					},
+					{
+						"mX": 4,
+						"mY": 9
+					},
+					{
+						"mX": 5,
+						"mY": 9
+					},
+					{
+						"mX": 6,
+						"mY": 9
+					},
+					{
+						"mX": 7,
+						"mY": 9
+					},
+					{
+						"mX": 8,
+						"mY": 9
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			],
+			"objclass": "LevelDifficultyScalingModuleProperties",
+			"objdata": {
+				"#comment": "Minus one level from calculation",
+				"DifficultyRulesType": "NoDifficulty",
+				"ZombieLevelSwaps": [
+					{
+						"Level": 0,
+						"Swaps": [
+							{
+								"From": "RTID(beach@ZombieTypes)",
+								"To": [
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(beach@ZombieTypes)",
+									"RTID(treasureyeti@ZombieTypes)"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 1,
+				"Plants": [
+					{
+						"GridX": 30,
+						"GridY": 6,
+						"PlantType": "spikeweed"
+					},
+					{
+						"GridX": 0,
+						"GridY": 6,
+						"PlantType": "powerlily"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
+			"objclass": "TideProperties",
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(BeachDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(BeachDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(BeachTideChanger@CurrentLevel)",
+					"RTID(BeachTideChanger2@CurrentLevel)",
+					"RTID(BeachLilypadPlacer@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"BeachDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 100,
+				"BasePointIncrementPerWave": 40,
+				"BasePointIncrementPerLevel": 8,
+				"ZombiePool": [
+					"RTID(beach_armor1@ZombieTypes)",
+					"RTID(beach_armor2@ZombieTypes)",
+					"RTID(beach_fem_armor1@ZombieTypes)",
+					"RTID(beach_fem_armor2@ZombieTypes)",
+					"RTID(beach_imp@ZombieTypes)",
+					"RTID(beach_gargantuar@ZombieTypes)",
+					"RTID(explorer@ZombieTypes)",
+					"RTID(explorer_veteran@ZombieTypes)",
+					"RTID(tomb_raiser@ZombieTypes)",
+					"RTID(cleopatra@ZombieTypes)",
+					"RTID(lostcity_excavator@ZombieTypes)",
+					"RTID(lostcity_jane@ZombieTypes)",
+					"RTID(lostcity_relichunter@ZombieTypes)",
+					"RTID(lostcity_mime@ZombieTypes)",
+					"RTID(lostcity_crystalskull@ZombieTypes)",
+					"RTID(dark_wizard@ZombieTypes)",
+					"RTID(dark_juggler@ZombieTypes)",
+					"RTID(night_camel@ZombieTypes)",
+					"RTID(barrelroller@ZombieTypes)",
+					"RTID(cannon@ZombieTypes)",
+					"RTID(swashbuckler_endless@ZombieTypes)",
+					"RTID(iceage_dodo@ZombieTypes)",
+					"RTID(iceage_weaselhoarder@ZombieTypes)",
+					"RTID(iceage_hunter@ZombieTypes)",
+					"RTID(chicken_farmer@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)",
+					"RTID(west_bull@ZombieTypes)",
+					"RTID(beach_snorkel@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_fisherman@ZombieTypes)",
+					"RTID(beach_armor4@ZombieTypes)",
+					"RTID(modern_balloon@ZombieTypes)",
+					"RTID(gargantuar_mega@ZombieTypes)",
+					"RTID(dino_bully@ZombieTypes)",
+					"RTID(amber@ZombieTypes)",
+					"RTID(modern_superfanimp@ZombieTypes)",
+					"RTID(football_mech@ZombieTypes)",
+					"RTID(disco_mech@ZombieTypes)",
+					"RTID(future_jetpack@ZombieTypes)",
+					"RTID(eighties_mc@ZombieTypes)",
+					"RTID(eighties_glitter@ZombieTypes)",
+					"RTID(eighties_breakdancer@ZombieTypes)",
+					"RTID(eighties_arcade@ZombieTypes)",
+					"RTID(football@ZombieTypes)",
+					"RTID(modern_newspaper@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"BeachTideChanger"
+			],
+			"objclass": "DangerRoomBeachTideChanger",
+			"objdata": {
+				"//": "Number of zombies per Low Tide",
+				"StartingTideLevel": {
+					"LowerBound": {
+						"SlopeCoefficient": -1,
+						"YIntercept": 7,
+						"LowerLimit": {
+							"Value": 0
+						},
+						"UpperLimit": {
+							"Value": 3
+						}
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 1,
+						"YIntercept": -11,
+						"LowerLimit": {
+							"Value": 3
+						},
+						"UpperLimit": {
+							"Value": 9
+						}
+					}
+				},
+				"FinalTideLevel": {
+					"LowerBound": {
+						"YIntercept": 3
+					},
+					"UpperBound": {
+						"YIntercept": 9
+					}
+				},
+				"MinimumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"YIntercept": 2
+					}
+				},
+				"MaximumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 4
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0.5,
+						"YIntercept": 4.5,
+						"LowerLimit": {
+							"Value": 5
+						},
+						"UpperLimit": {
+							"Value": 9
+						}
+					}
+				},
+				"MinimumTideDelta": {
+					"LowerBound": {
+						"YIntercept": 1
+					},
+					"UpperBound": {
+						"YIntercept": 2
+					}
+				},
+				"MaximumTideDelta": {
+					"LowerBound": {
+						"YIntercept": 4
+					},
+					"UpperBound": {
+						"YIntercept": 7
+					}
+				},
+				"LowTideEventsPerFlagWave": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"//": "+0.2 every level, starts at 0.2, min 0 max 4",
+						"SlopeCoefficient": 0.2,
+						"YIntercept": 0.2,
+						"LowerLimit": {
+							"Value": 0
+						},
+						"UpperLimit": {
+							"Value": 4
+						}
+					}
+				},
+				"LowTideStartLevel": {
+					"LowerBound": {
+						"YIntercept": 1
+					},
+					"UpperBound": {
+						"//": "+0.2 every level, starts at 0.8, min 1 max 6",
+						"SlopeCoefficient": 0.2,
+						"YIntercept": 0.8,
+						"LowerLimit": {
+							"Value": 1
+						},
+						"UpperLimit": {
+							"Value": 6
+						}
+					}
+				},
+				"LowTideRecedeAmount": {
+					"LowerBound": {
+						"YIntercept": 1
+					},
+					"UpperBound": {
+						"//": "+0.25 every level, starts at 0, min 1 max 6",
+						"SlopeCoefficient": 0.25,
+						"YIntercept": 0,
+						"LowerLimit": {
+							"Value": 1
+						},
+						"UpperLimit": {
+							"Value": 6
+						}
+					}
+				},
+				"BasicLowTideZombieType": "beach_imp",
+				"BasicLowTideZombiesPerLowTideEvent": {
+					"LowerBound": {
+						"//": "+0.125 every level, starts at 1.5, min 3 max 5",
+						"SlopeCoefficient": 0.125,
+						"YIntercept": 1.5,
+						"LowerLimit": {
+							"Value": 3
+						},
+						"UpperLimit": {
+							"Value": 5
+						}
+					},
+					"UpperBound": {
+						"//": "+0.25 every level, starts at 2, min 5 max 15",
+						"SlopeCoefficient": 0.25,
+						"YIntercept": 2,
+						"LowerLimit": {
+							"Value": 3
+						},
+						"UpperLimit": {
+							"Value": 15
+						}
+					}
+				},
+				"SpecialLowTideZombieTypes": [
+					"beach_armor1",
+					"beach_armor2",
+					"beach_fem_armor1",
+					"beach_fem_armor2"
+				],
+				"SpecialLowTideZombiesPerLowTideEvent": {
+					"LowerBound": {
+						"//": "0 for the first 19 levels, then 1",
+						"SlopeCoefficient": 1,
+						"YIntercept": -19,
+						"LowerLimit": {
+							"Value": 0
+						},
+						"UpperLimit": {
+							"Value": 1
+						}
+					},
+					"UpperBound": {
+						"//": "+0.2 every level, starts at -0.8, min 0 max 10",
+						"SlopeCoefficient": 0.2,
+						"YIntercept": -0.8,
+						"LowerLimit": {
+							"Value": 0
+						},
+						"UpperLimit": {
+							"Value": 10
+						}
+					}
+				}
+			}
+		},
+		{
+			"aliases": [
+				"BeachTideChanger2"
+			],
+			"objclass": "DangerRoomBeachTideChanger",
+			"objdata": {
+				"StartingTideLevel": {
+					"LowerBound": {
+						"SlopeCoefficient": -1,
+						"YIntercept": 7,
+						"LowerLimit": {
+							"Value": 0
+						},
+						"UpperLimit": {
+							"Value": 3
+						}
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 1,
+						"YIntercept": -11,
+						"LowerLimit": {
+							"Value": 3
+						},
+						"UpperLimit": {
+							"Value": 9
+						}
+					}
+				},
+				"FinalTideLevel": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"YIntercept": 9
+					}
+				},
+				"MinimumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"YIntercept": 2
+					}
+				},
+				"MaximumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 4
+					},
+					"UpperBound": {
+						"SlopeCoefficient": 0.5,
+						"YIntercept": 4.5,
+						"LowerLimit": {
+							"Value": 5
+						},
+						"UpperLimit": {
+							"Value": 9
+						}
+					}
+				},
+				"//": "Number of zombies per Low Tide",
+				"MinimumTideDelta": {
+					"LowerBound": {
+						"YIntercept": 1
+					},
+					"UpperBound": {
+						"YIntercept": 2
+					}
+				},
+				"MaximumTideDelta": {
+					"LowerBound": {
+						"YIntercept": 4
+					},
+					"UpperBound": {
+						"YIntercept": 7
+					}
+				},
+				"LowTideEventsPerFlagWave": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"//": "+0.2 every level, starts at 0.2, min 0 max 4",
+						"SlopeCoefficient": 0.2,
+						"YIntercept": 0.2,
+						"LowerLimit": {
+							"Value": 0
+						},
+						"UpperLimit": {
+							"Value": 4
+						}
+					}
+				},
+				"LowTideStartLevel": {
+					"LowerBound": {
+						"YIntercept": 1
+					},
+					"UpperBound": {
+						"//": "+0.2 every level, starts at -0.2, min 1 max 5",
+						"SlopeCoefficient": 0.2,
+						"YIntercept": -0.2,
+						"LowerLimit": {
+							"Value": 1
+						},
+						"UpperLimit": {
+							"Value": 5
+						}
+					}
+				},
+				"LowTideRecedeAmount": {
+					"LowerBound": {
+						"YIntercept": 1
+					},
+					"UpperBound": {
+						"//": "+0.25 every level, starts at 0, min 1 max 6",
+						"SlopeCoefficient": 0.25,
+						"YIntercept": 0,
+						"LowerLimit": {
+							"Value": 1
+						},
+						"UpperLimit": {
+							"Value": 6
+						}
+					}
+				},
+				"SpecialLowTideZombieTypes": [
+					"beach_octopus",
+					"beach_snorkel"
+				],
+				"SpecialLowTideZombiesPerLowTideEvent": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"//": "+0.2 every level, starts at -0.4, min 1 max 5",
+						"SlopeCoefficient": 0.2,
+						"YIntercept": -0.4,
+						"LowerLimit": {
+							"Value": 0
+						},
+						"UpperLimit": {
+							"Value": 5
+						}
+					}
+				}
+			}
+		},
+		{
+			"aliases": [
+				"BeachLilypadPlacer"
+			],
+			"objclass": "DangerRoomBeachLilypadPlacer",
+			"objdata": {
+				"NumberOfLilypads": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"YIntercept": 30
+					}
+				},
+				"MinimumLilypadColumn": {
+					"LowerBound": {
+						"YIntercept": 0
+					},
+					"UpperBound": {
+						"YIntercept": 0
+					}
+				},
+				"MaximumLilypadColumn": {
+					"LowerBound": {
+						"YIntercept": 7
+					},
+					"UpperBound": {
+						"YIntercept": 8
+					}
+				}
+			}
+		}
+	],
+	"version": 1
+}

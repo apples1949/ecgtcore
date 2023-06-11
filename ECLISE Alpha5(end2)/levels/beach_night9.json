@@ -1,0 +1,186 @@
+{
+    "#comment": "BWB-9",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "E  C  L  I  S  E",
+                "FirstRewardParam": "moneybag",
+                "FirstIntroNarrative": "BEACH_NIGHT9_INTRO",
+                "ReplayIntroNarrative": "BEACH_NIGHT9_INTRO",
+                "StartingSun": 50,
+                "LevelNumber": 9,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(BeachNightStageBackground@LevelModules)",
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(ConveyorBelt@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(IPP@CurrentLevel)",
+                    "RTID(Escalation@CurrentLevel)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(Tide@CurrentLevel)",
+                    "RTID(ChallengeModule@CurrentLevel)"
+                ],
+                "MusicType": "MiniGame_A",
+                "Name": "BWB-9: Banalogue",
+                "StageModule": "RTID(BeachNightStage@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "IPP"
+            ],
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": [
+					{"GridX":0,"GridY":1,"TypeName":"lilypad","Level":2},
+					{"GridX":0,"GridY":3,"TypeName":"lilypad","Level":2}
+
+                ]
+            }
+        },
+		{
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(LevelTimer@CurrentLevel)",
+						"RTID(BeatTheLevel@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "LevelTimer"
+            ],
+            "objclass": "StarChallengeLevelTimerProperties",
+            "objdata": {
+                "TimeLimit": 240
+            }
+        },
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive without lawnmowers",
+				"DescriptiveName": ""
+			}
+		},
+        {
+            "aliases": [
+                "Tide"
+            ],
+            "objclass": "TideProperties",
+            "objdata": {
+                "StartingWaveLocation": 9
+            }
+        },
+		{"aliases": ["ConveyorBelt"],"objclass": "ConveyorSeedBankProperties","objdata": {
+			"InitialPlantList": [
+				{"PlantType": "lilypad","Level": 2,"Weight": 100,"MaxCount": 1,"MaxWeightFactor": 1,"MaxCountCooldownSeconds": 40},
+				{"PlantType": "banana","Level": 2,"Weight": 100,"MaxCount": 1,"MaxWeightFactor": 1,"MaxCountCooldownSeconds": 60},
+				{"PlantType": "squash","Level": 0,"Weight": 2},
+				{"PlantType": "tanglekelp","Level": 0,"Weight": 3},
+				{"PlantType": "cherry_bomb","Level": 0,"Weight": 100,"MaxCount": 1,"MaxWeightFactor": 1,"MaxCountCooldownSeconds": 40},
+				{"PlantType": "unused_48","Level": 0,"Weight": 4}
+			],
+			"DropDelayConditions": [{"Delay": 6.5,"MaxPackets": 0}],
+			"SpeedConditions": [{"Speed": 80,"MaxPackets": 0}]
+		}},
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "PlantExcludeList": [
+                    "lilypad"
+                ],
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "Escalation"
+            ],
+            "objclass": "LevelEscalationModuleProperties",
+            "objdata": {
+                "FlagCount": 1,
+                "PlantfoodToSpawnCount": 0,
+                "PointIncrementPerWave": 300,
+                "StartingPoints": 0,
+                "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+                "WavesPerFlag": 12,
+                "ZombiePool": [
+                    "RTID(beach_imp@ZombieTypes)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "WaveManager"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "WaveSpendingPointIncrement": 0,
+                "WaveSpendingPoints": 0,
+                "Waves": [
+["RTID(Wave1@CurrentLevel)","RTID(W1_1@CurrentLevel)"],	
+["RTID(Wave2@CurrentLevel)","RTID(W2_2@CurrentLevel)"],	
+["RTID(Wave3@CurrentLevel)","RTID(W3_2@CurrentLevel)"],	
+["RTID(Wave4@CurrentLevel)","RTID(W4_1@CurrentLevel)"],	
+["RTID(Wave5@CurrentLevel)","RTID(W5_4@CurrentLevel)"],	
+["RTID(Wave6@CurrentLevel)","RTID(W6_2@CurrentLevel)"],	
+["RTID(Wave7@CurrentLevel)","RTID(W7_1@CurrentLevel)"],	
+["RTID(Wave8@CurrentLevel)","RTID(W8_2@CurrentLevel)","RTID(W8_4@CurrentLevel)"],	
+["RTID(Wave9@CurrentLevel)","RTID(W9_2@CurrentLevel)"],	
+["RTID(Wave10@CurrentLevel)","RTID(W10_1@CurrentLevel)","RTID(W10_4@CurrentLevel)"],	
+["RTID(Wave11@CurrentLevel)","RTID(W11_2@CurrentLevel)"],	
+["RTID(Wave12@CurrentLevel)","RTID(W12_1@CurrentLevel)","RTID(W12_2@CurrentLevel)","RTID(W12_4@CurrentLevel)"]
+                ]
+            }
+        },
+{"aliases":["Wave1"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Row":"5","Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave2"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Type":"RTID(iceage_weaselhoarder@ZombieTypes)"}]}},	
+{"aliases":["Wave3"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave4"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave5"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_snorkel@ZombieTypes)"},{"Type":"RTID(beach_snorkel@ZombieTypes)"}]}},	
+{"aliases":["Wave6"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"}]}},	
+{"aliases":["Wave7"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Type":"RTID(beach_snorkel@ZombieTypes)"}]}},	
+{"aliases":["Wave8"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Type":"RTID(beach_snorkel@ZombieTypes)"}]}},	
+{"aliases":["Wave9"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(iceage_weaselhoarder@ZombieTypes)"},{"Type":"RTID(iceage_weaselhoarder@ZombieTypes)"}]}},	
+{"aliases":["Wave10"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(iceage_weaselhoarder@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"},{"Type":"RTID(beach_imp@ZombieTypes)"}]}},	
+{"aliases":["Wave11"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"}]}},	
+{"aliases":["Wave12"],"objclass":"SpawnZombiesJitteredWaveActionProps","objdata":{"Zombies":[{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"},{"Type":"RTID(beach_surfer@ZombieTypes)"}]}},	
+
+{"aliases": ["W1_1"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":7,"ColumnStart":6,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":10,"ZombieName": "beach_imp"}},	
+{"aliases": ["W2_2"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":5,"ColumnStart":5,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":1,"ZombieName": "beach_snorkel"}},	
+{"aliases": ["W3_2"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":3,"ColumnStart":3,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":1,"ZombieName": "beach_snorkel"}},	
+{"aliases": ["W4_1"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":3,"ColumnStart":2,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":10,"ZombieName": "beach_imp"}},	
+{"aliases": ["W5_4"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":8,"ColumnStart":8,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":1,"ZombieName": "iceage_weaselhoarder"}},	
+{"aliases": ["W6_2"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":8,"ColumnStart":8,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":2,"ZombieName": "beach_snorkel"}},	
+{"aliases": ["W7_1"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":5,"ColumnStart":4,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":10,"ZombieName": "beach_imp"}},	
+{"aliases": ["W8_2"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":7,"ColumnStart":7,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":5,"ZombieName": "beach_snorkel"}},{"aliases": ["W8_4"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":4,"ColumnStart":4,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":1,"ZombieName": "iceage_weaselhoarder"}},	
+{"aliases": ["W9_2"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":2,"ColumnStart":1,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":2,"ZombieName": "beach_snorkel"}},	
+{"aliases": ["W10_1"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":4,"ColumnStart":3,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":9,"ZombieName": "beach_imp"}},{"aliases": ["W10_4"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":4,"ColumnStart":4,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":1,"ZombieName": "iceage_weaselhoarder"}},	
+{"aliases": ["W11_2"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":6,"ColumnStart":6,"GroupSize":10,"TimeBeforeFullSpawn": "30","TimeBetweenGroups": "0.5","WaveStartMessage": "No Tide!","ZombieCount":2,"ZombieName": "beach_snorkel"}},	
+{"aliases": ["W12_1"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":2,"ColumnStart":1,"WaveStartMessage": "No Tide!","ZombieCount":10,"ZombieName": "beach_imp"}},{"aliases": ["W12_2"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":8,"ColumnStart":8,"WaveStartMessage": "No Tide!","ZombieCount":3,"ZombieName": "beach_snorkel"}},{"aliases": ["W12_4"],"objclass": "BeachStageEventZombieSpawnerProps","objdata": {"ColumnEnd":8,"ColumnStart":8,"WaveStartMessage": "No Tide!","ZombieCount":2,"ZombieName": "iceage_weaselhoarder"}}
+    ],
+    "version": 1
+}

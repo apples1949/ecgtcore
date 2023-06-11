@@ -1,0 +1,451 @@
+{
+	"#comment": "Ice Age Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]",
+				"ForceNextLevel": "iceage_dangerroom",
+				"IsDangerRoom": true,
+				"LevelNumber": 666,
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"SuppressPlantfoodPurchase": true,
+				"Loot": "RTID(DangerRoomLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(IceageMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "[DANGER_ROOM_ICEAGE_LEVEL_NAME]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"StageModule": "RTID(IceageStage@LevelModules)"
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(IceageDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(IceageDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(SliderTileDesigner@CurrentLevel)",
+					"RTID(FreezingWindDesigner@CurrentLevel)",
+					"RTID(IceBlockDesigner@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 1,
+				"Plants": [
+					{
+						"GridX": 30,
+						"GridY": 6,
+						"PlantType": "spikeweed"
+					},
+					{
+						"GridX": 0,
+						"GridY": 6,
+						"PlantType": "powerlily"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": true
+			}
+		},
+		{
+			"aliases": [
+				"IceageDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 100,
+				"BasePointIncrementPerWave": 30,
+				"BasePointIncrementPerLevel": 10,
+				"ZombiePool": [
+					"RTID(iceage_armor1@ZombieTypes)",
+					"RTID(iceage_armor2@ZombieTypes)",
+					"RTID(iceage_armor3@ZombieTypes)",
+					"RTID(iceage_hunter@ZombieTypes)",
+					"RTID(iceage_imp@ZombieTypes)",
+					"RTID(iceage_dodo@ZombieTypes)",
+					"RTID(hellbird@ZombieTypes)",
+					"RTID(iceage_troglobite@ZombieTypes)",
+					"RTID(iceage_weaselhoarder@ZombieTypes)",
+					"RTID(iceage_gargantuar@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SliderTileDesigner"
+			],
+			"objclass": "DangerRoomBoardGridMapPlacer",
+			"objdata": {
+				"GridMaps": [
+					"RTID(Floes01@BoardGridMaps)",
+					"RTID(Floes01@BoardGridMaps)",
+					"RTID(Floes01@BoardGridMaps)",
+					"RTID(Floes04@BoardGridMaps)",
+					"RTID(Floes05@BoardGridMaps)",
+					"RTID(Floes06@BoardGridMaps)",
+					"RTID(Floes07@BoardGridMaps)",
+					"RTID(Floes08@BoardGridMaps)",
+					"RTID(Floes09@BoardGridMaps)",
+					"RTID(Floes10@BoardGridMaps)",
+					"RTID(Floes11@BoardGridMaps)",
+					"RTID(Floes12@BoardGridMaps)",
+					"RTID(Floes13@BoardGridMaps)",
+					"RTID(Floes14@BoardGridMaps)",
+					"RTID(Floes15@BoardGridMaps)",
+					"RTID(Floes16@BoardGridMaps)",
+					"RTID(Floes17@BoardGridMaps)",
+					"RTID(Floes18@BoardGridMaps)",
+					"RTID(Floes19@BoardGridMaps)",
+					"RTID(Floes20@BoardGridMaps)",
+					"RTID(Floes21@BoardGridMaps)",
+					"RTID(Floes22@BoardGridMaps)",
+					"RTID(Floes23@BoardGridMaps)",
+					"RTID(Floes24@BoardGridMaps)",
+					"RTID(Floes25@BoardGridMaps)",
+					"RTID(Floes26@BoardGridMaps)",
+					"RTID(Floes27@BoardGridMaps)",
+					"RTID(Floes28@BoardGridMaps)",
+					"RTID(Floes29@BoardGridMaps)",
+					"RTID(Floes30@BoardGridMaps)",
+					"RTID(Floes31@BoardGridMaps)",
+					"RTID(Floes32@BoardGridMaps)",
+					"RTID(Floes33@BoardGridMaps)",
+					"RTID(Floes34@BoardGridMaps)",
+					"RTID(Floes35@BoardGridMaps)",
+					"RTID(Floes36@BoardGridMaps)",
+					"RTID(Floes37@BoardGridMaps)",
+					"RTID(Floes38@BoardGridMaps)",
+					"RTID(Floes39@BoardGridMaps)",
+					"RTID(Floes40@BoardGridMaps)",
+					"RTID(Floes41@BoardGridMaps)",
+					"RTID(Floes42@BoardGridMaps)",
+					"RTID(Floes43@BoardGridMaps)",
+					"RTID(Floes44@BoardGridMaps)",
+					"RTID(Floes45@BoardGridMaps)",
+					"RTID(Floes46@BoardGridMaps)",
+					"RTID(Floes47@BoardGridMaps)",
+					"RTID(Floes48@BoardGridMaps)",
+					"RTID(Floes49@BoardGridMaps)",
+					"RTID(Floes50@BoardGridMaps)",
+					"RTID(Floes51@BoardGridMaps)",
+					"RTID(Floes52@BoardGridMaps)",
+					"RTID(Floes53@BoardGridMaps)",
+					"RTID(Floes54@BoardGridMaps)",
+					"RTID(Floes55@BoardGridMaps)",
+					"RTID(Floes56@BoardGridMaps)",
+					"RTID(Floes57@BoardGridMaps)",
+					"RTID(Floes58@BoardGridMaps)",
+					"RTID(Floes59@BoardGridMaps)",
+					"RTID(Floes60@BoardGridMaps)",
+					"RTID(Floes61@BoardGridMaps)",
+					"RTID(Floes62@BoardGridMaps)",
+					"RTID(Floes63@BoardGridMaps)",
+					"RTID(Floes64@BoardGridMaps)",
+					"RTID(Floes65@BoardGridMaps)",
+					"RTID(Floes66@BoardGridMaps)",
+					"RTID(Floes67@BoardGridMaps)",
+					"RTID(Floes68@BoardGridMaps)",
+					"RTID(Floes69@BoardGridMaps)",
+					"RTID(Floes70@BoardGridMaps)",
+					"RTID(Floes71@BoardGridMaps)",
+					"RTID(Floes72@BoardGridMaps)",
+					"RTID(Floes73@BoardGridMaps)",
+					"RTID(Floes74@BoardGridMaps)",
+					"RTID(Floes75@BoardGridMaps)",
+					"RTID(Floes76@BoardGridMaps)",
+					"RTID(Floes77@BoardGridMaps)",
+					"RTID(Floes78@BoardGridMaps)",
+					"RTID(Floes79@BoardGridMaps)",
+					"RTID(Floes80@BoardGridMaps)",
+					"RTID(Floes81@BoardGridMaps)",
+					"RTID(Floes82@BoardGridMaps)",
+					"RTID(Floes83@BoardGridMaps)",
+					"RTID(Floes84@BoardGridMaps)",
+					"RTID(Floes85@BoardGridMaps)",
+					"RTID(Floes86@BoardGridMaps)",
+					"RTID(Floes87@BoardGridMaps)",
+					"RTID(Floes88@BoardGridMaps)",
+					"RTID(Floes89@BoardGridMaps)",
+					"RTID(Floes90@BoardGridMaps)",
+					"RTID(Floes91@BoardGridMaps)",
+					"RTID(Floes92@BoardGridMaps)",
+					"RTID(Floes93@BoardGridMaps)",
+					"RTID(Floes94@BoardGridMaps)",
+					"RTID(Floes95@BoardGridMaps)",
+					"RTID(Floes96@BoardGridMaps)",
+					"RTID(Floes97@BoardGridMaps)",
+					"RTID(Floes98@BoardGridMaps)",
+					"RTID(Floes99@BoardGridMaps)",
+					"RTID(Floes100@BoardGridMaps)",
+					"RTID(Floes101@BoardGridMaps)",
+					"RTID(Floes102@BoardGridMaps)",
+					"RTID(Floes103@BoardGridMaps)",
+					"RTID(Floes104@BoardGridMaps)",
+					"RTID(Floes105@BoardGridMaps)",
+					"RTID(Floes106@BoardGridMaps)",
+					"RTID(Floes107@BoardGridMaps)",
+					"RTID(Floes108@BoardGridMaps)",
+					"RTID(Floes109@BoardGridMaps)",
+					"RTID(Floes110@BoardGridMaps)",
+					"RTID(Floes111@BoardGridMaps)",
+					"RTID(Floes112@BoardGridMaps)",
+					"RTID(Floes113@BoardGridMaps)",
+					"RTID(Floes114@BoardGridMaps)",
+					"RTID(Floes115@BoardGridMaps)",
+					"RTID(Floes116@BoardGridMaps)",
+					"RTID(Floes117@BoardGridMaps)",
+					"RTID(Floes118@BoardGridMaps)",
+					"RTID(Floes119@BoardGridMaps)",
+					"RTID(Floes120@BoardGridMaps)",
+					"RTID(Floes121@BoardGridMaps)",
+					"RTID(Floes123@BoardGridMaps)",
+					"RTID(Floes124@BoardGridMaps)",
+					"RTID(Floes125@BoardGridMaps)",
+					"RTID(Floes126@BoardGridMaps)",
+					"RTID(Floes127@BoardGridMaps)",
+					"RTID(Floes128@BoardGridMaps)",
+					"RTID(Floes129@BoardGridMaps)",
+					"RTID(Floes130@BoardGridMaps)",
+					"RTID(Floes131@BoardGridMaps)",
+					"RTID(Floes132@BoardGridMaps)",
+					"RTID(Floes133@BoardGridMaps)",
+					"RTID(Floes134@BoardGridMaps)",
+					"RTID(Floes135@BoardGridMaps)",
+					"RTID(Floes136@BoardGridMaps)",
+					"RTID(Floes137@BoardGridMaps)",
+					"RTID(Floes138@BoardGridMaps)",
+					"RTID(Floes139@BoardGridMaps)",
+					"RTID(Floes140@BoardGridMaps)",
+					"RTID(Floes141@BoardGridMaps)"
+				],
+				"GridItemTypes": [
+					"slider_down",
+					"slider_up"
+				],
+				"GridType": "sliderfloe"
+			}
+		},
+		{
+			"aliases": [
+				"FreezingWindDesigner"
+			],
+			"objclass": "DangerRoomFreezingWindDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 30
+				},
+				"LaneCountMin": {
+					"Min": 0,
+					"Max": 1
+				},
+				"LaneCountMax": {
+					"Min": 3,
+					"Max": 5
+				},
+				"WavePercent": {
+					"Min": 5,
+					"Max": 40
+				},
+				"DoubleBlastPercent": {
+					"Min": 0,
+					"Max": 10
+				}
+			}
+		},
+		{
+			"aliases": [
+				"IceBlockDesigner"
+			],
+			"objclass": "DangerRoomIceBlockDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 60
+				},
+				"PlantColumnMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"PlantColumnMax": {
+					"Min": 2,
+					"Max": 6
+				},
+				"ZombieColumnMin": {
+					"Min": 6,
+					"Max": 4
+				},
+				"ZombieColumnMax": {
+					"Min": 8,
+					"Max": 8
+				},
+				"BlocksMin": {
+					"Min": 0,
+					"Max": 5
+				},
+				"BlocksMax": {
+					"Min": 10,
+					"Max": 25
+				},
+				"PctGoodBlocks": {
+					"Min": 60,
+					"Max": 10
+				},
+				"PlantTypeNames": [
+					"primalsunflower",
+					"escaperoot",
+					"chardguard",
+					"dusklobber",
+					"parsnip",
+					"guacodile",
+					"homingthistle",
+					"hypnoshroom",
+					"magnetshroom",
+					"sapfling",
+					"hurrikale",
+					"celerystalker",
+					"powerlily",
+					"goldleaf",
+					"coconutcannon",
+					"citron",
+					"electricblueberry",
+					"caulipower",
+					"witchhazel",
+					"missiletoe",
+					"grapeshot",
+					"snapdragon",
+					"lightningreed",
+					"peashooter",
+					"bowlingbulb"
+				],
+				"ZombieTypeNames": [
+					"iceage_armor1",
+					"iceage_armor2",
+					"iceage_armor3",
+					"iceage_hunter",
+					"iceage_imp",
+					"iceage_armor1",
+					"iceage_armor2",
+					"iceage_hunter",
+					"iceage_imp",
+					"iceage_dodo",
+					"iceage_dodo",
+					"iceage_weaselhoarder",
+					"iceage_weasel",
+					"iceage_weasel",
+					"iceage_armor1",
+					"iceage_armor2",
+					"iceage_hunter"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IceBlockDesigner2"
+			],
+			"objclass": "DangerRoomIceBlockDesigner",
+			"objdata": {
+				"LevelRange": {
+					"Min": 1,
+					"Max": 60
+				},
+				"PlantColumnMin": {
+					"Min": 4,
+					"Max": 4
+				},
+				"PlantColumnMax": {
+					"Min": 8,
+					"Max": 8
+				},
+				"ZombieColumnMin": {
+					"Min": 8,
+					"Max": 8
+				},
+				"ZombieColumnMax": {
+					"Min": 8,
+					"Max": 8
+				},
+				"BlocksMin": {
+					"Min": 0,
+					"Max": 0
+				},
+				"BlocksMax": {
+					"Min": 3,
+					"Max": 4
+				},
+				"PctGoodBlocks": {
+					"Min": 100,
+					"Max": 85
+				},
+				"PlantTypeNames": [
+					"bombegranate",
+					"cherry_bomb",
+					"jalapeno",
+					"ghostpepper",
+					"thymewarp",
+					"bonkchoy",
+					"squash",
+					"wallnut",
+					"primalwallnut",
+					"endurian",
+					"chardguard",
+					"stallia",
+					"chilibean",
+					"sunbean",
+					"solartomato",
+					"hollyshield",
+					"hollyknight",
+					"hollybarrierleafplantfood",
+					"explodeonut"
+				],
+				"ZombieTypeNames": [
+					"iceage_gargantuar"
+				]
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,220 @@
+{
+	"#comment": "DA-19 - 2 special imp minigrave spam",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s grind thousand quests",
+				"FirstRewardParam": "moneybag_200",
+				"ReplayRewardParam": "moneybag_100",
+				"StartingSun": 50,
+				"LevelNumber": 19,
+				"ZombieLevel": 4,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DarkMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(NormalLootOverride@LevelModules)",
+					"RTID(DarkMainLevelSwapModule4@LevelModules)",
+					"RTID(MiniSunGraveSpawner@LevelModules)",
+					"RTID(MiniSunGraveSpawner2@.)",
+					"RTID(MiniGraveSpawner@LevelModules)",
+					"RTID(MiniGraveSpawner2@.)",
+					"RTID(MiniGraveSpawner3@.)",
+					"RTID(MiniGraveSpawner4@.)",
+					"RTID(MiniSpawnerLimit@LevelModules)",
+					"RTID(Gravestones@CurrentLevel)"
+				],
+				"Name": "Level 19",
+				"StageModule": "RTID(DarkStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"TypeName": "gravestonePlantfoodOnDestruction"
+					},
+					{
+						"GridX": 2,
+						"GridY": 3,
+						"TypeName": "gravestonePlantfoodOnDestruction"
+					},
+					{
+						"GridX": 3,
+						"GridY": 1,
+						"TypeName": "gravestonePlantfoodOnDestruction"
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"TypeName": "gravestonePlantfoodOnDestruction"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"MiniSunGraveSpawner2"
+			],
+			"objclass": "ZombiePotionModuleProperties",
+			"objdata": {
+				"InitialPotionCount": 0,
+				"MaxPotionCount": 25,
+				"PotionSpawnTimer": {
+					"Max": 6,
+					"Min": 6
+				},
+				"PotionTypes": [
+					"gravestone_minisun"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"MiniGraveSpawner2"
+			],
+			"objclass": "ZombiePotionModuleProperties",
+			"objdata": {
+				"InitialPotionCount": 0,
+				"MaxPotionCount": 25,
+				"PotionSpawnTimer": {
+					"Max": 18,
+					"Min": 18
+				},
+				"PotionTypes": [
+					"gravestone_mini"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"MiniGraveSpawner3"
+			],
+			"objclass": "ZombiePotionModuleProperties",
+			"objdata": {
+				"InitialPotionCount": 0,
+				"MaxPotionCount": 25,
+				"PotionSpawnTimer": {
+					"Max": 18,
+					"Min": 18
+				},
+				"PotionTypes": [
+					"gravestone_mini"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"MiniGraveSpawner4"
+			],
+			"objclass": "ZombiePotionModuleProperties",
+			"objdata": {
+				"InitialPotionCount": 0,
+				"MaxPotionCount": 25,
+				"PotionSpawnTimer": {
+					"Max": 18,
+					"Min": 18
+				},
+				"PotionTypes": [
+					"gravestone_mini"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Gravestones"
+			],
+			"objclass": "GravestoneProperties",
+			"objdata": {
+				"GravestoneCount": 6,
+				"SpawnColumnEnd": 8,
+				"SpawnColumnStart": 3
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 2,
+				"WavesPerFlag": 9,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 15,
+				"StartingPoints": 80,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(dark_gargantuar@ZombieTypes)",
+					"RTID(dark_armor2@ZombieTypes)",
+					"RTID(dark_imp_dragon@ZombieTypes)",
+					"RTID(dark_juggler@ZombieTypes)",
+					"RTID(dark_king@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

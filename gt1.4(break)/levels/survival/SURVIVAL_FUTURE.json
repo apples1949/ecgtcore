@@ -1,0 +1,92 @@
+{
+	"#comment": "Empty heart‘",
+	false: "Future survival",
+	"objects": [ {
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s ultimate duration test",
+				"FirstRewardParam": "moneybag_100",
+				"ReplayRewardParam": "moneybag_100",
+				"StartingSun": 50,
+				"LevelNumber": 0,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LootOverride@CurrentLevel)" ],
+				"Name": "Survival",
+				"StageModule": "RTID(FutureStage@LevelModules)"
+			}
+		}, {
+			"objclass": "LootOverrideModuleProperties",
+			"aliases": [ "LootOverride" ],
+			"objdata": {
+				"Overrides": [ {
+						"ZombieType": "RTID(future_coin1@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					}, {
+						"ZombieType": "RTID(future_armor1_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					}, {
+						"ZombieType": "RTID(future_armor2_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					}, {
+						"ZombieType": "RTID(future_jetpack_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					}, {
+						"ZombieType": "RTID(future_protector_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					}, {
+						"ZombieType": "RTID(disco_mech_silver@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					}, {
+						"ZombieType": "RTID(future_gargantuar@ZombieTypes)",
+						"LootOverride": "GoldCoin"
+					}, {
+						"ZombieType": "RTID(future_jetpack_veteran_gold@ZombieTypes)",
+						"LootOverride": "GoldCoin"
+					}, {
+						"ZombieType": "RTID(future_gargantuar_gem@ZombieTypes)",
+						"LootOverride": "Gem"
+					} ]
+			}
+		}, {
+			"aliases": [ "SeedBank" ],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [ "goldleaf", "thymewarp", "caulipower", "blastberry", "goldbloom", "electricblueberry", "missiletoe" ],
+				"SelectionMethod": "chooser"
+			}
+		}, {
+			"aliases": [ "Escalation" ],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 30,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 17,
+				"StartingPoints": 10,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"WavesPerFlag": 7,
+				"ZombiePool": [ "RTID(future@ZombieTypes)", "RTID(future_coin1@ZombieTypes)", "RTID(future_armor1@ZombieTypes)", "RTID(future_armor1_silver@ZombieTypes)", "RTID(future_armor2@ZombieTypes)", "RTID(future_armor2_silver@ZombieTypes)", "RTID(future_gargantuar@ZombieTypes)", "RTID(future_gargantuar_gem@ZombieTypes)", "RTID(future_jetpack@ZombieTypes)", "RTID(future_jetpack_silver@ZombieTypes)", "RTID(future_jetpack_veteran@ZombieTypes)", "RTID(future_jetpack_veteran_gold@ZombieTypes)", "RTID(mech_cone@ZombieTypes)", "RTID(future_protector@ZombieTypes)", "RTID(future_protector_silver@ZombieTypes)", "RTID(disco_mech@ZombieTypes)" ]
+			}
+		}, {
+			"aliases": [ "NewWaves" ],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {}
+		}, {
+			"aliases": [ "WaveManager" ],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+			}
+		}, {
+			"aliases": [ "Blank" ],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": []
+			}
+		} ],
+	"version": 1
+}

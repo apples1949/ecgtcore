@@ -1,0 +1,538 @@
+{
+	"#comment": "Gate",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"StartingSun": 0,
+				"FirstRewardParam": "kiwibeast_deprecated",
+				"FirstRewardType": "unlock_plant",
+				"ReplayRewardType": "none",
+				"ForceToWorldMap": true,
+				"DisableRestart": true,
+				"DisableSaveGame": true,
+				"SuppressAwardScreen": true,
+				"Loot": "RTID(NoLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)",
+					"RTID(IPP@CurrentLevel)"
+				],
+				"Name": "Unlock S-Potato Mine!",
+				"ReplayRewardType": "none",
+				"StageModule": "RTID(ModernStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "REQUIREMENT: Potato Mine Lv.10, Squash Lv.8, Primal Mine Lv.6, Explode-o-nut Lv.5",
+				"DescriptiveName": ""
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 3,
+				"Plants": [
+					{
+						"GridX": 1,
+						"GridY": 0,
+						"PlantType": "potatomine"
+					},
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"PlantType": "squash"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"PlantType": "primalpotatomine"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
+			"objclass": "InitialPlantProperties",
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 1,
+						"GridY": 4,
+						"TypeName": "explodeonut"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"ZombieCountdownFirstWaveSecs": 0,
+				"ZombieCountdownFirstWaveConveyorSecs": 0,
+				"ZombieCountdownHugeWaveDelay": 0,
+				"SuppressFlagZombie": true,
+				"FlagWaveInterval": 2,
+				"WaveCount": 2,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 1,
+						"Type": "RTID(traptile_1@GridItemTypes)"
+					},
+					{
+						"Count": 1,
+						"Type": "RTID(traptile_2@GridItemTypes)"
+					},
+					{
+						"Count": 1,
+						"Type": "RTID(traptile_3@GridItemTypes)"
+					},
+					{
+						"Count": 1,
+						"Type": "RTID(traptile_4@GridItemTypes)"
+					},
+					{
+						"Count": 1,
+						"Type": "RTID(gravestone_egypt@.)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 8,
+						"mY": 0
+					},
+					{
+						"mX": 8,
+						"mY": 1
+					},
+					{
+						"mX": 8,
+						"mY": 3
+					},
+					{
+						"mX": 8,
+						"mY": 4
+					},
+					{
+						"mX": 0,
+						"mY": 4
+					}
+				],
+				"RandomPlacement": false,
+				"SpawnEffectAnimID": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"AdditionalPlantfood": "0",
+				"GridTypes": [
+					"RTID(gravestone_egypt@.)"
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"TrapTileProps_1"
+			],
+			"objclass": "GridItemProjectileTrapProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_BACKGROUNDS_BOULDERTILE",
+				"PopAnimRenderOffset": {
+					"x": 99999,
+					"y": 99999
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"PositioningFlags": [
+					"locky"
+				],
+				"ProjectileFireOriginOffset": {
+					"x": 850,
+					"y": 0,
+					"z": 20
+				},
+				"ProjectileTypeToSpawn": "RTID(TrapProjectile1@.)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 99999999,
+				"TriggerRect": {
+					"mHeight": 0,
+					"mWidth": 4,
+					"mX": -2,
+					"mY": 4
+				},
+				"TriggeringEntityTypes": [
+					"griditem"
+				]
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"TrapProjectile1"
+			],
+			"objdata": {
+				"BaseDamage": 65,
+				"DamageFlags": [
+					"shooter"
+				],
+				"CollisionFlags": [
+					"plants"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -1000.0,
+						"Max": -1000.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"InitialScale": {
+					"Min": 0.0,
+					"Max": 0.0
+				},
+				"CollisionRect": {
+					"mX": -20.0,
+					"mY": -20.0,
+					"mWidth": 40.0,
+					"mHeight": 40.0
+				}
+			}
+		},
+		{
+			"aliases": [
+				"TrapTileProps_2"
+			],
+			"objclass": "GridItemProjectileTrapProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_BACKGROUNDS_BOULDERTILE",
+				"PopAnimRenderOffset": {
+					"x": 99999,
+					"y": 99999
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"PositioningFlags": [
+					"locky"
+				],
+				"ProjectileFireOriginOffset": {
+					"x": 850,
+					"y": 0,
+					"z": 20
+				},
+				"ProjectileTypeToSpawn": "RTID(TrapProjectile2@.)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 99999999,
+				"TriggerRect": {
+					"mHeight": 0,
+					"mWidth": 4,
+					"mX": -2,
+					"mY": 4
+				},
+				"TriggeringEntityTypes": [
+					"griditem"
+				]
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"TrapProjectile2"
+			],
+			"objdata": {
+				"BaseDamage": 57,
+				"DamageFlags": [
+					"shooter"
+				],
+				"CollisionFlags": [
+					"plants"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -1000.0,
+						"Max": -1000.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"InitialScale": {
+					"Min": 0.0,
+					"Max": 0.0
+				},
+				"CollisionRect": {
+					"mX": -20.0,
+					"mY": -20.0,
+					"mWidth": 40.0,
+					"mHeight": 40.0
+				}
+			}
+		},
+		{
+			"aliases": [
+				"TrapTileProps_3"
+			],
+			"objclass": "GridItemProjectileTrapProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_BACKGROUNDS_BOULDERTILE",
+				"PopAnimRenderOffset": {
+					"x": 99999,
+					"y": 99999
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"PositioningFlags": [
+					"locky"
+				],
+				"ProjectileFireOriginOffset": {
+					"x": 850,
+					"y": 0,
+					"z": 20
+				},
+				"ProjectileTypeToSpawn": "RTID(TrapProjectile3@.)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 99999999,
+				"TriggerRect": {
+					"mHeight": 0,
+					"mWidth": 4,
+					"mX": -2,
+					"mY": 4
+				},
+				"TriggeringEntityTypes": [
+					"griditem"
+				]
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"TrapProjectile3"
+			],
+			"objdata": {
+				"BaseDamage": 52,
+				"DamageFlags": [
+					"shooter"
+				],
+				"CollisionFlags": [
+					"plants"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -1000.0,
+						"Max": -1000.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"InitialScale": {
+					"Min": 0.0,
+					"Max": 0.0
+				},
+				"CollisionRect": {
+					"mX": -20.0,
+					"mY": -20.0,
+					"mWidth": 40.0,
+					"mHeight": 40.0
+				}
+			}
+		},
+		{
+			"aliases": [
+				"TrapTileProps_4"
+			],
+			"objclass": "GridItemProjectileTrapProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_BACKGROUNDS_BOULDERTILE",
+				"PopAnimRenderOffset": {
+					"x": 99999,
+					"y": 99999
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"PositioningFlags": [
+					"locky"
+				],
+				"ProjectileFireOriginOffset": {
+					"x": 850,
+					"y": 0,
+					"z": 20
+				},
+				"ProjectileTypeToSpawn": "RTID(TrapProjectile4@.)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 99999999,
+				"TriggerRect": {
+					"mHeight": 0,
+					"mWidth": 4,
+					"mX": -2,
+					"mY": 4
+				},
+				"TriggeringEntityTypes": [
+					"griditem"
+				]
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"TrapProjectile4"
+			],
+			"objdata": {
+				"BaseDamage": 210,
+				"DamageFlags": [
+					"shooter"
+				],
+				"CollisionFlags": [
+					"plants"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -1000.0,
+						"Max": -1000.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"InitialScale": {
+					"Min": 0.0,
+					"Max": 0.0
+				},
+				"CollisionRect": {
+					"mX": -20.0,
+					"mY": -20.0,
+					"mWidth": 40.0,
+					"mHeight": 40.0
+				}
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"gravestone_egypt"
+			],
+			"objdata": {
+				"TypeName": "gravestone_egypt",
+				"GridItemClass": "GridItemGravestone",
+				"ResourceGroups": [
+					"Egypt_Gravestone"
+				],
+				"Properties": "RTID(GridItemGravestoneDefault@.)"
+			}
+		},
+		{
+			"aliases": [
+				"GridItemGravestoneDefault"
+			],
+			"objclass": "GridItemGravestonePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 98,
+					"y": 127
+				},
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_EGYPT_HIEROGLYPH_DAMAGE",
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble",
+				"DamageStateCount": 5,
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"Hitpoints": 515,
+				"PopAnim": "POPANIM_GRAVESTONES_EGYPT_HIEROGLYPH",
+				"ScaledProps": [
+					{
+						"Arg1": 1.125,
+						"Arg2": 0.1,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

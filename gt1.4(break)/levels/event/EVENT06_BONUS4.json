@@ -1,0 +1,157 @@
+{
+	"#comment": "Empty heart‘",
+	false: "Power zombie IV",
+	"objects": [ {
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Difficult!",
+				"FirstRewardParam": "moneybag_100",
+				"ZombieLevel": 8,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [ "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(SunDropper@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LootOverride@CurrentLevel)", "RTID(JoustModule@CurrentLevel)", "RTID(LevelDifficultyScaling@CurrentLevel)", "RTID(LevelScoring@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)", "RTID(LastStand@CurrentLevel)" ],
+				"Name": "Zombie Cheater IV",
+				"LossModule": "RTID(JoustOutro@LevelModules)",
+				"VictoryModule": "RTID(JoustOutro@LevelModules)",
+				"StageModule": "RTID(JoustStage@CurrentLevel)"
+			}
+		}, {
+			"objclass": "EightiesStageProperties",
+			"aliases": [ "JoustStage" ],
+			"objdata": {
+				"ResourceGroupNames": [ "DelayLoad_Background_Joust", "Dirt_Spawn_Grass", "Dirt_Spawn_Dirt", "AudioJoust", "AudioDarkAges", "Tombstone_Dark_Base", "Tombstone_Dark_Effects" ],
+				"GroupsToUnloadForAds": [ "DelayLoad_Background_Joust", "DelayLoad_Background_Joust_ScoringZone" ],
+				"StagePrefix": "dark",
+				"BackgroundResourceGroup": "DelayLoad_Background_Joust",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_JOUST",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "dark",
+				"FlagZombieTypeName": "dark_flag",
+				"RailcartDefaultTypeName": "railcart_cowboy",
+				"GravestoneDefaultTypeName": "gravestone_dark",
+				"DirtSpawnEffectName": [ "POPANIM_EFFECTS_DIRT_SPAWN_DIRT", "POPANIM_EFFECTS_DIRT_SPAWN_GRASS" ],
+				"MusicSuffix": "DarkAges",
+				"AmbientAudioSuffix": "Amb_Tutorial_Garden_BG_LP",
+				"DrawMultiplierOverlay": true,
+				"DrawMultiplierLabels": false
+			}
+		}, {
+			"objclass": "SunDropperProperties",
+			"aliases": [ "SunDropper" ],
+			"objdata": {
+				"InitialSunDropDelay": 2,
+				"SunCountdownBase": 3,
+				"SunCountdownRange": 0,
+				"SunCountdownIncreasePerSun": 0.05,
+				"SunCountdownMax": 5
+			}
+		}, {
+			"aliases": [ "LastStand" ],
+			"objclass": "LastStandMinigameProperties",
+			"objdata": {
+				"StartingPlantfood": 3,
+				"StartingSun": 2450
+			}
+		}, {
+			"aliases": [ "Tide" ],
+			"objclass": "TideProperties",
+			"objdata": {
+				"StartingWaveLocation": 1
+			}
+		}, {
+			"aliases": [ "LevelDifficultyScaling" ],
+			"objclass": "LevelDifficultyScalingModuleProperties",
+			"objdata": {
+				"DifficultyRulesType": "NoLevelingIncrease"
+			}
+		}, {
+			"aliases": [ "LevelScoring" ],
+			"objclass": "LevelScoringModuleProperties",
+			"objdata": {
+				"PlantBonusMultiplier": 0.0,
+				"PlantBonuses": [],
+				"ScoringRulesType": "NoMultiplier",
+				"StartingPlantfood": 3
+			}
+		}, {
+			"aliases": [ "JoustModule" ],
+			"objclass": "JoustGameModuleProperties",
+			"objdata": {
+				"TimeLimit": 361
+			}
+		}, {
+			"aliases": [ "ChallengeModule" ],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"ChallengesAlwaysAvailable": true
+			}
+		}, {
+			"aliases": [ "BeatTheLevel" ],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "Survive for 6 minutes\nZombies are buffed to level 8\n(+198% HP, 141% DPS, 17.5% Speed)",
+				"DescriptiveName": "[STARCHALLENGE_PRESET_PLANTS_NAME]"
+			}
+		}, {
+			"objclass": "LootOverrideModuleProperties",
+			"aliases": [ "LootOverride" ],
+			"objdata": {
+				"Overrides": [ {
+						"ZombieType": "RTID(eighties_8bit@ZombieTypes)",
+						"LootOverride": "SilverCoin"
+					}, {
+						"ZombieType": "RTID(dark_wizard@ZombieTypes)",
+						"LootOverride": "GoldCoin"
+					} ]
+			}
+		}, {
+			"aliases": [ "SeedBank" ],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"OverrideSeedSlotsCount": 7,
+				"SelectionMethod": "chooser"
+			}
+		}, {
+			"aliases": [ "Escalation" ],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 10,
+				"PlantfoodToSpawnCount": 0,
+				"PointIncrementPerWave": 19,
+				"StartingPoints": 172,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"WavesPerFlag": 6,
+				"ZombiePool": [ "RTID(dark_wizard@ZombieTypes)", "RTID(lostcity_relichunter@ZombieTypes)", "RTID(eighties_arcade@ZombieTypes)", "RTID(dark_armor1_point@ZombieTypes)", "RTID(dark_armor3_point@ZombieTypes)", "RTID(dino_imp@ZombieTypes)" ]
+			}
+		}, {
+			"aliases": [ "NewWaves" ],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"ManualStartup": true
+			}
+		}, {
+			"aliases": [ "WaveManager" ],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [ [ "RTID(JamRap@CurrentLevel)" ] ]
+			}
+		}, {
+			"aliases": [ "JamRap" ],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"NotificationEvents": [ "jam_rap" ]
+			}
+		}, {
+			"aliases": [ "Blank" ],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": []
+			}
+		} ],
+	"version": 1
+}

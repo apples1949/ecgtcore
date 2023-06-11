@@ -1,0 +1,1027 @@
+{
+	"#comment": "Survival conveyor",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s ultimate luck test",
+				"FirstRewardParam": "moneybag_100",
+				"ReplayRewardParam": "moneybag_100",
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(BoostTileSpawner@CurrentLevel)",
+					"RTID(ZombieSwapModule@CurrentLevel)",
+					"RTID(NormalLootOverride@LevelModules)"
+				],
+				"Name": "Survival: Conveyor Belt",
+				"MusicType": "MiniGame_A",
+				"StageModule": "RTID(RomanStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieSwapModule"
+			],
+			"objclass": "LevelDifficultyScalingModuleProperties",
+			"objdata": {
+				"#comment": "Minus one level from calculation",
+				"DifficultyRulesType": "NoLevelingIncrease",
+				"ZombieLevelSwaps": [
+					{
+						"Level": 0,
+						"Swaps": [
+							{
+								"From": "RTID(roman@ZombieTypes)",
+								"To": [
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman@ZombieTypes)",
+									"RTID(roman_silver@ZombieTypes)",
+									"RTID(roman_silver@ZombieTypes)",
+									"RTID(roman_silver@ZombieTypes)",
+									"RTID(roman_silver@ZombieTypes)",
+									"RTID(roman_silver@ZombieTypes)",
+									"RTID(roman_gold@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(roman_armor1@ZombieTypes)",
+								"To": [
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1@ZombieTypes)",
+									"RTID(roman_armor1_silver@ZombieTypes)",
+									"RTID(roman_armor1_silver@ZombieTypes)",
+									"RTID(roman_armor1_silver@ZombieTypes)",
+									"RTID(roman_armor1_silver@ZombieTypes)",
+									"RTID(roman_armor1_silver@ZombieTypes)",
+									"RTID(roman_armor1_gold@ZombieTypes)",
+									"RTID(roman_armor1_gold@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(roman_armor3@ZombieTypes)",
+								"To": [
+									"RTID(roman_armor3@ZombieTypes)",
+									"RTID(roman_armor3@ZombieTypes)",
+									"RTID(roman_armor3_silver@ZombieTypes)",
+									"RTID(roman_armor3_silver@ZombieTypes)",
+									"RTID(roman_armor3_silver@ZombieTypes)",
+									"RTID(roman_armor3_silver@ZombieTypes)",
+									"RTID(roman_armor3_silver@ZombieTypes)",
+									"RTID(roman_armor3_silver@ZombieTypes)",
+									"RTID(roman_armor3_silver@ZombieTypes)",
+									"RTID(roman_armor3_gold@ZombieTypes)"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"BoostTileSpawner"
+			],
+			"objclass": "ZombiePotionModuleProperties",
+			"objdata": {
+				"InitialPotionCount": 0,
+				"MaxPotionCount": 45,
+				"PotionSpawnTimer": {
+					"Max": 60,
+					"Min": 50
+				},
+				"PotionTypes": [
+					"boosttile"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GI"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 2,
+						"GridY": 10,
+						"TypeName": "crater"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
+			"objclass": "ConveyorSeedBankProperties",
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 8,
+						"MaxPackets": 0
+					},
+					{
+						"Delay": 7.5,
+						"MaxPackets": 2
+					},
+					{
+						"Delay": 7.1,
+						"MaxPackets": 4
+					},
+					{
+						"Delay": 6.7,
+						"MaxPackets": 5
+					},
+					{
+						"Delay": 6.4,
+						"MaxPackets": 6
+					},
+					{
+						"Delay": 6.2,
+						"MaxPackets": 7
+					},
+					{
+						"Delay": 6,
+						"MaxPackets": 8
+					}
+				],
+				"InitialPlantList": [
+					{
+						"PlantType": "puffshroom",
+						"MaxCountCooldownSeconds": 90,
+						"MaxWeightFactor": 0.0166,
+						"MaxCount": 6,
+						"Weight": 300
+					},
+					{
+						"PlantType": "bloominghearts",
+						"MaxCountCooldownSeconds": 90,
+						"MaxWeightFactor": 0.0166,
+						"MaxCount": 6,
+						"Weight": 300
+					},
+					{
+						"PlantType": "shadowpeashooter",
+						"MaxCountCooldownSeconds": 70,
+						"MaxWeightFactor": 0.0333,
+						"MaxCount": 5,
+						"Weight": 120
+					},
+					{
+						"PlantType": "snowpea",
+						"MaxCountCooldownSeconds": 70,
+						"MaxWeightFactor": 0.06670000000000001,
+						"MaxCount": 5,
+						"Weight": 60
+					},
+					{
+						"PlantType": "homingthistle",
+						"MaxCountCooldownSeconds": 70,
+						"MaxWeightFactor": 0.06670000000000001,
+						"MaxCount": 5,
+						"Weight": 60
+					},
+					{
+						"PlantType": "strawburst",
+						"MaxCountCooldownSeconds": 50,
+						"MaxWeightFactor": 0.1,
+						"MaxCount": 4,
+						"Weight": 30
+					},
+					{
+						"PlantType": "pokra",
+						"MaxWeightFactor": 0.3330000000000001,
+						"MaxCount": 3,
+						"Weight": 6
+					},
+					{
+						"PlantType": "peanut",
+						"MaxWeightFactor": 0.3330000000000001,
+						"MaxCount": 3,
+						"Weight": 6
+					},
+					{
+						"PlantType": "ultomato",
+						"Weight": 6
+					},
+					{
+						"PlantType": "dazeychain",
+						"Weight": 1
+					},
+					{
+						"PlantType": "puffball",
+						"MaxWeightFactor": 0.0333,
+						"MaxCountCooldownSeconds": 60,
+						"MaxCount": 1,
+						"Weight": 30
+					},
+					{
+						"PlantType": "tallnut",
+						"MaxWeightFactor": 0.0167,
+						"MaxCountCooldownSeconds": 60,
+						"MaxCount": 2,
+						"Weight": 120
+					},
+					{
+						"PlantType": "reinforcemint",
+						"MaxWeightFactor": 0.0333,
+						"MaxCountCooldownSeconds": 30,
+						"MaxCount": 1,
+						"Weight": 30
+					},
+					{
+						"PlantType": "potatomine",
+						"MaxWeightFactor": 0.05,
+						"MaxCount": 3,
+						"Weight": 60
+					},
+					{
+						"PlantType": "bombegranate",
+						"MaxWeightFactor": 0.167,
+						"MaxCount": 1,
+						"Weight": 6
+					},
+					{
+						"PlantType": "enforcemint",
+						"MaxWeightFactor": 1,
+						"MaxCountCooldownSeconds": 300,
+						"MaxCount": 1,
+						"Weight": 1000
+					},
+					{
+						"PlantType": "enchantmint",
+						"MaxWeightFactor": 1,
+						"MaxCountCooldownSeconds": 300,
+						"MaxCount": 1,
+						"Weight": 1000
+					},
+					{
+						"PlantType": "marigold",
+						"MaxWeightFactor": 1,
+						"MaxCountCooldownSeconds": 120,
+						"MaxCount": 1,
+						"Weight": 400
+					}
+				],
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0,
+						"Speed": 100
+					},
+					{
+						"MaxPackets": 2,
+						"Speed": 106
+					},
+					{
+						"MaxPackets": 4,
+						"Speed": 113
+					},
+					{
+						"MaxPackets": 5,
+						"Speed": 119
+					},
+					{
+						"MaxPackets": 6,
+						"Speed": 125
+					},
+					{
+						"MaxPackets": 7,
+						"Speed": 129
+					},
+					{
+						"MaxPackets": 8,
+						"Speed": 133
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 20,
+				"WavesPerFlag": 10,
+				"PlantfoodToSpawnCount": 0,
+				"StartingPoints": 20,
+				"PointIncrementPerWave": 30,
+				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+				"ZombiePool": [
+					"RTID(roman@ZombieTypes)",
+					"RTID(roman_armor1@ZombieTypes)",
+					"RTID(roman_armor3@ZombieTypes)",
+					"RTID(roman_medusa@ZombieTypes)",
+					"RTID(roman_ballista@ZombieTypes)",
+					"RTID(dino_bully_veteran@ZombieTypes)",
+					"RTID(pelican@ZombieTypes)",
+					"RTID(modern_balloon@ZombieTypes)",
+					"RTID(pirate_captain@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"### ZombieCountdownHugeWaveDelay": 0,
+				"MinNextWaveHealthPercentage": 0.5,
+				"MaxNextWaveHealthPercentage": 0.5,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(ModConveyor@CurrentLevel)"
+					],
+					[
+						"RTID(Magician@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ModConveyor"
+			],
+			"objclass": "ModifyConveyorWaveActionProps",
+			"objdata": {
+				"Add": [
+				],
+				"Remove": [
+					{
+						"Type": "RTID(marigold@PlantTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Magician"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"GridTypes": [
+					"RTID(crater@GridItemTypes)"
+				],
+				"SuppressActionIfNoGridItemsFound": true,
+				"WaveStartMessage": "",
+				"ZombieSpawnWaitTime": "0",
+				"Zombies": [
+					{
+						"Type": "RTID(survival_magician@ZombieTypes)"
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

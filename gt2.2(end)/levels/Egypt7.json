@@ -1,0 +1,64 @@
+{
+	"#comment": "Gate",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"LevelPowerupSet": "LevelPowerupsDisabled",
+				"StartingSun": 0,
+				"FirstIntroNarrative": "FREE_REWARD_INTRO",
+				"ReplayIntroNarrative": "FREE_REWARD_INTRO",
+				"FirstRewardParam": "ailmint",
+				"FirstRewardType": "unlock_plant",
+				"GameFeaturesToUnlock": [
+					"lostcity_stargate_start",
+					"dino_stargate_start",
+					"cowboy_stargate_start",
+					"pirate_stargate_start",
+					"dark_stargate_start",
+					"iceage_stargate_start",
+					"modern_stargate_start",
+					"future_stargate_start",
+					"eighties_stargate_start",
+					"beach_stargate_start"
+				],
+				"ForceToWorldMap": true,
+				"DisableRestart": true,
+				"DisableSaveGame": true,
+				"Loot": "RTID(NoLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"Name": "Here we are.",
+				"ReplayRewardType": "none",
+				"StageModule": "RTID(ModernStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"ZombieCountdownFirstWaveSecs": 0,
+				"ZombieCountdownFirstWaveConveyorSecs": 0,
+				"ZombieCountdownHugeWaveDelay": 0,
+				"SuppressFlagZombie": true,
+				"Waves": [
+				]
+			}
+		}
+	],
+	"version": 1
+}

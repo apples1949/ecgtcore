@@ -1,0 +1,1957 @@
+{
+	"#comment": "DA boss endless",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "{PLAYER}'s omega ultimate endurance test",
+				"FirstRewardType": "none",
+				"ReplayRewardType": "none",
+				"StartingSun": 200,
+				"DisablePlantBoosts": true,
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DarkMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombossBattle@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(MiniSpawnerLimit@LevelModules)",
+					"RTID(PFSpawner@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LevelTimer@CurrentLevel)",
+					"RTID(PortalSpawner@CurrentLevel)",
+					"RTID(NormalLootOverride@LevelModules)"
+				],
+				"MusicType": "MiniGame_A",
+				"Name": "Survival B",
+				"StageModule": "RTID(DarkStage@CurrentLevel)",
+				"LoadDefaultMusic": false
+			}
+		},
+		{
+			"aliases": [
+				"PortalSpawner"
+			],
+			"objclass": "ZombiePotionModuleProperties",
+			"objdata": {
+				"InitialPotionCount": 0,
+				"MaxPotionCount": 20,
+				"PotionSpawnTimer": {
+					"Max": 10,
+					"Min": 6
+				},
+				"PotionTypes": [
+					"zombieportal_1"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombiePortal_1"
+			],
+			"objclass": "GridItemZombiePortalProps",
+			"objdata": {
+				"CanBeMowed": false,
+				"CloseAnimation": "end",
+				"Height": "ground",
+				"Hitpoints": 5,
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 125
+				},
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig",
+				"SpawnAnimation": "spawn",
+				"World": "",
+				"ZombieSpawnMethod": "NonRandomShuffled",
+				"ZombieSpawnPointOffset": -20,
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1,
+						"ZombieTypeName": "dark_gold"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"LevelTimer"
+			],
+			"objclass": "StarChallengeLevelTimerProperties",
+			"objdata": {
+				"TimeLimit": 2700
+			}
+		},
+		{
+			"aliases": [
+				"PFSpawner"
+			],
+			"objclass": "ZombiePotionModuleProperties",
+			"objdata": {
+				"InitialPotionCount": 0,
+				"MaxPotionCount": 25,
+				"PotionSpawnTimer": {
+					"Max": 300,
+					"Min": 300
+				},
+				"PotionTypes": [
+					"gravestonePlantfoodOnDestruction"
+				]
+			}
+		},
+		{
+			"objclass": "DarkStageProperties",
+			"aliases": [
+				"DarkStage"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Dark_Compressed",
+					"Dirt_Spawn_Dirt",
+					"ZombieDarkBasicGroup",
+					"AudioDarkAges",
+					"Tombstone_Dark_Base",
+					"Tombstone_Dark_Effects",
+					"Dark_Background_Effects"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_Dark_Compressed"
+				],
+				"StagePrefix": "zomboss",
+				"BackgroundResourceGroup": "DelayLoad_Background_Dark_Compressed",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_DARK",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "dark",
+				"FlagZombieTypeName": "dark_flag",
+				"FlagVeteranZombieTypeNames": [
+					"dark_flag_veteran"
+				],
+				"Armor1ZombieTypeName": "dark_armor1",
+				"Armor2ZombieTypeName": "dark_armor2",
+				"Armor3ZombieTypeName": "dark_armor3",
+				"RailcartDefaultTypeName": "railcart_cowboy",
+				"GravestoneDefaultTypeName": "gravestone_dark",
+				"DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_DIRT",
+				"MusicSuffix": "DarkAges"
+			}
+		},
+		{
+			"objclass": "ZombossBattleIntroProperties",
+			"aliases": [
+				"ZombossIntro"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+				],
+				"PanStartOffset": 78,
+				"PanEndOffset": 468,
+				"PanRightDuration": 1.5,
+				"PanLeftDuration": 1.5,
+				"ZombossPhaseCount": 16,
+				"SkipShowingStreet": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
+			"objclass": "ZombossBattleModuleProperties",
+			"objdata": {
+				"ReservedColumnCount": 2,
+				"##### MUST BE >= 2 FOR ZOMBOSS TO MOVE": 0,
+				"ZombossMechType": "zombossmech_dark_survival",
+				"ZombossDeathRow": 3,
+				"ZombossDeathColumn": 5,
+				"ZombossSpawnGridPosition": {
+					"mX": 6,
+					"mY": 3
+				}
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantExcludeList": [
+					"goldleaf"
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"Waves": [
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieZombossMechDarkSurvival"
+			],
+			"objclass": "ZombieZombossMechDarkProps",
+			"objdata": {
+				"# Dark Zomboss Properties": 0,
+				"# Zomboss properties": 0,
+				"AlmanacOffset": {
+					"x": 90,
+					"y": 140
+				},
+				"AlmanacScale": 0.7000000000000001,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 30,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanBeFlicked": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanSpawnPlantFood": false,
+				"CanTriggerZombieWin": false,
+				"CrosshairAnimation": "missile_lock_reticle",
+				"CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_DARK",
+				"FoeEatDamageReflectPct": 0.30000000000000004,
+				"GridExtents": {
+					"mX": 3,
+					"mY": 2
+				},
+				"GroundTrackName": "ground_swatch",
+				"HideDuringIntro": true,
+				"HitRect": {
+					"mHeight": 310,
+					"mWidth": 115,
+					"mX": 30,
+					"mY": 40
+				},
+				"IsValidPinchTarget": false,
+				"MagnetStunDuration": 2,
+				"MaxColumn": 7,
+				"MinColumn": 1,
+				"PowerUpDamageModifier": 0.25,
+				"RocketAnimation": "missile",
+				"RocketExplosionAnimation": "missile_explosion",
+				"ShadowOffset": {
+					"x": 55,
+					"y": -50,
+					"z": 0.8
+				},
+				"ShadowScaling": {
+					"x": 4.5,
+					"y": 4.5
+				},
+				"SkipHeadDropState": true,
+				"Speed": 0.1,
+				"SquashGridItems": false,
+				"SquashZombies": false,
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "stalled"
+					},
+					{
+						"Condition": "dazeystunned"
+					},
+					{
+						"Condition": "sapped"
+					},
+					{
+						"Condition": "poisoned"
+					},
+					{
+						"Condition": "decaypoison"
+					},
+					{
+						"Condition": "shrinking"
+					},
+					{
+						"Condition": "shrunken"
+					},
+					{
+						"Condition": "stackableslow"
+					},
+					{
+						"Condition": "speeddown4"
+					}
+				],
+				"Stages": [
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn1@.)",
+							"RTID(Sheep1@.)"
+						],
+						"AnimRateModifier": 1.0,
+						"ChilledDurationFromFrozen": 10,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 4000,
+						"IdleTime": {
+							"Max": 6.0,
+							"Min": 5.0
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn2@.)",
+							"RTID(Crater2@.)"
+						],
+						"AnimRateModifier": 1.03,
+						"ChilledDurationFromFrozen": 9,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 6000,
+						"IdleTime": {
+							"Max": 5.0,
+							"Min": 3.0
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn3@.)",
+							"RTID(Sheep3@.)"
+						],
+						"AnimRateModifier": 1.06,
+						"ChilledDurationFromFrozen": 8,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 9000,
+						"IdleTime": {
+							"Max": 4.0,
+							"Min": 2.0
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn4@.)",
+							"RTID(Sheep4@.)",
+							"RTID(Crater4@.)"
+						],
+						"AnimRateModifier": 1.09,
+						"ChilledDurationFromFrozen": 7,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 12000,
+						"IdleTime": {
+							"Max": 2.5,
+							"Min": 1.5
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn5@.)",
+							"RTID(Sheep5@.)",
+							"RTID(Crater5@.)"
+						],
+						"AnimRateModifier": 1.12,
+						"ChilledDurationFromFrozen": 6,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 16000,
+						"IdleTime": {
+							"Max": 2.0,
+							"Min": 1.0
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn6@.)",
+							"RTID(Sheep6@.)"
+						],
+						"AnimRateModifier": 1.1500000000000001,
+						"ChilledDurationFromFrozen": 5,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 21000,
+						"IdleTime": {
+							"Max": 2.0,
+							"Min": 1.0
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn7@.)",
+							"RTID(Sheep7@.)",
+							"RTID(Crater7@.)"
+						],
+						"AnimRateModifier": 1.1800000000000002,
+						"ChilledDurationFromFrozen": 4.5,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 27000,
+						"IdleTime": {
+							"Max": 1.5,
+							"Min": 0.5
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn8@.)",
+							"RTID(Sheep8@.)",
+							"RTID(Crater8@.)"
+						],
+						"AnimRateModifier": 1.21,
+						"ChilledDurationFromFrozen": 4,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 34000,
+						"IdleTime": {
+							"Max": 1.5,
+							"Min": 0.5
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn9@.)",
+							"RTID(Spawn9B@.)",
+							"RTID(Sheep9@.)"
+						],
+						"AnimRateModifier": 1.24,
+						"ChilledDurationFromFrozen": 3.5,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 42000,
+						"IdleTime": {
+							"Max": 1.0,
+							"Min": 0.5
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn10@.)",
+							"RTID(Crater10@.)"
+						],
+						"AnimRateModifier": 1.27,
+						"ChilledDurationFromFrozen": 3,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 51000,
+						"IdleTime": {
+							"Max": 1.0,
+							"Min": 0.5
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn11@.)",
+							"RTID(Sheep11@.)",
+							"RTID(Crater11@.)"
+						],
+						"AnimRateModifier": 1.3,
+						"ChilledDurationFromFrozen": 3,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 61000,
+						"IdleTime": {
+							"Max": 0.5,
+							"Min": 0.5
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn12@.)",
+							"RTID(Sheep12@.)",
+							"RTID(Crater12@.)"
+						],
+						"AnimRateModifier": 1.33,
+						"ChilledDurationFromFrozen": 3,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 72000,
+						"IdleTime": {
+							"Max": 0.5,
+							"Min": 0.5
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn13@.)",
+							"RTID(Sheep13@.)",
+							"RTID(Crater13@.)"
+						],
+						"AnimRateModifier": 1.36,
+						"ChilledDurationFromFrozen": 3,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 84000,
+						"IdleTime": {
+							"Max": 0.5,
+							"Min": 0.5
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn14@.)",
+							"RTID(Spawn14B@.)",
+							"RTID(Crater14@.)"
+						],
+						"AnimRateModifier": 1.3900000000000001,
+						"ChilledDurationFromFrozen": 3,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 97000,
+						"IdleTime": {
+							"Max": 0.5,
+							"Min": 0.5
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk1@.)",
+							"RTID(Spawn15@.)",
+							"RTID(Sheep15@.)",
+							"RTID(Crater15@.)"
+						],
+						"AnimRateModifier": 1.42,
+						"ChilledDurationFromFrozen": 3,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 111000,
+						"IdleTime": {
+							"Max": 0.5,
+							"Min": 0.25
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					},
+					{
+						"Actions": [
+							"RTID(Walk2@.)",
+							"RTID(Spawn16A@.)",
+							"RTID(Spawn16B@.)",
+							"RTID(Spawn16C@.)",
+							"RTID(Sheep16@.)",
+							"RTID(Crater16@.)"
+						],
+						"AnimRateModifier": 1.5,
+						"ChilledDurationFromFrozen": 3,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 1000000,
+						"IdleTime": {
+							"Max": 0.25,
+							"Min": 0.25
+						},
+						"RetreatAction": "RTID(ZombossDarkWalk1@ZombieActions)",
+						"StunDamageScale": 1.2,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 8
+					}
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness8"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombossDarkWalkActionDefinition",
+			"aliases": [
+				"Walk1"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 1,
+				"WalkVerticalChance": 1,
+				"WalkPreferSquashChance": 0.5
+			}
+		},
+		{
+			"objclass": "ZombossDarkWalkActionDefinition",
+			"aliases": [
+				"Walk2"
+			],
+			"objdata": {
+				"Weight": 3,
+				"RepeatMin": 0,
+				"RepeatMax": 1,
+				"WalkVerticalChance": 1,
+				"WalkPreferSquashChance": 0.5
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn1"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 40,
+					"Max": 120
+				},
+				"SpawnZombieTypes": [
+					"dark",
+					"dark_imp_dragon",
+					"dark_armor1",
+					"dark_armor1_silver",
+					"dark_silver"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 3.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn2"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 120,
+					"Max": 280
+				},
+				"SpawnZombieTypes": [
+					"dark",
+					"dark_imp",
+					"dark_armor1",
+					"dark_armor2",
+					"dark_wizard",
+					"dark_armor1_silver",
+					"dark_armor2_silver"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 3.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn3"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 280,
+					"Max": 480
+				},
+				"SpawnZombieTypes": [
+					"dark_imp_dragon",
+					"dark_armor1",
+					"dark_armor2",
+					"dark_armor3",
+					"dark_armor2_silver",
+					"dark_armor2_gold",
+					"dark_juggler"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 3.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn4"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 480,
+					"Max": 720
+				},
+				"SpawnZombieTypes": [
+					"dark_imp",
+					"dark_armor1",
+					"dark_armor3",
+					"dark_wizard",
+					"dark_armor1_silver",
+					"dark_wizard_gold"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 4.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn5"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 720,
+					"Max": 1000
+				},
+				"SpawnZombieTypes": [
+					"dark_imp_dragon",
+					"dark_armor2",
+					"dark_armor3",
+					"dark_juggler",
+					"dark_armor2_silver",
+					"dark_juggler_gold"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 4.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn6"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 1000,
+					"Max": 1320
+				},
+				"SpawnZombieTypes": [
+					"dark_imp_dragon",
+					"dark_armor2",
+					"dark_armor3",
+					"dark_wizard",
+					"dark_juggler",
+					"dark_wizard_gold",
+					"dark_juggler_gold",
+					"dark_impfinity",
+					"dark_impfinity_gold"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 3.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn7"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 1320,
+					"Max": 1680
+				},
+				"SpawnZombieTypes": [
+					"dark_armor3",
+					"dark_wizard",
+					"dark_juggler",
+					"dark_gargantuar",
+					"dark_juggler_gold",
+					"dark_gargantuar_gem",
+					"dark_gargantuar_gold"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 3.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn8"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 1680,
+					"Max": 2080
+				},
+				"SpawnZombieTypes": [
+					"dark_armor1",
+					"dark_armor2",
+					"dark_armor1_silver",
+					"dark_armor2_gold",
+					"dark_wizard",
+					"dark_juggler"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 5.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 0,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn9"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 2080,
+					"Max": 2520
+				},
+				"SpawnZombieTypes": [
+					"dark_armor2",
+					"dark_armor3",
+					"dark_juggler",
+					"dark_juggler_gold",
+					"dark_armor2_silver"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 6.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 0,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn9B"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 2080,
+					"Max": 2520
+				},
+				"SpawnZombieTypes": [
+					"dark_armor2_gold",
+					"dark_juggler_gold",
+					"giga_wizard",
+					"ultra_wizard"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 6.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn10"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 2520,
+					"Max": 3000
+				},
+				"SpawnZombieTypes": [
+					"dark_imp_dragon",
+					"dark_armor1",
+					"dark_armor2",
+					"dark_armor1_silver",
+					"dark_armor2_silver",
+					"dark_wizard",
+					"dark_wizard_silver",
+					"dark_impfinity_gem"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 7.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -1,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn11"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 3000,
+					"Max": 3520
+				},
+				"SpawnZombieTypes": [
+					"dark_armor2",
+					"dark_armor3",
+					"dark_gargantuar",
+					"dark_gargantuar_gold",
+					"dark_gargantuar_gem"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 5.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -1,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn12"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 3520,
+					"Max": 4080
+				},
+				"SpawnZombieTypes": [
+					"dark",
+					"dark_armor1",
+					"dark_armor2",
+					"dark_wizard",
+					"dark_armor1_silver",
+					"dark_armor2_gold",
+					"dark_wizard_silver"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 9.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -2,
+				"SpawnDistanceVariance": 192
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn13"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 4080,
+					"Max": 4680
+				},
+				"SpawnZombieTypes": [
+					"dark_imp_dragon",
+					"dark_armor2",
+					"dark_armor3",
+					"dark_juggler",
+					"dark_armor2_gold",
+					"dark_juggler_gold"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 10.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -2,
+				"SpawnDistanceVariance": 192
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn14"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 4680,
+					"Max": 5320
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard",
+					"dark_gargantuar",
+					"dark_gargantuar_gold"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 6.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -1,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn14B"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 4680,
+					"Max": 5320
+				},
+				"SpawnZombieTypes": [
+					"giga_wizard",
+					"ultra_wizard",
+					"dark_gargantuar_gem"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 6.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn15"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 5320,
+					"Max": 6000
+				},
+				"SpawnZombieTypes": [
+					"dark_armor3",
+					"dark_wizard",
+					"dark_juggler",
+					"dark_wizard_gold",
+					"dark_juggler_gold",
+					"dark_impfinity",
+					"dark_impfinity_gem"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 10.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -2,
+				"SpawnDistanceVariance": 160
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn16A"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 6000,
+					"Max": 12000
+				},
+				"SpawnZombieTypes": [
+					"dark_gargantuar"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 8.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -1,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn16C"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 6000,
+					"Max": 12000
+				},
+				"SpawnZombieTypes": [
+					"giga_wizard",
+					"ultra_wizard",
+					"dark_gargantuar_gold"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 8.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Spawn16B"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 6000,
+					"Max": 12000
+				},
+				"SpawnZombieTypes": [
+					"dark_gargantuar_gold",
+					"dark_gargantuar_gem"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 8.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -1,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep1"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 50,
+					"Max": 250
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep3"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 300,
+					"Max": 500
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep4"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 300,
+					"Max": 500
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep5"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 400,
+					"Max": 700
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep6"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 500,
+					"Max": 800
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 2.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep7"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 600,
+					"Max": 800
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 2.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep8"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 600,
+					"Max": 1000
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 3.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep9"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 800,
+					"Max": 1400
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 3.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep11"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 800,
+					"Max": 1200
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 3.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep12"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 1200,
+					"Max": 2000
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 4.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep13"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 800,
+					"Max": 1400
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 4.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep15"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 1000,
+					"Max": 1600
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 5.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Sheep16"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 800,
+					"Max": 3000
+				},
+				"SpawnZombieTypes": [
+					"dark_wizard_boss"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 6.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -4,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater2"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 300,
+					"Max": 450
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 3,
+				"SpawnDistanceVariance": 160
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater4"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 500,
+					"Max": 900
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 3,
+				"SpawnDistanceVariance": 160
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater5"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 800,
+					"Max": 1300
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 3,
+				"SpawnDistanceVariance": 160
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater7"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 1200,
+					"Max": 1700
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 3,
+				"SpawnDistanceVariance": 160
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater8"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 1600,
+					"Max": 2300
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater10"
+			],
+			"objdata": {
+				"Weight": 6,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 2400,
+					"Max": 2700
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 2,
+				"SpawnDistanceVariance": 192
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater11"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 2400,
+					"Max": 3000
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 1,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater12"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 3000,
+					"Max": 3000
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 0,
+				"SpawnDistanceVariance": 64
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater13"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 3000,
+					"Max": 3000
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -1,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater14"
+			],
+			"objdata": {
+				"Weight": 6,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 3000,
+					"Max": 3000
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": 1,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater15"
+			],
+			"objdata": {
+				"Weight": 2,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 3000,
+					"Max": 3500
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -1,
+				"SpawnDistanceVariance": 128
+			}
+		},
+		{
+			"objclass": "ZombossSummonActionDefinition",
+			"aliases": [
+				"Crater16"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 3000,
+					"Max": 5000
+				},
+				"SpawnZombieTypes": [
+					"night_camel2"
+				],
+				"SpawnStartTime": 0.5,
+				"SpawnEndTime": 1.0,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99,
+					"Max": 99
+				},
+				"SpawnColumnOffset": -1,
+				"SpawnDistanceVariance": 128
+			}
+		}
+	],
+	"version": 1
+}
