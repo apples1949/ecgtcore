@@ -1,7 +1,10 @@
 {
 	"version": 1,
-	"objects": [ {
-			"aliases": [ "JoustResultsScreen" ],
+	"objects": [
+		{
+			"aliases": [
+				"JoustResultsScreen"
+			],
 			"objclass": "HotUIJoustResultsScreenProperties",
 			"objdata": {
 				"EntryPoint": true,
@@ -17,7 +20,10 @@
 					"AnchorPoint": "center"
 				},
 				"IgnoreMouseInput": false,
-				"Children": [ "RTID(DialogDismiss@.)", "RTID(ContentSpacer@.)" ],
+				"Children": [
+					"RTID(DialogDismiss@.)",
+					"RTID(ContentSpacer@.)"
+				],
 				"ScoreFillStartDelay": 1.0,
 				"ScoreFillLength": 2.0,
 				"ShieldBreakLength": 1.0,
@@ -25,8 +31,11 @@
 				"CrownFillLength": 1.618,
 				"CrownFillEffectLength": 1.25
 			}
-		}, {
-			"aliases": [ "ContentSpacer" ],
+		},
+		{
+			"aliases": [
+				"ContentSpacer"
+			],
 			"objclass": "HotUIWidgetProperties",
 			"objdata": {
 				"Name": "ContentSpacer",
@@ -39,10 +48,24 @@
 				"Anchor": {
 					"AnchorPoint": "center"
 				},
-				"Children": [ "RTID(JoustMeter@.)", "RTID(ShieldAnim@.)", "RTID(PlayerBox@.)", "RTID(OpponentBox@.)", "RTID(YouWinText@.)", "RTID(YouLoseText@.)", "RTID(CrownCollectEffect@.)", "RTID(CrownIcon@.)", "RTID(EarnedCrowns@.)", "RTID(ContinueButton@.)" ]
+				"Children": [
+					"RTID(JoustMeter@.)",
+					"RTID(ShieldAnim@.)",
+					"RTID(PlayerBox@.)",
+					"RTID(OpponentBox@.)",
+					"RTID(YouWinText@.)",
+					"RTID(YouLoseText@.)",
+					"RTID(CrownCollectEffect@.)",
+					"RTID(CrownIcon@.)",
+					"RTID(EarnedCrowns@.)",
+					"RTID(ContinueButton@.)"
+				]
 			}
-		}, {
-			"aliases": [ "ShieldAnim" ],
+		},
+		{
+			"aliases": [
+				"ShieldAnim"
+			],
 			"objclass": "HotUIAnimProperties",
 			"objdata": {
 				"Name": "ShieldAnim",
@@ -58,7 +81,9 @@
 						"Value": "-35.0"
 					}
 				},
-				"Resources": [ "UI_Joust_MatchResult" ],
+				"Resources": [
+					"UI_Joust_MatchResult"
+				],
 				"PopAnimName": "POPANIM_UI_JOUST_MATCH_RESULTS_JOUST_SHIELD",
 				"InitialAnimationName": "idle",
 				"PlayStyle": "playandstop",
@@ -66,8 +91,11 @@
 				"ScaleOverride": 1.4,
 				"IgnoreMouseInput": true
 			}
-		}, {
-			"aliases": [ "YouWinText" ],
+		},
+		{
+			"aliases": [
+				"YouWinText"
+			],
 			"objclass": "HotUIAnimProperties",
 			"objdata": {
 				"Name": "YouWinText",
@@ -83,15 +111,20 @@
 						"Value": "40.0"
 					}
 				},
-				"Resources": [ "UI_Joust_MatchResult" ],
+				"Resources": [
+					"UI_Joust_MatchResult"
+				],
 				"PopAnimName": "POPANIM_UI_JOUST_MATCH_RESULTS_YOU_WON_TEXT",
 				"InitialAnimationName": "intro",
 				"PlayStyle": "none",
 				"DrawStyle": "scale_override",
 				"IgnoreMouseInput": true
 			}
-		}, {
-			"aliases": [ "YouLoseText" ],
+		},
+		{
+			"aliases": [
+				"YouLoseText"
+			],
 			"objclass": "HotUIAnimProperties",
 			"objdata": {
 				"Name": "YouLoseText",
@@ -107,15 +140,20 @@
 						"Value": "40.0"
 					}
 				},
-				"Resources": [ "UI_Joust_MatchResult" ],
+				"Resources": [
+					"UI_Joust_MatchResult"
+				],
 				"PopAnimName": "POPANIM_UI_JOUST_MATCH_RESULTS_YOU_LOST_TEXT",
 				"InitialAnimationName": "intro",
 				"PlayStyle": "none",
 				"DrawStyle": "scale_override",
 				"IgnoreMouseInput": true
 			}
-		}, {
-			"aliases": [ "CrownCollectEffect" ],
+		},
+		{
+			"aliases": [
+				"CrownCollectEffect"
+			],
 			"objclass": "HotUIJoustCrownCollectionEffectProperties",
 			"objdata": {
 				"Name": "CrownCollectEffect",
@@ -131,7 +169,9 @@
 						"Value": "-95.0"
 					}
 				},
-				"Resources": [ "UI_Joust_Icons" ],
+				"Resources": [
+					"UI_Joust_Icons"
+				],
 				"CrownImage": "IMAGE_UI_JOUST_ICONS_CROWNS_CROWNS_SMALL",
 				"ImageWidth": "32",
 				"FadeInTime": 0.3,
@@ -141,8 +181,11 @@
 				"MinAngleRadians": 0.5235987756,
 				"MaxAngleRadians": 2.617993878
 			}
-		}, {
-			"aliases": [ "CrownIcon" ],
+		},
+		{
+			"aliases": [
+				"CrownIcon"
+			],
 			"objclass": "HotUIAnimProperties",
 			"objdata": {
 				"Name": "CrownIcon",
@@ -158,7 +201,9 @@
 						"Value": "-10.0"
 					}
 				},
-				"Resources": [ "UI_Joust_MatchResult" ],
+				"Resources": [
+					"UI_Joust_MatchResult"
+				],
 				"PopAnimName": "POPANIM_UI_JOUST_MATCH_RESULTS_CROWN_COLLECT_ANIM",
 				"InitialAnimationName": "idle",
 				"PlayStyle": "none",
@@ -166,8 +211,11 @@
 				"ScaleOverride": 1.4,
 				"IgnoreMouseInput": true
 			}
-		}, {
-			"aliases": [ "EarnedCrowns" ],
+		},
+		{
+			"aliases": [
+				"EarnedCrowns"
+			],
 			"objclass": "HotUILabelProperties",
 			"objdata": {
 				"Name": "EarnedCrowns",
@@ -192,8 +240,11 @@
 				"Font": "Dialog_Header_Font_36",
 				"Color": "Dialog_Header_Color"
 			}
-		}, {
-			"aliases": [ "JoustMeter" ],
+		},
+		{
+			"aliases": [
+				"JoustMeter"
+			],
 			"objclass": "HotUIPrefabProperties",
 			"objdata": {
 				"Name": "JoustMeter",
@@ -212,8 +263,11 @@
 				"UIFileName": "JoustPlayMeter",
 				"AdaptorClassName": "AdaptorJoustPlayMeterHUD"
 			}
-		}, {
-			"aliases": [ "DialogDismiss" ],
+		},
+		{
+			"aliases": [
+				"DialogDismiss"
+			],
 			"objclass": "HotUIButtonProperties",
 			"objdata": {
 				"Name": "DialogDismiss",
@@ -230,8 +284,11 @@
 				"UpAudio": "Play_UI_Button_X_Close_Release",
 				"DownAudio": "Play_UI_Button_X_Close_Press"
 			}
-		}, {
-			"aliases": [ "PlayerBox" ],
+		},
+		{
+			"aliases": [
+				"PlayerBox"
+			],
 			"objclass": "HotUIWidgetProperties",
 			"objdata": {
 				"Name": "PlayerBox",
@@ -247,11 +304,19 @@
 						"Value": "200.0"
 					}
 				},
-				"Children": [ "RTID(PlayerAvatar@.)", "RTID(PlayerName@.)", "RTID(PlayerPlantSelection@.)", "RTID(PlayerTextYourPlants@.)" ],
+				"Children": [
+					"RTID(PlayerAvatar@.)",
+					"RTID(PlayerName@.)",
+					"RTID(PlayerPlantSelection@.)",
+					"RTID(PlayerTextYourPlants@.)"
+				],
 				"IgnoreMouseInput": true
 			}
-		}, {
-			"aliases": [ "PlayerName" ],
+		},
+		{
+			"aliases": [
+				"PlayerName"
+			],
 			"objclass": "HotUILabelProperties",
 			"objdata": {
 				"Name": "PlayerName",
@@ -276,8 +341,11 @@
 				"Font": "Dialog_Header_Font_36",
 				"Color": "Dialog_Header_Color"
 			}
-		}, {
-			"aliases": [ "PlayerAvatar" ],
+		},
+		{
+			"aliases": [
+				"PlayerAvatar"
+			],
 			"objclass": "HotUIImageBorderProperties",
 			"objdata": {
 				"Name": "PlayerAvatar",
@@ -293,7 +361,9 @@
 						"Value": "-94.0"
 					}
 				},
-				"Resources": [ "UI_Avatars" ],
+				"Resources": [
+					"UI_Avatars"
+				],
 				"Image": "",
 				"DrawStyle": "stretched",
 				"BorderDrawType": "9slice",
@@ -319,10 +389,15 @@
 						"Value": "-2.5"
 					}
 				},
-				"Children": [ "RTID(PlayerScoreLabel@.)" ]
+				"Children": [
+					"RTID(PlayerScoreLabel@.)"
+				]
 			}
-		}, {
-			"aliases": [ "PlayerScoreLabel" ],
+		},
+		{
+			"aliases": [
+				"PlayerScoreLabel"
+			],
 			"objclass": "HotUILabelProperties",
 			"objdata": {
 				"Name": "PlayerScoreLabel",
@@ -348,8 +423,11 @@
 				"Font": "JoustGameScore",
 				"Color": "White"
 			}
-		}, {
-			"aliases": [ "PlayerTextYourPlants" ],
+		},
+		{
+			"aliases": [
+				"PlayerTextYourPlants"
+			],
 			"objclass": "HotUILabelProperties",
 			"objdata": {
 				"Name": "PlayerTextYourPlants",
@@ -374,8 +452,11 @@
 				"Font": "JoustGameScore",
 				"Color": "White"
 			}
-		}, {
-			"aliases": [ "PlayerPlantSelection" ],
+		},
+		{
+			"aliases": [
+				"PlayerPlantSelection"
+			],
 			"objclass": "HotUISeedPacketListProperties",
 			"objdata": {
 				"Name": "PlayerPlantSelection",
@@ -408,10 +489,17 @@
 						"Value": "15.0"
 					}
 				},
-				"Children": [ "RTID(PlayerPlantList1@.)", "RTID(PlayerPlantList2@.)", "RTID(PlayerPlantList3@.)" ]
+				"Children": [
+					"RTID(PlayerPlantList1@.)",
+					"RTID(PlayerPlantList2@.)",
+					"RTID(PlayerPlantList3@.)"
+				]
 			}
-		}, {
-			"aliases": [ "PlayerPlantList1" ],
+		},
+		{
+			"aliases": [
+				"PlayerPlantList1"
+			],
 			"objclass": "HotUIHorizontalListProperties",
 			"objdata": {
 				"Name": "PlayerPlantList1",
@@ -429,13 +517,20 @@
 						"Value": "2"
 					}
 				},
-				"Children": [ "RTID(PlayerPacket1@.)", "RTID(PlayerPacket2@.)", "RTID(PlayerPacket3@.)" ],
+				"Children": [
+					"RTID(PlayerPacket1@.)",
+					"RTID(PlayerPacket2@.)",
+					"RTID(PlayerPacket3@.)"
+				],
 				"SpaceBetweenWidgets": {
 					"Value": "5"
 				}
 			}
-		}, {
-			"aliases": [ "PlayerPacket1" ],
+		},
+		{
+			"aliases": [
+				"PlayerPacket1"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "PlayerPacket1",
@@ -449,8 +544,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "PlayerPacket2" ],
+		},
+		{
+			"aliases": [
+				"PlayerPacket2"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "PlayerPacket2",
@@ -464,8 +562,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "PlayerPacket3" ],
+		},
+		{
+			"aliases": [
+				"PlayerPacket3"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "PlayerPacket3",
@@ -479,8 +580,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "PlayerPlantList2" ],
+		},
+		{
+			"aliases": [
+				"PlayerPlantList2"
+			],
 			"objclass": "HotUIHorizontalListProperties",
 			"objdata": {
 				"Name": "PlayerPlantList2",
@@ -501,13 +605,20 @@
 						"Value": "2"
 					}
 				},
-				"Children": [ "RTID(PlayerPacket4@.)", "RTID(PlayerPacket5@.)", "RTID(PlayerPacket6@.)" ],
+				"Children": [
+					"RTID(PlayerPacket4@.)",
+					"RTID(PlayerPacket5@.)",
+					"RTID(PlayerPacket6@.)"
+				],
 				"SpaceBetweenWidgets": {
 					"Value": "5"
 				}
 			}
-		}, {
-			"aliases": [ "PlayerPacket4" ],
+		},
+		{
+			"aliases": [
+				"PlayerPacket4"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "PlayerPacket4",
@@ -521,8 +632,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "PlayerPacket5" ],
+		},
+		{
+			"aliases": [
+				"PlayerPacket5"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "PlayerPacket5",
@@ -536,8 +650,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "PlayerPacket6" ],
+		},
+		{
+			"aliases": [
+				"PlayerPacket6"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "PlayerPacket6",
@@ -551,8 +668,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "PlayerPlantList3" ],
+		},
+		{
+			"aliases": [
+				"PlayerPlantList3"
+			],
 			"objclass": "HotUIHorizontalListProperties",
 			"objdata": {
 				"Name": "PlayerPlantList3",
@@ -568,13 +688,19 @@
 						"Value": "120.0"
 					}
 				},
-				"Children": [ "RTID(PlayerPacket7@.)", "RTID(PlayerPacket8@.)" ],
+				"Children": [
+					"RTID(PlayerPacket7@.)",
+					"RTID(PlayerPacket8@.)"
+				],
 				"SpaceBetweenWidgets": {
 					"Value": "5"
 				}
 			}
-		}, {
-			"aliases": [ "PlayerPacket7" ],
+		},
+		{
+			"aliases": [
+				"PlayerPacket7"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "PlayerPacket7",
@@ -588,8 +714,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "PlayerPacket8" ],
+		},
+		{
+			"aliases": [
+				"PlayerPacket8"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "PlayerPacket8",
@@ -603,8 +732,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "OpponentBox" ],
+		},
+		{
+			"aliases": [
+				"OpponentBox"
+			],
 			"objclass": "HotUIWidgetProperties",
 			"objdata": {
 				"Name": "OpponentBox",
@@ -620,11 +752,19 @@
 						"Value": "200.0"
 					}
 				},
-				"Children": [ "RTID(OpponentAvatar@.)", "RTID(OpponentName@.)", "RTID(OpponentPlantSelection@.)", "RTID(OpponentTextTheirPlants@.)" ],
+				"Children": [
+					"RTID(OpponentAvatar@.)",
+					"RTID(OpponentName@.)",
+					"RTID(OpponentPlantSelection@.)",
+					"RTID(OpponentTextTheirPlants@.)"
+				],
 				"IgnoreMouseInput": true
 			}
-		}, {
-			"aliases": [ "OpponentName" ],
+		},
+		{
+			"aliases": [
+				"OpponentName"
+			],
 			"objclass": "HotUILabelProperties",
 			"objdata": {
 				"Name": "OpponentName",
@@ -649,8 +789,11 @@
 				"Font": "Dialog_Header_Font_36",
 				"Color": "Dialog_Header_Color"
 			}
-		}, {
-			"aliases": [ "OpponentAvatar" ],
+		},
+		{
+			"aliases": [
+				"OpponentAvatar"
+			],
 			"objclass": "HotUIImageBorderProperties",
 			"objdata": {
 				"Name": "OpponentAvatar",
@@ -666,7 +809,9 @@
 						"Value": "94.0"
 					}
 				},
-				"Resources": [ "UI_Avatars" ],
+				"Resources": [
+					"UI_Avatars"
+				],
 				"Image": "",
 				"DrawStyle": "stretched",
 				"BorderDrawType": "9slice",
@@ -692,10 +837,15 @@
 						"Value": "-2.5"
 					}
 				},
-				"Children": [ "RTID(OpponentScoreLabel@.)" ]
+				"Children": [
+					"RTID(OpponentScoreLabel@.)"
+				]
 			}
-		}, {
-			"aliases": [ "OpponentScoreLabel" ],
+		},
+		{
+			"aliases": [
+				"OpponentScoreLabel"
+			],
 			"objclass": "HotUILabelProperties",
 			"objdata": {
 				"Name": "OpponentScoreLabel",
@@ -721,8 +871,11 @@
 				"Font": "JoustGameScore",
 				"Color": "White"
 			}
-		}, {
-			"aliases": [ "OpponentTextTheirPlants" ],
+		},
+		{
+			"aliases": [
+				"OpponentTextTheirPlants"
+			],
 			"objclass": "HotUILabelProperties",
 			"objdata": {
 				"Name": "OpponentTextTheirPlants",
@@ -747,8 +900,11 @@
 				"Font": "JoustGameScore",
 				"Color": "White"
 			}
-		}, {
-			"aliases": [ "OpponentPlantSelection" ],
+		},
+		{
+			"aliases": [
+				"OpponentPlantSelection"
+			],
 			"objclass": "HotUISeedPacketListProperties",
 			"objdata": {
 				"Name": "OpponentPlantSelection",
@@ -778,10 +934,17 @@
 						"Value": "15.0"
 					}
 				},
-				"Children": [ "RTID(OpponentPlantList1@.)", "RTID(OpponentPlantList2@.)", "RTID(OpponentPlantList3@.)" ]
+				"Children": [
+					"RTID(OpponentPlantList1@.)",
+					"RTID(OpponentPlantList2@.)",
+					"RTID(OpponentPlantList3@.)"
+				]
 			}
-		}, {
-			"aliases": [ "OpponentPlantList1" ],
+		},
+		{
+			"aliases": [
+				"OpponentPlantList1"
+			],
 			"objclass": "HotUIHorizontalListProperties",
 			"objdata": {
 				"Name": "OpponentPlantList1",
@@ -799,13 +962,20 @@
 						"Value": "2"
 					}
 				},
-				"Children": [ "RTID(OpponentPacket1@.)", "RTID(OpponentPacket2@.)", "RTID(OpponentPacket3@.)" ],
+				"Children": [
+					"RTID(OpponentPacket1@.)",
+					"RTID(OpponentPacket2@.)",
+					"RTID(OpponentPacket3@.)"
+				],
 				"SpaceBetweenWidgets": {
 					"Value": "5"
 				}
 			}
-		}, {
-			"aliases": [ "OpponentPacket1" ],
+		},
+		{
+			"aliases": [
+				"OpponentPacket1"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "OpponentPacket1",
@@ -819,8 +989,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "OpponentPacket2" ],
+		},
+		{
+			"aliases": [
+				"OpponentPacket2"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "OpponentPacket2",
@@ -834,8 +1007,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "OpponentPacket3" ],
+		},
+		{
+			"aliases": [
+				"OpponentPacket3"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "OpponentPacket3",
@@ -849,8 +1025,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "OpponentPlantList2" ],
+		},
+		{
+			"aliases": [
+				"OpponentPlantList2"
+			],
 			"objclass": "HotUIHorizontalListProperties",
 			"objdata": {
 				"Name": "OpponentPlantList2",
@@ -871,13 +1050,20 @@
 						"Value": "2"
 					}
 				},
-				"Children": [ "RTID(OpponentPacket4@.)", "RTID(OpponentPacket5@.)", "RTID(OpponentPacket6@.)" ],
+				"Children": [
+					"RTID(OpponentPacket4@.)",
+					"RTID(OpponentPacket5@.)",
+					"RTID(OpponentPacket6@.)"
+				],
 				"SpaceBetweenWidgets": {
 					"Value": "5"
 				}
 			}
-		}, {
-			"aliases": [ "OpponentPacket4" ],
+		},
+		{
+			"aliases": [
+				"OpponentPacket4"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "OpponentPacket4",
@@ -891,8 +1077,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "OpponentPacket5" ],
+		},
+		{
+			"aliases": [
+				"OpponentPacket5"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "OpponentPacket5",
@@ -906,8 +1095,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "OpponentPacket6" ],
+		},
+		{
+			"aliases": [
+				"OpponentPacket6"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "OpponentPacket6",
@@ -921,8 +1113,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "OpponentPlantList3" ],
+		},
+		{
+			"aliases": [
+				"OpponentPlantList3"
+			],
 			"objclass": "HotUIHorizontalListProperties",
 			"objdata": {
 				"Name": "OpponentPlantList3",
@@ -938,13 +1133,19 @@
 						"Value": "120.0"
 					}
 				},
-				"Children": [ "RTID(OpponentPacket7@.)", "RTID(OpponentPacket8@.)" ],
+				"Children": [
+					"RTID(OpponentPacket7@.)",
+					"RTID(OpponentPacket8@.)"
+				],
 				"SpaceBetweenWidgets": {
 					"Value": "5"
 				}
 			}
-		}, {
-			"aliases": [ "OpponentPacket7" ],
+		},
+		{
+			"aliases": [
+				"OpponentPacket7"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "OpponentPacket7",
@@ -958,8 +1159,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "OpponentPacket8" ],
+		},
+		{
+			"aliases": [
+				"OpponentPacket8"
+			],
 			"objclass": "HotUISeedPacketProperties",
 			"objdata": {
 				"Name": "OpponentPacket8",
@@ -973,8 +1177,11 @@
 					"AnchorPoint": "topleft"
 				}
 			}
-		}, {
-			"aliases": [ "ContinueButton" ],
+		},
+		{
+			"aliases": [
+				"ContinueButton"
+			],
 			"objclass": "HotUIButtonProperties",
 			"objdata": {
 				"Name": "ContinueButton",
@@ -1004,5 +1211,6 @@
 				"UpAudio": "Play_UI_Battlez_Continue_Release",
 				"WhitelistID": "SECURITY_GOURD_DECLINE_BUTTON"
 			}
-		} ]
+		}
+	]
 }

@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Event2 lv3A",
-	"objects": [ {
+	"#comment": "Event2 lv3A",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Special level practice",
@@ -10,34 +10,63 @@
 				"StartingSun": 50,
 				"LevelNumber": 3,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
 				"Name": "Event 2 - Level 3A",
 				"StageModule": "RTID(DinoStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(SimultaneousPlants@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(SimultaneousPlants@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "SimultaneousPlants" ],
+		},
+		{
+			"aliases": [
+				"SimultaneousPlants"
+			],
 			"objclass": "StarChallengeSimultaneousPlantsProps",
 			"objdata": {
 				"MaximumPlants": 21
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 4,
@@ -46,59 +75,159 @@
 				"StartingPoints": 10,
 				"PointIncrementPerWave": 13,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(dino_armor1@ZombieTypes)", "RTID(dino@ZombieTypes)", "RTID(dino_armor4@ZombieTypes)", "RTID(eighties_boombox@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(dino_armor1@ZombieTypes)",
+					"RTID(dino@ZombieTypes)",
+					"RTID(dino_armor4@ZombieTypes)",
+					"RTID(eighties_boombox@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(ZombieShown@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)", "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)", "RTID(Garg@CurrentLevel)", "RTID(Garg@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(ZombieShown@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)",
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)",
+						"RTID(Garg@CurrentLevel)",
+						"RTID(Garg@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "ZombieShown" ],
+		},
+		{
+			"aliases": [
+				"ZombieShown"
+			],
 			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
 			"objdata": {
 				"AdditionalPlantfood": "0",
-				"GridTypes": [ "RTID(plank@GridItemTypes)" ],
+				"GridTypes": [
+					"RTID(plank@GridItemTypes)"
+				],
 				"WaveStartMessage": "",
 				"SuppressActionIfNoGridItemsFound": true,
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Garg" ],
+		},
+		{
+			"aliases": [
+				"Garg"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
 				"AdditionalPlantfood": 1,
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(tutorial_gargantuar@CurrentLevel)"
-					} ]
+					}
+				]
 			}
-		}, {
+		},
+		{
 			"objclass": "ZombieType",
-			"aliases": [ "tutorial_gargantuar" ],
+			"aliases": [
+				"tutorial_gargantuar"
+			],
 			"objdata": {
 				"TypeName": "tutorial_gargantuar",
 				"ZombieClass": "ZombieGargantuar",
 				"Properties": "RTID(ZombieTutorialGargantuar@CurrentLevel)",
-				"ResourceGroups": [ "ZombieTutorialGargantuarGroup", "ZombieTutorialImpGroup", "ZombieGargantuarEffects" ],
-				"AudioGroups": [ "ZombieGlobalGargantuarAudio" ],
+				"ResourceGroups": [
+					"ZombieTutorialGargantuarGroup",
+					"ZombieTutorialImpGroup",
+					"ZombieGargantuarEffects"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
 				"AnimRigClass": "ZombieAnimRig_Gargantuar",
 				"PopAnim": "POPANIM_ZOMBIE_TUTORIAL_GARGANTUAR",
 				"HomeWorld": "tutorial",
 				"IsBasicZombie": false,
 				"HastyOnStart": false
 			}
-		}, {
-			"aliases": [ "ZombieTutorialGargantuar" ],
+		},
+		{
+			"aliases": [
+				"ZombieTutorialGargantuar"
+			],
 			"objclass": "ZombieGargantuarProps",
 			"objdata": {
 				"AlmanacOffset": {
@@ -126,10 +255,35 @@
 				"ExplodesWhenMowed": true,
 				"FlickIsLaneRestricted": true,
 				"GroundTrackName": "ground_swatch",
-				"HealthThresholdToImpAmmoLayers": [ {
+				"HealthThresholdToImpAmmoLayers": [
+					{
 						"HealthPercentThrowImp": 0.5,
-						"ProjectileLayersToHide": [ "zombie_imp_skull", "zombie_imp_jaw", "Zombie_gargantuar_whiterope", "zombie_imp_arm_inner_lower", "zombie_imp_arm_inner_upper", "zombie_imp_arm_outer_lower", "zombie_imp_arm_outer_upper_01", "zombie_imp_arm_outer_upper_02", "zombie_imp_arms_outer_upper", "zombie_imp_eye", "zombie_imp_eye_sm", "zombie_imp_hand_inner", "zombie_imp_hand_outer", "zombie_imp_leg_inner_lower", "zombie_imp_leg_inner_upper", "zombie_imp_leg_outer_lower", "zombie_imp_leg_outer_upper", "zombie_imp_pupil", "zombie_imp_torso", "zombie_imp_waist", "zombie_imp_toe_outer", "zombie_imp_toe_inner" ]
-					} ],
+						"ProjectileLayersToHide": [
+							"zombie_imp_skull",
+							"zombie_imp_jaw",
+							"Zombie_gargantuar_whiterope",
+							"zombie_imp_arm_inner_lower",
+							"zombie_imp_arm_inner_upper",
+							"zombie_imp_arm_outer_lower",
+							"zombie_imp_arm_outer_upper_01",
+							"zombie_imp_arm_outer_upper_02",
+							"zombie_imp_arms_outer_upper",
+							"zombie_imp_eye",
+							"zombie_imp_eye_sm",
+							"zombie_imp_hand_inner",
+							"zombie_imp_hand_outer",
+							"zombie_imp_leg_inner_lower",
+							"zombie_imp_leg_inner_upper",
+							"zombie_imp_leg_outer_lower",
+							"zombie_imp_leg_outer_upper",
+							"zombie_imp_pupil",
+							"zombie_imp_torso",
+							"zombie_imp_waist",
+							"zombie_imp_toe_outer",
+							"zombie_imp_toe_inner"
+						]
+					}
+				],
 				"HitRect": {
 					"mHeight": 150,
 					"mWidth": 61,
@@ -152,28 +306,34 @@
 				"ImpType": "tutorial_imp",
 				"IsValidPinchTarget": false,
 				"MinPosXThrowImp": 450,
-				"ScaledProps": [ {
+				"ScaledProps": [
+					{
 						"Arg1": 1.3,
 						"Arg2": 0.05,
 						"Formula": "standard",
 						"Key": "Hitpoints"
-					}, {
+					},
+					{
 						"Arg1": 1.3,
 						"Arg2": 0.05,
 						"Formula": "standard",
 						"Key": "EatDPS"
-					}, {
+					},
+					{
 						"Formula": "constant",
 						"Key": "Speed"
-					}, {
+					},
+					{
 						"Formula": "constant",
 						"Key": "WavePointCost"
-					}, {
+					},
+					{
 						"Arg1": 1.3,
 						"Arg2": 0.05,
 						"Formula": "standard",
 						"Key": "SmashDamage"
-					} ],
+					}
+				],
 				"ShadowOffset": {
 					"x": 5,
 					"y": 0,
@@ -192,20 +352,28 @@
 				"ThrowImpDuration": 1,
 				"WavePointCost": 250,
 				"Weight": 10,
-				"ZombieStats": [ {
+				"ZombieStats": [
+					{
 						"Type": "toughness",
 						"Value": "toughness7"
-					}, {
+					},
+					{
 						"Type": "speed",
 						"Value": "speed0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

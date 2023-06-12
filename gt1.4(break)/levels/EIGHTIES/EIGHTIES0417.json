@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "NMT-4 - 1 special + breakdancer",
-	"objects": [ {
+	"#comment": "NMT-4 - 1 special + breakdancer",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s grind thousand quests",
@@ -10,54 +10,91 @@
 				"StartingSun": 50,
 				"LevelNumber": 4,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(EightiesMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(IPP@CurrentLevel)", "RTID(ProtectThePlant@CurrentLevel)", "RTID(LootOverride@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(EightiesMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(IPP@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)"
+				],
 				"Name": "Level 4",
 				"StageModule": "RTID(EightiesStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "LootOverrideModuleProperties",
-			"aliases": [ "LootOverride" ],
+			"aliases": [
+				"LootOverride"
+			],
 			"objdata": {
-				"Overrides": [ {
+				"Overrides": [
+					{
 						"ZombieType": "RTID(eighties_coin1@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(eighties_coin2@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "IPP" ],
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
 			"objclass": "InitialPlantProperties",
 			"objdata": {
-				"InitialPlantPlacements": [ {
+				"InitialPlantPlacements": [
+					{
 						"GridX": 4,
 						"GridY": 2,
 						"TypeName": "powerlily"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ProtectThePlant" ],
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
 			"objclass": "ProtectThePlantChallengeProperties",
 			"objdata": {
 				"MustProtectCount": 1,
-				"Plants": [ {
+				"Plants": [
+					{
 						"GridX": 30,
 						"GridY": 6,
 						"PlantType": "spikeweed"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 2,
@@ -66,27 +103,50 @@
 				"StartingPoints": 10,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
 				"WavesPerFlag": 10,
-				"ZombiePool": [ "RTID(eighties@ZombieTypes)", "RTID(eighties_armor2@ZombieTypes)", "RTID(eighties_breakdancer@ZombieTypes)", "RTID(eighties_glitter@ZombieTypes)", "RTID(eighties_coin1@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(eighties@ZombieTypes)",
+					"RTID(eighties_armor2@ZombieTypes)",
+					"RTID(eighties_breakdancer@ZombieTypes)",
+					"RTID(eighties_glitter@ZombieTypes)",
+					"RTID(eighties_coin1@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(JamRap@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(JamRap@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "JamRap" ],
+		},
+		{
+			"aliases": [
+				"JamRap"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"NotificationEvents": [ "jam_rap" ]
+				"NotificationEvents": [
+					"jam_rap"
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

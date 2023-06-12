@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Dino Danger Room",
-	"objects": [ {
+	"#comment": "Dino Danger Room",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Endless Zone!",
@@ -12,13 +12,31 @@
 				"SuppressPlantfoodPurchase": true,
 				"SuppressAwardScreen": true,
 				"Loot": "RTID(DangerRoomLoot@LevelModules)",
-				"Modules": [ "RTID(DangerRoomIntro@CurrentLevel)", "RTID(DangerRoomModule@CurrentLevel)", "RTID(DinoMowers@LevelModules)", "RTID(AutoSunDropperBase@CurrentLevel)", "RTID(AutoSunDropper1@CurrentLevel)", "RTID(AutoSunDropper2@CurrentLevel)", "RTID(AutoSunDropper3@CurrentLevel)", "RTID(AutoSunDropper4@CurrentLevel)", "RTID(AutoSunDropper5@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ChallengeModule@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(DinoMowers@LevelModules)",
+					"RTID(AutoSunDropperBase@CurrentLevel)",
+					"RTID(AutoSunDropper1@CurrentLevel)",
+					"RTID(AutoSunDropper2@CurrentLevel)",
+					"RTID(AutoSunDropper3@CurrentLevel)",
+					"RTID(AutoSunDropper4@CurrentLevel)",
+					"RTID(AutoSunDropper5@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
 				"Name": "Auto Sun - Level {LEVEL_NUMBER}",
 				"StageModule": "RTID(DinoStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropperBase" ],
+			"aliases": [
+				"AutoSunDropperBase"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 2,
 				"SunCountdownBase": 6,
@@ -26,9 +44,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 6
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper1" ],
+			"aliases": [
+				"AutoSunDropper1"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 29,
 				"SunCountdownBase": 30,
@@ -36,9 +57,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper2" ],
+			"aliases": [
+				"AutoSunDropper2"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 71,
 				"SunCountdownBase": 30,
@@ -46,9 +70,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper3" ],
+			"aliases": [
+				"AutoSunDropper3"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 143,
 				"SunCountdownBase": 30,
@@ -56,9 +83,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper4" ],
+			"aliases": [
+				"AutoSunDropper4"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 215,
 				"SunCountdownBase": 30,
@@ -66,9 +96,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper5" ],
+			"aliases": [
+				"AutoSunDropper5"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 317,
 				"SunCountdownBase": 30,
@@ -76,45 +109,76 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Survive with sun given over time",
 				"DescriptiveName": ""
 			}
-		}, {
+		},
+		{
 			"objclass": "WaveManagerModuleProperties",
-			"aliases": [ "NewWaves" ],
-			"objdata": {}
-		}, {
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "DangerRoomModuleProperties",
-			"aliases": [ "DangerRoomModule" ],
+			"aliases": [
+				"DangerRoomModule"
+			],
 			"objdata": {
 				"WorldSpecificProperties": "RTID(AutoSunDangerRoomProps@PropertySheets)",
-				"LevelDesigners": [ "RTID(DinoDangerRoomWaveGenerator@CurrentLevel)", "RTID(DinosaurDesigner@CurrentLevel)" ]
+				"LevelDesigners": [
+					"RTID(DinoDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(DinosaurDesigner@CurrentLevel)"
+				]
 			}
-		}, {
-			"aliases": [ "DangerRoomIntro" ],
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
 			"objclass": "DangerRoomLevelIntroProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "SeedBank" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [],
+				"PlantBlackList": [
+				],
 				"SelectionMethod": "chooser",
 				"AlwaysUseChooser": true
 			}
-		}, {
-			"aliases": [ "DinosaurDesigner" ],
+		},
+		{
+			"aliases": [
+				"DinosaurDesigner"
+			],
 			"objclass": "DangerRoomDinoDesigner",
 			"objdata": {
 				"LevelRange": {
@@ -153,32 +217,59 @@
 					"Min": 2,
 					"Max": 3
 				},
-				"DinoTypePool": [ {
+				"DinoTypePool": [
+					{
 						"Value": "raptor",
 						"Weight": 0.0
-					}, {
+					},
+					{
 						"Value": "stego",
 						"Weight": 0.0
-					}, {
+					},
+					{
 						"Value": "ptero",
 						"Weight": 0.0
-					}, {
+					},
+					{
 						"Value": "tyranno",
 						"Weight": 1.0
-					}, {
+					},
+					{
 						"Value": "ankylo",
 						"Weight": 0.0
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "DinoDangerRoomWaveGenerator" ],
+		},
+		{
+			"aliases": [
+				"DinoDangerRoomWaveGenerator"
+			],
 			"objclass": "DangerRoomJitteredWaveGenerator",
 			"objdata": {
 				"StartingPoints": 20,
 				"BasePointIncrementPerWave": 5,
 				"BasePointIncrementPerLevel": 1,
-				"ZombiePool": [ "RTID(dino_armor1@ZombieTypes)", "RTID(dino_armor2@ZombieTypes)", "RTID(dino@ZombieTypes)", "RTID(dino_armor3@ZombieTypes)", "RTID(dino_bully@ZombieTypes)", "RTID(dino_gargantuar@ZombieTypes)", "RTID(holohead@ZombieTypes)", "RTID(dino_armor4@ZombieTypes)", "RTID(dino_bully_veteran@ZombieTypes)", "RTID(dino_imp@ZombieTypes)", "RTID(seagull@ZombieTypes)", "RTID(pirate_captain@ZombieTypes)", "RTID(cannon@ZombieTypes)", "RTID(camel_onehump@ZombieTypes)", "RTID(tomb_raiser@ZombieTypes)", "RTID(pharaoh@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(dino_armor1@ZombieTypes)",
+					"RTID(dino_armor2@ZombieTypes)",
+					"RTID(dino@ZombieTypes)",
+					"RTID(dino_armor3@ZombieTypes)",
+					"RTID(dino_bully@ZombieTypes)",
+					"RTID(dino_gargantuar@ZombieTypes)",
+					"RTID(holohead@ZombieTypes)",
+					"RTID(dino_armor4@ZombieTypes)",
+					"RTID(dino_bully_veteran@ZombieTypes)",
+					"RTID(dino_imp@ZombieTypes)",
+					"RTID(seagull@ZombieTypes)",
+					"RTID(pirate_captain@ZombieTypes)",
+					"RTID(cannon@ZombieTypes)",
+					"RTID(camel_onehump@ZombieTypes)",
+					"RTID(tomb_raiser@ZombieTypes)",
+					"RTID(pharaoh@ZombieTypes)"
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

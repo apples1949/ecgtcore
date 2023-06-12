@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Modern Danger Room",
-	"objects": [ {
+	"#comment": "Modern Danger Room",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Endless Zone!",
@@ -12,35 +12,66 @@
 				"SuppressPlantfoodPurchase": true,
 				"SuppressAwardScreen": true,
 				"Loot": "RTID(DangerRoomLoot@LevelModules)",
-				"Modules": [ "RTID(DangerRoomIntro@CurrentLevel)", "RTID(DangerRoomModule@CurrentLevel)", "RTID(ModernMowers@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(NewWaves@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)" ],
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
 				"Name": "All Out - Level {LEVEL_NUMBER}",
 				"StageModule": "RTID(ModernStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "WaveManagerModuleProperties",
-			"aliases": [ "NewWaves" ],
-			"objdata": {}
-		}, {
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "DangerRoomModuleProperties",
-			"aliases": [ "DangerRoomModule" ],
+			"aliases": [
+				"DangerRoomModule"
+			],
 			"objdata": {
 				"WorldSpecificProperties": "RTID(FullSeedbankDangerRoomProps@PropertySheets)",
-				"LevelDesigners": [ "RTID(ModernDangerRoomWaveGenerator@CurrentLevel)", "RTID(IceBlockDesigner@CurrentLevel)", "RTID(IceBlockDesigner2@CurrentLevel)" ]
+				"LevelDesigners": [
+					"RTID(ModernDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(IceBlockDesigner@CurrentLevel)",
+					"RTID(IceBlockDesigner2@CurrentLevel)"
+				]
 			}
-		}, {
-			"aliases": [ "DangerRoomIntro" ],
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
 			"objclass": "DangerRoomLevelIntroProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "SeedBank" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [],
+				"PlantBlackList": [
+				],
 				"SelectionMethod": "chooser",
 				"AlwaysUseChooser": true
 			}
-		}, {
-			"aliases": [ "IceBlockDesigner" ],
+		},
+		{
+			"aliases": [
+				"IceBlockDesigner"
+			],
 			"objclass": "DangerRoomIceBlockDesigner",
 			"objdata": {
 				"LevelRange": {
@@ -75,10 +106,20 @@
 					"Min": 100,
 					"Max": 100
 				},
-				"PlantTypeNames": [ "goldbloom", "cherry_bomb", "grapeshot", "bombegranate", "primalpotatomine", "explodeonut" ]
+				"PlantTypeNames": [
+					"goldbloom",
+					"cherry_bomb",
+					"grapeshot",
+					"bombegranate",
+					"primalpotatomine",
+					"explodeonut"
+				]
 			}
-		}, {
-			"aliases": [ "IceBlockDesigner2" ],
+		},
+		{
+			"aliases": [
+				"IceBlockDesigner2"
+			],
 			"objclass": "DangerRoomIceBlockDesigner",
 			"objdata": {
 				"LevelRange": {
@@ -113,17 +154,46 @@
 					"Min": 100,
 					"Max": 100
 				},
-				"PlantTypeNames": [ "solartomato", "sunbean", "chilibean", "potatomine", "hypnoshroom", "stunion" ]
+				"PlantTypeNames": [
+					"solartomato",
+					"sunbean",
+					"chilibean",
+					"potatomine",
+					"hypnoshroom",
+					"stunion"
+				]
 			}
-		}, {
-			"aliases": [ "ModernDangerRoomWaveGenerator" ],
+		},
+		{
+			"aliases": [
+				"ModernDangerRoomWaveGenerator"
+			],
 			"objclass": "DangerRoomJitteredWaveGenerator",
 			"objdata": {
 				"StartingPoints": 20,
 				"BasePointIncrementPerWave": 10,
 				"BasePointIncrementPerLevel": 2,
-				"ZombiePool": [ "RTID(tutorial_armor1@ZombieTypes)", "RTID(tutorial_armor2@ZombieTypes)", "RTID(tutorial@ZombieTypes)", "RTID(tutorial_armor4@ZombieTypes)", "RTID(tutorial_gargantuar@ZombieTypes)", "RTID(tutorial_imp@ZombieTypes)", "RTID(modern_football@ZombieTypes)", "RTID(modern_newspaper@ZombieTypes)", "RTID(modern_balloon@ZombieTypes)", "RTID(football_mech@ZombieTypes)", "RTID(eighties_boombox@ZombieTypes)", "RTID(holohead@ZombieTypes)", "RTID(dino_armor4@ZombieTypes)", "RTID(dino_bully_veteran@ZombieTypes)", "RTID(iceage_hunter@ZombieTypes)", "RTID(iceage_troglobite@ZombieTypes)", "RTID(iceage_weaselhoarder@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(tutorial_armor1@ZombieTypes)",
+					"RTID(tutorial_armor2@ZombieTypes)",
+					"RTID(tutorial@ZombieTypes)",
+					"RTID(tutorial_armor4@ZombieTypes)",
+					"RTID(tutorial_gargantuar@ZombieTypes)",
+					"RTID(tutorial_imp@ZombieTypes)",
+					"RTID(modern_football@ZombieTypes)",
+					"RTID(modern_newspaper@ZombieTypes)",
+					"RTID(modern_balloon@ZombieTypes)",
+					"RTID(football_mech@ZombieTypes)",
+					"RTID(eighties_boombox@ZombieTypes)",
+					"RTID(holohead@ZombieTypes)",
+					"RTID(dino_armor4@ZombieTypes)",
+					"RTID(dino_bully_veteran@ZombieTypes)",
+					"RTID(iceage_hunter@ZombieTypes)",
+					"RTID(iceage_troglobite@ZombieTypes)",
+					"RTID(iceage_weaselhoarder@ZombieTypes)"
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

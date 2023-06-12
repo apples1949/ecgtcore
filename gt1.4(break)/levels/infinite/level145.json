@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv145",
-	"objects": [ {
+	"#comment": "lv145",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,76 +9,117 @@
 				"StartingSun": 50,
 				"LevelNumber": 145,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(WestMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(CowboyRails@CurrentLevel)", "RTID(ProtectThePlant@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(WestMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(CowboyRails@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_B",
 				"Name": "Adventure 145",
 				"StageModule": "RTID(WestStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ProtectThePlant" ],
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
 			"objclass": "ProtectThePlantChallengeProperties",
 			"objdata": {
 				"MustProtectCount": 4,
-				"Plants": [ {
+				"Plants": [
+					{
 						"GridX": 0,
 						"GridY": 0,
 						"PlantType": "citron"
-					}, {
+					},
+					{
 						"GridX": 0,
 						"GridY": 1,
 						"PlantType": "citron"
-					}, {
+					},
+					{
 						"GridX": 0,
 						"GridY": 3,
 						"PlantType": "citron"
-					}, {
+					},
+					{
 						"GridX": 0,
 						"GridY": 4,
 						"PlantType": "citron"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "CowboyRails" ],
+		},
+		{
+			"aliases": [
+				"CowboyRails"
+			],
 			"objclass": "RailcartProperties",
 			"objdata": {
 				"RailcartType": "railcart_cowboy",
-				"Railcarts": [ {
+				"Railcarts": [
+					{
 						"Column": 0,
 						"Row": 0
-					}, {
+					},
+					{
 						"Column": 0,
 						"Row": 1
-					}, {
+					},
+					{
 						"Column": 0,
 						"Row": 3
-					}, {
+					},
+					{
 						"Column": 0,
 						"Row": 4
-					}, {
+					},
+					{
 						"Column": 5,
 						"Row": 2
-					} ],
-				"Rails": [ {
+					}
+				],
+				"Rails": [
+					{
 						"Column": 0,
 						"RowStart": 0,
 						"RowEnd": 4
-					}, {
+					},
+					{
 						"Column": 5,
 						"RowStart": 0,
 						"RowEnd": 4
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -87,27 +128,49 @@
 				"StartingPoints": 25,
 				"PointIncrementPerWave": 14,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(cowboy@ZombieTypes)", "RTID(cowboy_armor1@ZombieTypes)", "RTID(cowboy_armor4@ZombieTypes)", "RTID(chicken_farmer@ZombieTypes)", "RTID(prospector@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(cowboy@ZombieTypes)",
+					"RTID(cowboy_armor1@ZombieTypes)",
+					"RTID(cowboy_armor4@ZombieTypes)",
+					"RTID(chicken_farmer@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

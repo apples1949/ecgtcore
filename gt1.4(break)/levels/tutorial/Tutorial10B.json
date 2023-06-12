@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Tutorial 10B",
-	"objects": [ {
+	"#comment": "Tutorial 10B",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Final touches for a good headstart",
@@ -12,54 +12,93 @@
 				"ForceWarpTunnel": true,
 				"ForceToWorldMap": true,
 				"LevelNumber": 10,
-				"GameFeaturesToUnlock": [ "feature_worldmap", "feature_plantfood", "feature_almanac" ],
+				"GameFeaturesToUnlock": [
+					"feature_worldmap",
+					"feature_plantfood",
+					"feature_almanac"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(FrontLawnMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LootOverride@CurrentLevel)", "RTID(GI@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(FrontLawnMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)",
+					"RTID(GI@CurrentLevel)"
+				],
 				"Name": "Tutorial 10",
 				"StageModule": "RTID(ModernStage@LevelModules)",
 				"StartingSun": 50,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "PeaEffects", "DelayLoad_Background_Beach_Compressed", "SodRollGroup" ]
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"PeaEffects",
+					"DelayLoad_Background_Beach_Compressed",
+					"SodRollGroup"
+				]
 			}
-		}, {
-			"aliases": [ "GI" ],
+		},
+		{
+			"aliases": [
+				"GI"
+			],
 			"objclass": "InitialGridItemProperties",
 			"objdata": {
-				"InitialGridItemPlacements": [ {
+				"InitialGridItemPlacements": [
+					{
 						"GridX": 6,
 						"GridY": 1,
 						"TypeName": "gravestone_dark"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 0,
 						"TypeName": "gravestone_dark"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 2,
 						"TypeName": "gravestone_dark"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 4,
 						"TypeName": "gravestone_dark"
-					} ]
+					}
+				]
 			}
-		}, {
+		},
+		{
 			"objclass": "LootOverrideModuleProperties",
-			"aliases": [ "LootOverride" ],
+			"aliases": [
+				"LootOverride"
+			],
 			"objdata": {
-				"Overrides": [ {
+				"Overrides": [
+					{
 						"ZombieType": "RTID(tutorial_coin2@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -68,27 +107,49 @@
 				"StartingPoints": 10,
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
 				"WavesPerFlag": 6,
-				"ZombiePool": [ "RTID(tutorial@ZombieTypes)", "RTID(tutorial_armor1@ZombieTypes)", "RTID(tutorial_armor2@ZombieTypes)", "RTID(tutorial_imp@ZombieTypes)", "RTID(tutorial_coin2@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(tutorial@ZombieTypes)",
+					"RTID(tutorial_armor1@ZombieTypes)",
+					"RTID(tutorial_armor2@ZombieTypes)",
+					"RTID(tutorial_imp@ZombieTypes)",
+					"RTID(tutorial_coin2@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"IgnoreFlagCarriers": false,
 				"WaveSpendingPointIncrement": 10,
 				"WaveSpendingPoints": 100,
-				"Waves": [ [ "RTID(Wave1@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Wave1" ],
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv443",
-	"objects": [ {
+	"#comment": "lv443",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -10,101 +10,226 @@
 				"LevelNumber": 443,
 				"ZombieLevel": 3,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(EgyptMowers@LevelModules)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(EgyptMowers@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "Adventure 443",
 				"StageModule": "RTID(EgyptStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 7.0,
 						"MaxPackets": 0
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"PlantType": "peashooter",
 						"Weight": 5
-					}, {
+					},
+					{
 						"PlantType": "tallnut",
 						"Weight": 4
-					}, {
+					},
+					{
 						"PlantType": "coconutcannon",
 						"MaxCountCooldownSeconds": 45,
 						"MaxWeightFactor": 1,
 						"MaxCount": 1,
 						"Weight": 40
-					}, {
+					},
+					{
 						"PlantType": "chardguard",
 						"Weight": 1
-					}, {
+					},
+					{
 						"PlantType": "spikeweed",
 						"Weight": 2
-					} ],
-				"SpeedConditions": [ {
+					}
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 80
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
-				"DynamicZombies": [ {}, {}, {}, {
+				"DynamicZombies": [
+					{
+					},
+					{
+					},
+					{
+					},
+					{
 						"PointIncrementPerWave": 20,
 						"StartingPoints": 120,
 						"StartingWave": 4,
-						"ZombiePool": [ "RTID(mummy_armor2@ZombieTypes)", "RTID(explorer_veteran@ZombieTypes)", "RTID(modern_balloon@ZombieTypes)" ]
-					}, {}, {}, {} ],
+						"ZombiePool": [
+							"RTID(mummy_armor2@ZombieTypes)",
+							"RTID(explorer_veteran@ZombieTypes)",
+							"RTID(modern_balloon@ZombieTypes)"
+						]
+					},
+					{
+					},
+					{
+					},
+					{
+					}
+				],
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManager" ],
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"FlagWaveInterval": 6,
 				"WaveCount": 18,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Wave1@CurrentLevel)" ], [ "RTID(Wave2@CurrentLevel)" ], [ "RTID(Wave3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		}, {
-			"aliases": [ "Wave1" ],
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave2" ],
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave3" ],
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SS1" ],
+		},
+		{
+			"aliases": [
+				"SS1"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 6,
@@ -112,14 +237,20 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 2,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(explorer_veteran@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(explorer_veteran@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SS2" ],
+		},
+		{
+			"aliases": [
+				"SS2"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 4,
@@ -127,12 +258,16 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 2,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

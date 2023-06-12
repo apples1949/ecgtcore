@@ -1,6 +1,7 @@
 {
 	"#comment": "Pirate Zomboss 2.0",
-	"objects": [ {
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "[EPIC_QUEST_PIRATE_NEW_TITLE]",
@@ -9,7 +10,14 @@
 				"LevelNumber": 10,
 				"LoadDefaultMusic": false,
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(ZombossIntro@LevelModules)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(ZombossBattle@CurrentLevel)", "RTID(PiratePlanks@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(ZombossBattle@CurrentLevel)",
+					"RTID(PiratePlanks@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "[EPIC_QUEST_PIRATE_NEW_TITLE]",
 				"NormalPresentTable": "pirate_normal_01",
@@ -19,37 +27,56 @@
 				"StageModule": "RTID(PirateStage@LevelModules)",
 				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)"
 			}
-		}, {
-			"aliases": [ "PiratePlanks" ],
+		},
+		{
+			"aliases": [
+				"PiratePlanks"
+			],
 			"objclass": "PiratePlankProperties",
 			"objdata": {
-				"PlankRows": [ 0, 1, 2, 3, 4 ]
+				"PlankRows": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 2,
 						"MaxPackets": 0
-					}, {
+					},
+					{
 						"Delay": 3,
 						"MaxPackets": 2
-					}, {
+					},
+					{
 						"Delay": 5,
 						"MaxPackets": 4
-					}, {
+					},
+					{
 						"Delay": 8,
 						"MaxPackets": 8
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"MaxCount": 6,
 						"MaxCountCooldownSeconds": 30,
 						"MaxWeightFactor": 0,
 						"MinCount": 3,
 						"PlantType": "chardguard",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 3,
 						"MaxCountCooldownSeconds": 30,
 						"MaxWeightFactor": 0,
@@ -57,20 +84,23 @@
 						"MinWeightFactor": 2,
 						"PlantType": "dandelion",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 1,
 						"MaxCountCooldownSeconds": 10,
 						"MaxWeightFactor": 0.1,
 						"PlantType": "jalapeno",
 						"Weight": 5
-					}, {
+					},
+					{
 						"MaxCount": 6,
 						"MaxCountCooldownSeconds": 15,
 						"MaxWeightFactor": 0,
 						"MinCount": 5,
 						"PlantType": "lightningreed",
 						"Weight": 30
-					}, {
+					},
+					{
 						"MaxCount": 10,
 						"MaxCountCooldownSeconds": 20,
 						"MaxWeightFactor": 0.1,
@@ -78,14 +108,20 @@
 						"MinWeightFactor": 2,
 						"PlantType": "spikeweed",
 						"Weight": 10
-					} ],
-				"SpeedConditions": [ {
+					}
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 100
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ZombossBattle" ],
+		},
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
 			"objclass": "ZombossBattleModuleProperties",
 			"objdata": {
 				"ReservedColumnCount": 2,
@@ -97,18 +133,26 @@
 					"mY": 3
 				}
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
-				"Waves": []
+				"Waves": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

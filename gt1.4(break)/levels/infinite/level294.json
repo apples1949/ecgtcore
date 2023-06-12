@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv294",
-	"objects": [ {
+	"#comment": "lv294",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,33 +9,115 @@
 				"StartingSun": 50,
 				"LevelNumber": 294,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(IceageMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(MoldColonies@CurrentLevel)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(IceageMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(MoldColonies@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"Name": "Adventure 294",
 				"StageModule": "RTID(IceageStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "MoldColonies" ],
+		},
+		{
+			"aliases": [
+				"MoldColonies"
+			],
 			"objclass": "MoldColonyChallengeProps",
 			"objdata": {
 				"Locations": "RTID(Mold@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "Mold" ],
+		},
+		{
+			"aliases": [
+				"Mold"
+			],
 			"objclass": "BoardGridMapProps",
 			"objdata": {
-				"Values": [ [ 0, 0, 0, 0, 0, 1, 1, 1, 1 ], [ 0, 0, 0, 0, 0, 1, 1, 1, 1 ], [ 0, 0, 0, 0, 0, 1, 1, 1, 1 ], [ 0, 0, 0, 0, 0, 1, 1, 1, 1 ], [ 0, 0, 0, 0, 0, 1, 1, 1, 1 ] ]
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						1,
+						1
+					]
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 2,
@@ -44,72 +126,165 @@
 				"StartingPoints": 15,
 				"PointIncrementPerWave": 12,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(iceage_imp@ZombieTypes)", "RTID(iceage_troglobite@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(iceage_imp@ZombieTypes)",
+					"RTID(iceage_troglobite@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(W1@CurrentLevel)" ], [ "RTID(W3@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W4@CurrentLevel)" ], [ "RTID(W5@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)", "RTID(W5@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)", "RTID(W4@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)", "RTID(W3@CurrentLevel)" ], [ "RTID(W4@CurrentLevel)", "RTID(W5@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)", "RTID(W2@CurrentLevel)", "RTID(W3@CurrentLevel)", "RTID(W4@CurrentLevel)", "RTID(W5@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)", "RTID(W3@CurrentLevel)", "RTID(W4@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(W3@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W4@CurrentLevel)"
+					],
+					[
+						"RTID(W5@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)",
+						"RTID(W5@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)",
+						"RTID(W4@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)",
+						"RTID(W3@CurrentLevel)"
+					],
+					[
+						"RTID(W4@CurrentLevel)",
+						"RTID(W5@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)",
+						"RTID(W2@CurrentLevel)",
+						"RTID(W3@CurrentLevel)",
+						"RTID(W4@CurrentLevel)",
+						"RTID(W5@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)",
+						"RTID(W3@CurrentLevel)",
+						"RTID(W4@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "W1" ],
+		},
+		{
+			"aliases": [
+				"W1"
+			],
 			"objclass": "FrostWindWaveActionProps",
 			"objdata": {
-				"Winds": [ {
+				"Winds": [
+					{
 						"Direction": "right",
 						"Row": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "W2" ],
+		},
+		{
+			"aliases": [
+				"W2"
+			],
 			"objclass": "FrostWindWaveActionProps",
 			"objdata": {
-				"Winds": [ {
+				"Winds": [
+					{
 						"Direction": "right",
 						"Row": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "W3" ],
+		},
+		{
+			"aliases": [
+				"W3"
+			],
 			"objclass": "FrostWindWaveActionProps",
 			"objdata": {
-				"Winds": [ {
+				"Winds": [
+					{
 						"Direction": "right",
 						"Row": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "W4" ],
+		},
+		{
+			"aliases": [
+				"W4"
+			],
 			"objclass": "FrostWindWaveActionProps",
 			"objdata": {
-				"Winds": [ {
+				"Winds": [
+					{
 						"Direction": "right",
 						"Row": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "W5" ],
+		},
+		{
+			"aliases": [
+				"W5"
+			],
 			"objclass": "FrostWindWaveActionProps",
 			"objdata": {
-				"Winds": [ {
+				"Winds": [
+					{
 						"Direction": "right",
 						"Row": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

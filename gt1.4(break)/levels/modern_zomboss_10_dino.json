@@ -1,6 +1,7 @@
 {
 	"#comment": "Dino Zomboss",
-	"objects": [ {
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"CompletionAchievement": "its_waffle_time",
@@ -10,12 +11,21 @@
 				"FirstRewardParam": "worldtrophy_modern",
 				"FirstRewardType": "worldtrophy",
 				"ForceToWorldMap": true,
-				"GameFeaturesToUnlock": [ "world_trophy_dino" ],
+				"GameFeaturesToUnlock": [
+					"world_trophy_dino"
+				],
 				"SuppressSunSpawn": true,
 				"LevelNumber": 34,
 				"LoadDefaultMusic": false,
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(ZombossIntro@LevelModules)", "RTID(DinoMowers@LevelModules)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(ZombossBattle@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)",
+					"RTID(DinoMowers@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(ZombossBattle@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "[MODERN_LEVEL_NAME]",
 				"NormalPresentTable": "egypt_normal_01",
@@ -23,52 +33,73 @@
 				"ShinyPresentTable": "egypt_shiny_01",
 				"StageModule": "RTID(DinoStage@LevelModules)",
 				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)",
-				"ResourceGroupNames": [ "ModernLootPinatas" ]
+				"ResourceGroupNames": [
+					"ModernLootPinatas"
+				]
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 3,
 						"MaxPackets": 0
-					}, {
+					},
+					{
 						"Delay": 4,
 						"MaxPackets": 2
-					}, {
+					},
+					{
 						"Delay": 6,
 						"MaxPackets": 4
-					}, {
+					},
+					{
 						"Delay": 9,
 						"MaxPackets": 8
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"PlantType": "dusklobber",
 						"Weight": 10
-					}, {
+					},
+					{
 						"PlantType": "grimrose",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 10,
 						"MaxWeightFactor": 0.1,
 						"MinCount": 4,
 						"MinWeightFactor": 3,
 						"PlantType": "moonflower",
 						"Weight": 10
-					}, {
+					},
+					{
 						"PlantType": "nightshade",
 						"Weight": 10
-					}, {
+					},
+					{
 						"PlantType": "shadowshroom",
 						"Weight": 10
-					} ],
-				"SpeedConditions": [ {
+					}
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 100
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ZombossBattle" ],
+		},
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
 			"objclass": "ZombossBattleModuleProperties",
 			"objdata": {
 				"ReservedColumnCount": 3,
@@ -80,18 +111,26 @@
 					"mY": 4
 				}
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
-				"Waves": []
+				"Waves": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

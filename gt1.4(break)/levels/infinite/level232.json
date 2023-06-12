@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv232",
-	"objects": [ {
+	"#comment": "lv232",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -10,44 +10,70 @@
 				"LevelNumber": 232,
 				"ZombieLevel": 2,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(LostCityMowers@LevelModules)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(LostCityMowers@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "Adventure 232",
 				"StageModule": "RTID(LostCityStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 6.0,
 						"MaxPackets": 0
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"PlantType": "melonpult",
 						"MaxCountCooldownSeconds": 30,
 						"MaxWeightFactor": 1,
 						"MaxCount": 1,
 						"Weight": 6
-					}, {
+					},
+					{
 						"PlantType": "missiletoe",
 						"Weight": 3
-					}, {
+					},
+					{
 						"PlantType": "springbean",
 						"Weight": 6
-					}, {
+					},
+					{
 						"PlantType": "sapfling",
 						"Weight": 1
-					} ],
-				"SpeedConditions": [ {
+					}
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 80
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 2,
@@ -56,23 +82,81 @@
 				"StartingPoints": 30,
 				"PointIncrementPerWave": 30,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(lostcity_bug_armor2@ZombieTypes)", "RTID(lostcity_jane@ZombieTypes)", "RTID(lostcity_jane_silver@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(lostcity_bug_armor2@ZombieTypes)",
+					"RTID(lostcity_jane@ZombieTypes)",
+					"RTID(lostcity_jane_silver@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(PR1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR3@CurrentLevel)", "RTID(PR4@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(PR1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR3@CurrentLevel)",
+						"RTID(PR4@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "PR1" ],
+		},
+		{
+			"aliases": [
+				"PR1"
+			],
 			"objclass": "ParachuteRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 8,
@@ -85,8 +169,11 @@
 				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
 				"ZombieFallTime": "1.5"
 			}
-		}, {
-			"aliases": [ "PR2" ],
+		},
+		{
+			"aliases": [
+				"PR2"
+			],
 			"objclass": "ParachuteRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 7,
@@ -99,8 +186,11 @@
 				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
 				"ZombieFallTime": "1.5"
 			}
-		}, {
-			"aliases": [ "PR3" ],
+		},
+		{
+			"aliases": [
+				"PR3"
+			],
 			"objclass": "ParachuteRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 8,
@@ -113,8 +203,11 @@
 				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
 				"ZombieFallTime": "1.5"
 			}
-		}, {
-			"aliases": [ "PR4" ],
+		},
+		{
+			"aliases": [
+				"PR4"
+			],
 			"objclass": "ParachuteRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 4,
@@ -127,12 +220,17 @@
 				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
 				"ZombieFallTime": "1.5"
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

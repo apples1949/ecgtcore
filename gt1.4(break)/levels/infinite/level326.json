@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv326",
-	"objects": [ {
+	"#comment": "lv326",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,40 +9,69 @@
 				"StartingSun": 50,
 				"LevelNumber": 326,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(BeachMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(Tide@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(BeachMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(Tide@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "Adventure 326",
 				"StageModule": "RTID(BeachStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "Tide" ],
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
 			"objclass": "TideProperties",
 			"objdata": {
 				"StartingWaveLocation": 2
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [ {
+				"PresetPlantList": [
+					{
 						"PlantType": "sunflower"
-					}, {
+					},
+					{
 						"PlantType": "tanglekelp"
-					}, {
+					},
+					{
 						"PlantType": "squash"
-					}, {
+					},
+					{
 						"PlantType": "guacodile"
-					}, {
+					},
+					{
 						"PlantType": "endurian"
-					}, {
+					},
+					{
 						"PlantType": "hotpotato"
-					} ],
+					}
+				],
 				"SelectionMethod": "preset"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 2,
@@ -51,27 +80,49 @@
 				"StartingPoints": 10,
 				"PointIncrementPerWave": 12,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(beach@ZombieTypes)", "RTID(beach_fem@ZombieTypes)", "RTID(beach_armor1@ZombieTypes)", "RTID(beach_octopus@ZombieTypes)", "RTID(beach_fisherman@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(beach@ZombieTypes)",
+					"RTID(beach_fem@ZombieTypes)",
+					"RTID(beach_armor1@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_fisherman@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

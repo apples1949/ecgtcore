@@ -1,2888 +1,4081 @@
 {
-	"#comment": "Empty heart‘",
-	false: "",
-	"objects": [ {
-			"aliases": [ "test_monetizers" ],
+	"#comment": "",
+	"objects": [
+		{
+			"aliases": [
+				"test_monetizers"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "test_monetizers",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "TotPrch",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_big_monetizers" ],
+		},
+		{
+			"aliases": [
+				"test_big_monetizers"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "test_big_monetizers",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "TotPrch",
 						"Value": "0"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "LstCashPrchPrice",
 						"Value": "19.9"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_nonmonetizers" ],
+		},
+		{
+			"aliases": [
+				"test_nonmonetizers"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "test_nonmonetizers",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_egypt_advanced" ],
+		},
+		{
+			"aliases": [
+				"test_egypt_advanced"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "test_egypt_advanced",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">=",
 						"Key": "HighLvlEgypt",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_just_lost" ],
+		},
+		{
+			"aliases": [
+				"test_just_lost"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "test_just_lost",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "FailLstGame",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_just_won" ],
+		},
+		{
+			"aliases": [
+				"test_just_won"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "test_just_won",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "!=",
 						"Key": "FailLstGame",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_nonmon_early" ],
+		},
+		{
+			"aliases": [
+				"test_nonmon_early"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "test_nonmon_early",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "DaysSinceInstall",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_nonmon_late" ],
+		},
+		{
+			"aliases": [
+				"test_nonmon_late"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "test_nonmon_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_zack" ],
+		},
+		{
+			"aliases": [
+				"test_zack"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "test_zack",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "TotPrch",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_vietnam" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_vietnam"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_nonmon_vietnam",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "VN"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_russia" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_russia"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_nonmon_russia",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "RU"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_mexico" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_mexico"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_nonmon_mexico",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "MX"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_brazil" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_brazil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_nonmon_brazil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "BR"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_spain" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_spain"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_nonmon_spain",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "ES"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_vietnam" ],
+		},
+		{
+			"aliases": [
+				"reg_vietnam"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_vietnam",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "VN"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_russia" ],
+		},
+		{
+			"aliases": [
+				"reg_russia"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_russia",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "RU"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_mexico" ],
+		},
+		{
+			"aliases": [
+				"reg_mexico"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_mexico",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "MX"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_brazil" ],
+		},
+		{
+			"aliases": [
+				"reg_brazil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_brazil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "BR"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_vietnam_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_vietnam_late"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_nonmon_vietnam_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "VN"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_russia_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_russia_late"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_nonmon_russia_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "RU"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_mexico_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_mexico_late"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_nonmon_mexico_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "MX"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_brazil_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_brazil_late"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_nonmon_brazil_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "BR"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_spain_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_spain_late"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_nonmon_spain_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "ES"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_notvrmb_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_notvrmb_late"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "reg_nonmon_notvrmb_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "2"
-					}, {
+					},
+					{
 						"Comparator": "!=",
 						"Key": "Country",
 						"Value": "VN"
-					}, {
+					},
+					{
 						"Comparator": "!=",
 						"Key": "Country",
 						"Value": "RU"
-					}, {
+					},
+					{
 						"Comparator": "!=",
 						"Key": "Country",
 						"Value": "MX"
-					}, {
+					},
+					{
 						"Comparator": "!=",
 						"Key": "Country",
 						"Value": "BR"
-					}, {
+					},
+					{
 						"Comparator": "!=",
 						"Key": "Country",
 						"Value": "ES"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "quests_segment_1" ],
+		},
+		{
+			"aliases": [
+				"quests_segment_1"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "quests_segment_1",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "StoreTestID",
 						"Value": "25"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "quests_segment_2" ],
+		},
+		{
+			"aliases": [
+				"quests_segment_2"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "quests_segment_2",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "StoreTestID",
 						"Value": "50"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "StoreTestID",
 						"Value": "25"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "quests_segment_3" ],
+		},
+		{
+			"aliases": [
+				"quests_segment_3"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "quests_segment_3",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "StoreTestID",
 						"Value": "75"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "StoreTestID",
 						"Value": "50"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "quests_segment_4" ],
+		},
+		{
+			"aliases": [
+				"quests_segment_4"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "quests_segment_4",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">=",
 						"Key": "StoreTestID",
 						"Value": "75"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LastCashPurch_over9" ],
+		},
+		{
+			"aliases": [
+				"LastCashPurch_over9"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LastCashPurch_over9",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "LstCashPrchPrice",
 						"Value": "9"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LastCashPurch_under9" ],
+		},
+		{
+			"aliases": [
+				"LastCashPurch_under9"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LastCashPurch_under9",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<=",
 						"Key": "LstCashPrchPrice",
 						"Value": "9"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_AppleMortar" ],
+		},
+		{
+			"aliases": [
+				"Own_AppleMortar"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_AppleMortar",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "AppleMortar",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_ElectricPeashooter" ],
+		},
+		{
+			"aliases": [
+				"Own_ElectricPeashooter"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_ElectricPeashooter",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "ElectricPeashooter",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "StartedBeach" ],
+		},
+		{
+			"aliases": [
+				"StartedBeach"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "StartedBeach",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlBeach",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "StartedCowboy" ],
+		},
+		{
+			"aliases": [
+				"StartedCowboy"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "StartedCowboy",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlCowboy",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "StartedDark" ],
+		},
+		{
+			"aliases": [
+				"StartedDark"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "StartedDark",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDark",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "StartedDino" ],
+		},
+		{
+			"aliases": [
+				"StartedDino"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "StartedDino",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDino",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "StartedEgypt" ],
+		},
+		{
+			"aliases": [
+				"StartedEgypt"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "StartedEgypt",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "StartedEighties" ],
+		},
+		{
+			"aliases": [
+				"StartedEighties"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "StartedEighties",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEighties",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "StartedFuture" ],
+		},
+		{
+			"aliases": [
+				"StartedFuture"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "StartedFuture",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlFuture",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "StartedIceage" ],
+		},
+		{
+			"aliases": [
+				"StartedIceage"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "StartedIceage",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlIceage",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "StartedLostCity" ],
+		},
+		{
+			"aliases": [
+				"StartedLostCity"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "StartedLostCity",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlLostCity",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "StartedModern" ],
+		},
+		{
+			"aliases": [
+				"StartedModern"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "StartedModern",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlModern",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "StartedPirate" ],
+		},
+		{
+			"aliases": [
+				"StartedPirate"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "StartedPirate",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlPirate",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "DailyQuestUnlock" ],
+		},
+		{
+			"aliases": [
+				"DailyQuestUnlock"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "DailyQuestUnlock",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "IceAgeSpineUnlock" ],
+		},
+		{
+			"aliases": [
+				"IceAgeSpineUnlock"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "IceAgeSpineUnlock",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LostCitySpineUnlock" ],
+		},
+		{
+			"aliases": [
+				"LostCitySpineUnlock"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LostCitySpineUnlock",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "FutureSpineUnlock" ],
+		},
+		{
+			"aliases": [
+				"FutureSpineUnlock"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "FutureSpineUnlock",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "DarkSpineUnlock" ],
+		},
+		{
+			"aliases": [
+				"DarkSpineUnlock"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "DarkSpineUnlock",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "EightiesSpineUnlock" ],
+		},
+		{
+			"aliases": [
+				"EightiesSpineUnlock"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "EightiesSpineUnlock",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "DinoSpineUnlock" ],
+		},
+		{
+			"aliases": [
+				"DinoSpineUnlock"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "DinoSpineUnlock",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "BeachSpineUnlock" ],
+		},
+		{
+			"aliases": [
+				"BeachSpineUnlock"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "BeachSpineUnlock",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ModernSpineUnlock" ],
+		},
+		{
+			"aliases": [
+				"ModernSpineUnlock"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "ModernSpineUnlock",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "InzanityQuestUnlock" ],
+		},
+		{
+			"aliases": [
+				"InzanityQuestUnlock"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "InzanityQuestUnlock",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "new_players" ],
+		},
+		{
+			"aliases": [
+				"new_players"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "new_players",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<=",
 						"Key": "DaysSinceInstall",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Totspend_Zero" ],
+		},
+		{
+			"aliases": [
+				"Totspend_Zero"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Totspend_Zero",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "TotSpendForCurrentInstall",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Totspend_LessThan100" ],
+		},
+		{
+			"aliases": [
+				"Totspend_LessThan100"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Totspend_LessThan100",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "TotSpendForCurrentInstall",
 						"Value": "0"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "TotSpendForCurrentInstall",
 						"Value": "100"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Totspend_100AndMore" ],
+		},
+		{
+			"aliases": [
+				"Totspend_100AndMore"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Totspend_100AndMore",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">=",
 						"Key": "TotSpendForCurrentInstall",
 						"Value": "100"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchGems" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchGems"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchGems",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "gem"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchCoins" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchCoins"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchCoins",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "coin"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LastCashPurch_10" ],
+		},
+		{
+			"aliases": [
+				"LastCashPurch_10"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LastCashPurch_10",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchPrice",
 						"Value": "9.99"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LastCashPurch_20" ],
+		},
+		{
+			"aliases": [
+				"LastCashPurch_20"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LastCashPurch_20",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchPrice",
 						"Value": "19.99"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LastCashPurch_50" ],
+		},
+		{
+			"aliases": [
+				"LastCashPurch_50"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LastCashPurch_50",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchPrice",
 						"Value": "49.99"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LastCashPurch_100" ],
+		},
+		{
+			"aliases": [
+				"LastCashPurch_100"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LastCashPurch_100",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchPrice",
 						"Value": "99.99"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchGems_Under10" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchGems_Under10"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchGems_Under10",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "gem"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "LstCashPrchPrice",
 						"Value": "9"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchGems_10" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchGems_10"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchGems_10",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "gem"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "LstCashPrchPrice",
 						"Value": "9"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "LstCashPrchPrice",
 						"Value": "19"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchGems_20" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchGems_20"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchGems_20",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "gem"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "LstCashPrchPrice",
 						"Value": "19"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "LstCashPrchPrice",
 						"Value": "49"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchGems_50" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchGems_50"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchGems_50",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "gem"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "LstCashPrchPrice",
 						"Value": "49"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "LstCashPrchPrice",
 						"Value": "99"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchGems_100" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchGems_100"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchGems_100",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "gem"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "LstCashPrchPrice",
 						"Value": "99"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchCoins_Under10" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchCoins_Under10"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchCoins_Under10",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "coin"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "LstCashPrchPrice",
 						"Value": "9"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchCoins_10" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchCoins_10"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchCoins_10",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "coin"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "LstCashPrchPrice",
 						"Value": "9"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "LstCashPrchPrice",
 						"Value": "19"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchCoins_20" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchCoins_20"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchCoins_20",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "coin"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "LstCashPrchPrice",
 						"Value": "19"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "LstCashPrchPrice",
 						"Value": "49"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchCoins_50" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchCoins_50"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchCoins_50",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "coin"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "LstCashPrchPrice",
 						"Value": "49"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "LstCashPrchPrice",
 						"Value": "99"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LstCashPrchCoins_100" ],
+		},
+		{
+			"aliases": [
+				"LstCashPrchCoins_100"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "LstCashPrchCoins_100",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "LstCashPrchType",
 						"Value": "coin"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "LstCashPrchPrice",
 						"Value": "99"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "CoinsForGemsTest_A" ],
+		},
+		{
+			"aliases": [
+				"CoinsForGemsTest_A"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "CoinsForGemsTest_A",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<=",
 						"Key": "DaysSinceInstall",
 						"Value": "14"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "StoreTestID",
 						"Value": "50"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "CoinsForGemsTest_B" ],
+		},
+		{
+			"aliases": [
+				"CoinsForGemsTest_B"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "CoinsForGemsTest_B",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<=",
 						"Key": "DaysSinceInstall",
 						"Value": "14"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "StoreTestID",
 						"Value": "49"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "CoinsForGemsTest_C" ],
+		},
+		{
+			"aliases": [
+				"CoinsForGemsTest_C"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "CoinsForGemsTest_C",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "DaysSinceInstall",
 						"Value": "14"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SoilLeague" ],
+		},
+		{
+			"aliases": [
+				"SoilLeague"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "SoilLeague",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "WoodLeague" ],
+		},
+		{
+			"aliases": [
+				"WoodLeague"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "WoodLeague",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "BrickLeague" ],
+		},
+		{
+			"aliases": [
+				"BrickLeague"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "BrickLeague",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "IronLeague" ],
+		},
+		{
+			"aliases": [
+				"IronLeague"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "IronLeague",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "BronzeLeague" ],
+		},
+		{
+			"aliases": [
+				"BronzeLeague"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "BronzeLeague",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SilverLeague" ],
+		},
+		{
+			"aliases": [
+				"SilverLeague"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "SilverLeague",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "GoldLeague" ],
+		},
+		{
+			"aliases": [
+				"GoldLeague"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "GoldLeague",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "JadeLeague" ],
+		},
+		{
+			"aliases": [
+				"JadeLeague"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "JadeLeague",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "BattlezEligible" ],
+		},
+		{
+			"aliases": [
+				"BattlezEligible"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "BattlezEligible",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "JoustPlayerReady",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Beach_Soil" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Beach_Soil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Beach_Soil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlBeach",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Cowboy_Soil" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Cowboy_Soil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Cowboy_Soil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlCowboy",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dark_Soil" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dark_Soil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dark_Soil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDark",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dino_Soil" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dino_Soil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dino_Soil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDino",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Egypt_Soil" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Egypt_Soil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Egypt_Soil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<=",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Eighties_Soil" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Eighties_Soil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Eighties_Soil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEighties",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Future_Soil" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Future_Soil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Future_Soil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlFuture",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Iceage_Soil" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Iceage_Soil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Iceage_Soil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlIceage",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_LostCity_Soil" ],
+		},
+		{
+			"aliases": [
+				"Pinata_LostCity_Soil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_LostCity_Soil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlLostCity",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Modern_Soil" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Modern_Soil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Modern_Soil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlModern",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Pirate_Soil" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Pirate_Soil"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Pirate_Soil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlPirate",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Beach_Wood" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Beach_Wood"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Beach_Wood",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlBeach",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Cowboy_Wood" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Cowboy_Wood"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Cowboy_Wood",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlCowboy",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dark_Wood" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dark_Wood"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dark_Wood",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDark",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dino_Wood" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dino_Wood"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dino_Wood",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDino",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Egypt_Wood" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Egypt_Wood"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Egypt_Wood",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Eighties_Wood" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Eighties_Wood"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Eighties_Wood",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEighties",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Future_Wood" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Future_Wood"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Future_Wood",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlFuture",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Iceage_Wood" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Iceage_Wood"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Iceage_Wood",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlIceage",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_LostCity_Wood" ],
+		},
+		{
+			"aliases": [
+				"Pinata_LostCity_Wood"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_LostCity_Wood",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlLostCity",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Modern_Wood" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Modern_Wood"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Modern_Wood",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlModern",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Pirate_Wood" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Pirate_Wood"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Pirate_Wood",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlPirate",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Beach_Brick" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Beach_Brick"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Beach_Brick",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlBeach",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Cowboy_Brick" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Cowboy_Brick"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Cowboy_Brick",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlCowboy",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dark_Brick" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dark_Brick"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dark_Brick",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDark",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dino_Brick" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dino_Brick"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dino_Brick",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDino",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Egypt_Brick" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Egypt_Brick"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Egypt_Brick",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Eighties_Brick" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Eighties_Brick"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Eighties_Brick",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEighties",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Future_Brick" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Future_Brick"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Future_Brick",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlFuture",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Iceage_Brick" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Iceage_Brick"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Iceage_Brick",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlIceage",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_LostCity_Brick" ],
+		},
+		{
+			"aliases": [
+				"Pinata_LostCity_Brick"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_LostCity_Brick",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlLostCity",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Modern_Brick" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Modern_Brick"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Modern_Brick",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlModern",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Pirate_Brick" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Pirate_Brick"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Pirate_Brick",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlPirate",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Beach_Iron" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Beach_Iron"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Beach_Iron",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlBeach",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Cowboy_Iron" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Cowboy_Iron"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Cowboy_Iron",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlCowboy",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dark_Iron" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dark_Iron"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dark_Iron",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDark",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dino_Iron" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dino_Iron"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dino_Iron",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDino",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Egypt_Iron" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Egypt_Iron"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Egypt_Iron",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Eighties_Iron" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Eighties_Iron"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Eighties_Iron",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEighties",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Future_Iron" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Future_Iron"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Future_Iron",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlFuture",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Iceage_Iron" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Iceage_Iron"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Iceage_Iron",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlIceage",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_LostCity_Iron" ],
+		},
+		{
+			"aliases": [
+				"Pinata_LostCity_Iron"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_LostCity_Iron",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlLostCity",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Modern_Iron" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Modern_Iron"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Modern_Iron",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlModern",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Pirate_Iron" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Pirate_Iron"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Pirate_Iron",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlPirate",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Beach_Bronze" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Beach_Bronze"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Beach_Bronze",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlBeach",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Cowboy_Bronze" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Cowboy_Bronze"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Cowboy_Bronze",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlCowboy",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dark_Bronze" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dark_Bronze"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dark_Bronze",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDark",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dino_Bronze" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dino_Bronze"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dino_Bronze",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDino",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Egypt_Bronze" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Egypt_Bronze"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Egypt_Bronze",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Eighties_Bronze" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Eighties_Bronze"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Eighties_Bronze",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEighties",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Future_Bronze" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Future_Bronze"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Future_Bronze",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlFuture",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Iceage_Bronze" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Iceage_Bronze"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Iceage_Bronze",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlIceage",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_LostCity_Bronze" ],
+		},
+		{
+			"aliases": [
+				"Pinata_LostCity_Bronze"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_LostCity_Bronze",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlLostCity",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Modern_Bronze" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Modern_Bronze"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Modern_Bronze",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlModern",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Pirate_Bronze" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Pirate_Bronze"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Pirate_Bronze",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlPirate",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "5"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Beach_Silver" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Beach_Silver"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Beach_Silver",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlBeach",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Cowboy_Silver" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Cowboy_Silver"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Cowboy_Silver",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlCowboy",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dark_Silver" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dark_Silver"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dark_Silver",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDark",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dino_Silver" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dino_Silver"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dino_Silver",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDino",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Egypt_Silver" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Egypt_Silver"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Egypt_Silver",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Eighties_Silver" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Eighties_Silver"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Eighties_Silver",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEighties",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Future_Silver" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Future_Silver"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Future_Silver",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlFuture",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Iceage_Silver" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Iceage_Silver"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Iceage_Silver",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlIceage",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_LostCity_Silver" ],
+		},
+		{
+			"aliases": [
+				"Pinata_LostCity_Silver"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_LostCity_Silver",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlLostCity",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Modern_Silver" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Modern_Silver"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Modern_Silver",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlModern",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Pirate_Silver" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Pirate_Silver"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Pirate_Silver",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlPirate",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Beach_Gold" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Beach_Gold"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Beach_Gold",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlBeach",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Cowboy_Gold" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Cowboy_Gold"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Cowboy_Gold",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlCowboy",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dark_Gold" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dark_Gold"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dark_Gold",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDark",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dino_Gold" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dino_Gold"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dino_Gold",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDino",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Egypt_Gold" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Egypt_Gold"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Egypt_Gold",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Eighties_Gold" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Eighties_Gold"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Eighties_Gold",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEighties",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Future_Gold" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Future_Gold"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Future_Gold",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlFuture",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Iceage_Gold" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Iceage_Gold"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Iceage_Gold",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlIceage",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_LostCity_Gold" ],
+		},
+		{
+			"aliases": [
+				"Pinata_LostCity_Gold"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_LostCity_Gold",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlLostCity",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Modern_Gold" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Modern_Gold"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Modern_Gold",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlModern",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Pirate_Gold" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Pirate_Gold"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Pirate_Gold",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlPirate",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Beach_Jade" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Beach_Jade"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Beach_Jade",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlBeach",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Cowboy_Jade" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Cowboy_Jade"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Cowboy_Jade",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlCowboy",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dark_Jade" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dark_Jade"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dark_Jade",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDark",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Dino_Jade" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Dino_Jade"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Dino_Jade",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlDino",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Egypt_Jade" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Egypt_Jade"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Egypt_Jade",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Eighties_Jade" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Eighties_Jade"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Eighties_Jade",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEighties",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Future_Jade" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Future_Jade"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Future_Jade",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlFuture",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Iceage_Jade" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Iceage_Jade"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Iceage_Jade",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlIceage",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_LostCity_Jade" ],
+		},
+		{
+			"aliases": [
+				"Pinata_LostCity_Jade"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_LostCity_Jade",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlLostCity",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Modern_Jade" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Modern_Jade"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Modern_Jade",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlModern",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Pinata_Pirate_Jade" ],
+		},
+		{
+			"aliases": [
+				"Pinata_Pirate_Jade"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Pinata_Pirate_Jade",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlPirate",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "8"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SoilLeague_TestA" ],
+		},
+		{
+			"aliases": [
+				"SoilLeague_TestA"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "SoilLeague_TestA",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "StoreTestID",
 						"Value": "50"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SoilLeague_TestB" ],
+		},
+		{
+			"aliases": [
+				"SoilLeague_TestB"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "SoilLeague_TestB",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "StoreTestID",
 						"Value": "49"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "JoustDivision",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "FtueComplete" ],
+		},
+		{
+			"aliases": [
+				"FtueComplete"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "FtueComplete",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "HasDataPatch" ],
+		},
+		{
+			"aliases": [
+				"HasDataPatch"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "HasDataPatch",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "HasDataPatch",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ABTest_1" ],
+		},
+		{
+			"aliases": [
+				"ABTest_1"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "ABTest_1",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "StoreTestID",
 						"Value": "50"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ABTest_2" ],
+		},
+		{
+			"aliases": [
+				"ABTest_2"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "ABTest_2",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "StoreTestID",
 						"Value": "49"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_PotW_A" ],
+		},
+		{
+			"aliases": [
+				"Own_PotW_A"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_PotW_A",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "PowerLily",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_PotW_B" ],
+		},
+		{
+			"aliases": [
+				"Own_PotW_B"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_PotW_B",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "AppleMortar",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_PotW_C" ],
+		},
+		{
+			"aliases": [
+				"Own_PotW_C"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_PotW_C",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "ElectricPeashooter",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_PotW_D" ],
+		},
+		{
+			"aliases": [
+				"Own_PotW_D"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_PotW_D",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Parsnip",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_PotW_E" ],
+		},
+		{
+			"aliases": [
+				"Own_PotW_E"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_PotW_E",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "WitchHazel",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_PotW_F" ],
+		},
+		{
+			"aliases": [
+				"Own_PotW_F"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_PotW_F",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Pokra",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ProReg_T1_A" ],
+		},
+		{
+			"aliases": [
+				"ProReg_T1_A"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "ProReg_T1_A",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "Pokra",
 						"Value": "26"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ProReg_T1_B" ],
+		},
+		{
+			"aliases": [
+				"ProReg_T1_B"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "ProReg_T1_B",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "StoreTestID",
 						"Value": "25"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "StoreTestID",
 						"Value": "51"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "HighLvlTutorial",
 						"Value": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ProReg_T1_C" ],
+		},
+		{
+			"aliases": [
+				"ProReg_T1_C"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "ProReg_T1_C",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "StoreTestID",
 						"Value": "50"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "StoreTestID",
 						"Value": "76"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ProReg_T1_D" ],
+		},
+		{
+			"aliases": [
+				"ProReg_T1_D"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "ProReg_T1_D",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "StoreTestID",
 						"Value": "75"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "HighLvlEgypt",
 						"Value": "6"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Plants" ],
+		},
+		{
+			"aliases": [
+				"Own_Plants"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Plants",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "ElectricPeashooter",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_PowerMint_1" ],
+		},
+		{
+			"aliases": [
+				"Own_PowerMint_1"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_PowerMint_1",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Appeasemint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_PowerMint_2" ],
+		},
+		{
+			"aliases": [
+				"Own_PowerMint_2"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_PowerMint_2",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Wintermint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Ailmint" ],
+		},
+		{
+			"aliases": [
+				"Own_Ailmint"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Ailmint",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Ailmint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Enforcemint" ],
+		},
+		{
+			"aliases": [
+				"Own_Enforcemint"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Enforcemint",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Enforcemint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Concealmint" ],
+		},
+		{
+			"aliases": [
+				"Own_Concealmint"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Concealmint",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Concealmint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Filamint" ],
+		},
+		{
+			"aliases": [
+				"Own_Filamint"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Filamint",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Filamint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Reinforcemint" ],
+		},
+		{
+			"aliases": [
+				"Own_Reinforcemint"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Reinforcemint",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Reinforcemint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Armamint" ],
+		},
+		{
+			"aliases": [
+				"Own_Armamint"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Armamint",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Armamint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Bombardmint" ],
+		},
+		{
+			"aliases": [
+				"Own_Bombardmint"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Bombardmint",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Bombardmint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Containmint" ],
+		},
+		{
+			"aliases": [
+				"Own_Containmint"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Containmint",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Containmint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Peppermint" ],
+		},
+		{
+			"aliases": [
+				"Own_Peppermint"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Peppermint",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Peppermint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Enchantmint" ],
+		},
+		{
+			"aliases": [
+				"Own_Enchantmint"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Enchantmint",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Enchantmint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Spearmint" ],
+		},
+		{
+			"aliases": [
+				"Own_Spearmint"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Spearmint",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Spearmint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_ElectricPeashooter2" ],
+		},
+		{
+			"aliases": [
+				"Own_ElectricPeashooter2"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_ElectricPeashooter2",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "ElectricPeashooter",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Enlightenmint_Over_1000" ],
+		},
+		{
+			"aliases": [
+				"Enlightenmint_Over_1000"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Enlightenmint_Over_1000",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">=",
 						"Key": "SeasonCrowns",
 						"Value": "1000"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Enlightenmint",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Locked_Season_Plant" ],
+		},
+		{
+			"aliases": [
+				"Locked_Season_Plant"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Locked_Season_Plant",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">=",
 						"Key": "SeasonCrowns",
 						"Value": "50"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "SeasonCrowns",
 						"Value": "150"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Unlocked_All_Season_Rewards" ],
+		},
+		{
+			"aliases": [
+				"Unlocked_All_Season_Rewards"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Unlocked_All_Season_Rewards",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">=",
 						"Key": "SeasonCrowns",
 						"Value": "1000"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "PyreVine",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "New_players_mon" ],
+		},
+		{
+			"aliases": [
+				"New_players_mon"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "New_players_mon",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<=",
 						"Key": "DaysSinceInstall",
 						"Value": "7"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "TotPrch",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_PyreVine" ],
+		},
+		{
+			"aliases": [
+				"Own_PyreVine"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_PyreVine",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "PyreVine",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Own_Pumpkin" ],
+		},
+		{
+			"aliases": [
+				"Own_Pumpkin"
+			],
 			"objclass": "PlayerSegmentRules",
 			"objdata": {
 				"BucketName": "Own_Pumpkin",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "Pumpkin",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

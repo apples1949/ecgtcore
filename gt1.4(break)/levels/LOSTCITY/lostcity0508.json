@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "LC-5 - 2 special garg",
-	"objects": [ {
+	"#comment": "LC-5 - 2 special garg",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s grind thousand quests",
@@ -10,63 +10,100 @@
 				"StartingSun": 50,
 				"LevelNumber": 5,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(LostCityMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(GI@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LootOverride@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(LostCityMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)"
+				],
 				"Name": "Level 5",
 				"StageModule": "RTID(LostCityStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "LootOverrideModuleProperties",
-			"aliases": [ "LootOverride" ],
+			"aliases": [
+				"LootOverride"
+			],
 			"objdata": {
-				"Overrides": [ {
+				"Overrides": [
+					{
 						"ZombieType": "RTID(lostcity_coin1@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(lostcity_coin2@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "GI" ],
+		},
+		{
+			"aliases": [
+				"GI"
+			],
 			"objclass": "InitialGridItemProperties",
 			"objdata": {
-				"InitialGridItemPlacements": [ {
+				"InitialGridItemPlacements": [
+					{
 						"GridX": 4,
 						"GridY": 1,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 3,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 5,
 						"GridY": 4,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 6,
 						"GridY": 0,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 1,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 3,
 						"TypeName": "goldtile"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -75,29 +112,54 @@
 				"StartingPoints": 10,
 				"PointIncrementPerWave": 15,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(lostcity@ZombieTypes)", "RTID(lostcity_coin2@ZombieTypes)", "RTID(lostcity_armor1@ZombieTypes)", "RTID(lostcity_excavator@ZombieTypes)", "RTID(lostcity_relichunter@ZombieTypes)", "RTID(lostcity_gargantuar@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(lostcity@ZombieTypes)",
+					"RTID(lostcity_coin2@ZombieTypes)",
+					"RTID(lostcity_armor1@ZombieTypes)",
+					"RTID(lostcity_excavator@ZombieTypes)",
+					"RTID(lostcity_relichunter@ZombieTypes)",
+					"RTID(lostcity_gargantuar@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		}, {
-			"aliases": [ "PR1" ],
+		},
+		{
+			"aliases": [
+				"PR1"
+			],
 			"objclass": "ParachuteRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 7,
@@ -110,6 +172,7 @@
 				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
 				"ZombieFallTime": "1.5"
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

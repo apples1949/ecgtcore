@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Event1 lv4 Quest",
-	"objects": [ {
+	"#comment": "Event1 lv4 Quest",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Is that steel or ceramic?",
@@ -9,87 +9,135 @@
 				"StartingSun": 500,
 				"LevelNumber": 4,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(GI@CurrentLevel)", "RTID(FlowerLine@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(FlowerLine@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
 				"Name": "Event 1 Revisit - Level 4",
 				"StageModule": "RTID(EgyptStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Survive with 500 starting sun",
 				"DescriptiveName": ""
 			}
-		}, {
-			"aliases": [ "FlowerLine" ],
+		},
+		{
+			"aliases": [
+				"FlowerLine"
+			],
 			"objclass": "StarChallengeZombieDistanceProps",
 			"objdata": {
 				"TargetDistance": 2
 			}
-		}, {
-			"aliases": [ "GI" ],
+		},
+		{
+			"aliases": [
+				"GI"
+			],
 			"objclass": "InitialGridItemProperties",
 			"objdata": {
-				"InitialGridItemPlacements": [ {
+				"InitialGridItemPlacements": [
+					{
 						"GridX": 3,
 						"GridY": 2,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 1,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 4,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 5,
 						"GridY": 0,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 5,
 						"GridY": 3,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 6,
 						"GridY": 1,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 0,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 2,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 4,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 1,
 						"TypeName": "gravestone_egypt"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -98,51 +146,170 @@
 				"StartingPoints": 0,
 				"PointIncrementPerWave": 0,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": []
+				"ZombiePool": [
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
-				"DynamicZombies": [ {}, {}, {}, {
+				"DynamicZombies": [
+					{
+					},
+					{
+					},
+					{
+					},
+					{
 						"PointIncrementPerWave": 20,
 						"StartingPoints": 90,
 						"StartingWave": 2,
-						"ZombiePool": [ "RTID(mummy@ZombieTypes)", "RTID(mummy_armor2@ZombieTypes)", "RTID(pharaoh@ZombieTypes)", "RTID(dark_wizard@ZombieTypes)", "RTID(lostcity_bug@ZombieTypes)", "RTID(egypt_gargantuar@ZombieTypes)" ]
-					}, {}, {}, {} ],
+						"ZombiePool": [
+							"RTID(mummy@ZombieTypes)",
+							"RTID(mummy_armor2@ZombieTypes)",
+							"RTID(pharaoh@ZombieTypes)",
+							"RTID(dark_wizard@ZombieTypes)",
+							"RTID(lostcity_bug@ZombieTypes)",
+							"RTID(egypt_gargantuar@ZombieTypes)"
+						]
+					},
+					{
+					},
+					{
+					},
+					{
+					}
+				],
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManager" ],
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Wave1@CurrentLevel)" ], [ "RTID(Wave2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)", "RTID(SS1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)", "RTID(SS1@CurrentLevel)", "RTID(SS2@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)", "RTID(SS1@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)" ], [ "RTID(SS3@CurrentLevel)", "RTID(SS1@CurrentLevel)" ], [ "RTID(SS3@CurrentLevel)", "RTID(SS2@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)", "RTID(SS2@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)", "RTID(SS1@CurrentLevel)", "RTID(SS1@CurrentLevel)", "RTID(SS2@CurrentLevel)", "RTID(SS2@CurrentLevel)", "RTID(SS2@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS2@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)",
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)"
+					],
+					[
+						"RTID(SS3@CurrentLevel)",
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(SS3@CurrentLevel)",
+						"RTID(SS2@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)",
+						"RTID(SS2@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS2@CurrentLevel)",
+						"RTID(SS2@CurrentLevel)",
+						"RTID(SS2@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Wave1" ],
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave2" ],
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(mummy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(mummy@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SS1" ],
+		},
+		{
+			"aliases": [
+				"SS1"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 7,
@@ -150,12 +317,17 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 1,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SS2" ],
+		},
+		{
+			"aliases": [
+				"SS2"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 5,
@@ -163,12 +335,17 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 1,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SS3" ],
+		},
+		{
+			"aliases": [
+				"SS3"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 4,
@@ -176,16 +353,23 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 1,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "JM-13 - 1 special imp amber",
-	"objects": [ {
+	"#comment": "JM-13 - 1 special imp amber",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s grind thousand quests",
@@ -11,30 +11,55 @@
 				"LevelNumber": 13,
 				"ZombieLevel": 4,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(DinoMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LootOverride@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DinoMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)"
+				],
 				"Name": "Level 13",
 				"StageModule": "RTID(DinoStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "LootOverrideModuleProperties",
-			"aliases": [ "LootOverride" ],
+			"aliases": [
+				"LootOverride"
+			],
 			"objdata": {
-				"Overrides": [ {
+				"Overrides": [
+					{
 						"ZombieType": "RTID(dino_imp_coin1@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 6,
@@ -43,27 +68,50 @@
 				"StartingPoints": 20,
 				"PointIncrementPerWave": 14,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(dino_imp@ZombieTypes)", "RTID(dino_armor1@ZombieTypes)", "RTID(dino_armor2@ZombieTypes)", "RTID(dino_armor4@ZombieTypes)", "RTID(dino_bully@ZombieTypes)", "RTID(dino_imp_coin1@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(dino_imp@ZombieTypes)",
+					"RTID(dino_armor1@ZombieTypes)",
+					"RTID(dino_armor2@ZombieTypes)",
+					"RTID(dino_armor4@ZombieTypes)",
+					"RTID(dino_bully@ZombieTypes)",
+					"RTID(dino_imp_coin1@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

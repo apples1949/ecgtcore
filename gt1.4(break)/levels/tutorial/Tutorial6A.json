@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Tutorial 6A",
-	"objects": [ {
+	"#comment": "Tutorial 6A",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Beginning of fate, directing an output",
@@ -12,60 +12,97 @@
 				"ForceNextLevel": "tutorial7",
 				"LevelNumber": 6,
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(FrontLawnMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LootOverride@CurrentLevel)", "RTID(GI@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(FrontLawnMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)",
+					"RTID(GI@CurrentLevel)"
+				],
 				"Name": "Tutorial 6",
 				"StageModule": "RTID(ModernStage@LevelModules)",
 				"StartingSun": 50,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "PeaEffects", "DelayLoad_Background_Beach_Compressed", "SodRollGroup" ]
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"PeaEffects",
+					"DelayLoad_Background_Beach_Compressed",
+					"SodRollGroup"
+				]
 			}
-		}, {
-			"aliases": [ "GI" ],
+		},
+		{
+			"aliases": [
+				"GI"
+			],
 			"objclass": "InitialGridItemProperties",
 			"objdata": {
-				"InitialGridItemPlacements": [ {
+				"InitialGridItemPlacements": [
+					{
 						"GridX": 3,
 						"GridY": 0,
 						"TypeName": "gravestone_dark"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 4,
 						"TypeName": "gravestone_dark"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 0,
 						"TypeName": "gravestone_dark"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 4,
 						"TypeName": "gravestone_dark"
-					}, {
+					},
+					{
 						"GridX": 5,
 						"GridY": 0,
 						"TypeName": "gravestone_dark"
-					}, {
+					},
+					{
 						"GridX": 5,
 						"GridY": 4,
 						"TypeName": "gravestone_dark"
-					} ]
+					}
+				]
 			}
-		}, {
+		},
+		{
 			"objclass": "LootOverrideModuleProperties",
-			"aliases": [ "LootOverride" ],
+			"aliases": [
+				"LootOverride"
+			],
 			"objdata": {
-				"Overrides": [ {
+				"Overrides": [
+					{
 						"ZombieType": "RTID(tutorial_coin1@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 1,
@@ -74,192 +111,310 @@
 				"StartingPoints": -1,
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
 				"WavesPerFlag": 10,
-				"ZombiePool": [ "RTID(dino@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(dino@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"IgnoreFlagCarriers": false,
 				"WaveSpendingPointIncrement": 10,
 				"WaveSpendingPoints": 100,
-				"Waves": [ [ "RTID(Wave1@CurrentLevel)" ], [ "RTID(Wave2@CurrentLevel)" ], [ "RTID(Wave3@CurrentLevel)" ], [ "RTID(Wave4@CurrentLevel)" ], [ "RTID(Wave5@CurrentLevel)" ], [ "RTID(Wave6@CurrentLevel)" ], [ "RTID(Wave7@CurrentLevel)" ], [ "RTID(Wave8@CurrentLevel)" ], [ "RTID(Wave9@CurrentLevel)" ], [ "RTID(Wave10@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Wave1" ],
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave2" ],
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial_coin1@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave3" ],
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "1",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave4" ],
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "2",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave5" ],
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "1",
 						"Type": "RTID(tutorial_coin1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave6" ],
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "2",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave7" ],
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "1",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(tutorial_coin1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave8" ],
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "1",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial_coin1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave9" ],
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "1",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave10" ],
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "1",
 						"Type": "RTID(tutorial_coin1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial_coin1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(tutorial_coin1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "1",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial_imp@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv49",
-	"objects": [ {
+	"#comment": "lv49",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,51 +9,87 @@
 				"StartingSun": 50,
 				"LevelNumber": 49,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(PirateMowers@LevelModules)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(PiratePlanks@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(PirateMowers@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(PiratePlanks@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "Adventure 49",
 				"StageModule": "RTID(PirateStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "PiratePlanks" ],
+		},
+		{
+			"aliases": [
+				"PiratePlanks"
+			],
 			"objclass": "PiratePlankProperties",
 			"objdata": {
-				"PlankRows": [ 0, 1, 2, 3, 4 ]
+				"PlankRows": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 7.0,
 						"MaxPackets": 0
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"PlantType": "escaperoot",
 						"Weight": 1,
 						"MaxCount": 4
-					}, {
+					},
+					{
 						"PlantType": "coconutcannon",
 						"MaxCountCooldownSeconds": 70,
 						"MaxWeightFactor": 1,
 						"MaxCount": 1,
 						"Weight": 10
-					}, {
+					},
+					{
 						"PlantType": "fumeshroom",
 						"Weight": 2
-					}, {
+					},
+					{
 						"PlantType": "wallnut",
 						"Weight": 1
-					} ],
-				"SpeedConditions": [ {
+					}
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 80
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 2,
@@ -62,27 +98,47 @@
 				"StartingPoints": 30,
 				"PointIncrementPerWave": 22,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(pirate_imp@ZombieTypes)", "RTID(pirate_armor2@ZombieTypes)", "RTID(barrelroller@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(pirate_imp@ZombieTypes)",
+					"RTID(pirate_armor2@ZombieTypes)",
+					"RTID(barrelroller@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

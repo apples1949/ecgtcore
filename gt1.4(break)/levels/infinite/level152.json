@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv152",
-	"objects": [ {
+	"#comment": "lv152",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,56 +9,95 @@
 				"StartingSun": 50,
 				"LevelNumber": 152,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(PirateMowers@LevelModules)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(PiratePlanks@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(PirateMowers@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(PiratePlanks@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "Adventure 152",
 				"StageModule": "RTID(PirateStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 6,
 						"MaxPackets": 0
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"PlantType": "cabbagepult",
 						"Weight": 3
-					}, {
+					},
+					{
 						"PlantType": "endurian",
 						"MinCount": 1,
 						"MinWeightFactor": 4,
 						"Weight": 1
-					}, {
+					},
+					{
 						"PlantType": "iceburg",
 						"Weight": 2
-					}, {
+					},
+					{
 						"PlantType": "spikeweed",
 						"Weight": 2
-					} ],
-				"SpeedConditions": [ {
+					}
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 80
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "PiratePlanks" ],
+		},
+		{
+			"aliases": [
+				"PiratePlanks"
+			],
 			"objclass": "PiratePlankProperties",
 			"objdata": {
-				"PlankRows": [ 0, 1, 3, 4 ]
+				"PlankRows": [
+					0,
+					1,
+					3,
+					4
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -67,27 +106,47 @@
 				"StartingPoints": 50,
 				"PointIncrementPerWave": 30,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(pirate_armor2@ZombieTypes)", "RTID(barrelroller@ZombieTypes)", "RTID(seagull@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(pirate_armor2@ZombieTypes)",
+					"RTID(barrelroller@ZombieTypes)",
+					"RTID(seagull@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

@@ -1,30 +1,59 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Power zombie VI",
-	"objects": [ {
+	"#comment": "Power zombie VI",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Extreme!",
 				"FirstRewardParam": "moneybag_100",
 				"ZombieLevel": 12,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(SunDropper@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LootOverride@CurrentLevel)", "RTID(JoustModule@CurrentLevel)", "RTID(LevelDifficultyScaling@CurrentLevel)", "RTID(LevelScoring@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)", "RTID(LastStand@CurrentLevel)", "RTID(PiratePlanks@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SunDropper@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)",
+					"RTID(JoustModule@CurrentLevel)",
+					"RTID(LevelDifficultyScaling@CurrentLevel)",
+					"RTID(LevelScoring@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(LastStand@CurrentLevel)",
+					"RTID(PiratePlanks@CurrentLevel)"
+				],
 				"Name": "Zombie Cheater VI",
 				"LossModule": "RTID(JoustOutro@LevelModules)",
 				"VictoryModule": "RTID(JoustOutro@LevelModules)",
 				"StageModule": "RTID(PirateStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "PiratePlanks" ],
+		},
+		{
+			"aliases": [
+				"PiratePlanks"
+			],
 			"objclass": "PiratePlankProperties",
 			"objdata": {
-				"PlankRows": [ 0, 1, 2, 3, 4 ]
+				"PlankRows": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "SunDropper" ],
+			"aliases": [
+				"SunDropper"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 2,
 				"SunCountdownBase": 3,
@@ -32,81 +61,121 @@
 				"SunCountdownIncreasePerSun": 0.05,
 				"SunCountdownMax": 5
 			}
-		}, {
-			"aliases": [ "LastStand" ],
+		},
+		{
+			"aliases": [
+				"LastStand"
+			],
 			"objclass": "LastStandMinigameProperties",
 			"objdata": {
 				"StartingPlantfood": 3,
 				"StartingSun": 2800
 			}
-		}, {
-			"aliases": [ "Tide" ],
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
 			"objclass": "TideProperties",
 			"objdata": {
 				"StartingWaveLocation": 1
 			}
-		}, {
-			"aliases": [ "LevelDifficultyScaling" ],
+		},
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			],
 			"objclass": "LevelDifficultyScalingModuleProperties",
 			"objdata": {
 				"DifficultyRulesType": "NoLevelingIncrease"
 			}
-		}, {
-			"aliases": [ "LevelScoring" ],
+		},
+		{
+			"aliases": [
+				"LevelScoring"
+			],
 			"objclass": "LevelScoringModuleProperties",
 			"objdata": {
 				"PlantBonusMultiplier": 0.0,
-				"PlantBonuses": [],
+				"PlantBonuses": [
+				],
 				"ScoringRulesType": "NoMultiplier",
 				"StartingPlantfood": 3
 			}
-		}, {
-			"aliases": [ "JoustModule" ],
+		},
+		{
+			"aliases": [
+				"JoustModule"
+			],
 			"objclass": "JoustGameModuleProperties",
 			"objdata": {
 				"TimeLimit": 361
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Survive for 6 minutes\nZombies are buffed to level 12\n(+375% HP, 243% DPS, 27.5% Speed)",
 				"DescriptiveName": "[STARCHALLENGE_PRESET_PLANTS_NAME]"
 			}
-		}, {
+		},
+		{
 			"objclass": "LootOverrideModuleProperties",
-			"aliases": [ "LootOverride" ],
+			"aliases": [
+				"LootOverride"
+			],
 			"objdata": {
-				"Overrides": [ {
+				"Overrides": [
+					{
 						"ZombieType": "RTID(barrel@ZombieTypes)",
 						"LootOverride": "GoldCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(cannon@ZombieTypes)",
 						"LootOverride": "GoldCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(lostcity_crystalskull@ZombieTypes)",
 						"LootOverride": "GoldCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(dino_bully@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
 				"OverrideSeedSlotsCount": 7,
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 10,
@@ -115,29 +184,51 @@
 				"StartingPoints": 190,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
 				"WavesPerFlag": 6,
-				"ZombiePool": [ "RTID(barrelroller@ZombieTypes)", "RTID(cannon@ZombieTypes)", "RTID(lostcity_crystalskull@ZombieTypes)", "RTID(ra@ZombieTypes)", "RTID(pirate_armor2_point@ZombieTypes)", "RTID(dino_bully@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(barrelroller@ZombieTypes)",
+					"RTID(cannon@ZombieTypes)",
+					"RTID(lostcity_crystalskull@ZombieTypes)",
+					"RTID(ra@ZombieTypes)",
+					"RTID(pirate_armor2_point@ZombieTypes)",
+					"RTID(dino_bully@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"ManualStartup": true
 			}
-		}, {
-			"aliases": [ "WaveManager" ],
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

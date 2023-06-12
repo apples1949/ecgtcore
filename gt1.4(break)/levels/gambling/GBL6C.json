@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Gambling 6C",
-	"objects": [ {
+	"#comment": "Gambling 6C",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Welcome to casino land!",
@@ -10,85 +10,208 @@
 				"DisableRestart": true,
 				"DisablePlantBoosts": true,
 				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)",
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(ModernMowers@LevelModules)", "RTID(ChallengeModule@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LastStand@CurrentLevel)", "RTID(MoldColonies@CurrentLevel)", "RTID(LootOverride@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LastStand@CurrentLevel)",
+					"RTID(MoldColonies@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)"
+				],
 				"Name": "Risky Island",
 				"StageModule": "RTID(ModernStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "LootOverrideModuleProperties",
-			"aliases": [ "LootOverride" ],
+			"aliases": [
+				"LootOverride"
+			],
 			"objdata": {
-				"Overrides": [ {
+				"Overrides": [
+					{
 						"ZombieType": "RTID(tutorial_gargantuar@ZombieTypes)",
 						"LootOverride": "GoldCoin"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "IPP" ],
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
 			"objclass": "InitialPlantProperties",
 			"objdata": {
-				"InitialPlantPlacements": [ {
+				"InitialPlantPlacements": [
+					{
 						"GridX": 3,
 						"GridY": 5,
 						"TypeName": "xshot"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "LastStand" ],
+		},
+		{
+			"aliases": [
+				"LastStand"
+			],
 			"objclass": "LastStandMinigameProperties",
 			"objdata": {
 				"StartingPlantfood": 2,
 				"StartingSun": 4000
 			}
-		}, {
-			"aliases": [ "MoldColonies" ],
+		},
+		{
+			"aliases": [
+				"MoldColonies"
+			],
 			"objclass": "MoldColonyChallengeProps",
 			"objdata": {
 				"Locations": "RTID(Mold@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "Mold" ],
+		},
+		{
+			"aliases": [
+				"Mold"
+			],
 			"objclass": "BoardGridMapProps",
 			"objdata": {
-				"Values": [ [ 0, 0, 0, 1, 1, 1, 1, 1, 1 ], [ 0, 0, 0, 1, 1, 1, 1, 1, 1 ], [ 0, 0, 0, 1, 1, 1, 1, 1, 1 ], [ 0, 0, 0, 1, 1, 1, 1, 1, 1 ], [ 0, 0, 0, 1, 1, 1, 1, 1, 1 ] ]
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						1,
+						1,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						1,
+						1,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						1,
+						1,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						1,
+						1,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						0,
+						0,
+						0,
+						1,
+						1,
+						1,
+						1,
+						1,
+						1
+					]
+				]
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Two Gargantuars will spawn on each wave!",
 				"DescriptiveName": ""
 			}
-		}, {
+		},
+		{
 			"objclass": "PlantCooldownModifierProperties",
-			"aliases": [ "CoolDown" ],
+			"aliases": [
+				"CoolDown"
+			],
 			"objdata": {
 				"CooldownMultiplier": 0.5
 			}
-		}, {
-			"aliases": [ "FlowerLine" ],
+		},
+		{
+			"aliases": [
+				"FlowerLine"
+			],
 			"objclass": "StarChallengeZombieDistanceProps",
 			"objdata": {
 				"TargetDistance": 4
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [ "sunflower", "twinsunflower", "primalsunflower", "moonflower", "sunshroom", "sunbean", "goldleaf", "goldbloom", "solartomato", "witchhazel" ],
+				"PlantBlackList": [
+					"sunflower",
+					"twinsunflower",
+					"primalsunflower",
+					"moonflower",
+					"sunshroom",
+					"sunbean",
+					"goldleaf",
+					"goldbloom",
+					"solartomato",
+					"witchhazel"
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelOfTheDayModuleProperties",
 			"objdata": {
 				"FlagCount": 2,
@@ -97,40 +220,91 @@
 				"StartingPoints": 30,
 				"PointIncrementPerWave": 10,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(chicken_farmer@ZombieTypes)", "RTID(prospector@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(chicken_farmer@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"ManualStartup": true
 			}
-		}, {
-			"aliases": [ "WaveManager" ],
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ], [ "RTID(Garg@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					],
+					[
+						"RTID(Garg@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Garg" ],
+		},
+		{
+			"aliases": [
+				"Garg"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
 				"AdditionalPlantfood": 0,
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

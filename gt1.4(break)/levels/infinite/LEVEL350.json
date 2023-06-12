@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv350",
-	"objects": [ {
+	"#comment": "lv350",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,51 +9,81 @@
 				"StartingSun": 50,
 				"LevelNumber": 350,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(LostCityMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(GI@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(LostCityMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(GI@CurrentLevel)"
+				],
 				"Name": "Adventure 350",
 				"StageModule": "RTID(LostCityStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "GI" ],
+		},
+		{
+			"aliases": [
+				"GI"
+			],
 			"objclass": "InitialGridItemProperties",
 			"objdata": {
-				"InitialGridItemPlacements": [ {
+				"InitialGridItemPlacements": [
+					{
 						"GridX": 0,
 						"GridY": 2,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 1,
 						"GridY": 1,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 1,
 						"GridY": 3,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 2,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 1,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 3,
 						"TypeName": "goldtile"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 5,
@@ -62,23 +92,170 @@
 				"StartingPoints": 10,
 				"PointIncrementPerWave": 19,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(lostcity_imp@ZombieTypes)", "RTID(lostcity_bug_armor2@ZombieTypes)", "RTID(lostcity_bug@ZombieTypes)", "RTID(lostcity_relichunter@ZombieTypes)", "RTID(lostcity_crystalskull@ZombieTypes)", "RTID(lostcity_gargantuar@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(lostcity_imp@ZombieTypes)",
+					"RTID(lostcity_bug_armor2@ZombieTypes)",
+					"RTID(lostcity_bug@ZombieTypes)",
+					"RTID(lostcity_relichunter@ZombieTypes)",
+					"RTID(lostcity_crystalskull@ZombieTypes)",
+					"RTID(lostcity_gargantuar@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR1@CurrentLevel)" ], [ "RTID(PR2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR2@CurrentLevel)" ], [ "RTID(PR3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR3@CurrentLevel)" ], [ "RTID(PR4@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR1@CurrentLevel)" ], [ "RTID(PR2@CurrentLevel)", "RTID(PR3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR2@CurrentLevel)" ], [ "RTID(PR2@CurrentLevel)", "RTID(PR4@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR5@CurrentLevel)" ], [ "RTID(PR4@CurrentLevel)", "RTID(PR3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR3@CurrentLevel)" ], [ "RTID(PR5@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR1@CurrentLevel)", "RTID(PR2@CurrentLevel)", "RTID(PR3@CurrentLevel)" ], [ "RTID(PR4@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PR1@CurrentLevel)", "RTID(PR2@CurrentLevel)", "RTID(PR3@CurrentLevel)", "RTID(PR4@CurrentLevel)", "RTID(PR5@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR1@CurrentLevel)"
+					],
+					[
+						"RTID(PR2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR2@CurrentLevel)"
+					],
+					[
+						"RTID(PR3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR3@CurrentLevel)"
+					],
+					[
+						"RTID(PR4@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR1@CurrentLevel)"
+					],
+					[
+						"RTID(PR2@CurrentLevel)",
+						"RTID(PR3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR2@CurrentLevel)"
+					],
+					[
+						"RTID(PR2@CurrentLevel)",
+						"RTID(PR4@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR5@CurrentLevel)"
+					],
+					[
+						"RTID(PR4@CurrentLevel)",
+						"RTID(PR3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR3@CurrentLevel)"
+					],
+					[
+						"RTID(PR5@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR1@CurrentLevel)",
+						"RTID(PR2@CurrentLevel)",
+						"RTID(PR3@CurrentLevel)"
+					],
+					[
+						"RTID(PR4@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PR1@CurrentLevel)",
+						"RTID(PR2@CurrentLevel)",
+						"RTID(PR3@CurrentLevel)",
+						"RTID(PR4@CurrentLevel)",
+						"RTID(PR5@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "PR1" ],
+		},
+		{
+			"aliases": [
+				"PR1"
+			],
 			"objclass": "ParachuteRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 8,
@@ -91,8 +268,11 @@
 				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
 				"ZombieFallTime": "1.5"
 			}
-		}, {
-			"aliases": [ "PR2" ],
+		},
+		{
+			"aliases": [
+				"PR2"
+			],
 			"objclass": "ParachuteRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 7,
@@ -105,8 +285,11 @@
 				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
 				"ZombieFallTime": "1.5"
 			}
-		}, {
-			"aliases": [ "PR3" ],
+		},
+		{
+			"aliases": [
+				"PR3"
+			],
 			"objclass": "ParachuteRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 6,
@@ -119,8 +302,11 @@
 				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
 				"ZombieFallTime": "1.5"
 			}
-		}, {
-			"aliases": [ "PR4" ],
+		},
+		{
+			"aliases": [
+				"PR4"
+			],
 			"objclass": "ParachuteRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 4,
@@ -133,8 +319,11 @@
 				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
 				"ZombieFallTime": "1.5"
 			}
-		}, {
-			"aliases": [ "PR5" ],
+		},
+		{
+			"aliases": [
+				"PR5"
+			],
 			"objclass": "ParachuteRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 2,
@@ -147,12 +336,17 @@
 				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
 				"ZombieFallTime": "1.5"
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

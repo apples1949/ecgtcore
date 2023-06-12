@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Beach Danger Room",
-	"objects": [ {
+	"#comment": "Beach Danger Room",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Endless Zone!",
@@ -12,13 +12,32 @@
 				"SuppressPlantfoodPurchase": true,
 				"SuppressAwardScreen": true,
 				"Loot": "RTID(DangerRoomLoot@LevelModules)",
-				"Modules": [ "RTID(DangerRoomIntro@CurrentLevel)", "RTID(DangerRoomModule@CurrentLevel)", "RTID(BeachMowers@LevelModules)", "RTID(AutoSunDropperBase@CurrentLevel)", "RTID(AutoSunDropper1@CurrentLevel)", "RTID(AutoSunDropper2@CurrentLevel)", "RTID(AutoSunDropper3@CurrentLevel)", "RTID(AutoSunDropper4@CurrentLevel)", "RTID(AutoSunDropper5@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(Tide@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(BeachMowers@LevelModules)",
+					"RTID(AutoSunDropperBase@CurrentLevel)",
+					"RTID(AutoSunDropper1@CurrentLevel)",
+					"RTID(AutoSunDropper2@CurrentLevel)",
+					"RTID(AutoSunDropper3@CurrentLevel)",
+					"RTID(AutoSunDropper4@CurrentLevel)",
+					"RTID(AutoSunDropper5@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(Tide@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
 				"Name": "Auto Sun - Level {LEVEL_NUMBER}",
 				"StageModule": "RTID(BeachStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropperBase" ],
+			"aliases": [
+				"AutoSunDropperBase"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 2,
 				"SunCountdownBase": 6,
@@ -26,9 +45,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 6
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper1" ],
+			"aliases": [
+				"AutoSunDropper1"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 29,
 				"SunCountdownBase": 30,
@@ -36,9 +58,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper2" ],
+			"aliases": [
+				"AutoSunDropper2"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 71,
 				"SunCountdownBase": 30,
@@ -46,9 +71,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper3" ],
+			"aliases": [
+				"AutoSunDropper3"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 143,
 				"SunCountdownBase": 30,
@@ -56,9 +84,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper4" ],
+			"aliases": [
+				"AutoSunDropper4"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 215,
 				"SunCountdownBase": 30,
@@ -66,9 +97,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper5" ],
+			"aliases": [
+				"AutoSunDropper5"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 317,
 				"SunCountdownBase": 30,
@@ -76,58 +110,116 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Survive with sun given over time",
 				"DescriptiveName": ""
 			}
-		}, {
-			"aliases": [ "Tide" ],
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
 			"objclass": "TideProperties",
-			"objdata": {}
-		}, {
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "WaveManagerModuleProperties",
-			"aliases": [ "NewWaves" ],
-			"objdata": {}
-		}, {
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "DangerRoomModuleProperties",
-			"aliases": [ "DangerRoomModule" ],
+			"aliases": [
+				"DangerRoomModule"
+			],
 			"objdata": {
 				"WorldSpecificProperties": "RTID(AutoSunDangerRoomProps@PropertySheets)",
-				"LevelDesigners": [ "RTID(BeachDangerRoomWaveGenerator@CurrentLevel)", "RTID(BeachTideChanger@CurrentLevel)", "RTID(BeachLilypadPlacer@CurrentLevel)" ]
+				"LevelDesigners": [
+					"RTID(BeachDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(BeachTideChanger@CurrentLevel)",
+					"RTID(BeachLilypadPlacer@CurrentLevel)"
+				]
 			}
-		}, {
-			"aliases": [ "DangerRoomIntro" ],
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
 			"objclass": "DangerRoomLevelIntroProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "SeedBank" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [],
+				"PlantBlackList": [
+				],
 				"SelectionMethod": "chooser",
 				"AlwaysUseChooser": true
 			}
-		}, {
-			"aliases": [ "BeachDangerRoomWaveGenerator" ],
+		},
+		{
+			"aliases": [
+				"BeachDangerRoomWaveGenerator"
+			],
 			"objclass": "DangerRoomJitteredWaveGenerator",
 			"objdata": {
 				"StartingPoints": 15,
 				"BasePointIncrementPerWave": 5,
 				"BasePointIncrementPerLevel": 1,
-				"ZombiePool": [ "RTID(beach_armor1@ZombieTypes)", "RTID(beach_armor2@ZombieTypes)", "RTID(beach@ZombieTypes)", "RTID(beach_fem_armor1@ZombieTypes)", "RTID(beach_fem_armor2@ZombieTypes)", "RTID(beach_fem@ZombieTypes)", "RTID(beach_gargantuar@ZombieTypes)", "RTID(beach_imp@ZombieTypes)", "RTID(beach_snorkel@ZombieTypes)", "RTID(beach_octopus@ZombieTypes)", "RTID(beach_surfer@ZombieTypes)", "RTID(beach_fisherman@ZombieTypes)", "RTID(future_jetpack@ZombieTypes)", "RTID(mech_cone@ZombieTypes)", "RTID(future_protector@ZombieTypes)", "RTID(lostcity_jane@ZombieTypes)", "RTID(lostcity_excavator@ZombieTypes)", "RTID(lostcity_crystalskull@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(beach_armor1@ZombieTypes)",
+					"RTID(beach_armor2@ZombieTypes)",
+					"RTID(beach@ZombieTypes)",
+					"RTID(beach_fem_armor1@ZombieTypes)",
+					"RTID(beach_fem_armor2@ZombieTypes)",
+					"RTID(beach_fem@ZombieTypes)",
+					"RTID(beach_gargantuar@ZombieTypes)",
+					"RTID(beach_imp@ZombieTypes)",
+					"RTID(beach_snorkel@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)",
+					"RTID(beach_fisherman@ZombieTypes)",
+					"RTID(future_jetpack@ZombieTypes)",
+					"RTID(mech_cone@ZombieTypes)",
+					"RTID(future_protector@ZombieTypes)",
+					"RTID(lostcity_jane@ZombieTypes)",
+					"RTID(lostcity_excavator@ZombieTypes)",
+					"RTID(lostcity_crystalskull@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "BeachTideChanger" ],
+		},
+		{
+			"aliases": [
+				"BeachTideChanger"
+			],
 			"objclass": "DangerRoomBeachTideChanger",
 			"objdata": {
 				"//": "Number of Low Tides",
@@ -217,8 +309,11 @@
 					}
 				}
 			}
-		}, {
-			"aliases": [ "BeachTideChanger2" ],
+		},
+		{
+			"aliases": [
+				"BeachTideChanger2"
+			],
 			"objclass": "DangerRoomBeachTideChanger",
 			"objdata": {
 				"StartingTideLevel": {
@@ -339,7 +434,10 @@
 						}
 					}
 				},
-				"SpecialLowTideZombieTypes": [ "beach_octopus", "beach_snorkel" ],
+				"SpecialLowTideZombieTypes": [
+					"beach_octopus",
+					"beach_snorkel"
+				],
 				"SpecialLowTideZombiesPerLowTideEvent": {
 					"LowerBound": {
 						"YIntercept": 0
@@ -357,8 +455,11 @@
 					}
 				}
 			}
-		}, {
-			"aliases": [ "BeachLilypadPlacer" ],
+		},
+		{
+			"aliases": [
+				"BeachLilypadPlacer"
+			],
 			"objclass": "DangerRoomBeachLilypadPlacer",
 			"objdata": {
 				"NumberOfLilypads": {
@@ -386,6 +487,7 @@
 					}
 				}
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

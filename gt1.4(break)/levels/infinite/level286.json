@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv286",
-	"objects": [ {
+	"#comment": "lv286",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,51 +9,82 @@
 				"StartingSun": 50,
 				"LevelNumber": 286,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(FutureMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(ProtectThePlant@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(FutureMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "Adventure 286",
 				"StageModule": "RTID(FutureStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ProtectThePlant" ],
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
 			"objclass": "ProtectThePlantChallengeProperties",
 			"objdata": {
 				"MustProtectCount": 4,
-				"Plants": [ {
+				"Plants": [
+					{
 						"GridX": 1,
 						"GridY": 0,
 						"PlantType": "hollyknight"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 1,
 						"PlantType": "hollyknight"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 3,
 						"PlantType": "hollyknight"
-					}, {
+					},
+					{
 						"GridX": 1,
 						"GridY": 4,
 						"PlantType": "hollyknight"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [ {
+				"PresetPlantList": [
+					{
 						"PlantType": "shrinkingviolet"
-					}, {
+					},
+					{
 						"PlantType": "puffshroom"
-					}, {
+					},
+					{
 						"PlantType": "torchwood"
-					} ],
+					}
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 2,
@@ -62,27 +93,48 @@
 				"StartingPoints": 80,
 				"PointIncrementPerWave": 24,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(future_jetpack@ZombieTypes)", "RTID(future_armor1@ZombieTypes)", "RTID(future_armor2@ZombieTypes)", "RTID(mech_cone@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(future_jetpack@ZombieTypes)",
+					"RTID(future_armor1@ZombieTypes)",
+					"RTID(future_armor2@ZombieTypes)",
+					"RTID(mech_cone@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

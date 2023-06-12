@@ -1,6 +1,7 @@
 {
 	"#comment": "Cowboy Minigame C",
-	"objects": [ {
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "[PLAYERS_TRIP_TO_WEST]",
@@ -8,125 +9,181 @@
 				"FirstRewardType": "upgrade",
 				"LevelNumber": 20,
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(ChallengeModule@CurrentLevel)", "RTID(Rails@CurrentLevel)", "RTID(Conveyor@CurrentLevel)", "RTID(CowboyMinigame@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(Rails@CurrentLevel)",
+					"RTID(Conveyor@CurrentLevel)",
+					"RTID(CowboyMinigame@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_B",
 				"Name": "[WEST_LEVEL_NAME]",
 				"NormalPresentTable": "cowboy_normal_01",
 				"ShinyPresentTable": "cowboy_shiny_01",
 				"StageModule": "RTID(WestStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "Rails" ],
+		},
+		{
+			"aliases": [
+				"Rails"
+			],
 			"objclass": "RailcartProperties",
 			"objdata": {
 				"RailcartType": "railcart_cowboy",
-				"Railcarts": [ {
+				"Railcarts": [
+					{
 						"Column": 0,
 						"Row": 0
-					}, {
+					},
+					{
 						"Column": 1,
 						"Row": 0
-					}, {
+					},
+					{
 						"Column": 2,
 						"Row": 0
-					}, {
+					},
+					{
 						"Column": 3,
 						"Row": 2
-					}, {
+					},
+					{
 						"Column": 4,
 						"Row": 0
-					}, {
+					},
+					{
 						"Column": 5,
 						"Row": 4
-					}, {
+					},
+					{
 						"Column": 6,
 						"Row": 4
-					}, {
+					},
+					{
 						"Column": 7,
 						"Row": 3
-					}, {
+					},
+					{
 						"Column": 8,
 						"Row": 1
-					} ],
-				"Rails": [ {
+					}
+				],
+				"Rails": [
+					{
 						"Column": 0,
 						"RowEnd": 4,
 						"RowStart": 0
-					}, {
+					},
+					{
 						"Column": 1,
 						"RowEnd": 4,
 						"RowStart": 0
-					}, {
+					},
+					{
 						"Column": 2,
 						"RowEnd": 4,
 						"RowStart": 0
-					}, {
+					},
+					{
 						"Column": 3,
 						"RowEnd": 4,
 						"RowStart": 0
-					}, {
+					},
+					{
 						"Column": 4,
 						"RowEnd": 4,
 						"RowStart": 0
-					}, {
+					},
+					{
 						"Column": 5,
 						"RowEnd": 4,
 						"RowStart": 0
-					}, {
+					},
+					{
 						"Column": 6,
 						"RowEnd": 4,
 						"RowStart": 0
-					}, {
+					},
+					{
 						"Column": 7,
 						"RowEnd": 4,
 						"RowStart": 0
-					}, {
+					},
+					{
 						"Column": 8,
 						"RowEnd": 4,
 						"RowStart": 0
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "[STARCHALLENGE_CORRAL_MINIGAME]",
 				"DescriptiveName": "[STARCHALLENGE_CORRAL_MINIGAME_NAME]"
 			}
-		}, {
-			"aliases": [ "CowboyMinigame" ],
+		},
+		{
+			"aliases": [
+				"CowboyMinigame"
+			],
 			"objclass": "CowboyMinigameProperties",
 			"objdata": {
 				"BeginString": "[COWBOY_MINIGAME_TUTORIAL_1]"
 			}
-		}, {
-			"aliases": [ "Conveyor" ],
+		},
+		{
+			"aliases": [
+				"Conveyor"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"InitialPlantList": [ {
+				"InitialPlantList": [
+					{
 						"PlantType": "peashooter"
-					} ],
+					}
+				],
 				"ManualPacketSpawning": true,
-				"SpeedConditions": [ {
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 100
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"FlagWaveInterval": 10,
@@ -134,321 +191,507 @@
 				"WaveCount": 10,
 				"WaveSpendingPointIncrement": 100,
 				"WaveSpendingPoints": 100,
-				"Waves": [ [ "RTID(Wave1@CurrentLevel)" ], [ "RTID(Wave2@CurrentLevel)", "RTID(Wave2ModConveyor@CurrentLevel)" ], [ "RTID(Wave3@CurrentLevel)", "RTID(Wave3ModConveyor@CurrentLevel)" ], [ "RTID(Wave4@CurrentLevel)", "RTID(Wave4ModConveyor@CurrentLevel)" ], [ "RTID(Wave5@CurrentLevel)", "RTID(Wave5ModConveyor@CurrentLevel)" ], [ "RTID(Wave6@CurrentLevel)", "RTID(Wave6ModConveyor@CurrentLevel)" ], [ "RTID(Wave7@CurrentLevel)", "RTID(Wave7ModConveyor@CurrentLevel)" ], [ "RTID(Wave8@CurrentLevel)", "RTID(Wave8ModConveyor@CurrentLevel)" ], [ "RTID(Wave9@CurrentLevel)", "RTID(Wave9ModConveyor@CurrentLevel)" ], [ "RTID(Wave10@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)",
+						"RTID(Wave2ModConveyor@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)",
+						"RTID(Wave3ModConveyor@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)",
+						"RTID(Wave4ModConveyor@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)",
+						"RTID(Wave5ModConveyor@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)",
+						"RTID(Wave6ModConveyor@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)",
+						"RTID(Wave7ModConveyor@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)",
+						"RTID(Wave8ModConveyor@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)",
+						"RTID(Wave9ModConveyor@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Wave1" ],
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "2",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave2" ],
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave2ModConveyor" ],
+		},
+		{
+			"aliases": [
+				"Wave2ModConveyor"
+			],
 			"objclass": "ModifyConveyorWaveActionProps",
 			"objdata": {
-				"Add": [ {
+				"Add": [
+					{
 						"MaxWeightFactor": 10.0,
 						"MinWeightFactor": 0.1,
 						"Type": "RTID(wallnut@PlantTypes)"
-					} ],
-				"Remove": [ {
+					}
+				],
+				"Remove": [
+					{
 						"Type": "RTID(peashooter@PlantTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave3" ],
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "2",
 						"Type": "RTID(cowboy_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "1",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave3ModConveyor" ],
+		},
+		{
+			"aliases": [
+				"Wave3ModConveyor"
+			],
 			"objclass": "ModifyConveyorWaveActionProps",
 			"objdata": {
-				"Add": [ {
+				"Add": [
+					{
 						"MaxWeightFactor": 10.0,
 						"MinWeightFactor": 0.1,
 						"Type": "RTID(potatomine@PlantTypes)"
-					} ],
-				"Remove": [ {
+					}
+				],
+				"Remove": [
+					{
 						"Type": "RTID(wallnut@PlantTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave4" ],
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "1",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave4ModConveyor" ],
+		},
+		{
+			"aliases": [
+				"Wave4ModConveyor"
+			],
 			"objclass": "ModifyConveyorWaveActionProps",
 			"objdata": {
-				"Add": [ {
+				"Add": [
+					{
 						"MaxWeightFactor": 10.0,
 						"MinWeightFactor": 0.1,
 						"Type": "RTID(chilibean@PlantTypes)"
-					} ],
-				"Remove": [ {
+					}
+				],
+				"Remove": [
+					{
 						"Type": "RTID(potatomine@PlantTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave5" ],
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "5",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(cowboy_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "1",
 						"Type": "RTID(cowboy_armor1@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave5ModConveyor" ],
+		},
+		{
+			"aliases": [
+				"Wave5ModConveyor"
+			],
 			"objclass": "ModifyConveyorWaveActionProps",
 			"objdata": {
-				"Add": [ {
+				"Add": [
+					{
 						"MaxWeightFactor": 10.0,
 						"MinWeightFactor": 0.1,
 						"Type": "RTID(repeater@PlantTypes)"
-					} ],
-				"Remove": [ {
+					}
+				],
+				"Remove": [
+					{
 						"Type": "RTID(chilibean@PlantTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave6" ],
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "1",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "1",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave6ModConveyor" ],
+		},
+		{
+			"aliases": [
+				"Wave6ModConveyor"
+			],
 			"objclass": "ModifyConveyorWaveActionProps",
 			"objdata": {
-				"Add": [ {
+				"Add": [
+					{
 						"MaxWeightFactor": 10.0,
 						"MinWeightFactor": 0.1,
 						"Type": "RTID(potatomine@PlantTypes)"
-					} ],
-				"Remove": [ {
+					}
+				],
+				"Remove": [
+					{
 						"Type": "RTID(chilibean@PlantTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave7" ],
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "5",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(cowboy_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "1",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave7ModConveyor" ],
+		},
+		{
+			"aliases": [
+				"Wave7ModConveyor"
+			],
 			"objclass": "ModifyConveyorWaveActionProps",
 			"objdata": {
-				"Add": [ {
+				"Add": [
+					{
 						"MaxWeightFactor": 10.0,
 						"MinWeightFactor": 0.1,
 						"Type": "RTID(wallnut@PlantTypes)"
-					} ],
-				"Remove": [ {
+					}
+				],
+				"Remove": [
+					{
 						"Type": "RTID(potatomine@PlantTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave8" ],
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "5",
 						"Type": "RTID(cowboy_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "1",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy_armor1@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave8ModConveyor" ],
+		},
+		{
+			"aliases": [
+				"Wave8ModConveyor"
+			],
 			"objclass": "ModifyConveyorWaveActionProps",
 			"objdata": {
-				"Add": [ {
+				"Add": [
+					{
 						"MaxWeightFactor": 10.0,
 						"MinWeightFactor": 0.1,
 						"Type": "RTID(coconutcannon@PlantTypes)"
-					} ],
-				"Remove": [ {
+					}
+				],
+				"Remove": [
+					{
 						"Type": "RTID(wallnut@PlantTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave9" ],
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "3",
 						"Type": "RTID(cowboy_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(cowboy_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "1",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave9ModConveyor" ],
+		},
+		{
+			"aliases": [
+				"Wave9ModConveyor"
+			],
 			"objclass": "ModifyConveyorWaveActionProps",
 			"objdata": {
-				"Add": [ {
+				"Add": [
+					{
 						"MaxWeightFactor": 10.0,
 						"MinWeightFactor": 0.1,
 						"Type": "RTID(chilibean@PlantTypes)"
-					} ],
-				"Remove": [ {
+					}
+				],
+				"Remove": [
+					{
 						"Type": "RTID(coconutcannon@PlantTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave10" ],
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "2",
 						"Type": "RTID(cowboy_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(chicken_farmer@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "5",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(cowboy_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(cowboy_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "1",
 						"Type": "RTID(cowboy@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

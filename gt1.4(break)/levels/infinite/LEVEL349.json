@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv349",
-	"objects": [ {
+	"#comment": "lv349",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,91 +9,142 @@
 				"StartingSun": 50,
 				"LevelNumber": 349,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(LostCityMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(GI@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(LostCityMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(GI@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_B",
 				"Name": "Adventure 349",
 				"StageModule": "RTID(LostCityStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "GI" ],
+		},
+		{
+			"aliases": [
+				"GI"
+			],
 			"objclass": "InitialGridItemProperties",
 			"objdata": {
-				"InitialGridItemPlacements": [ {
+				"InitialGridItemPlacements": [
+					{
 						"GridX": 2,
 						"GridY": 1,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 3,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 1,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 3,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 0,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 1,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 2,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 3,
 						"TypeName": "goldtile"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 4,
 						"TypeName": "goldtile"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(SunUsed@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(SunUsed@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "SunUsed" ],
+		},
+		{
+			"aliases": [
+				"SunUsed"
+			],
 			"objclass": "StarChallengeSunUsedProps",
 			"objdata": {
 				"MaximumSun": 5000
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [ {
+				"PresetPlantList": [
+					{
 						"PlantType": "sunflower"
-					}, {
+					},
+					{
 						"PlantType": "aloe"
-					}, {
+					},
+					{
 						"PlantType": "wallnut"
-					}, {
+					},
+					{
 						"PlantType": "tallnut"
-					}, {
+					},
+					{
 						"PlantType": "stallia"
-					}, {
+					},
+					{
 						"PlantType": "squash"
-					}, {
+					},
+					{
 						"PlantType": "caulipower"
-					} ],
+					}
+				],
 				"SelectionMethod": "preset"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 2,
@@ -102,23 +153,41 @@
 				"StartingPoints": 10,
 				"PointIncrementPerWave": 16,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(lostcity@ZombieTypes)", "RTID(lostcity_bug_armor1@ZombieTypes)", "RTID(lostcity_impporter@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(lostcity@ZombieTypes)",
+					"RTID(lostcity_bug_armor1@ZombieTypes)",
+					"RTID(lostcity_impporter@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "PR1" ],
+		},
+		{
+			"aliases": [
+				"PR1"
+			],
 			"objclass": "ParachuteRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 7,
@@ -131,12 +200,17 @@
 				"WaveStartMessage": "[WARNING_PARACHUTERAIN]",
 				"ZombieFallTime": "1.5"
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

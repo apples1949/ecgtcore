@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Pirate Danger Room",
-	"objects": [ {
+	"#comment": "Pirate Danger Room",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Endless Zone!",
@@ -13,70 +13,160 @@
 				"SuppressPlantfoodPurchase": true,
 				"SuppressAwardScreen": true,
 				"Loot": "RTID(DangerRoomLoot@LevelModules)",
-				"Modules": [ "RTID(DangerRoomIntro@CurrentLevel)", "RTID(DangerRoomModule@CurrentLevel)", "RTID(DefaultSunDropper@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(PirateMowers@LevelModules)", "RTID(NewWaves@CurrentLevel)", "RTID(PiratePlanks@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ChallengeModule@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(PirateMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(PiratePlanks@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
 				"Name": "Starting Sun - Level {LEVEL_NUMBER}",
 				"StageModule": "RTID(PirateStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Survive with 600 starting sun",
 				"DescriptiveName": ""
 			}
-		}, {
+		},
+		{
 			"objclass": "WaveManagerModuleProperties",
-			"aliases": [ "NewWaves" ],
-			"objdata": {}
-		}, {
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "DangerRoomModuleProperties",
-			"aliases": [ "DangerRoomModule" ],
+			"aliases": [
+				"DangerRoomModule"
+			],
 			"objdata": {
 				"WorldSpecificProperties": "RTID(SunHeadStartDangerRoomProps@PropertySheets)",
-				"LevelDesigners": [ "RTID(PirateDangerRoomWaveGenerator@CurrentLevel)", "RTID(PlankDesigner@CurrentLevel)", "RTID(StartingSunRP@CurrentLevel)" ]
+				"LevelDesigners": [
+					"RTID(PirateDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(PlankDesigner@CurrentLevel)",
+					"RTID(StartingSunRP@CurrentLevel)"
+				]
 			}
-		}, {
-			"aliases": [ "DangerRoomIntro" ],
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
 			"objclass": "DangerRoomLevelIntroProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "PiratePlanks" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"PiratePlanks"
+			],
 			"objclass": "PiratePlankProperties",
 			"objdata": {
-				"PlankRows": [ 0, 1 ]
+				"PlankRows": [
+					0,
+					1
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [],
+				"PlantBlackList": [
+				],
 				"SelectionMethod": "chooser",
 				"AlwaysUseChooser": true
 			}
-		}, {
-			"aliases": [ "PirateDangerRoomWaveGenerator" ],
+		},
+		{
+			"aliases": [
+				"PirateDangerRoomWaveGenerator"
+			],
 			"objclass": "DangerRoomJitteredWaveGenerator",
 			"objdata": {
 				"StartingPoints": 60,
 				"BasePointIncrementPerWave": 10,
 				"BasePointIncrementPerLevel": 1,
-				"ZombiePool": [ "RTID(pirate_armor1@ZombieTypes)", "RTID(pirate_armor2@ZombieTypes)", "RTID(pirate@ZombieTypes)", "RTID(pirate_armor4@ZombieTypes)", "RTID(pirate_gargantuar@ZombieTypes)", "RTID(pirate_imp@ZombieTypes)", "RTID(swashbuckler@ZombieTypes)", "RTID(barrelroller@ZombieTypes)", "RTID(seagull@ZombieTypes)", "RTID(pelican@ZombieTypes)", "RTID(pirate_captain@ZombieTypes)", "RTID(cannon@ZombieTypes)", "RTID(lostcity_jane@ZombieTypes)", "RTID(lostcity_excavator@ZombieTypes)", "RTID(lostcity_crystalskull@ZombieTypes)", "RTID(modern_football@ZombieTypes)", "RTID(modern_balloon@ZombieTypes)", "RTID(eighties_boombox@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(pirate_armor1@ZombieTypes)",
+					"RTID(pirate_armor2@ZombieTypes)",
+					"RTID(pirate@ZombieTypes)",
+					"RTID(pirate_armor4@ZombieTypes)",
+					"RTID(pirate_gargantuar@ZombieTypes)",
+					"RTID(pirate_imp@ZombieTypes)",
+					"RTID(swashbuckler@ZombieTypes)",
+					"RTID(barrelroller@ZombieTypes)",
+					"RTID(seagull@ZombieTypes)",
+					"RTID(pelican@ZombieTypes)",
+					"RTID(pirate_captain@ZombieTypes)",
+					"RTID(cannon@ZombieTypes)",
+					"RTID(lostcity_jane@ZombieTypes)",
+					"RTID(lostcity_excavator@ZombieTypes)",
+					"RTID(lostcity_crystalskull@ZombieTypes)",
+					"RTID(modern_football@ZombieTypes)",
+					"RTID(modern_balloon@ZombieTypes)",
+					"RTID(eighties_boombox@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "PlankDesigner" ],
+		},
+		{
+			"aliases": [
+				"PlankDesigner"
+			],
 			"objclass": "DangerRoomPlankDesigner",
 			"objdata": {
-				"PlankLayouts": [ "11110", "11011", "01111", "11100", "01110", "00111", "10101", "11010", "11001", "01101", "10110", "10011", "01011", "10111", "11101" ]
+				"PlankLayouts": [
+					"11110",
+					"11011",
+					"01111",
+					"11100",
+					"01110",
+					"00111",
+					"10101",
+					"11010",
+					"11001",
+					"01101",
+					"10110",
+					"10011",
+					"01011",
+					"10111",
+					"11101"
+				]
 			}
-		}, {
-			"aliases": [ "StartingSunRP" ],
+		},
+		{
+			"aliases": [
+				"StartingSunRP"
+			],
 			"objclass": "DangerRoomRaidingPartyDesigner",
 			"objdata": {
 				"BasePartyCount": 0,
@@ -87,6 +177,7 @@
 				"MaxPartyCount": 8,
 				"BasePartyStartWave": 4
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

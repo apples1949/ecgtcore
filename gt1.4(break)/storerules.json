@@ -1,387 +1,542 @@
 {
 	"date": "2017-09-08 17:06:04.485909351 -0700 PDT",
-	"objects": [ {
-			"aliases": [ "test_monetizers" ],
+	"objects": [
+		{
+			"aliases": [
+				"test_monetizers"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "test_monetizers",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "TotPrch",
 						"Value": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_big_monetizers" ],
+		},
+		{
+			"aliases": [
+				"test_big_monetizers"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "test_big_monetizers",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">",
 						"Key": "TotPrch",
 						"Value": "0"
-					}, {
+					},
+					{
 						"Comparator": ">",
 						"Key": "LstCashPrchPrice",
 						"Value": "19.899999999999999"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_nonmonetizers" ],
+		},
+		{
+			"aliases": [
+				"test_nonmonetizers"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "test_nonmonetizers",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_egypt_advanced" ],
+		},
+		{
+			"aliases": [
+				"test_egypt_advanced"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "test_egypt_advanced",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": ">=",
 						"Key": "HighLvlEgypt",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_just_lost" ],
+		},
+		{
+			"aliases": [
+				"test_just_lost"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "test_just_lost",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "FailLstGame",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_just_won" ],
+		},
+		{
+			"aliases": [
+				"test_just_won"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "test_just_won",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "!=",
 						"Key": "FailLstGame",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_nonmon_early" ],
+		},
+		{
+			"aliases": [
+				"test_nonmon_early"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "test_nonmon_early",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "<",
 						"Key": "DaysSinceInstall",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_nonmon_late" ],
+		},
+		{
+			"aliases": [
+				"test_nonmon_late"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "test_nonmon_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "test_zack" ],
+		},
+		{
+			"aliases": [
+				"test_zack"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "test_zack",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "TotPrch",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_vietnam" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_vietnam"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_nonmon_vietnam",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "VN"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_russia" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_russia"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_nonmon_russia",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "RU"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_mexico" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_mexico"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_nonmon_mexico",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "MX"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_brazil" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_brazil"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_nonmon_brazil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "BR"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_spain" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_spain"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_nonmon_spain",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "ES"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_vietnam" ],
+		},
+		{
+			"aliases": [
+				"reg_vietnam"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_vietnam",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "VN"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_russia" ],
+		},
+		{
+			"aliases": [
+				"reg_russia"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_russia",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "RU"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_mexico" ],
+		},
+		{
+			"aliases": [
+				"reg_mexico"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_mexico",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "MX"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_brazil" ],
+		},
+		{
+			"aliases": [
+				"reg_brazil"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_brazil",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "BR"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_vietnam_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_vietnam_late"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_nonmon_vietnam_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "VN"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_russia_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_russia_late"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_nonmon_russia_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "RU"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_mexico_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_mexico_late"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_nonmon_mexico_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "MX"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_brazil_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_brazil_late"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_nonmon_brazil_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "BR"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_spain_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_spain_late"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_nonmon_spain_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": "==",
 						"Key": "Country",
 						"Value": "ES"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "reg_nonmon_notvrmb_late" ],
+		},
+		{
+			"aliases": [
+				"reg_nonmon_notvrmb_late"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "reg_nonmon_notvrmb_late",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<",
 						"Key": "TotPrch",
 						"Value": "1"
-					}, {
+					},
+					{
 						"Comparator": ">=",
 						"Key": "DaysSinceInstall",
 						"Value": "2"
-					}, {
+					},
+					{
 						"Comparator": "!=",
 						"Key": "Country",
 						"Value": "VN"
-					}, {
+					},
+					{
 						"Comparator": "!=",
 						"Key": "Country",
 						"Value": "RU"
-					}, {
+					},
+					{
 						"Comparator": "!=",
 						"Key": "Country",
 						"Value": "MX"
-					}, {
+					},
+					{
 						"Comparator": "!=",
 						"Key": "Country",
 						"Value": "BR"
-					}, {
+					},
+					{
 						"Comparator": "!=",
 						"Key": "Country",
 						"Value": "ES"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "early" ],
+		},
+		{
+			"aliases": [
+				"early"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "early",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<=",
 						"Key": "DaysSinceInstall",
 						"Value": "7"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "day1" ],
+		},
+		{
+			"aliases": [
+				"day1"
+			],
 			"objclass": "StoreRuleSet",
 			"objdata": {
 				"BucketName": "day1",
-				"Rules": [ {
+				"Rules": [
+					{
 						"Comparator": "<=",
 						"Key": "DaysSinceInstall",
 						"Value": "1"
-					} ]
+					}
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

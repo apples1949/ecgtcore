@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv285",
-	"objects": [ {
+	"#comment": "lv285",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,48 +9,75 @@
 				"StartingSun": 50,
 				"LevelNumber": 285,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(FutureMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(PowerTiles@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(FutureMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(PowerTiles@CurrentLevel)"
+				],
 				"Name": "Adventure 285",
 				"StageModule": "RTID(FutureStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "PowerTiles" ],
+		},
+		{
+			"aliases": [
+				"PowerTiles"
+			],
 			"objclass": "PowerTileProperties",
 			"objdata": {
-				"LinkedTiles": [ {
+				"LinkedTiles": [
+					{
 						"Group": "alpha",
 						"Location": {
 							"mX": 1,
 							"mY": 1
 						},
 						"PropagationDelay": 1
-					}, {
+					},
+					{
 						"Group": "alpha",
 						"Location": {
 							"mX": 3,
 							"mY": 2
 						},
 						"PropagationDelay": 1
-					}, {
+					},
+					{
 						"Group": "alpha",
 						"Location": {
 							"mX": 5,
 							"mY": 3
 						},
 						"PropagationDelay": 1
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -59,23 +86,119 @@
 				"StartingPoints": 15,
 				"PointIncrementPerWave": 17,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(future_imp@ZombieTypes)", "RTID(future_armor2@ZombieTypes)", "RTID(future_gargantuar@ZombieTypes)", "RTID(future_protector@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(future_imp@ZombieTypes)",
+					"RTID(future_armor2@ZombieTypes)",
+					"RTID(future_gargantuar@ZombieTypes)",
+					"RTID(future_protector@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SR1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SR1@CurrentLevel)" ], [ "RTID(SR1@CurrentLevel)" ], [ "RTID(SR2@CurrentLevel)" ], [ "RTID(SR2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SR1@CurrentLevel)", "RTID(SR3@CurrentLevel)" ], [ "RTID(SR2@CurrentLevel)", "RTID(SR3@CurrentLevel)" ], [ "RTID(SR1@CurrentLevel)", "RTID(SR3@CurrentLevel)" ], [ "RTID(SR2@CurrentLevel)", "RTID(SR3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SR2@CurrentLevel)", "RTID(SR3@CurrentLevel)", "RTID(SR3@CurrentLevel)" ], [ "RTID(SR1@CurrentLevel)", "RTID(SR2@CurrentLevel)", "RTID(SR3@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SR1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SR1@CurrentLevel)"
+					],
+					[
+						"RTID(SR1@CurrentLevel)"
+					],
+					[
+						"RTID(SR2@CurrentLevel)"
+					],
+					[
+						"RTID(SR2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SR1@CurrentLevel)",
+						"RTID(SR3@CurrentLevel)"
+					],
+					[
+						"RTID(SR2@CurrentLevel)",
+						"RTID(SR3@CurrentLevel)"
+					],
+					[
+						"RTID(SR1@CurrentLevel)",
+						"RTID(SR3@CurrentLevel)"
+					],
+					[
+						"RTID(SR2@CurrentLevel)",
+						"RTID(SR3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SR2@CurrentLevel)",
+						"RTID(SR3@CurrentLevel)",
+						"RTID(SR3@CurrentLevel)"
+					],
+					[
+						"RTID(SR1@CurrentLevel)",
+						"RTID(SR2@CurrentLevel)",
+						"RTID(SR3@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "SR1" ],
+		},
+		{
+			"aliases": [
+				"SR1"
+			],
 			"objclass": "SpiderRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 9,
@@ -88,8 +211,11 @@
 				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
 				"ZombieFallTime": 2.0
 			}
-		}, {
-			"aliases": [ "SR2" ],
+		},
+		{
+			"aliases": [
+				"SR2"
+			],
 			"objclass": "SpiderRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 6,
@@ -102,8 +228,11 @@
 				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
 				"ZombieFallTime": 2.0
 			}
-		}, {
-			"aliases": [ "SR3" ],
+		},
+		{
+			"aliases": [
+				"SR3"
+			],
 			"objclass": "SpiderRainZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 4,
@@ -116,12 +245,17 @@
 				"WaveStartMessage": "[WARNING_SPIDERRAIN]",
 				"ZombieFallTime": 2.0
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

@@ -1,6 +1,7 @@
 {
 	"#comment": "Modern 44",
-	"objects": [ {
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "[EPIC_QUEST_MODERN_NEW_TITLE]",
@@ -9,7 +10,13 @@
 				"LevelNumber": 10,
 				"LoadDefaultMusic": false,
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(ZombossIntro@LevelModules)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(ZombossBattle@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(ZombossBattle@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "[EPIC_QUEST_MODERN_NEW_TITLE]",
 				"NormalPresentTable": "egypt_normal_01",
@@ -20,74 +27,96 @@
 				"SuppressSunSpawn": true,
 				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 3,
 						"MaxPackets": 0
-					}, {
+					},
+					{
 						"Delay": 4,
 						"MaxPackets": 2
-					}, {
+					},
+					{
 						"Delay": 6,
 						"MaxPackets": 4
-					}, {
+					},
+					{
 						"Delay": 9,
 						"MaxPackets": 8
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"MaxCount": 10,
 						"MaxWeightFactor": 0.1,
 						"MinCount": 2,
 						"MinWeightFactor": 2,
 						"PlantType": "chomper",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 10,
 						"MaxWeightFactor": 0.1,
 						"MinCount": 2,
 						"MinWeightFactor": 2,
 						"PlantType": "dusklobber",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 10,
 						"MaxWeightFactor": 0.1,
 						"MinCount": 2,
 						"MinWeightFactor": 2,
 						"PlantType": "fumeshroom",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 3,
 						"PlantType": "moonflower",
 						"Weight": 5
-					}, {
+					},
+					{
 						"PlantType": "nightshade",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 2,
 						"PlantType": "shadowshroom",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 15,
 						"MaxWeightFactor": 0.1,
 						"MinCount": 3,
 						"MinWeightFactor": 2,
 						"PlantType": "spikeweed",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 2,
 						"PlantType": "stallia",
 						"Weight": 5
-					} ],
-				"SpeedConditions": [ {
+					}
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 100
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ZombossBattle" ],
+		},
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
 			"objclass": "ZombossBattleModuleProperties",
 			"objdata": {
 				"ReservedColumnCount": 3,
@@ -99,19 +128,27 @@
 					"mY": 4
 				}
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"LevelJam": "jam_pop",
-				"Waves": []
+				"Waves": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

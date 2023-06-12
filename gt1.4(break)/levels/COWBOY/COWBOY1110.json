@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "WW-11 - 2 special wr",
-	"objects": [ {
+	"#comment": "WW-11 - 2 special wr",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s grind thousand quests",
@@ -11,68 +11,108 @@
 				"ZombieLevel": 4,
 				"LevelNumber": 11,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(WestMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(LootOverride@CurrentLevel)", "RTID(CowboyRails@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(WestMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)",
+					"RTID(CowboyRails@CurrentLevel)"
+				],
 				"Name": "Level 11",
 				"StageModule": "RTID(WestStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "CowboyRails" ],
+		},
+		{
+			"aliases": [
+				"CowboyRails"
+			],
 			"objclass": "RailcartProperties",
 			"objdata": {
 				"RailcartType": "railcart_cowboy",
-				"Railcarts": [ {
+				"Railcarts": [
+					{
 						"Column": 0,
 						"Row": 0
-					}, {
+					},
+					{
 						"Column": 2,
 						"Row": 2
-					}, {
+					},
+					{
 						"Column": 4,
 						"Row": 4
-					} ],
-				"Rails": [ {
+					}
+				],
+				"Rails": [
+					{
 						"Column": 0,
 						"RowStart": 0,
 						"RowEnd": 1
-					}, {
+					},
+					{
 						"Column": 2,
 						"RowStart": 1,
 						"RowEnd": 3
-					}, {
+					},
+					{
 						"Column": 4,
 						"RowStart": 3,
 						"RowEnd": 4
-					} ]
+					}
+				]
 			}
-		}, {
+		},
+		{
 			"objclass": "LootOverrideModuleProperties",
-			"aliases": [ "LootOverride" ],
+			"aliases": [
+				"LootOverride"
+			],
 			"objdata": {
-				"Overrides": [ {
+				"Overrides": [
+					{
 						"ZombieType": "RTID(cowboy_coin1@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(cowboy_coin2@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(cowboy_armor1_silver@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(cowboy_armor2_silver@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 2,
@@ -81,47 +121,145 @@
 				"PointIncrementPerWave": 11,
 				"StartingPoints": 20,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(cowboy@ZombieTypes)", "RTID(cowboy_armor4@ZombieTypes)", "RTID(west_bull@ZombieTypes)", "RTID(piano@ZombieTypes)", "RTID(cowboy_coin1@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(cowboy@ZombieTypes)",
+					"RTID(cowboy_armor4@ZombieTypes)",
+					"RTID(west_bull@ZombieTypes)",
+					"RTID(piano@ZombieTypes)",
+					"RTID(cowboy_coin1@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(WR@CurrentLevel)", "RTID(WR@CurrentLevel)", "RTID(WRMessage@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(WR@CurrentLevel)", "RTID(WR@CurrentLevel)", "RTID(WR@CurrentLevel)", "RTID(WRMessage@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(WR@CurrentLevel)", "RTID(WR@CurrentLevel)", "RTID(WRMessage@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(WR@CurrentLevel)", "RTID(WR@CurrentLevel)", "RTID(WRMessage@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(WR@CurrentLevel)", "RTID(WR@CurrentLevel)", "RTID(WR@CurrentLevel)", "RTID(WR@CurrentLevel)", "RTID(WRMessage@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(WR@CurrentLevel)",
+						"RTID(WR@CurrentLevel)",
+						"RTID(WRMessage@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(WR@CurrentLevel)",
+						"RTID(WR@CurrentLevel)",
+						"RTID(WR@CurrentLevel)",
+						"RTID(WRMessage@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(WR@CurrentLevel)",
+						"RTID(WR@CurrentLevel)",
+						"RTID(WRMessage@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(WR@CurrentLevel)",
+						"RTID(WR@CurrentLevel)",
+						"RTID(WRMessage@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(WR@CurrentLevel)",
+						"RTID(WR@CurrentLevel)",
+						"RTID(WR@CurrentLevel)",
+						"RTID(WR@CurrentLevel)",
+						"RTID(WRMessage@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		}, {
-			"aliases": [ "WR" ],
+		},
+		{
+			"aliases": [
+				"WR"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "WRMessage" ],
+		},
+		{
+			"aliases": [
+				"WRMessage"
+			],
 			"objclass": "BeachStageEventZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 0,
@@ -131,6 +269,7 @@
 				"ZombieCount": 0,
 				"ZombieName": "prospector"
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

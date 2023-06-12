@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv65",
-	"objects": [ {
+	"#comment": "lv65",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,68 +9,107 @@
 				"StartingSun": 50,
 				"LevelNumber": 65,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(FutureMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)", "RTID(PowerTiles@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(FutureMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(PowerTiles@CurrentLevel)"
+				],
 				"Name": "Adventure 65",
 				"StageModule": "RTID(FutureStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(SimultaneousPlants@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(SimultaneousPlants@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "SimultaneousPlants" ],
+		},
+		{
+			"aliases": [
+				"SimultaneousPlants"
+			],
 			"objclass": "StarChallengeSimultaneousPlantsProps",
 			"objdata": {
 				"MaximumPlants": 20
 			}
-		}, {
-			"aliases": [ "PowerTiles" ],
+		},
+		{
+			"aliases": [
+				"PowerTiles"
+			],
 			"objclass": "PowerTileProperties",
 			"objdata": {
-				"LinkedTiles": [ {
+				"LinkedTiles": [
+					{
 						"Group": "alpha",
 						"Location": {
 							"mX": 0,
 							"mY": 0
 						},
 						"PropagationDelay": 1
-					}, {
+					},
+					{
 						"Group": "alpha",
 						"Location": {
 							"mX": 0,
 							"mY": 3
 						},
 						"PropagationDelay": 1
-					}, {
+					},
+					{
 						"Group": "beta",
 						"Location": {
 							"mX": 0,
 							"mY": 1
 						},
 						"PropagationDelay": 1
-					}, {
+					},
+					{
 						"Group": "beta",
 						"Location": {
 							"mX": 0,
 							"mY": 4
 						},
 						"PropagationDelay": 1
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -79,27 +118,47 @@
 				"StartingPoints": 10,
 				"PointIncrementPerWave": 12,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(future_imp@ZombieTypes)", "RTID(future_protector@ZombieTypes)", "RTID(mech_cone@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(future_imp@ZombieTypes)",
+					"RTID(future_protector@ZombieTypes)",
+					"RTID(mech_cone@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv220",
-	"objects": [ {
+	"#comment": "lv220",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,85 +9,186 @@
 				"StartingSun": 50,
 				"LevelNumber": 220,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(BeachMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(MoldColonies@CurrentLevel)", "RTID(Tide@CurrentLevel)", "RTID(IPP@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(BeachMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(MoldColonies@CurrentLevel)",
+					"RTID(Tide@CurrentLevel)",
+					"RTID(IPP@CurrentLevel)"
+				],
 				"Name": "Adventure 220",
 				"StageModule": "RTID(BeachStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "IPP" ],
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
 			"objclass": "InitialPlantProperties",
 			"objdata": {
-				"InitialPlantPlacements": [ {
+				"InitialPlantPlacements": [
+					{
 						"GridX": 2,
 						"GridY": 0,
 						"TypeName": "lilypad"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 1,
 						"TypeName": "lilypad"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 2,
 						"TypeName": "lilypad"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 3,
 						"TypeName": "lilypad"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 4,
 						"TypeName": "lilypad"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 0,
 						"TypeName": "lilypad"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 1,
 						"TypeName": "lilypad"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 2,
 						"TypeName": "lilypad"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 3,
 						"TypeName": "lilypad"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 4,
 						"TypeName": "lilypad"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "MoldColonies" ],
+		},
+		{
+			"aliases": [
+				"MoldColonies"
+			],
 			"objclass": "MoldColonyChallengeProps",
 			"objdata": {
 				"Locations": "RTID(Mold@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "Mold" ],
+		},
+		{
+			"aliases": [
+				"Mold"
+			],
 			"objclass": "BoardGridMapProps",
 			"objdata": {
-				"Values": [ [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ] ]
+				"Values": [
+					[
+						1,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						1,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						1,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						1,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						1,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Tide" ],
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
 			"objclass": "TideProperties",
 			"objdata": {
 				"StartingWaveLocation": 7
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 4,
@@ -96,27 +197,50 @@
 				"StartingPoints": 10,
 				"PointIncrementPerWave": 10,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(beach_imp@ZombieTypes)", "RTID(beach@ZombieTypes)", "RTID(beach_armor2@ZombieTypes)", "RTID(beach_fem_armor2@ZombieTypes)", "RTID(beach_fisherman@ZombieTypes)", "RTID(beach_gargantuar@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(beach_imp@ZombieTypes)",
+					"RTID(beach@ZombieTypes)",
+					"RTID(beach_armor2@ZombieTypes)",
+					"RTID(beach_fem_armor2@ZombieTypes)",
+					"RTID(beach_fisherman@ZombieTypes)",
+					"RTID(beach_gargantuar@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "DarkAges Danger Room",
-	"objects": [ {
+	"#comment": "DarkAges Danger Room",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Endless Zone!",
@@ -12,52 +12,105 @@
 				"SuppressPlantfoodPurchase": true,
 				"SuppressAwardScreen": true,
 				"Loot": "RTID(DangerRoomLoot@LevelModules)",
-				"Modules": [ "RTID(DangerRoomIntro@CurrentLevel)", "RTID(DangerRoomModule@CurrentLevel)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DarkMowers@LevelModules)", "RTID(NewWaves@CurrentLevel)", "RTID(Gravestones@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)" ],
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DarkMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(Gravestones@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
 				"Name": "Classic II - Level {LEVEL_NUMBER}",
 				"StageModule": "RTID(DarkStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "WaveManagerModuleProperties",
-			"aliases": [ "NewWaves" ],
-			"objdata": {}
-		}, {
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "DangerRoomModuleProperties",
-			"aliases": [ "DangerRoomModule" ],
+			"aliases": [
+				"DangerRoomModule"
+			],
 			"objdata": {
 				"WorldSpecificProperties": "RTID(ClassicDangerRoomProps@PropertySheets)",
-				"LevelDesigners": [ "RTID(DarkDangerRoomWaveGenerator@CurrentLevel)", "RTID(DarkGravestoneGenerator@CurrentLevel)", "RTID(DarkEventGenerator@CurrentLevel)" ]
+				"LevelDesigners": [
+					"RTID(DarkDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(DarkGravestoneGenerator@CurrentLevel)",
+					"RTID(DarkEventGenerator@CurrentLevel)"
+				]
 			}
-		}, {
-			"aliases": [ "DangerRoomIntro" ],
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
 			"objclass": "DangerRoomLevelIntroProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "Gravestones" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"Gravestones"
+			],
 			"objclass": "GravestoneProperties",
 			"objdata": {
 				"GravestoneCount": 0,
 				"SpawnColumnEnd": 0,
 				"SpawnColumnStart": 0
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [],
+				"PlantBlackList": [
+				],
 				"SelectionMethod": "chooser",
 				"AlwaysUseChooser": true
 			}
-		}, {
-			"aliases": [ "DarkDangerRoomWaveGenerator" ],
+		},
+		{
+			"aliases": [
+				"DarkDangerRoomWaveGenerator"
+			],
 			"objclass": "DangerRoomJitteredWaveGenerator",
 			"objdata": {
 				"StartingPoints": 15,
 				"BasePointIncrementPerWave": 10,
 				"BasePointIncrementPerLevel": 2,
-				"ZombiePool": [ "RTID(dark_armor1@ZombieTypes)", "RTID(dark_armor2@ZombieTypes)", "RTID(dark@ZombieTypes)", "RTID(dark_armor3@ZombieTypes)", "RTID(dark_gargantuar@ZombieTypes)", "RTID(dark_king@ZombieTypes)", "RTID(dark_juggler@ZombieTypes)", "RTID(dark_wizard@ZombieTypes)", "RTID(dark_imp_dragon@ZombieTypes)", "RTID(lostcity_jane@ZombieTypes)", "RTID(lostcity_excavator@ZombieTypes)", "RTID(lostcity_crystalskull@ZombieTypes)", "RTID(beach_octopus@ZombieTypes)", "RTID(beach_surfer@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(dark_armor1@ZombieTypes)",
+					"RTID(dark_armor2@ZombieTypes)",
+					"RTID(dark@ZombieTypes)",
+					"RTID(dark_armor3@ZombieTypes)",
+					"RTID(dark_gargantuar@ZombieTypes)",
+					"RTID(dark_king@ZombieTypes)",
+					"RTID(dark_juggler@ZombieTypes)",
+					"RTID(dark_wizard@ZombieTypes)",
+					"RTID(dark_imp_dragon@ZombieTypes)",
+					"RTID(lostcity_jane@ZombieTypes)",
+					"RTID(lostcity_excavator@ZombieTypes)",
+					"RTID(lostcity_crystalskull@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "DarkGravestoneGenerator" ],
+		},
+		{
+			"aliases": [
+				"DarkGravestoneGenerator"
+			],
 			"objclass": "DangerRoomGravestoneGenerator",
 			"objdata": {
 				"MinGravestoneCount": 0,
@@ -70,8 +123,11 @@
 				"MaxEndingGravestoneSpawnCol": 9,
 				"MaxEndingGravestoneSpawnColOffsetPerLevel": 0.0
 			}
-		}, {
-			"aliases": [ "DarkEventGenerator" ],
+		},
+		{
+			"aliases": [
+				"DarkEventGenerator"
+			],
 			"objclass": "DangerRoomDarkEventGenerator",
 			"objdata": {
 				"#Comment": "All ranges are evaluated as a function of level (x = level)",
@@ -133,6 +189,7 @@
 				},
 				"SpawnZombieType": "dark_imp"
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv407",
-	"objects": [ {
+	"#comment": "lv407",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -10,33 +10,58 @@
 				"LevelNumber": 407,
 				"ZombieLevel": 3,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(IceageMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(IceageMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"Name": "Adventure 407",
 				"StageModule": "RTID(IceageStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [ {
+				"PresetPlantList": [
+					{
 						"PlantType": "sunflower"
-					}, {
+					},
+					{
 						"PlantType": "sunshroom"
-					}, {
+					},
+					{
 						"PlantType": "snowpea"
-					}, {
+					},
+					{
 						"PlantType": "torchwood"
-					}, {
+					},
+					{
 						"PlantType": "blastberry"
-					}, {
+					},
+					{
 						"PlantType": "puffshroom"
-					} ],
+					}
+				],
 				"SelectionMethod": "preset"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 2,
@@ -45,47 +70,137 @@
 				"StartingPoints": 15,
 				"PointIncrementPerWave": 11,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(iceage_imp@ZombieTypes)", "RTID(iceage_armor1@ZombieTypes)", "RTID(iceage_dodo@ZombieTypes)", "RTID(iceage_hunter@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(iceage_imp@ZombieTypes)",
+					"RTID(iceage_armor1@ZombieTypes)",
+					"RTID(iceage_dodo@ZombieTypes)",
+					"RTID(iceage_hunter@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)", "RTID(W3@CurrentLevel)" ], [ "RTID(PF@CurrentLevel)" ], [ "RTID(W5@CurrentLevel)" ], [ "RTID(W4@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)", "RTID(W5@CurrentLevel)" ], [ "RTID(W3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)", "RTID(W4@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(W5@CurrentLevel)" ], [ "RTID(W3@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)", "RTID(W4@CurrentLevel)" ], [ "RTID(W5@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)", "RTID(W2@CurrentLevel)", "RTID(W3@CurrentLevel)", "RTID(W4@CurrentLevel)", "RTID(W5@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)",
+						"RTID(W3@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(W5@CurrentLevel)"
+					],
+					[
+						"RTID(W4@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)",
+						"RTID(W5@CurrentLevel)"
+					],
+					[
+						"RTID(W3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)",
+						"RTID(W4@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(W5@CurrentLevel)"
+					],
+					[
+						"RTID(W3@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)",
+						"RTID(W4@CurrentLevel)"
+					],
+					[
+						"RTID(W5@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)",
+						"RTID(W2@CurrentLevel)",
+						"RTID(W3@CurrentLevel)",
+						"RTID(W4@CurrentLevel)",
+						"RTID(W5@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "PF" ],
+		},
+		{
+			"aliases": [
+				"PF"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
 				"AdditionalPlantfood": 1,
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(iceage_imp@.)"
-					} ]
+					}
+				]
 			}
-		}, {
+		},
+		{
 			"objclass": "ZombieType",
-			"aliases": [ "iceage_imp" ],
+			"aliases": [
+				"iceage_imp"
+			],
 			"objdata": {
 				"TypeName": "iceage_imp",
 				"ZombieClass": "ZombieImp",
 				"Properties": "RTID(ZombieIceageImpDefault@.)",
-				"ResourceGroups": [ "ZombieIceageImpGroup" ],
-				"AudioGroups": [ "ZombieGlobalGargantuarAudio" ],
+				"ResourceGroups": [
+					"ZombieIceageImpGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
 				"AnimRigClass": "ZombieAnimRig_Imp",
 				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ICEAGE_IMP",
 				"HomeWorld": "iceage",
 				"IsBasicZombie": true,
 				"HastyOnStart": false
 			}
-		}, {
-			"aliases": [ "ZombieIceageImpDefault" ],
+		},
+		{
+			"aliases": [
+				"ZombieIceageImpDefault"
+			],
 			"objclass": "ZombiePropertySheet",
 			"objdata": {
 				"ArtCenter": {
@@ -124,66 +239,99 @@
 				"SpeedVariance": 0.05,
 				"WavePointCost": 10,
 				"Weight": 150,
-				"ZombieStats": [ {
+				"ZombieStats": [
+					{
 						"Type": "toughness",
 						"Value": "toughness0"
-					}, {
+					},
+					{
 						"Type": "speed",
 						"Value": "speed2"
-					} ],
+					}
+				],
 				"ScoreOverride": 10
 			}
-		}, {
-			"aliases": [ "W1" ],
+		},
+		{
+			"aliases": [
+				"W1"
+			],
 			"objclass": "FrostWindWaveActionProps",
 			"objdata": {
-				"Winds": [ {
+				"Winds": [
+					{
 						"Direction": "right",
 						"Row": "0"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "W2" ],
+		},
+		{
+			"aliases": [
+				"W2"
+			],
 			"objclass": "FrostWindWaveActionProps",
 			"objdata": {
-				"Winds": [ {
+				"Winds": [
+					{
 						"Direction": "right",
 						"Row": "1"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "W3" ],
+		},
+		{
+			"aliases": [
+				"W3"
+			],
 			"objclass": "FrostWindWaveActionProps",
 			"objdata": {
-				"Winds": [ {
+				"Winds": [
+					{
 						"Direction": "right",
 						"Row": "2"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "W4" ],
+		},
+		{
+			"aliases": [
+				"W4"
+			],
 			"objclass": "FrostWindWaveActionProps",
 			"objdata": {
-				"Winds": [ {
+				"Winds": [
+					{
 						"Direction": "right",
 						"Row": "3"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "W5" ],
+		},
+		{
+			"aliases": [
+				"W5"
+			],
 			"objclass": "FrostWindWaveActionProps",
 			"objdata": {
-				"Winds": [ {
+				"Winds": [
+					{
 						"Direction": "right",
 						"Row": "4"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

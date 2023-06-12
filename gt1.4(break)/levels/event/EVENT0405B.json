@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Event4 lv5B",
-	"objects": [ {
+	"#comment": "Event4 lv5B",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Special level attack!",
@@ -13,89 +13,132 @@
 				"SuppressAwardScreen": true,
 				"ForceToWorldMap": true,
 				"ReplayForceToWorldMap": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LootOverride@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)"
+				],
 				"Name": "Event 4 - Layout 5B",
 				"MusicType": "MiniGame_A",
 				"StageModule": "RTID(ModernStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "LootOverrideModuleProperties",
-			"aliases": [ "LootOverride" ],
+			"aliases": [
+				"LootOverride"
+			],
 			"objdata": {
-				"Overrides": [ {
+				"Overrides": [
+					{
 						"ZombieType": "RTID(eighties_arcade@ZombieTypes)",
 						"LootOverride": "GoldCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(football_mech@ZombieTypes)",
 						"LootOverride": "Gem"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(prospector@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(eighties_breakdancer@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(tutorial@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(tutorial_armor1@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 8.0,
 						"MaxPackets": 0
-					}, {
+					},
+					{
 						"Delay": 7.2,
 						"MaxPackets": 4
-					}, {
+					},
+					{
 						"Delay": 6.5,
 						"MaxPackets": 7
-					}, {
+					},
+					{
 						"Delay": 6.0,
 						"MaxPackets": 9
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"PlantType": "phatbeet",
 						"Weight": 3
-					}, {
+					},
+					{
 						"PlantType": "sporeshroom",
 						"Weight": 3
-					}, {
+					},
+					{
 						"PlantType": "pyrevine",
 						"Weight": 3
-					}, {
+					},
+					{
 						"PlantType": "shrinkingviolet",
 						"Weight": 1
-					}, {
+					},
+					{
 						"PlantType": "wintermint",
 						"MaxCountCooldownSeconds": 120,
 						"MaxWeightFactor": 1,
 						"MaxCount": 1,
 						"Weight": 100
-					} ],
-				"SpeedConditions": [ {
+					}
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 80
-					}, {
+					},
+					{
 						"MaxPackets": 4,
 						"Speed": 89
-					}, {
+					},
+					{
 						"MaxPackets": 7,
 						"Speed": 98
-					}, {
+					},
+					{
 						"MaxPackets": 9,
 						"Speed": 107
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelOfTheDayModuleProperties",
 			"objdata": {
 				"FlagCount": 6,
@@ -104,58 +147,237 @@
 				"StartingPoints": 30,
 				"PointIncrementPerWave": 22,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(football_mech@ZombieTypes)", "RTID(prospector@ZombieTypes)", "RTID(tutorial_armor1@ZombieTypes)", "RTID(eighties_breakdancer@ZombieTypes)", "RTID(tutorial@ZombieTypes)", "RTID(eighties_arcade@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(football_mech@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)",
+					"RTID(tutorial_armor1@ZombieTypes)",
+					"RTID(eighties_breakdancer@ZombieTypes)",
+					"RTID(tutorial@ZombieTypes)",
+					"RTID(eighties_arcade@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(W1@CurrentLevel)", "RTID(JamRap@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)" ], [ "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)" ], [ "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(W2@CurrentLevel)" ], [ "RTID(W1@CurrentLevel)" ], [ "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(W1@CurrentLevel)",
+						"RTID(JamRap@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(W2@CurrentLevel)"
+					],
+					[
+						"RTID(W1@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "JamRap" ],
+		},
+		{
+			"aliases": [
+				"JamRap"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"NotificationEvents": [ "jam_rap" ]
+				"NotificationEvents": [
+					"jam_rap"
+				]
 			}
-		}, {
-			"aliases": [ "DM" ],
+		},
+		{
+			"aliases": [
+				"DM"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(boombox_ambush@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "DMMessage" ],
+		},
+		{
+			"aliases": [
+				"DMMessage"
+			],
 			"objclass": "BeachStageEventZombieSpawnerProps",
 			"objdata": {
 				"WaveStartMessage": "Domainator!",
 				"ZombieCount": 0
 			}
-		}, {
-			"aliases": [ "W1" ],
+		},
+		{
+			"aliases": [
+				"W1"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(eighties_arcade@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "W2" ],
+		},
+		{
+			"aliases": [
+				"W2"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(football_mech@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

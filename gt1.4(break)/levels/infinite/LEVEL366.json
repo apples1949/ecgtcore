@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv366",
-	"objects": [ {
+	"#comment": "lv366",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,86 +9,134 @@
 				"StartingSun": 600,
 				"LevelNumber": 366,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(WestMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(CowboyRails@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(WestMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(CowboyRails@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "Adventure 366",
 				"StageModule": "RTID(WestStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Survive with 600 starting sun",
 				"DescriptiveName": ""
 			}
-		}, {
-			"aliases": [ "CowboyRails" ],
+		},
+		{
+			"aliases": [
+				"CowboyRails"
+			],
 			"objclass": "RailcartProperties",
 			"objdata": {
 				"RailcartType": "railcart_cowboy",
-				"Railcarts": [ {
+				"Railcarts": [
+					{
 						"Column": 0,
 						"Row": 2
-					}, {
+					},
+					{
 						"Column": 1,
 						"Row": 2
-					}, {
+					},
+					{
 						"Column": 2,
 						"Row": 2
-					}, {
+					},
+					{
 						"Column": 3,
 						"Row": 2
-					}, {
+					},
+					{
 						"Column": 5,
 						"Row": 2
-					}, {
+					},
+					{
 						"Column": 7,
 						"Row": 2
-					} ],
-				"Rails": [ {
+					}
+				],
+				"Rails": [
+					{
 						"Column": 0,
 						"RowStart": 0,
 						"RowEnd": 4
-					}, {
+					},
+					{
 						"Column": 1,
 						"RowStart": 1,
 						"RowEnd": 3
-					}, {
+					},
+					{
 						"Column": 2,
 						"RowStart": 0,
 						"RowEnd": 4
-					}, {
+					},
+					{
 						"Column": 3,
 						"RowStart": 1,
 						"RowEnd": 3
-					}, {
+					},
+					{
 						"Column": 5,
 						"RowStart": 0,
 						"RowEnd": 4
-					}, {
+					},
+					{
 						"Column": 7,
 						"RowStart": 1,
 						"RowEnd": 3
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -97,41 +145,70 @@
 				"StartingPoints": 60,
 				"PointIncrementPerWave": 18,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(cowboy@ZombieTypes)", "RTID(prospector@ZombieTypes)", "RTID(west_bull@ZombieTypes)", "RTID(vegan@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(cowboy@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)",
+					"RTID(west_bull@ZombieTypes)",
+					"RTID(vegan@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "WR" ],
+		},
+		{
+			"aliases": [
+				"WR"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(chicken@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "WRMessage" ],
+		},
+		{
+			"aliases": [
+				"WRMessage"
+			],
 			"objclass": "BeachStageEventZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 0,
@@ -141,12 +218,17 @@
 				"ZombieCount": 0,
 				"ZombieName": "prospector"
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

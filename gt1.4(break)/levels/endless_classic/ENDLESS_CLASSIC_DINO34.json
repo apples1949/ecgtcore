@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Dino Danger Room",
-	"objects": [ {
+	"#comment": "Dino Danger Room",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Endless Zone!",
@@ -12,35 +12,65 @@
 				"SuppressPlantfoodPurchase": true,
 				"SuppressAwardScreen": true,
 				"Loot": "RTID(DangerRoomLoot@LevelModules)",
-				"Modules": [ "RTID(DangerRoomIntro@CurrentLevel)", "RTID(DangerRoomModule@CurrentLevel)", "RTID(DinoMowers@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(NewWaves@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)" ],
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(DinoMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
 				"Name": "Classic - Level {LEVEL_NUMBER}",
 				"StageModule": "RTID(DinoStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "WaveManagerModuleProperties",
-			"aliases": [ "NewWaves" ],
-			"objdata": {}
-		}, {
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "DangerRoomModuleProperties",
-			"aliases": [ "DangerRoomModule" ],
+			"aliases": [
+				"DangerRoomModule"
+			],
 			"objdata": {
 				"WorldSpecificProperties": "RTID(ClassicDangerRoomProps@PropertySheets)",
-				"LevelDesigners": [ "RTID(DinoDangerRoomWaveGenerator@CurrentLevel)", "RTID(DinosaurDesigner@CurrentLevel)" ]
+				"LevelDesigners": [
+					"RTID(DinoDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(DinosaurDesigner@CurrentLevel)"
+				]
 			}
-		}, {
-			"aliases": [ "DangerRoomIntro" ],
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
 			"objclass": "DangerRoomLevelIntroProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "SeedBank" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [],
+				"PlantBlackList": [
+				],
 				"SelectionMethod": "chooser",
 				"AlwaysUseChooser": true
 			}
-		}, {
-			"aliases": [ "DinosaurDesigner" ],
+		},
+		{
+			"aliases": [
+				"DinosaurDesigner"
+			],
 			"objclass": "DangerRoomDinoDesigner",
 			"objdata": {
 				"LevelRange": {
@@ -79,32 +109,58 @@
 					"Min": 2,
 					"Max": 3
 				},
-				"DinoTypePool": [ {
+				"DinoTypePool": [
+					{
 						"Value": "raptor",
 						"Weight": 0.0
-					}, {
+					},
+					{
 						"Value": "stego",
 						"Weight": 0.0
-					}, {
+					},
+					{
 						"Value": "ptero",
 						"Weight": 0.0
-					}, {
+					},
+					{
 						"Value": "tyranno",
 						"Weight": 1.0
-					}, {
+					},
+					{
 						"Value": "ankylo",
 						"Weight": 0.0
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "DinoDangerRoomWaveGenerator" ],
+		},
+		{
+			"aliases": [
+				"DinoDangerRoomWaveGenerator"
+			],
 			"objclass": "DangerRoomJitteredWaveGenerator",
 			"objdata": {
 				"StartingPoints": 15,
 				"BasePointIncrementPerWave": 5,
 				"BasePointIncrementPerLevel": 1,
-				"ZombiePool": [ "RTID(dino_armor1@ZombieTypes)", "RTID(dino_armor2@ZombieTypes)", "RTID(dino@ZombieTypes)", "RTID(dino_armor3@ZombieTypes)", "RTID(dino_bully@ZombieTypes)", "RTID(dino_gargantuar@ZombieTypes)", "RTID(holohead@ZombieTypes)", "RTID(dino_armor4@ZombieTypes)", "RTID(dino_bully_veteran@ZombieTypes)", "RTID(dino_imp@ZombieTypes)", "RTID(dark_juggler@ZombieTypes)", "RTID(dark_wizard@ZombieTypes)", "RTID(iceage_hunter@ZombieTypes)", "RTID(iceage_troglobite@ZombieTypes)", "RTID(iceage_weaselhoarder@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(dino_armor1@ZombieTypes)",
+					"RTID(dino_armor2@ZombieTypes)",
+					"RTID(dino@ZombieTypes)",
+					"RTID(dino_armor3@ZombieTypes)",
+					"RTID(dino_bully@ZombieTypes)",
+					"RTID(dino_gargantuar@ZombieTypes)",
+					"RTID(holohead@ZombieTypes)",
+					"RTID(dino_armor4@ZombieTypes)",
+					"RTID(dino_bully_veteran@ZombieTypes)",
+					"RTID(dino_imp@ZombieTypes)",
+					"RTID(dark_juggler@ZombieTypes)",
+					"RTID(dark_wizard@ZombieTypes)",
+					"RTID(iceage_hunter@ZombieTypes)",
+					"RTID(iceage_troglobite@ZombieTypes)",
+					"RTID(iceage_weaselhoarder@ZombieTypes)"
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

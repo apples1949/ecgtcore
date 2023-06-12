@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv29",
-	"objects": [ {
+	"#comment": "lv29",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,29 +9,60 @@
 				"StartingSun": 50,
 				"LevelNumber": 29,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(DinoMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LastStand@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DinoMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LastStand@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_B",
 				"Name": "Adventure 29",
 				"StageModule": "RTID(DinoStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "LastStand" ],
+		},
+		{
+			"aliases": [
+				"LastStand"
+			],
 			"objclass": "LastStandMinigameProperties",
 			"objdata": {
 				"StartingPlantfood": 0,
 				"StartingSun": 3000
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [ "sunflower", "twinsunflower", "primalsunflower", "moonflower", "sunshroom", "sunbean", "goldleaf", "goldbloom", "solartomato", "witchhazel" ],
+				"PlantBlackList": [
+					"sunflower",
+					"twinsunflower",
+					"primalsunflower",
+					"moonflower",
+					"sunshroom",
+					"sunbean",
+					"goldleaf",
+					"goldbloom",
+					"solartomato",
+					"witchhazel"
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 4,
@@ -40,16 +71,27 @@
 				"StartingPoints": 80,
 				"PointIncrementPerWave": 7,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(dino_armor2@ZombieTypes)", "RTID(dino_armor1@ZombieTypes)", "RTID(holohead@ZombieTypes)", "RTID(dino_bully@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(dino_armor2@ZombieTypes)",
+					"RTID(dino_armor1@ZombieTypes)",
+					"RTID(holohead@ZombieTypes)",
+					"RTID(dino_bully@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"ManualStartup": true
 			}
-		}, {
-			"aliases": [ "WaveManager" ],
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"ZombieCountdownHugeWaveDelay": 3,
@@ -57,14 +99,23 @@
 				"WaveSpendingPoints": 0,
 				"MinNextWaveHealthPercentage": 0.6,
 				"MaxNextWaveHealthPercentage": 0.6,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

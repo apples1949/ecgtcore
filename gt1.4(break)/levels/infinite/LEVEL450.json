@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv450",
-	"objects": [ {
+	"#comment": "lv450",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -10,99 +10,141 @@
 				"LevelNumber": 450,
 				"ZombieLevel": 3,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(EgyptMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(GI@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(EgyptMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(GI@CurrentLevel)"
+				],
 				"Name": "Adventure 450",
 				"StageModule": "RTID(EgyptStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "GI" ],
+		},
+		{
+			"aliases": [
+				"GI"
+			],
 			"objclass": "InitialGridItemProperties",
 			"objdata": {
-				"InitialGridItemPlacements": [ {
+				"InitialGridItemPlacements": [
+					{
 						"GridX": 0,
 						"GridY": 2,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 0,
 						"GridY": 3,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 0,
 						"GridY": 4,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 1,
 						"GridY": 2,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 1,
 						"GridY": 3,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 1,
 						"GridY": 4,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 2,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 3,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 4,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 6,
 						"GridY": 0,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 6,
 						"GridY": 1,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 6,
 						"GridY": 2,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 0,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 1,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 2,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 0,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 1,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 2,
 						"TypeName": "gravestone_egypt"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 5,
@@ -111,28 +153,179 @@
 				"StartingPoints": 15,
 				"PointIncrementPerWave": 13,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(ra@ZombieTypes)", "RTID(mummy_armor1@ZombieTypes)", "RTID(pharaoh@ZombieTypes)", "RTID(lostcity_relichunter@ZombieTypes)", "RTID(egypt_gargantuar@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(ra@ZombieTypes)",
+					"RTID(mummy_armor1@ZombieTypes)",
+					"RTID(pharaoh@ZombieTypes)",
+					"RTID(lostcity_relichunter@ZombieTypes)",
+					"RTID(egypt_gargantuar@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)", "RTID(SS1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)", "RTID(SS3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS4@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)", "RTID(SS1@CurrentLevel)", "RTID(SS1@CurrentLevel)", "RTID(SS3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS3@CurrentLevel)", "RTID(SS4@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)", "RTID(SS4@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)", "RTID(SS3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)", "RTID(SS3@CurrentLevel)", "RTID(SS4@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS4@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS3@CurrentLevel)",
+						"RTID(SS4@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)",
+						"RTID(SS4@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)",
+						"RTID(SS3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)",
+						"RTID(SS3@CurrentLevel)",
+						"RTID(SS4@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		}, {
-			"aliases": [ "SS1" ],
+		},
+		{
+			"aliases": [
+				"SS1"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 6,
@@ -140,14 +333,20 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 1,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(ra@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(ra@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SS2" ],
+		},
+		{
+			"aliases": [
+				"SS2"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 6,
@@ -155,14 +354,20 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 1,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(mummy_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(mummy_armor1@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SS3" ],
+		},
+		{
+			"aliases": [
+				"SS3"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 7,
@@ -170,12 +375,17 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 1.5,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(pharaoh@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SS4" ],
+		},
+		{
+			"aliases": [
+				"SS4"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 6,
@@ -183,10 +393,13 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 1.5,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(egypt_gargantuar@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

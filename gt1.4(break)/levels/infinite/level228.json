@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv228",
-	"objects": [ {
+	"#comment": "lv228",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,75 +9,114 @@
 				"StartingSun": 50,
 				"LevelNumber": 228,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(EgyptMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(GI@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(EgyptMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(GI@CurrentLevel)"
+				],
 				"Name": "Adventure 228",
 				"StageModule": "RTID(EgyptStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "GI" ],
+		},
+		{
+			"aliases": [
+				"GI"
+			],
 			"objclass": "InitialGridItemProperties",
 			"objdata": {
-				"InitialGridItemPlacements": [ {
+				"InitialGridItemPlacements": [
+					{
 						"GridX": 5,
 						"GridY": 3,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 5,
 						"GridY": 4,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 6,
 						"GridY": 0,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 6,
 						"GridY": 3,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 0,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 1,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 2,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 7,
 						"GridY": 4,
 						"TypeName": "gravestone_egypt"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 4,
 						"TypeName": "gravestone_egypt"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [ {
+				"PresetPlantList": [
+					{
 						"PlantType": "sunflower"
-					}, {
+					},
+					{
 						"PlantType": "goldleaf"
-					}, {
+					},
+					{
 						"PlantType": "ultomato"
-					}, {
+					},
+					{
 						"PlantType": "zoybeanpod"
-					}, {
+					},
+					{
 						"PlantType": "potatomine"
-					}, {
+					},
+					{
 						"PlantType": "wintermint"
-					} ],
+					}
+				],
 				"SelectionMethod": "preset"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -86,27 +125,48 @@
 				"StartingPoints": 10,
 				"PointIncrementPerWave": 10,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(mummy@ZombieTypes)", "RTID(pharaoh@ZombieTypes)", "RTID(explorer@ZombieTypes)", "RTID(tomb_raiser@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(mummy@ZombieTypes)",
+					"RTID(pharaoh@ZombieTypes)",
+					"RTID(explorer@ZombieTypes)",
+					"RTID(tomb_raiser@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

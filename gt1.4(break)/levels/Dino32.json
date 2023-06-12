@@ -1,6 +1,7 @@
 {
 	"#comment": "Dino Zomboss",
-	"objects": [ {
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"CompletionAchievement": "meteor_right",
@@ -10,11 +11,20 @@
 				"FirstRewardParam": "worldtrophy_dino",
 				"FirstRewardType": "worldtrophy",
 				"ForceToWorldMap": true,
-				"GameFeaturesToUnlock": [ "world_trophy_dino" ],
+				"GameFeaturesToUnlock": [
+					"world_trophy_dino"
+				],
 				"LevelNumber": 32,
 				"LoadDefaultMusic": false,
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(ZombossIntro@LevelModules)", "RTID(DinoMowers@LevelModules)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(ZombossBattle@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)",
+					"RTID(DinoMowers@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(ZombossBattle@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "[DINO_LEVEL_NAME]",
 				"NormalPresentTable": "egypt_normal_01",
@@ -23,66 +33,86 @@
 				"StageModule": "RTID(DinoStage@LevelModules)",
 				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 3,
 						"MaxPackets": 0
-					}, {
+					},
+					{
 						"Delay": 4,
 						"MaxPackets": 2
-					}, {
+					},
+					{
 						"Delay": 6,
 						"MaxPackets": 4
-					}, {
+					},
+					{
 						"Delay": 9,
 						"MaxPackets": 8
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"MaxCount": 5,
 						"MaxWeightFactor": 0,
 						"MinCount": 1,
 						"MinWeightFactor": 2,
 						"PlantType": "bonkchoy",
 						"Weight": 15
-					}, {
+					},
+					{
 						"MaxCount": 1,
 						"MaxCountCooldownSeconds": 20,
 						"MaxWeightFactor": 1,
 						"PlantType": "chardguard",
 						"Weight": 5
-					}, {
+					},
+					{
 						"MaxCount": 1,
 						"MaxCountCooldownSeconds": 20,
 						"MaxWeightFactor": 0,
 						"PlantType": "perfumeshroom",
 						"Weight": 3
-					}, {
+					},
+					{
 						"MinCount": 2,
 						"MinWeightFactor": 2,
 						"PlantType": "primalpeashooter",
 						"Weight": 30
-					}, {
+					},
+					{
 						"MaxCount": 1,
 						"MaxCountCooldownSeconds": 25,
 						"MaxWeightFactor": 0,
 						"PlantType": "primalpotatomine",
 						"Weight": 5
-					}, {
+					},
+					{
 						"MaxCount": 3,
 						"MaxWeightFactor": 0.6,
 						"PlantType": "primalwallnut",
 						"Weight": 5
-					} ],
-				"SpeedConditions": [ {
+					}
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 100
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ZombossBattle" ],
+		},
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
 			"objclass": "ZombossBattleModuleProperties",
 			"objdata": {
 				"ReservedColumnCount": 3,
@@ -94,18 +124,26 @@
 					"mY": 4
 				}
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
-				"Waves": []
+				"Waves": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

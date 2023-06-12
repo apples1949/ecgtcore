@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv69",
-	"objects": [ {
+	"#comment": "lv69",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,67 +9,105 @@
 				"StartingSun": 50,
 				"LevelNumber": 69,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(FutureMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(IPP@CurrentLevel)", "RTID(ProtectThePlant@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(FutureMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(IPP@CurrentLevel)",
+					"RTID(ProtectThePlant@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_B",
 				"Name": "Adventure 69",
 				"StageModule": "RTID(FutureStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "IPP" ],
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
 			"objclass": "InitialPlantProperties",
 			"objdata": {
-				"InitialPlantPlacements": [ {
+				"InitialPlantPlacements": [
+					{
 						"GridX": 3,
 						"GridY": 2,
 						"TypeName": "powerlily"
-					}, {
+					},
+					{
 						"GridX": 5,
 						"GridY": 2,
 						"TypeName": "powerlily"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 2,
 						"TypeName": "powerlily"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ProtectThePlant" ],
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
 			"objclass": "ProtectThePlantChallengeProperties",
 			"objdata": {
 				"MustProtectCount": 5,
-				"Plants": [ {
+				"Plants": [
+					{
 						"GridX": 0,
 						"GridY": 0,
 						"PlantType": "sunshroom"
-					}, {
+					},
+					{
 						"GridX": 0,
 						"GridY": 1,
 						"PlantType": "sunshroom"
-					}, {
+					},
+					{
 						"GridX": 0,
 						"GridY": 2,
 						"PlantType": "sunshroom"
-					}, {
+					},
+					{
 						"GridX": 0,
 						"GridY": 3,
 						"PlantType": "sunshroom"
-					}, {
+					},
+					{
 						"GridX": 0,
 						"GridY": 4,
 						"PlantType": "sunshroom"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [ "springbean" ],
+				"PlantBlackList": [
+					"springbean"
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 1,
@@ -78,27 +116,46 @@
 				"StartingPoints": 150,
 				"PointIncrementPerWave": 4,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(mech_cone@ZombieTypes)", "RTID(disco_mech@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(mech_cone@ZombieTypes)",
+					"RTID(disco_mech@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

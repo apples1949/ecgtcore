@@ -1,6 +1,7 @@
 {
 	"#comment": "Tutorial Mines (#4)",
-	"objects": [ {
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "[PLAYERS_HOUSE]",
@@ -9,96 +10,140 @@
 				"ForceNextLevel": "tutorial4",
 				"LevelNumber": 4,
 				"Loot": "RTID(NoLoot@LevelModules)",
-				"Modules": [ "RTID(TutorialIntro@CurrentLevel)", "RTID(FastSunDropper@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(TutorialPeashooterDeath@LevelModules)", "RTID(TutorialMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(NewWaves@CurrentLevel)", "RTID(FrozenPlantPlacement@CurrentLevel)", "RTID(SeedPacketHalfTimeModule@LevelModules)" ],
+				"Modules": [
+					"RTID(TutorialIntro@CurrentLevel)",
+					"RTID(FastSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(TutorialPeashooterDeath@LevelModules)",
+					"RTID(TutorialMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(FrozenPlantPlacement@CurrentLevel)",
+					"RTID(SeedPacketHalfTimeModule@LevelModules)"
+				],
 				"Name": "[TUTORIAL_LEVEL_NAME]",
 				"ReplayRewardParam": "endlevelreward",
 				"ReplayRewardType": "collectable",
 				"StartingSun": 100,
-				"ResourceGroupNames": [ "SodRollGroup" ],
+				"ResourceGroupNames": [
+					"SodRollGroup"
+				],
 				"StageModule": "RTID(TutorialStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [ {
+				"PresetPlantList": [
+					{
 						"Level": -1,
 						"PlantType": "peashooter"
-					}, {
+					},
+					{
 						"Level": -1,
 						"PlantType": "sunflower"
-					}, {
+					},
+					{
 						"Level": -1,
 						"PlantType": "wallnut"
-					}, {
+					},
+					{
 						"Level": -1,
 						"PlantType": "potatomine"
-					} ],
+					}
+				],
 				"SelectionMethod": "preset"
 			}
-		}, {
-			"aliases": [ "FrozenPlantPlacement" ],
+		},
+		{
+			"aliases": [
+				"FrozenPlantPlacement"
+			],
 			"objclass": "InitialPlantProperties",
 			"objdata": {
-				"InitialPlantPlacements": [ {
+				"InitialPlantPlacements": [
+					{
 						"GridX": 4,
 						"GridY": 1,
 						"Level": "-1",
 						"TypeName": "potatomine"
-					}, {
+					},
+					{
 						"GridX": 5,
 						"GridY": 1,
 						"Level": "-1",
 						"TypeName": "potatomine"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 1,
 						"Level": "-1",
 						"TypeName": "potatomine"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 2,
 						"Level": "-1",
 						"TypeName": "potatomine"
-					}, {
+					},
+					{
 						"GridX": 5,
 						"GridY": 2,
 						"Level": "-1",
 						"TypeName": "potatomine"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 2,
 						"Level": "-1",
 						"TypeName": "potatomine"
-					}, {
+					},
+					{
 						"GridX": 4,
 						"GridY": 3,
 						"Level": "-1",
 						"TypeName": "potatomine"
-					}, {
+					},
+					{
 						"GridX": 5,
 						"GridY": 3,
 						"Level": "-1",
 						"TypeName": "potatomine"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 3,
 						"Level": "-1",
 						"TypeName": "potatomine"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "TutorialIntro" ],
+		},
+		{
+			"aliases": [
+				"TutorialIntro"
+			],
 			"objclass": "TutorialLevelMinesProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "NewWaves" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"FlagWaveInterval": 6,
@@ -107,54 +152,86 @@
 				"WaveCount": 6,
 				"WaveSpendingPointIncrement": 10,
 				"WaveSpendingPoints": 100,
-				"Waves": [ [ "RTID(Wave1@CurrentLevel)" ], [ "RTID(Wave2@CurrentLevel)" ], [ "RTID(Wave3@CurrentLevel)" ] ],
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					]
+				],
 				"ZombieCountdownFirstWaveSecs": 2
 			}
-		}, {
-			"aliases": [ "Wave1" ],
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "2",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave2" ],
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(tutorial_armor2@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave3" ],
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "4",
 						"Type": "RTID(tutorial_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "2",
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

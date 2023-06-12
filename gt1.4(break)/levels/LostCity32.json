@@ -1,6 +1,7 @@
 {
 	"#comment": "SandboxLostCity",
-	"objects": [ {
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"CompletionAchievement": "lost_and_found",
@@ -10,11 +11,20 @@
 				"FirstRewardParam": "worldtrophy_lostcity",
 				"FirstRewardType": "worldtrophy",
 				"ForceToWorldMap": true,
-				"GameFeaturesToUnlock": [ "world_trophy_lostcity" ],
+				"GameFeaturesToUnlock": [
+					"world_trophy_lostcity"
+				],
 				"LevelNumber": 32,
 				"LoadDefaultMusic": false,
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(ZombossIntro@LevelModules)", "RTID(ZombossBattle@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(BoulderTraps@CurrentLevel)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)",
+					"RTID(ZombossBattle@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(BoulderTraps@CurrentLevel)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "[LOSTCITY_LEVEL_NAME]",
 				"NormalPresentTable": "egypt_normal_01",
@@ -23,46 +33,61 @@
 				"StageModule": "RTID(LostCityStage@LevelModules)",
 				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)"
 			}
-		}, {
-			"aliases": [ "BoulderTraps" ],
+		},
+		{
+			"aliases": [
+				"BoulderTraps"
+			],
 			"objclass": "InitialGridItemProperties",
 			"objdata": {
-				"InitialGridItemPlacements": [ {
+				"InitialGridItemPlacements": [
+					{
 						"GridX": 0,
 						"GridY": 0,
 						"TypeName": "zomboss_boulder_trap_falling_forward"
-					}, {
+					},
+					{
 						"GridX": 0,
 						"GridY": 4,
 						"TypeName": "zomboss_boulder_trap_falling_forward"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 2,
 						"TypeName": "zomboss_boulder_trap_falling_forward"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 0,
 						"TypeName": "flame_spreader_trap"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 1,
 						"TypeName": "flame_spreader_trap"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 2,
 						"TypeName": "flame_spreader_trap"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 3,
 						"TypeName": "flame_spreader_trap"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 4,
 						"TypeName": "flame_spreader_trap"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ZombossBattle" ],
+		},
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
 			"objclass": "ZombossBattleModuleProperties",
 			"objdata": {
 				"ReservedColumnCount": 3,
@@ -74,66 +99,90 @@
 					"mY": 3
 				}
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 4,
 						"MaxPackets": 0
-					}, {
+					},
+					{
 						"Delay": 5,
 						"MaxPackets": 2
-					}, {
+					},
+					{
 						"Delay": 7,
 						"MaxPackets": 4
-					}, {
+					},
+					{
 						"Delay": 9,
 						"MaxPackets": 6
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"MinCount": 2,
 						"MinWeightFactor": 3,
 						"PlantType": "akee",
 						"Weight": 40
-					}, {
+					},
+					{
 						"MaxCount": 1,
 						"MaxCountCooldownSeconds": 15,
 						"PlantType": "bonkchoy",
 						"Weight": 30
-					}, {
+					},
+					{
 						"MaxCount": 1,
 						"MaxCountCooldownSeconds": 15,
 						"PlantType": "endurian",
 						"Weight": 30
-					}, {
+					},
+					{
 						"MinCount": 2,
 						"MinWeightFactor": 3,
 						"PlantType": "redstinger",
 						"Weight": 40
-					}, {
+					},
+					{
 						"MaxCount": 1,
 						"MaxCountCooldownSeconds": 20,
 						"PlantType": "stallia",
 						"Weight": 100
-					} ],
-				"SpeedConditions": [ {
+					}
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 100
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
-				"Waves": []
+				"Waves": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

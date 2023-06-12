@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv66",
-	"objects": [ {
+	"#comment": "lv66",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -9,62 +9,91 @@
 				"StartingSun": 50,
 				"LevelNumber": 66,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(FutureMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(PowerTiles@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(FutureMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(PowerTiles@CurrentLevel)"
+				],
 				"Name": "Adventure 66",
 				"StageModule": "RTID(FutureStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "PowerTiles" ],
+		},
+		{
+			"aliases": [
+				"PowerTiles"
+			],
 			"objclass": "PowerTileProperties",
 			"objdata": {
-				"LinkedTiles": [ {
+				"LinkedTiles": [
+					{
 						"Group": "delta",
 						"Location": {
 							"mX": 0,
 							"mY": 0
 						},
 						"PropagationDelay": 1
-					}, {
+					},
+					{
 						"Group": "delta",
 						"Location": {
 							"mX": 1,
 							"mY": 1
 						},
 						"PropagationDelay": 1
-					}, {
+					},
+					{
 						"Group": "delta",
 						"Location": {
 							"mX": 2,
 							"mY": 2
 						},
 						"PropagationDelay": 1
-					}, {
+					},
+					{
 						"Group": "delta",
 						"Location": {
 							"mX": 1,
 							"mY": 3
 						},
 						"PropagationDelay": 1
-					}, {
+					},
+					{
 						"Group": "delta",
 						"Location": {
 							"mX": 0,
 							"mY": 4
 						},
 						"PropagationDelay": 1
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 1,
@@ -73,27 +102,47 @@
 				"StartingPoints": 20,
 				"PointIncrementPerWave": 8,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(future@ZombieTypes)", "RTID(future_armor1@ZombieTypes)", "RTID(future_armor2@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(future@ZombieTypes)",
+					"RTID(future_armor1@ZombieTypes)",
+					"RTID(future_armor2@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

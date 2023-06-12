@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "lv433",
-	"objects": [ {
+	"#comment": "lv433",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s infinity trials",
@@ -10,61 +10,106 @@
 				"LevelNumber": 433,
 				"ZombieLevel": 3,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(BeachMowers@LevelModules)", "RTID(ChallengeModule@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(Tide@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(BeachMowers@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(Tide@CurrentLevel)"
+				],
 				"Name": "Adventure 433",
 				"StageModule": "RTID(BeachStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)", "RTID(SimultaneousPlants@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)",
+						"RTID(SimultaneousPlants@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Survive with 500 starting sun",
 				"DescriptiveName": ""
 			}
-		}, {
-			"aliases": [ "SimultaneousPlants" ],
+		},
+		{
+			"aliases": [
+				"SimultaneousPlants"
+			],
 			"objclass": "StarChallengeSimultaneousPlantsProps",
 			"objdata": {
 				"MaximumPlants": 20
 			}
-		}, {
-			"aliases": [ "Tide" ],
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
 			"objclass": "TideProperties",
 			"objdata": {
 				"StartingWaveLocation": 3
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [ {
+				"PresetPlantList": [
+					{
 						"PlantType": "sunflower"
-					}, {
+					},
+					{
 						"PlantType": "goldleaf"
-					}, {
+					},
+					{
 						"PlantType": "pokra"
-					}, {
+					},
+					{
 						"PlantType": "peppermint"
-					}, {
+					},
+					{
 						"PlantType": "cabbagepult"
-					}, {
+					},
+					{
 						"PlantType": "stunion"
-					}, {
+					},
+					{
 						"PlantType": "enchantmint"
-					} ],
+					}
+				],
 				"SelectionMethod": "preset"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -73,23 +118,115 @@
 				"StartingPoints": 30,
 				"PointIncrementPerWave": 12,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(beach_imp@ZombieTypes)", "RTID(beach_armor1@ZombieTypes)", "RTID(beach_fem_armor1@ZombieTypes)", "RTID(beach_octopus@ZombieTypes)", "RTID(beach_snorkel@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(beach_imp@ZombieTypes)",
+					"RTID(beach_armor1@ZombieTypes)",
+					"RTID(beach_fem_armor1@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_snorkel@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(PF@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Tide1@CurrentLevel)", "RTID(LT1@CurrentLevel)" ], [ "RTID(Tide4@CurrentLevel)" ], [ "RTID(PF@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Tide2@CurrentLevel)", "RTID(LT2@CurrentLevel)" ], [ "RTID(PF@CurrentLevel)" ], [ "RTID(Tide4@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Tide3@CurrentLevel)", "RTID(LT3@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Tide1@CurrentLevel)",
+						"RTID(LT1@CurrentLevel)"
+					],
+					[
+						"RTID(Tide4@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Tide2@CurrentLevel)",
+						"RTID(LT2@CurrentLevel)"
+					],
+					[
+						"RTID(PF@CurrentLevel)"
+					],
+					[
+						"RTID(Tide4@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Tide3@CurrentLevel)",
+						"RTID(LT3@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Tide0" ],
+		},
+		{
+			"aliases": [
+				"Tide0"
+			],
 			"objclass": "TidalChangeWaveActionProps",
 			"objdata": {
 				"TidalChange": {
@@ -97,8 +234,11 @@
 					"ChangeType": "absolute"
 				}
 			}
-		}, {
-			"aliases": [ "Tide1" ],
+		},
+		{
+			"aliases": [
+				"Tide1"
+			],
 			"objclass": "TidalChangeWaveActionProps",
 			"objdata": {
 				"TidalChange": {
@@ -106,8 +246,11 @@
 					"ChangeType": "absolute"
 				}
 			}
-		}, {
-			"aliases": [ "Tide2" ],
+		},
+		{
+			"aliases": [
+				"Tide2"
+			],
 			"objclass": "TidalChangeWaveActionProps",
 			"objdata": {
 				"TidalChange": {
@@ -115,8 +258,11 @@
 					"ChangeType": "absolute"
 				}
 			}
-		}, {
-			"aliases": [ "Tide3" ],
+		},
+		{
+			"aliases": [
+				"Tide3"
+			],
 			"objclass": "TidalChangeWaveActionProps",
 			"objdata": {
 				"TidalChange": {
@@ -124,8 +270,11 @@
 					"ChangeType": "absolute"
 				}
 			}
-		}, {
-			"aliases": [ "Tide4" ],
+		},
+		{
+			"aliases": [
+				"Tide4"
+			],
 			"objclass": "TidalChangeWaveActionProps",
 			"objdata": {
 				"TidalChange": {
@@ -133,8 +282,11 @@
 					"ChangeType": "absolute"
 				}
 			}
-		}, {
-			"aliases": [ "Tide5" ],
+		},
+		{
+			"aliases": [
+				"Tide5"
+			],
 			"objclass": "TidalChangeWaveActionProps",
 			"objdata": {
 				"TidalChange": {
@@ -142,8 +294,11 @@
 					"ChangeType": "absolute"
 				}
 			}
-		}, {
-			"aliases": [ "Tide6" ],
+		},
+		{
+			"aliases": [
+				"Tide6"
+			],
 			"objclass": "TidalChangeWaveActionProps",
 			"objdata": {
 				"TidalChange": {
@@ -151,8 +306,11 @@
 					"ChangeType": "absolute"
 				}
 			}
-		}, {
-			"aliases": [ "Tide7" ],
+		},
+		{
+			"aliases": [
+				"Tide7"
+			],
 			"objclass": "TidalChangeWaveActionProps",
 			"objdata": {
 				"TidalChange": {
@@ -160,8 +318,11 @@
 					"ChangeType": "absolute"
 				}
 			}
-		}, {
-			"aliases": [ "Tide8" ],
+		},
+		{
+			"aliases": [
+				"Tide8"
+			],
 			"objclass": "TidalChangeWaveActionProps",
 			"objdata": {
 				"TidalChange": {
@@ -169,8 +330,11 @@
 					"ChangeType": "absolute"
 				}
 			}
-		}, {
-			"aliases": [ "Tide9" ],
+		},
+		{
+			"aliases": [
+				"Tide9"
+			],
 			"objclass": "TidalChangeWaveActionProps",
 			"objdata": {
 				"TidalChange": {
@@ -178,8 +342,11 @@
 					"ChangeType": "absolute"
 				}
 			}
-		}, {
-			"aliases": [ "LT1" ],
+		},
+		{
+			"aliases": [
+				"LT1"
+			],
 			"objclass": "BeachStageEventZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 7,
@@ -188,8 +355,11 @@
 				"ZombieCount": 2,
 				"ZombieName": "beach_fem_armor1"
 			}
-		}, {
-			"aliases": [ "LT2" ],
+		},
+		{
+			"aliases": [
+				"LT2"
+			],
 			"objclass": "BeachStageEventZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 7,
@@ -198,8 +368,11 @@
 				"ZombieCount": 8,
 				"ZombieName": "beach_imp"
 			}
-		}, {
-			"aliases": [ "LT3" ],
+		},
+		{
+			"aliases": [
+				"LT3"
+			],
 			"objclass": "BeachStageEventZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 7,
@@ -208,30 +381,46 @@
 				"ZombieCount": 2,
 				"ZombieName": "beach_octopus"
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		}, {
-			"aliases": [ "PF" ],
+		},
+		{
+			"aliases": [
+				"PF"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
 				"AdditionalPlantfood": 1,
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(beach_imp@.)"
-					} ]
+					}
+				]
 			}
-		}, {
+		},
+		{
 			"objclass": "ZombieType",
-			"aliases": [ "beach_imp" ],
+			"aliases": [
+				"beach_imp"
+			],
 			"objdata": {
 				"TypeName": "beach_imp",
 				"ZombieClass": "ZombieImp",
 				"Properties": "RTID(ZombieBeachImpDefault@.)",
-				"ResourceGroups": [ "ZombieBeachImpGroup" ],
-				"AudioGroups": [ "ZombieBeachImpAudio" ],
+				"ResourceGroups": [
+					"ZombieBeachImpGroup"
+				],
+				"AudioGroups": [
+					"ZombieBeachImpAudio"
+				],
 				"AnimRigClass": "ZombieAnimRig_DarkImp",
 				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_IMP_MERMAID",
 				"HomeWorld": "beach",
@@ -240,8 +429,11 @@
 				"IsBasicZombie": true,
 				"HastyOnStart": false
 			}
-		}, {
-			"aliases": [ "ZombieBeachImpDefault" ],
+		},
+		{
+			"aliases": [
+				"ZombieBeachImpDefault"
+			],
 			"objclass": "ZombiePropertySheet",
 			"objdata": {
 				"ArtCenter": {
@@ -280,15 +472,19 @@
 				"SpeedVariance": 0.05,
 				"WavePointCost": 10,
 				"Weight": 150,
-				"ZombieStats": [ {
+				"ZombieStats": [
+					{
 						"Type": "toughness",
 						"Value": "toughness0"
-					}, {
+					},
+					{
 						"Type": "speed",
 						"Value": "speed2"
-					} ],
+					}
+				],
 				"ScoreOverride": 10
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

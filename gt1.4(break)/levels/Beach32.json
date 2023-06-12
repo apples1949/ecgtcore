@@ -1,6 +1,7 @@
 {
 	"#comment": "Beach Zomboss",
-	"objects": [ {
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"CompletionAchievement": "wave_goodbye",
@@ -12,7 +13,16 @@
 				"ForceToWorldMap": true,
 				"LevelNumber": 32,
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(ZombossIntro@LevelModules)", "RTID(BeachMowers@LevelModules)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(ZombossBattle@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(NewWaves@CurrentLevel)", "RTID(LilypadPlacement@CurrentLevel)", "RTID(Tide@CurrentLevel)" ],
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)",
+					"RTID(BeachMowers@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(ZombossBattle@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LilypadPlacement@CurrentLevel)",
+					"RTID(Tide@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "[BEACH_LEVEL_NAME]",
 				"NormalPresentTable": "egypt_normal_01",
@@ -20,35 +30,50 @@
 				"ShinyPresentTable": "egypt_shiny_01",
 				"StageModule": "RTID(BeachStage@LevelModules)",
 				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)",
-				"GameFeaturesToUnlock": [ "world_trophy_beach" ],
+				"GameFeaturesToUnlock": [
+					"world_trophy_beach"
+				],
 				"LoadDefaultMusic": false
 			}
-		}, {
-			"aliases": [ "Tide" ],
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
 			"objclass": "TideProperties",
 			"objdata": {
 				"StartingWaveLocation": 7.0
 			}
-		}, {
-			"aliases": [ "LilypadPlacement" ],
+		},
+		{
+			"aliases": [
+				"LilypadPlacement"
+			],
 			"objclass": "InitialGridItemProperties",
 			"objdata": {
-				"InitialGridItemPlacements": [ {
+				"InitialGridItemPlacements": [
+					{
 						"GridX": 2,
 						"GridY": 0,
 						"TypeName": "lilypad"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 2,
 						"TypeName": "lilypad"
-					}, {
+					},
+					{
 						"GridX": 2,
 						"GridY": 4,
 						"TypeName": "lilypad"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ZombossBattle" ],
+		},
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
 			"objclass": "ZombossBattleModuleProperties",
 			"objdata": {
 				"ReservedColumnCount": 3,
@@ -60,24 +85,33 @@
 					"mY": 3
 				}
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 2,
 						"MaxPackets": 0
-					}, {
+					},
+					{
 						"Delay": 3,
 						"MaxPackets": 2
-					}, {
+					},
+					{
 						"Delay": 5,
 						"MaxPackets": 4
-					}, {
+					},
+					{
 						"Delay": 8,
 						"MaxPackets": 8
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"MaxCount": 6,
 						"ForceBoosted": true,
 						"MaxWeightFactor": 0.0,
@@ -85,57 +119,73 @@
 						"MinWeightFactor": 2.5,
 						"PlantType": "lilypad",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 4,
 						"MaxWeightFactor": 0,
 						"MinCount": 2,
 						"MinWeightFactor": 3,
 						"PlantType": "tanglekelp",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 8,
 						"MaxWeightFactor": 0,
 						"MinCount": 5,
 						"MinWeightFactor": 3,
 						"PlantType": "bowlingbulb",
 						"Weight": 8
-					}, {
+					},
+					{
 						"MaxCount": 10,
 						"MaxWeightFactor": 0.1,
 						"MinCount": 5,
 						"MinWeightFactor": 2,
 						"PlantType": "guacodile",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 5,
 						"MaxWeightFactor": 0,
 						"PlantType": "homingthistle",
 						"Weight": 15
-					}, {
+					},
+					{
 						"MaxCount": 2,
 						"MaxWeightFactor": 0,
 						"MinCount": 1,
 						"MinWeightFactor": 3,
 						"PlantType": "banana",
 						"Weight": 20
-					} ],
-				"SpeedConditions": [ {
+					}
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 100
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
-				"Waves": []
+				"Waves": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

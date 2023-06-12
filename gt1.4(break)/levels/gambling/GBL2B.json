@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Gambling 2B",
-	"objects": [ {
+	"#comment": "Gambling 2B",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Welcome to casino land!",
@@ -10,53 +10,150 @@
 				"DisableRestart": true,
 				"DisablePlantBoosts": true,
 				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)",
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(LevelOfTheDayIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(ModernMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)", "RTID(MoldColonies@CurrentLevel)", "RTID(Tide@CurrentLevel)" ],
+				"Modules": [
+					"RTID(LevelOfTheDayIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(MoldColonies@CurrentLevel)",
+					"RTID(Tide@CurrentLevel)"
+				],
 				"Name": "Risky Island",
 				"StageModule": "RTID(ModernStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Survive with 600 starting sun.\nThere will be Turquoise Skull Zombies storming to the mold tiles at flag waves!",
 				"DescriptiveName": ""
 			}
-		}, {
-			"aliases": [ "MoldColonies" ],
+		},
+		{
+			"aliases": [
+				"MoldColonies"
+			],
 			"objclass": "MoldColonyChallengeProps",
 			"objdata": {
 				"Locations": "RTID(Mold@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "Mold" ],
+		},
+		{
+			"aliases": [
+				"Mold"
+			],
 			"objclass": "BoardGridMapProps",
 			"objdata": {
-				"Values": [ [ 0, 0, 0, 0, 1, 1, 0, 0, 0 ], [ 0, 0, 0, 0, 1, 1, 0, 0, 0 ], [ 0, 0, 0, 0, 1, 1, 0, 0, 0 ], [ 0, 0, 0, 0, 1, 1, 0, 0, 0 ], [ 0, 0, 0, 0, 1, 1, 0, 0, 0 ] ]
+				"Values": [
+					[
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						1,
+						1,
+						0,
+						0,
+						0
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Tide" ],
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
 			"objclass": "TideProperties",
 			"objdata": {
 				"StartingWaveLocation": 1
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelOfTheDayModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -65,23 +162,94 @@
 				"StartingPoints": 50,
 				"PointIncrementPerWave": 26,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(beach_fisherman@ZombieTypes)", "RTID(pharaoh@ZombieTypes)", "RTID(vegan@ZombieTypes)", "RTID(prospector@ZombieTypes)", "RTID(cowboy@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(beach_fisherman@ZombieTypes)",
+					"RTID(pharaoh@ZombieTypes)",
+					"RTID(vegan@ZombieTypes)",
+					"RTID(prospector@ZombieTypes)",
+					"RTID(cowboy@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(SS3@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(SS3@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "SS1" ],
+		},
+		{
+			"aliases": [
+				"SS1"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 6,
@@ -89,16 +257,23 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 1,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SS2" ],
+		},
+		{
+			"aliases": [
+				"SS2"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 6,
@@ -106,20 +281,29 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 1,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SS3" ],
+		},
+		{
+			"aliases": [
+				"SS3"
+			],
 			"objclass": "StormZombieSpawnerProps",
 			"objdata": {
 				"ColumnEnd": 6,
@@ -127,30 +311,44 @@
 				"GroupSize": 1,
 				"TimeBetweenGroups": 1,
 				"Type": "sandstorm",
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(lostcity_crystalskull@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

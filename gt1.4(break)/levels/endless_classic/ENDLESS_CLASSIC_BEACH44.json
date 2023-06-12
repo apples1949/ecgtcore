@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Beach Danger Room",
-	"objects": [ {
+	"#comment": "Beach Danger Room",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Endless Zone!",
@@ -12,48 +12,106 @@
 				"SuppressPlantfoodPurchase": true,
 				"SuppressAwardScreen": true,
 				"Loot": "RTID(DangerRoomLoot@LevelModules)",
-				"Modules": [ "RTID(DangerRoomIntro@CurrentLevel)", "RTID(DangerRoomModule@CurrentLevel)", "RTID(BeachMowers@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(NewWaves@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(Tide@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(BeachMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(Tide@CurrentLevel)"
+				],
 				"Name": "Classic - Level {LEVEL_NUMBER}",
 				"StageModule": "RTID(BeachStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "Tide" ],
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
 			"objclass": "TideProperties",
-			"objdata": {}
-		}, {
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "WaveManagerModuleProperties",
-			"aliases": [ "NewWaves" ],
-			"objdata": {}
-		}, {
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "DangerRoomModuleProperties",
-			"aliases": [ "DangerRoomModule" ],
+			"aliases": [
+				"DangerRoomModule"
+			],
 			"objdata": {
 				"WorldSpecificProperties": "RTID(ClassicDangerRoomProps@PropertySheets)",
-				"LevelDesigners": [ "RTID(BeachDangerRoomWaveGenerator@CurrentLevel)", "RTID(BeachTideChanger@CurrentLevel)", "RTID(BeachLilypadPlacer@CurrentLevel)" ]
+				"LevelDesigners": [
+					"RTID(BeachDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(BeachTideChanger@CurrentLevel)",
+					"RTID(BeachLilypadPlacer@CurrentLevel)"
+				]
 			}
-		}, {
-			"aliases": [ "DangerRoomIntro" ],
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
 			"objclass": "DangerRoomLevelIntroProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "SeedBank" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [],
+				"PlantBlackList": [
+				],
 				"SelectionMethod": "chooser",
 				"AlwaysUseChooser": true
 			}
-		}, {
-			"aliases": [ "BeachDangerRoomWaveGenerator" ],
+		},
+		{
+			"aliases": [
+				"BeachDangerRoomWaveGenerator"
+			],
 			"objclass": "DangerRoomJitteredWaveGenerator",
 			"objdata": {
 				"StartingPoints": 10,
 				"BasePointIncrementPerWave": 5,
 				"BasePointIncrementPerLevel": 1,
-				"ZombiePool": [ "RTID(beach_armor1@ZombieTypes)", "RTID(beach_armor2@ZombieTypes)", "RTID(beach@ZombieTypes)", "RTID(beach_fem_armor1@ZombieTypes)", "RTID(beach_fem_armor2@ZombieTypes)", "RTID(beach_fem@ZombieTypes)", "RTID(beach_gargantuar@ZombieTypes)", "RTID(beach_imp@ZombieTypes)", "RTID(beach_snorkel@ZombieTypes)", "RTID(beach_octopus@ZombieTypes)", "RTID(beach_surfer@ZombieTypes)", "RTID(beach_fisherman@ZombieTypes)", "RTID(iceage_hunter@ZombieTypes)", "RTID(iceage_troglobite@ZombieTypes)", "RTID(iceage_weaselhoarder@ZombieTypes)", "RTID(modern_football@ZombieTypes)", "RTID(modern_balloon@ZombieTypes)", "RTID(eighties_boombox@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(beach_armor1@ZombieTypes)",
+					"RTID(beach_armor2@ZombieTypes)",
+					"RTID(beach@ZombieTypes)",
+					"RTID(beach_fem_armor1@ZombieTypes)",
+					"RTID(beach_fem_armor2@ZombieTypes)",
+					"RTID(beach_fem@ZombieTypes)",
+					"RTID(beach_gargantuar@ZombieTypes)",
+					"RTID(beach_imp@ZombieTypes)",
+					"RTID(beach_snorkel@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)",
+					"RTID(beach_fisherman@ZombieTypes)",
+					"RTID(iceage_hunter@ZombieTypes)",
+					"RTID(iceage_troglobite@ZombieTypes)",
+					"RTID(iceage_weaselhoarder@ZombieTypes)",
+					"RTID(modern_football@ZombieTypes)",
+					"RTID(modern_balloon@ZombieTypes)",
+					"RTID(eighties_boombox@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "BeachTideChanger" ],
+		},
+		{
+			"aliases": [
+				"BeachTideChanger"
+			],
 			"objclass": "DangerRoomBeachTideChanger",
 			"objdata": {
 				"//": "Number of Low Tides",
@@ -143,8 +201,11 @@
 					}
 				}
 			}
-		}, {
-			"aliases": [ "BeachTideChanger2" ],
+		},
+		{
+			"aliases": [
+				"BeachTideChanger2"
+			],
 			"objclass": "DangerRoomBeachTideChanger",
 			"objdata": {
 				"StartingTideLevel": {
@@ -265,7 +326,10 @@
 						}
 					}
 				},
-				"SpecialLowTideZombieTypes": [ "beach_octopus", "beach_snorkel" ],
+				"SpecialLowTideZombieTypes": [
+					"beach_octopus",
+					"beach_snorkel"
+				],
 				"SpecialLowTideZombiesPerLowTideEvent": {
 					"LowerBound": {
 						"YIntercept": 0
@@ -283,8 +347,11 @@
 					}
 				}
 			}
-		}, {
-			"aliases": [ "BeachLilypadPlacer" ],
+		},
+		{
+			"aliases": [
+				"BeachLilypadPlacer"
+			],
 			"objclass": "DangerRoomBeachLilypadPlacer",
 			"objdata": {
 				"NumberOfLilypads": {
@@ -312,6 +379,7 @@
 					}
 				}
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

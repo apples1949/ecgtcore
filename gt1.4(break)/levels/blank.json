@@ -1,6 +1,7 @@
 {
 	"#comment": "Gate",
-	"objects": [ {
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"LevelPowerupSet": "LevelPowerupsDisabled",
@@ -8,30 +9,47 @@
 				"DisableRestart": true,
 				"DisableSaveGame": true,
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"Name": "What are you doing here? Go play some other levels!",
 				"FirstRewardType": "none",
 				"ReplayRewardType": "none",
 				"StageModule": "RTID(ModernStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [ {
+				"PresetPlantList": [
+					{
 						"PlantType": "gravebuster",
 						"Level": -1
-					} ],
+					}
+				],
 				"SelectionMethod": "preset"
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"ZombieCountdownFirstWaveSecs": 0,
@@ -40,35 +58,53 @@
 				"SuppressFlagZombie": true,
 				"FlagWaveInterval": 1,
 				"WaveCount": 1,
-				"Waves": [ [ "RTID(Wave1@.)" ] ]
+				"Waves": [
+					[
+						"RTID(Wave1@.)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Wave1" ],
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
 			"objclass": "SpawnZombiesFromGroundSpawnerProps",
 			"objdata": {
 				"ColumnStart": 8,
 				"ColumnEnd": 9,
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@.)"
-					} ]
+					}
+				]
 			}
-		}, {
+		},
+		{
 			"objclass": "ZombieType",
-			"aliases": [ "tutorial" ],
+			"aliases": [
+				"tutorial"
+			],
 			"objdata": {
 				"TypeName": "tutorial",
 				"ZombieClass": "ZombieBasic",
 				"Properties": "RTID(ZombieTutorialDefault@.)",
-				"ResourceGroups": [ "ZombieTutorialGroup" ],
-				"AudioGroups": [],
+				"ResourceGroups": [
+					"ZombieTutorialGroup"
+				],
+				"AudioGroups": [
+				],
 				"AnimRigClass": "ZombieAnimRig_Tutorial",
 				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL",
 				"HomeWorld": "modern",
 				"IsBasicZombie": true
 			}
-		}, {
-			"aliases": [ "ZombieTutorialDefault" ],
+		},
+		{
+			"aliases": [
+				"ZombieTutorialDefault"
+			],
 			"objclass": "ZombiePropertySheet",
 			"objdata": {
 				"ArtCenter": {
@@ -98,6 +134,7 @@
 				},
 				"Speed": 0
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Egypt Danger Room",
-	"objects": [ {
+	"#comment": "Egypt Danger Room",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Endless Zone!",
@@ -12,52 +12,106 @@
 				"SuppressPlantfoodPurchase": true,
 				"SuppressAwardScreen": true,
 				"Loot": "RTID(DangerRoomLoot@LevelModules)",
-				"Modules": [ "RTID(DangerRoomIntro@CurrentLevel)", "RTID(DangerRoomModule@CurrentLevel)", "RTID(EgyptMowers@LevelModules)", "RTID(NewWaves@CurrentLevel)", "RTID(Gravestones@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)" ],
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(EgyptMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(Gravestones@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
 				"Name": "Classic Night - Level {LEVEL_NUMBER}",
 				"StageModule": "RTID(EgyptStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "WaveManagerModuleProperties",
-			"aliases": [ "NewWaves" ],
-			"objdata": {}
-		}, {
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "DangerRoomModuleProperties",
-			"aliases": [ "DangerRoomModule" ],
+			"aliases": [
+				"DangerRoomModule"
+			],
 			"objdata": {
 				"WorldSpecificProperties": "RTID(ClassicNightDangerRoomProps@PropertySheets)",
-				"LevelDesigners": [ "RTID(EgyptDangerRoomWaveGenerator@CurrentLevel)", "RTID(EgyptGravestoneGenerator@CurrentLevel)" ]
+				"LevelDesigners": [
+					"RTID(EgyptDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(EgyptGravestoneGenerator@CurrentLevel)"
+				]
 			}
-		}, {
-			"aliases": [ "DangerRoomIntro" ],
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
 			"objclass": "DangerRoomLevelIntroProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "Gravestones" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"Gravestones"
+			],
 			"objclass": "GravestoneProperties",
 			"objdata": {
 				"GravestoneCount": 0,
 				"SpawnColumnEnd": 0,
 				"SpawnColumnStart": 0
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [],
+				"PlantBlackList": [
+				],
 				"SelectionMethod": "chooser",
 				"AlwaysUseChooser": true
 			}
-		}, {
-			"aliases": [ "EgyptDangerRoomWaveGenerator" ],
+		},
+		{
+			"aliases": [
+				"EgyptDangerRoomWaveGenerator"
+			],
 			"objclass": "DangerRoomJitteredWaveGenerator",
 			"objdata": {
 				"StartingPoints": 12,
 				"BasePointIncrementPerWave": 3,
 				"BasePointIncrementPerLevel": 1,
-				"ZombiePool": [ "RTID(mummy_armor1@ZombieTypes)", "RTID(mummy_armor2@ZombieTypes)", "RTID(mummy@ZombieTypes)", "RTID(mummy_armor4@ZombieTypes)", "RTID(egypt_gargantuar@ZombieTypes)", "RTID(egypt_imp@ZombieTypes)", "RTID(ra@ZombieTypes)", "RTID(camel_onehump@ZombieTypes)", "RTID(tomb_raiser@ZombieTypes)", "RTID(pharaoh@ZombieTypes)", "RTID(explorer@ZombieTypes)", "RTID(explorer_veteran@ZombieTypes)", "RTID(iceage_hunter@ZombieTypes)", "RTID(iceage_troglobite@ZombieTypes)", "RTID(iceage_weaselhoarder@ZombieTypes)", "RTID(beach_octopus@ZombieTypes)", "RTID(beach_surfer@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(mummy_armor1@ZombieTypes)",
+					"RTID(mummy_armor2@ZombieTypes)",
+					"RTID(mummy@ZombieTypes)",
+					"RTID(mummy_armor4@ZombieTypes)",
+					"RTID(egypt_gargantuar@ZombieTypes)",
+					"RTID(egypt_imp@ZombieTypes)",
+					"RTID(ra@ZombieTypes)",
+					"RTID(camel_onehump@ZombieTypes)",
+					"RTID(tomb_raiser@ZombieTypes)",
+					"RTID(pharaoh@ZombieTypes)",
+					"RTID(explorer@ZombieTypes)",
+					"RTID(explorer_veteran@ZombieTypes)",
+					"RTID(iceage_hunter@ZombieTypes)",
+					"RTID(iceage_troglobite@ZombieTypes)",
+					"RTID(iceage_weaselhoarder@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "EgyptGravestoneGenerator" ],
+		},
+		{
+			"aliases": [
+				"EgyptGravestoneGenerator"
+			],
 			"objclass": "DangerRoomGravestoneGenerator",
 			"objdata": {
 				"MinGravestoneCount": 3,
@@ -70,8 +124,11 @@
 				"MaxEndingGravestoneSpawnCol": 9,
 				"MaxEndingGravestoneSpawnColOffsetPerLevel": 0.0
 			}
-		}, {
-			"aliases": [ "EgyptSandstormGenerator" ],
+		},
+		{
+			"aliases": [
+				"EgyptSandstormGenerator"
+			],
 			"objclass": "DangerRoomSandstormDesigner",
 			"objdata": {
 				"BaseSandstormCount": 0,
@@ -90,6 +147,7 @@
 				"MaxEndingSandstormSpawnColOffsetPerLevel": -0.1,
 				"BaseSandstormStartWave": 8
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

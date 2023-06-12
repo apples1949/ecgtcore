@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Pirate Danger Room",
-	"objects": [ {
+	"#comment": "Pirate Danger Room",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Endless Zone!",
@@ -11,62 +11,147 @@
 				"LevelPowerupSet": "LevelPowerupsDisabled",
 				"SuppressPlantfoodPurchase": true,
 				"SuppressAwardScreen": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DangerRoomLoot@LevelModules)",
-				"Modules": [ "RTID(DangerRoomIntro@CurrentLevel)", "RTID(DangerRoomModule@CurrentLevel)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(PirateMowers@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(NewWaves@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(Tide@CurrentLevel)", "RTID(PiratePlanks@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(PirateMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(Tide@CurrentLevel)",
+					"RTID(PiratePlanks@CurrentLevel)"
+				],
 				"Name": "High Tide - Level {LEVEL_NUMBER}",
 				"StageModule": "RTID(PirateStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "Tide" ],
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
 			"objclass": "TideProperties",
-			"objdata": {}
-		}, {
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "WaveManagerModuleProperties",
-			"aliases": [ "NewWaves" ],
-			"objdata": {}
-		}, {
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "DangerRoomModuleProperties",
-			"aliases": [ "DangerRoomModule" ],
+			"aliases": [
+				"DangerRoomModule"
+			],
 			"objdata": {
 				"WorldSpecificProperties": "RTID(FloodedLawnDangerRoomProps@PropertySheets)",
-				"LevelDesigners": [ "RTID(PirateDangerRoomWaveGenerator@CurrentLevel)", "RTID(PlankDesigner@CurrentLevel)", "RTID(BeachTideChanger@CurrentLevel)", "RTID(BeachLilypadPlacer@CurrentLevel)" ]
+				"LevelDesigners": [
+					"RTID(PirateDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(PlankDesigner@CurrentLevel)",
+					"RTID(BeachTideChanger@CurrentLevel)",
+					"RTID(BeachLilypadPlacer@CurrentLevel)"
+				]
 			}
-		}, {
-			"aliases": [ "DangerRoomIntro" ],
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
 			"objclass": "DangerRoomLevelIntroProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "PiratePlanks" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"PiratePlanks"
+			],
 			"objclass": "PiratePlankProperties",
 			"objdata": {
-				"PlankRows": [ 0, 1 ]
+				"PlankRows": [
+					0,
+					1
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [],
+				"PlantBlackList": [
+				],
 				"SelectionMethod": "chooser",
 				"AlwaysUseChooser": true
 			}
-		}, {
-			"aliases": [ "PirateDangerRoomWaveGenerator" ],
+		},
+		{
+			"aliases": [
+				"PirateDangerRoomWaveGenerator"
+			],
 			"objclass": "DangerRoomJitteredWaveGenerator",
 			"objdata": {
 				"StartingPoints": 12,
 				"BasePointIncrementPerWave": 4,
 				"BasePointIncrementPerLevel": 1,
-				"ZombiePool": [ "RTID(pirate_armor1@ZombieTypes)", "RTID(pirate_armor2@ZombieTypes)", "RTID(pirate@ZombieTypes)", "RTID(pirate_armor4@ZombieTypes)", "RTID(pirate_gargantuar@ZombieTypes)", "RTID(pirate_imp@ZombieTypes)", "RTID(swashbuckler@ZombieTypes)", "RTID(barrelroller@ZombieTypes)", "RTID(seagull@ZombieTypes)", "RTID(pelican@ZombieTypes)", "RTID(pirate_captain@ZombieTypes)", "RTID(cannon@ZombieTypes)", "RTID(dark_juggler@ZombieTypes)", "RTID(dark_wizard@ZombieTypes)", "RTID(dark_imp_dragon@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(pirate_armor1@ZombieTypes)",
+					"RTID(pirate_armor2@ZombieTypes)",
+					"RTID(pirate@ZombieTypes)",
+					"RTID(pirate_armor4@ZombieTypes)",
+					"RTID(pirate_gargantuar@ZombieTypes)",
+					"RTID(pirate_imp@ZombieTypes)",
+					"RTID(swashbuckler@ZombieTypes)",
+					"RTID(barrelroller@ZombieTypes)",
+					"RTID(seagull@ZombieTypes)",
+					"RTID(pelican@ZombieTypes)",
+					"RTID(pirate_captain@ZombieTypes)",
+					"RTID(cannon@ZombieTypes)",
+					"RTID(dark_juggler@ZombieTypes)",
+					"RTID(dark_wizard@ZombieTypes)",
+					"RTID(dark_imp_dragon@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "PlankDesigner" ],
+		},
+		{
+			"aliases": [
+				"PlankDesigner"
+			],
 			"objclass": "DangerRoomPlankDesigner",
 			"objdata": {
-				"PlankLayouts": [ "11110", "11011", "01111", "11100", "01110", "00111", "10101", "11010", "11001", "01101", "10110", "10011", "01011", "10111", "11101" ]
+				"PlankLayouts": [
+					"11110",
+					"11011",
+					"01111",
+					"11100",
+					"01110",
+					"00111",
+					"10101",
+					"11010",
+					"11001",
+					"01101",
+					"10110",
+					"10011",
+					"01011",
+					"10111",
+					"11101"
+				]
 			}
-		}, {
-			"aliases": [ "RaidingPartyGenerator" ],
+		},
+		{
+			"aliases": [
+				"RaidingPartyGenerator"
+			],
 			"objclass": "DangerRoomRaidingPartyDesigner",
 			"objdata": {
 				"BasePartyCount": 0,
@@ -77,8 +162,11 @@
 				"MaxPartyCount": 10,
 				"BasePartyStartWave": 4
 			}
-		}, {
-			"aliases": [ "BeachTideChanger" ],
+		},
+		{
+			"aliases": [
+				"BeachTideChanger"
+			],
 			"objclass": "DangerRoomBeachTideChanger",
 			"objdata": {
 				"//": "If the value is lower than LowerLimit, use LowerLimit instead. If the value is bigger than UpperLimit, use UpperLimit instead.",
@@ -136,8 +224,11 @@
 					}
 				}
 			}
-		}, {
-			"aliases": [ "BeachLilypadPlacer" ],
+		},
+		{
+			"aliases": [
+				"BeachLilypadPlacer"
+			],
 			"objclass": "DangerRoomBeachLilypadPlacer",
 			"objdata": {
 				"NumberOfLilypads": {
@@ -165,6 +256,7 @@
 					}
 				}
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

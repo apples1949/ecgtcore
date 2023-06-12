@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Event6 lv4B",
-	"objects": [ {
+	"#comment": "Event6 lv4B",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "No hunting! No fishing! No trading!",
@@ -13,108 +13,231 @@
 				"DisablePlantBoosts": true,
 				"SuppressAwardScreen": true,
 				"ForceNextLevel": "event/event0605b",
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(LootOverride@CurrentLevel)", "RTID(JoustModule@CurrentLevel)", "RTID(LevelDifficultyScaling@CurrentLevel)", "RTID(LevelScoring@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)", "RTID(MoldColonies@CurrentLevel)", "RTID(Tide@CurrentLevel)", "RTID(LootOverride@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)",
+					"RTID(JoustModule@CurrentLevel)",
+					"RTID(LevelDifficultyScaling@CurrentLevel)",
+					"RTID(LevelScoring@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(MoldColonies@CurrentLevel)",
+					"RTID(Tide@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)"
+				],
 				"Name": "Event 6 - Level 4B",
 				"LossModule": "RTID(JoustOutro@LevelModules)",
 				"VictoryModule": "RTID(JoustOutro@LevelModules)",
 				"StageModule": "RTID(IceageStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "LootOverrideModuleProperties",
-			"aliases": [ "LootOverride" ],
+			"aliases": [
+				"LootOverride"
+			],
 			"objdata": {
-				"Overrides": [ {
+				"Overrides": [
+					{
 						"ZombieType": "RTID(beach_fisherman@ZombieTypes)",
 						"LootOverride": "GoldCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(iceage_dodo@ZombieTypes)",
 						"LootOverride": "GoldCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(iceage_hunter@ZombieTypes)",
 						"LootOverride": "GoldCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(beach_gargantuar@ZombieTypes)",
 						"LootOverride": "Gem"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Tide" ],
+		},
+		{
+			"aliases": [
+				"Tide"
+			],
 			"objclass": "TideProperties",
 			"objdata": {
 				"StartingWaveLocation": 1
 			}
-		}, {
-			"aliases": [ "LevelDifficultyScaling" ],
+		},
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			],
 			"objclass": "LevelDifficultyScalingModuleProperties",
 			"objdata": {
 				"DifficultyRulesType": "NoLevelingIncrease"
 			}
-		}, {
-			"aliases": [ "LevelScoring" ],
+		},
+		{
+			"aliases": [
+				"LevelScoring"
+			],
 			"objclass": "LevelScoringModuleProperties",
 			"objdata": {
 				"PlantBonusMultiplier": 0.0,
-				"PlantBonuses": [],
+				"PlantBonuses": [
+				],
 				"ScoringRulesType": "NoMultiplier",
 				"StartingPlantfood": 3
 			}
-		}, {
-			"aliases": [ "JoustModule" ],
+		},
+		{
+			"aliases": [
+				"JoustModule"
+			],
 			"objclass": "JoustGameModuleProperties",
 			"objdata": {
 				"TimeLimit": 481
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "MoldColonies" ],
+		},
+		{
+			"aliases": [
+				"MoldColonies"
+			],
 			"objclass": "MoldColonyChallengeProps",
 			"objdata": {
 				"Locations": "RTID(Mold@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "Mold" ],
+		},
+		{
+			"aliases": [
+				"Mold"
+			],
 			"objclass": "BoardGridMapProps",
 			"objdata": {
-				"Values": [ [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 1, 0, 0, 0, 0, 0, 0, 0, 0 ] ]
+				"Values": [
+					[
+						1,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						1,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						1,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						1,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						1,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				]
 			}
-		}, {
-			"aliases": [ "LastStand" ],
+		},
+		{
+			"aliases": [
+				"LastStand"
+			],
 			"objclass": "LastStandMinigameProperties",
 			"objdata": {
 				"StartingPlantfood": 3,
 				"StartingSun": 500
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Survive with 3 starting Plant Foods\nSurvive for 8 minutes without most upgrades",
 				"DescriptiveName": "[STARCHALLENGE_PRESET_PLANTS_NAME]"
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [ {
+				"PresetPlantList": [
+					{
 						"PlantType": "ultomato"
-					}, {
+					},
+					{
 						"PlantType": "solartomato"
-					}, {
+					},
+					{
 						"PlantType": "thymewarp"
-					} ],
+					}
+				],
 				"OverrideSeedSlotsCount": 7,
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 1,
@@ -123,27 +246,50 @@
 				"StartingPoints": 20,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
 				"WavesPerFlag": 25,
-				"ZombiePool": [ "RTID(beach_fisherman@ZombieTypes)", "RTID(iceage_hunter@ZombieTypes)", "RTID(iceage_troglobite@ZombieTypes)", "RTID(iceage_dodo@ZombieTypes)", "RTID(beach_imp@ZombieTypes)", "RTID(beach_gargantuar@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(beach_fisherman@ZombieTypes)",
+					"RTID(iceage_hunter@ZombieTypes)",
+					"RTID(iceage_troglobite@ZombieTypes)",
+					"RTID(iceage_dodo@ZombieTypes)",
+					"RTID(beach_imp@ZombieTypes)",
+					"RTID(beach_gargantuar@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

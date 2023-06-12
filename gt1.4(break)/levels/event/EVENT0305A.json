@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Event3 lv5A",
-	"objects": [ {
+	"#comment": "Event3 lv5A",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Special level practice",
@@ -10,61 +10,99 @@
 				"StartingSun": 300,
 				"LevelNumber": 5,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(IPP@CurrentLevel)", "RTID(ChallengeModule@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(IPP@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
 				"Name": "Event 3 - Level 5A",
 				"StageModule": "RTID(EightiesStage@LevelModules)"
 			}
-		}, {
-			"aliases": [ "IPP" ],
+		},
+		{
+			"aliases": [
+				"IPP"
+			],
 			"objclass": "InitialPlantProperties",
 			"objdata": {
-				"InitialPlantPlacements": [ {
+				"InitialPlantPlacements": [
+					{
 						"GridX": 3,
 						"GridY": 0,
 						"TypeName": "coconutcannon"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 1,
 						"TypeName": "coconutcannon"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 2,
 						"TypeName": "coconutcannon"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 3,
 						"TypeName": "coconutcannon"
-					}, {
+					},
+					{
 						"GridX": 3,
 						"GridY": 4,
 						"TypeName": "coconutcannon"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Survive with 300 starting sun",
 				"DescriptiveName": ""
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 3,
@@ -73,98 +111,230 @@
 				"StartingPoints": 50,
 				"PointIncrementPerWave": 18,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(eighties_imp@ZombieTypes)", "RTID(eighties_armor2@ZombieTypes)", "RTID(eighties_arcade@ZombieTypes)", "RTID(eighties_gargantuar@ZombieTypes)", "RTID(pelican@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(eighties_imp@ZombieTypes)",
+					"RTID(eighties_armor2@ZombieTypes)",
+					"RTID(eighties_arcade@ZombieTypes)",
+					"RTID(eighties_gargantuar@ZombieTypes)",
+					"RTID(pelican@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(JamRap@CurrentLevel)", "RTID(GL1@CurrentLevel)" ], [ "RTID(GL2@CurrentLevel)" ], [ "RTID(GL3@CurrentLevel)" ], [ "RTID(GL4@CurrentLevel)" ], [ "RTID(GL5@CurrentLevel)" ], [ "RTID(GL1@CurrentLevel)" ], [ "RTID(GL2@CurrentLevel)" ], [ "RTID(GL3@CurrentLevel)" ], [ "RTID(GL4@CurrentLevel)" ], [ "RTID(GL5@CurrentLevel)" ], [ "RTID(GL1@CurrentLevel)", "RTID(GL2@CurrentLevel)" ], [ "RTID(GL3@CurrentLevel)", "RTID(GL4@CurrentLevel)" ], [ "RTID(GL5@CurrentLevel)", "RTID(GL1@CurrentLevel)" ], [ "RTID(GL2@CurrentLevel)", "RTID(GL3@CurrentLevel)" ], [ "RTID(GL4@CurrentLevel)", "RTID(GL5@CurrentLevel)" ], [ "RTID(GL1@CurrentLevel)", "RTID(GL2@CurrentLevel)", "RTID(GL3@CurrentLevel)" ], [ "RTID(GL4@CurrentLevel)", "RTID(GL5@CurrentLevel)", "RTID(GL1@CurrentLevel)" ], [ "RTID(GL4@CurrentLevel)", "RTID(GL2@CurrentLevel)", "RTID(GL3@CurrentLevel)" ], [ "RTID(GL5@CurrentLevel)", "RTID(GL1@CurrentLevel)", "RTID(GL2@CurrentLevel)" ], [ "RTID(GL3@CurrentLevel)", "RTID(GL4@CurrentLevel)", "RTID(GL5@CurrentLevel)" ], [ "RTID(GL1@CurrentLevel)", "RTID(GL2@CurrentLevel)", "RTID(GL3@CurrentLevel)", "RTID(GL4@CurrentLevel)", "RTID(GL5@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(JamRap@CurrentLevel)",
+						"RTID(GL1@CurrentLevel)"
+					],
+					[
+						"RTID(GL2@CurrentLevel)"
+					],
+					[
+						"RTID(GL3@CurrentLevel)"
+					],
+					[
+						"RTID(GL4@CurrentLevel)"
+					],
+					[
+						"RTID(GL5@CurrentLevel)"
+					],
+					[
+						"RTID(GL1@CurrentLevel)"
+					],
+					[
+						"RTID(GL2@CurrentLevel)"
+					],
+					[
+						"RTID(GL3@CurrentLevel)"
+					],
+					[
+						"RTID(GL4@CurrentLevel)"
+					],
+					[
+						"RTID(GL5@CurrentLevel)"
+					],
+					[
+						"RTID(GL1@CurrentLevel)",
+						"RTID(GL2@CurrentLevel)"
+					],
+					[
+						"RTID(GL3@CurrentLevel)",
+						"RTID(GL4@CurrentLevel)"
+					],
+					[
+						"RTID(GL5@CurrentLevel)",
+						"RTID(GL1@CurrentLevel)"
+					],
+					[
+						"RTID(GL2@CurrentLevel)",
+						"RTID(GL3@CurrentLevel)"
+					],
+					[
+						"RTID(GL4@CurrentLevel)",
+						"RTID(GL5@CurrentLevel)"
+					],
+					[
+						"RTID(GL1@CurrentLevel)",
+						"RTID(GL2@CurrentLevel)",
+						"RTID(GL3@CurrentLevel)"
+					],
+					[
+						"RTID(GL4@CurrentLevel)",
+						"RTID(GL5@CurrentLevel)",
+						"RTID(GL1@CurrentLevel)"
+					],
+					[
+						"RTID(GL4@CurrentLevel)",
+						"RTID(GL2@CurrentLevel)",
+						"RTID(GL3@CurrentLevel)"
+					],
+					[
+						"RTID(GL5@CurrentLevel)",
+						"RTID(GL1@CurrentLevel)",
+						"RTID(GL2@CurrentLevel)"
+					],
+					[
+						"RTID(GL3@CurrentLevel)",
+						"RTID(GL4@CurrentLevel)",
+						"RTID(GL5@CurrentLevel)"
+					],
+					[
+						"RTID(GL1@CurrentLevel)",
+						"RTID(GL2@CurrentLevel)",
+						"RTID(GL3@CurrentLevel)",
+						"RTID(GL4@CurrentLevel)",
+						"RTID(GL5@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "JamRap" ],
+		},
+		{
+			"aliases": [
+				"JamRap"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"NotificationEvents": [ "jam_rap" ]
+				"NotificationEvents": [
+					"jam_rap"
+				]
 			}
-		}, {
-			"aliases": [ "GL1" ],
+		},
+		{
+			"aliases": [
+				"GL1"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
 				"ForcedCondition": {
 					"Condition": "speedup2",
 					"Duration": 10
 				},
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "1",
 						"Type": "RTID(eighties_glitter@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "GL2" ],
+		},
+		{
+			"aliases": [
+				"GL2"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
 				"ForcedCondition": {
 					"Condition": "speedup2",
 					"Duration": 10
 				},
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "2",
 						"Type": "RTID(eighties_glitter@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "GL3" ],
+		},
+		{
+			"aliases": [
+				"GL3"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
 				"ForcedCondition": {
 					"Condition": "speedup2",
 					"Duration": 10
 				},
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "3",
 						"Type": "RTID(eighties_glitter@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "GL4" ],
+		},
+		{
+			"aliases": [
+				"GL4"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
 				"ForcedCondition": {
 					"Condition": "speedup2",
 					"Duration": 10
 				},
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "4",
 						"Type": "RTID(eighties_glitter@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "GL5" ],
+		},
+		{
+			"aliases": [
+				"GL5"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
 				"ForcedCondition": {
 					"Condition": "speedup2",
 					"Duration": 10
 				},
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "5",
 						"Type": "RTID(eighties_glitter@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

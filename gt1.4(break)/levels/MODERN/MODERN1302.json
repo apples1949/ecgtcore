@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "MD-13 - 1 special domainator garg",
-	"objects": [ {
+	"#comment": "MD-13 - 1 special domainator garg",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "{PLAYER}'s grind thousand quests",
@@ -11,59 +11,95 @@
 				"ZombieLevel": 4,
 				"LevelNumber": 13,
 				"DisablePlantBoosts": true,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "DelayLoad_Background_Beach_Compressed" ],
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"DelayLoad_Background_Beach_Compressed"
+				],
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(StandardIntro@LevelModules)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(ModernMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(NewWaves@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(LootOverride@CurrentLevel)", "RTID(GI@CurrentLevel)" ],
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(LootOverride@CurrentLevel)",
+					"RTID(GI@CurrentLevel)"
+				],
 				"Name": "Level 13",
 				"StageModule": "RTID(ModernStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "LootOverrideModuleProperties",
-			"aliases": [ "LootOverride" ],
+			"aliases": [
+				"LootOverride"
+			],
 			"objdata": {
-				"Overrides": [ {
+				"Overrides": [
+					{
 						"ZombieType": "RTID(tutorial_armor1_silver@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					}, {
+					},
+					{
 						"ZombieType": "RTID(tutorial_armor2_silver@ZombieTypes)",
 						"LootOverride": "SilverCoin"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "GI" ],
+		},
+		{
+			"aliases": [
+				"GI"
+			],
 			"objclass": "InitialGridItemProperties",
 			"objdata": {
-				"InitialGridItemPlacements": [ {
+				"InitialGridItemPlacements": [
+					{
 						"GridX": 8,
 						"GridY": 0,
 						"TypeName": "gravestone_tutorial"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 1,
 						"TypeName": "gravestone_tutorial"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 2,
 						"TypeName": "gravestone_tutorial"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 3,
 						"TypeName": "gravestone_tutorial"
-					}, {
+					},
+					{
 						"GridX": 8,
 						"GridY": 4,
 						"TypeName": "gravestone_tutorial"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [],
+				"PresetPlantList": [
+				],
 				"SelectionMethod": "chooser"
 			}
-		}, {
-			"aliases": [ "Escalation" ],
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 4,
@@ -72,114 +108,278 @@
 				"StartingPoints": 25,
 				"PointIncrementPerWave": 13,
 				"WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
-				"ZombiePool": [ "RTID(tutorial_armor1@ZombieTypes)", "RTID(tutorial_armor2@ZombieTypes)", "RTID(modern_balloon@ZombieTypes)", "RTID(tutorial_gargantuar@ZombieTypes)", "RTID(tutorial_armor1_silver@ZombieTypes)", "RTID(tutorial_armor2_silver@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(tutorial_armor1@ZombieTypes)",
+					"RTID(tutorial_armor2@ZombieTypes)",
+					"RTID(modern_balloon@ZombieTypes)",
+					"RTID(tutorial_gargantuar@ZombieTypes)",
+					"RTID(tutorial_armor1_silver@ZombieTypes)",
+					"RTID(tutorial_armor2_silver@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManager" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManager"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"### ZombieCountdownHugeWaveDelay": 0,
 				"WaveSpendingPointIncrement": 0,
 				"WaveSpendingPoints": 0,
-				"Waves": [ [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(GS1@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(GS2@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(DM@CurrentLevel)", "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)", "RTID(GS3@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(Blank@CurrentLevel)" ], [ "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(DM@CurrentLevel)", "RTID(DMMessage@CurrentLevel)" ], [ "RTID(GS4@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(GS1@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(GS2@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)",
+						"RTID(GS3@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(Blank@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(DM@CurrentLevel)",
+						"RTID(DMMessage@CurrentLevel)"
+					],
+					[
+						"RTID(GS4@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "GS1" ],
+		},
+		{
+			"aliases": [
+				"GS1"
+			],
 			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
 			"objdata": {
 				"AdditionalPlantfood": "0",
-				"GridTypes": [ "RTID(gravestone_tutorial@GridItemTypes)" ],
-				"Zombies": [ {
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "GS2" ],
+		},
+		{
+			"aliases": [
+				"GS2"
+			],
 			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
 			"objdata": {
 				"AdditionalPlantfood": "0",
-				"GridTypes": [ "RTID(gravestone_tutorial@GridItemTypes)" ],
-				"Zombies": [ {
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "GS3" ],
+		},
+		{
+			"aliases": [
+				"GS3"
+			],
 			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
 			"objdata": {
 				"AdditionalPlantfood": "0",
-				"GridTypes": [ "RTID(gravestone_tutorial@GridItemTypes)" ],
-				"Zombies": [ {
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor1@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "GS4" ],
+		},
+		{
+			"aliases": [
+				"GS4"
+			],
 			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
 			"objdata": {
 				"AdditionalPlantfood": "0",
-				"GridTypes": [ "RTID(gravestone_tutorial@GridItemTypes)" ],
-				"Zombies": [ {
+				"GridTypes": [
+					"RTID(gravestone_tutorial@GridItemTypes)"
+				],
+				"Zombies": [
+					{
 						"Type": "RTID(tutorial_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor2@ZombieTypes)"
-					}, {
+					},
+					{
 						"Type": "RTID(tutorial_armor2@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "DM" ],
+		},
+		{
+			"aliases": [
+				"DM"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Type": "RTID(boombox_ambush@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "DMMessage" ],
+		},
+		{
+			"aliases": [
+				"DMMessage"
+			],
 			"objclass": "BeachStageEventZombieSpawnerProps",
 			"objdata": {
 				"WaveStartMessage": "Domainator!",
 				"ZombieCount": 0
 			}
-		}, {
-			"aliases": [ "Blank" ],
+		},
+		{
+			"aliases": [
+				"Blank"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": []
+				"Zombies": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

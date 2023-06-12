@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Pirate Danger Room",
-	"objects": [ {
+	"#comment": "Pirate Danger Room",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "Endless Zone!",
@@ -12,13 +12,32 @@
 				"SuppressPlantfoodPurchase": true,
 				"SuppressAwardScreen": true,
 				"Loot": "RTID(DangerRoomLoot@LevelModules)",
-				"Modules": [ "RTID(DangerRoomIntro@CurrentLevel)", "RTID(DangerRoomModule@CurrentLevel)", "RTID(AutoSunDropperBase@CurrentLevel)", "RTID(AutoSunDropper1@CurrentLevel)", "RTID(AutoSunDropper2@CurrentLevel)", "RTID(AutoSunDropper3@CurrentLevel)", "RTID(AutoSunDropper4@CurrentLevel)", "RTID(AutoSunDropper5@CurrentLevel)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(PirateMowers@LevelModules)", "RTID(NewWaves@CurrentLevel)", "RTID(PiratePlanks@CurrentLevel)", "RTID(SeedBank@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ChallengeModule@CurrentLevel)" ],
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(AutoSunDropperBase@CurrentLevel)",
+					"RTID(AutoSunDropper1@CurrentLevel)",
+					"RTID(AutoSunDropper2@CurrentLevel)",
+					"RTID(AutoSunDropper3@CurrentLevel)",
+					"RTID(AutoSunDropper4@CurrentLevel)",
+					"RTID(AutoSunDropper5@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(PirateMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(PiratePlanks@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)"
+				],
 				"Name": "Auto Sun - Level {LEVEL_NUMBER}",
 				"StageModule": "RTID(PirateStage@LevelModules)"
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropperBase" ],
+			"aliases": [
+				"AutoSunDropperBase"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 2,
 				"SunCountdownBase": 6,
@@ -26,9 +45,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 6
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper1" ],
+			"aliases": [
+				"AutoSunDropper1"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 29,
 				"SunCountdownBase": 30,
@@ -36,9 +58,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper2" ],
+			"aliases": [
+				"AutoSunDropper2"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 71,
 				"SunCountdownBase": 30,
@@ -46,9 +71,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper3" ],
+			"aliases": [
+				"AutoSunDropper3"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 143,
 				"SunCountdownBase": 30,
@@ -56,9 +84,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper4" ],
+			"aliases": [
+				"AutoSunDropper4"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 215,
 				"SunCountdownBase": 30,
@@ -66,9 +97,12 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
+		},
+		{
 			"objclass": "SunDropperProperties",
-			"aliases": [ "AutoSunDropper5" ],
+			"aliases": [
+				"AutoSunDropper5"
+			],
 			"objdata": {
 				"InitialSunDropDelay": 317,
 				"SunCountdownBase": 30,
@@ -76,66 +110,143 @@
 				"SunCountdownIncreasePerSun": 0.0,
 				"SunCountdownMax": 30
 			}
-		}, {
-			"aliases": [ "ChallengeModule" ],
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
 			"objclass": "StarChallengeModuleProperties",
 			"objdata": {
-				"Challenges": [ [ "RTID(BeatTheLevel@CurrentLevel)" ] ],
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
 				"ChallengesAlwaysAvailable": true
 			}
-		}, {
-			"aliases": [ "BeatTheLevel" ],
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
 			"objclass": "StarChallengeBeatTheLevelProps",
 			"objdata": {
 				"Description": "Survive with sun given over time",
 				"DescriptiveName": ""
 			}
-		}, {
+		},
+		{
 			"objclass": "WaveManagerModuleProperties",
-			"aliases": [ "NewWaves" ],
-			"objdata": {}
-		}, {
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+			}
+		},
+		{
 			"objclass": "DangerRoomModuleProperties",
-			"aliases": [ "DangerRoomModule" ],
+			"aliases": [
+				"DangerRoomModule"
+			],
 			"objdata": {
 				"WorldSpecificProperties": "RTID(AutoSunDangerRoomProps@PropertySheets)",
-				"LevelDesigners": [ "RTID(PirateDangerRoomWaveGenerator@CurrentLevel)", "RTID(PlankDesigner@CurrentLevel)" ]
+				"LevelDesigners": [
+					"RTID(PirateDangerRoomWaveGenerator@CurrentLevel)",
+					"RTID(PlankDesigner@CurrentLevel)"
+				]
 			}
-		}, {
-			"aliases": [ "DangerRoomIntro" ],
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
 			"objclass": "DangerRoomLevelIntroProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "PiratePlanks" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"PiratePlanks"
+			],
 			"objclass": "PiratePlankProperties",
 			"objdata": {
-				"PlankRows": [ 0, 1 ]
+				"PlankRows": [
+					0,
+					1
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PlantBlackList": [],
+				"PlantBlackList": [
+				],
 				"SelectionMethod": "chooser",
 				"AlwaysUseChooser": true
 			}
-		}, {
-			"aliases": [ "PirateDangerRoomWaveGenerator" ],
+		},
+		{
+			"aliases": [
+				"PirateDangerRoomWaveGenerator"
+			],
 			"objclass": "DangerRoomJitteredWaveGenerator",
 			"objdata": {
 				"StartingPoints": 25,
 				"BasePointIncrementPerWave": 5,
 				"BasePointIncrementPerLevel": 1,
-				"ZombiePool": [ "RTID(pirate_armor1@ZombieTypes)", "RTID(pirate_armor2@ZombieTypes)", "RTID(pirate@ZombieTypes)", "RTID(pirate_armor4@ZombieTypes)", "RTID(pirate_gargantuar@ZombieTypes)", "RTID(pirate_imp@ZombieTypes)", "RTID(swashbuckler@ZombieTypes)", "RTID(barrelroller@ZombieTypes)", "RTID(seagull@ZombieTypes)", "RTID(pelican@ZombieTypes)", "RTID(pirate_captain@ZombieTypes)", "RTID(cannon@ZombieTypes)", "RTID(camel_onehump@ZombieTypes)", "RTID(tomb_raiser@ZombieTypes)", "RTID(pharaoh@ZombieTypes)", "RTID(beach_octopus@ZombieTypes)", "RTID(beach_surfer@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(pirate_armor1@ZombieTypes)",
+					"RTID(pirate_armor2@ZombieTypes)",
+					"RTID(pirate@ZombieTypes)",
+					"RTID(pirate_armor4@ZombieTypes)",
+					"RTID(pirate_gargantuar@ZombieTypes)",
+					"RTID(pirate_imp@ZombieTypes)",
+					"RTID(swashbuckler@ZombieTypes)",
+					"RTID(barrelroller@ZombieTypes)",
+					"RTID(seagull@ZombieTypes)",
+					"RTID(pelican@ZombieTypes)",
+					"RTID(pirate_captain@ZombieTypes)",
+					"RTID(cannon@ZombieTypes)",
+					"RTID(camel_onehump@ZombieTypes)",
+					"RTID(tomb_raiser@ZombieTypes)",
+					"RTID(pharaoh@ZombieTypes)",
+					"RTID(beach_octopus@ZombieTypes)",
+					"RTID(beach_surfer@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "PlankDesigner" ],
+		},
+		{
+			"aliases": [
+				"PlankDesigner"
+			],
 			"objclass": "DangerRoomPlankDesigner",
 			"objdata": {
-				"PlankLayouts": [ "11110", "11011", "01111", "11100", "01110", "00111", "10101", "11010", "11001", "01101", "10110", "10011", "01011", "10111", "11101" ]
+				"PlankLayouts": [
+					"11110",
+					"11011",
+					"01111",
+					"11100",
+					"01110",
+					"00111",
+					"10101",
+					"11010",
+					"11001",
+					"01101",
+					"10110",
+					"10011",
+					"01011",
+					"10111",
+					"11101"
+				]
 			}
-		}, {
-			"aliases": [ "RaidingPartyGenerator" ],
+		},
+		{
+			"aliases": [
+				"RaidingPartyGenerator"
+			],
 			"objclass": "DangerRoomRaidingPartyDesigner",
 			"objdata": {
 				"BasePartyCount": 0,
@@ -146,6 +257,7 @@
 				"MaxPartyCount": 10,
 				"BasePartyStartWave": 4
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

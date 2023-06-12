@@ -1,7 +1,7 @@
 {
-	"#comment": "Empty heart‘",
-	false: "Tutorial 1",
-	"objects": [ {
+	"#comment": "Tutorial 1",
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "First steps into grind journey",
@@ -12,30 +12,69 @@
 				"ForceNextLevel": "tutorial2",
 				"LevelNumber": 1,
 				"Loot": "RTID(NoLoot@LevelModules)",
-				"GameFeaturesToUnlock": [ "feature_coins" ],
-				"Modules": [ "RTID(TutorialIntro@CurrentLevel)", "RTID(DefaultSunDropper@LevelModules)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(ZombiesDeadWinCon@LevelModules)", "RTID(TutorialPeashooterDeath@LevelModules)", "RTID(FrontLawnMowers@LevelModules)", "RTID(SeedBank@CurrentLevel)", "RTID(Escalation@CurrentLevel)", "RTID(NewWaves@CurrentLevel)" ],
+				"GameFeaturesToUnlock": [
+					"feature_coins"
+				],
+				"Modules": [
+					"RTID(TutorialIntro@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(TutorialPeashooterDeath@LevelModules)",
+					"RTID(FrontLawnMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(Escalation@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"Name": "Tutorial 1",
 				"ReplayRewardParam": "endlevelreward",
 				"ReplayRewardType": "collectable",
 				"StageModule": "RTID(TutorialStage@LevelModules)",
 				"StartingSun": 150,
-				"ResourceGroupNames": [ "DelayLoad_Background_Beach", "PeaEffects", "DelayLoad_Background_Beach_Compressed", "SodRollGroup", "PlantSunflower", "PlantWallnut", "PlantWallnutAudio", "PlantPotatomine", "PlantPotatomineAudio", "AudioCrazyDave", "AudioTimeMachine", "NPC_Common", "NPC_CrazyDave", "NPC_Winnie" ]
+				"ResourceGroupNames": [
+					"DelayLoad_Background_Beach",
+					"PeaEffects",
+					"DelayLoad_Background_Beach_Compressed",
+					"SodRollGroup",
+					"PlantSunflower",
+					"PlantWallnut",
+					"PlantWallnutAudio",
+					"PlantPotatomine",
+					"PlantPotatomineAudio",
+					"AudioCrazyDave",
+					"AudioTimeMachine",
+					"NPC_Common",
+					"NPC_CrazyDave",
+					"NPC_Winnie"
+				]
 			}
-		}, {
-			"aliases": [ "SeedBank" ],
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
 			"objclass": "SeedBankProperties",
 			"objdata": {
-				"PresetPlantList": [ {
+				"PresetPlantList": [
+					{
 						"PlantType": "peashooter"
-					} ],
+					}
+				],
 				"SelectionMethod": "preset"
 			}
-		}, {
-			"aliases": [ "TutorialIntro" ],
+		},
+		{
+			"aliases": [
+				"TutorialIntro"
+			],
 			"objclass": "TutorialLevel1Properties",
-			"objdata": {}
-		}, {
-			"aliases": [ "Escalation" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"Escalation"
+			],
 			"objclass": "LevelEscalationModuleProperties",
 			"objdata": {
 				"FlagCount": 1,
@@ -44,81 +83,137 @@
 				"StartingPoints": -1,
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
 				"WavesPerFlag": 5,
-				"ZombiePool": [ "RTID(dino@ZombieTypes)" ]
+				"ZombiePool": [
+					"RTID(dino@ZombieTypes)"
+				]
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
-			"objdata": {}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+			"objdata": {
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
 				"IgnoreFlagCarriers": true,
 				"WaveSpendingPointIncrement": 10,
 				"WaveSpendingPoints": 100,
-				"Waves": [ [ "RTID(Wave1@CurrentLevel)" ], [ "RTID(Wave2@CurrentLevel)" ], [ "RTID(Wave3@CurrentLevel)" ], [ "RTID(Wave4@CurrentLevel)" ], [ "RTID(Wave5@CurrentLevel)" ] ]
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					]
+				]
 			}
-		}, {
-			"aliases": [ "Wave1" ],
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave2" ],
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave3" ],
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave4" ],
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "Wave5" ],
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
 			"objclass": "SpawnZombiesJitteredWaveActionProps",
 			"objdata": {
-				"Zombies": [ {
+				"Zombies": [
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					}, {
+					},
+					{
 						"Row": "3",
 						"Type": "RTID(tutorial@ZombieTypes)"
-					} ]
+					}
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }

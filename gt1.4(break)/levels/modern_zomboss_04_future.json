@@ -1,6 +1,7 @@
 {
 	"#comment": "Future Prototype",
-	"objects": [ {
+	"objects": [
+		{
 			"objclass": "LevelDefinition",
 			"objdata": {
 				"Description": "[PLAYERS_TRIP_TO_MODERN]",
@@ -8,12 +9,22 @@
 				"FirstOutroNarrative": "MODERN_33_OUTRO",
 				"FirstRewardType": "giftbox",
 				"ForceToWorldMap": true,
-				"GameFeaturesToUnlock": [ "world_trophy_future" ],
+				"GameFeaturesToUnlock": [
+					"world_trophy_future"
+				],
 				"SuppressSunSpawn": true,
 				"LevelNumber": 33,
 				"LoadDefaultMusic": false,
 				"Loot": "RTID(DefaultLoot@LevelModules)",
-				"Modules": [ "RTID(ZombossIntro@LevelModules)", "RTID(FutureMowers@LevelModules)", "RTID(FutureLinkedTileGroups@CurrentLevel)", "RTID(ConveyorBelt@CurrentLevel)", "RTID(ZombossBattle@CurrentLevel)", "RTID(DefaultZombieWinCondition@LevelModules)", "RTID(NewWaves@CurrentLevel)" ],
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)",
+					"RTID(FutureMowers@LevelModules)",
+					"RTID(FutureLinkedTileGroups@CurrentLevel)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(ZombossBattle@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
 				"MusicType": "MiniGame_A",
 				"Name": "[MODERN_LEVEL_NAME]",
 				"NormalPresentTable": "future_normal_01",
@@ -21,61 +32,88 @@
 				"ShinyPresentTable": "future_shiny_01",
 				"StageModule": "RTID(FutureStage@LevelModules)",
 				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)",
-				"ResourceGroupNames": [ "ModernLootPinatas" ]
+				"ResourceGroupNames": [
+					"ModernLootPinatas"
+				]
 			}
-		}, {
-			"aliases": [ "ConveyorBelt" ],
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
 			"objclass": "ConveyorSeedBankProperties",
 			"objdata": {
-				"DropDelayConditions": [ {
+				"DropDelayConditions": [
+					{
 						"Delay": 2,
 						"MaxPackets": 0
-					}, {
+					},
+					{
 						"Delay": 3,
 						"MaxPackets": 2
-					}, {
+					},
+					{
 						"Delay": 5,
 						"MaxPackets": 4
-					}, {
+					},
+					{
 						"Delay": 8,
 						"MaxPackets": 8
-					} ],
-				"InitialPlantList": [ {
+					}
+				],
+				"InitialPlantList": [
+					{
 						"PlantType": "fumeshroom",
 						"Weight": 10
-					}, {
+					},
+					{
 						"MaxCount": 5,
 						"MaxWeightFactor": 0.1,
 						"PlantType": "magnetshroom",
 						"Weight": 5
-					}, {
+					},
+					{
 						"PlantType": "puffshroom",
 						"Weight": 20
-					}, {
+					},
+					{
 						"MaxCount": 3,
 						"MaxWeightFactor": 0,
 						"PlantType": "tool_powertile_alpha",
 						"Weight": 2
-					}, {
+					},
+					{
 						"MaxCount": 2,
 						"MaxWeightFactor": 0,
 						"PlantType": "tool_powertile_gamma",
 						"Weight": 2
-					} ],
-				"ResourceGroupNames": [ "PowerTileModule" ],
-				"SpeedConditions": [ {
+					}
+				],
+				"ResourceGroupNames": [
+					"PowerTileModule"
+				],
+				"SpeedConditions": [
+					{
 						"MaxPackets": 0,
 						"Speed": 100
-					} ]
+					}
+				]
 			}
-		}, {
-			"aliases": [ "FutureLinkedTileGroups" ],
+		},
+		{
+			"aliases": [
+				"FutureLinkedTileGroups"
+			],
 			"objclass": "PowerTileProperties",
 			"objdata": {
-				"LinkedTiles": []
+				"LinkedTiles": [
+				]
 			}
-		}, {
-			"aliases": [ "ZombossBattle" ],
+		},
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
 			"objclass": "ZombossBattleModuleProperties",
 			"objdata": {
 				"ReservedColumnCount": 2,
@@ -87,18 +125,26 @@
 					"mY": 3
 				}
 			}
-		}, {
-			"aliases": [ "NewWaves" ],
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
 			}
-		}, {
-			"aliases": [ "WaveManagerProps" ],
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
 			"objclass": "WaveManagerProperties",
 			"objdata": {
-				"Waves": []
+				"Waves": [
+				]
 			}
-		} ],
+		}
+	],
 	"version": 1
 }
